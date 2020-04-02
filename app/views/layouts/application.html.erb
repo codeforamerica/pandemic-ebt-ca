@@ -17,7 +17,21 @@
 
   <body class="template--<%= content_for(:template_name) if content_for?(:template_name) %>">
     <div class="page-wrapper">
-      <%= content_for?(:content) ? yield(:content) : yield %>
+      <% if content_for(:template_name) == "card" %>
+        <div class="slab">
+          <div class="grid">
+            <div class="grid__item width-five-sixths shift-one-twelfth">
+              <div class="form-card">
+                <div class="form-card__content">
+                  <%= yield %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% else  %>
+        <%= content_for?(:content) ? yield(:content) : yield %>
+      <% end %>
     </div>
   </body>
 </html>
