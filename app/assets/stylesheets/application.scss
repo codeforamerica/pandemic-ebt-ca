@@ -1,0 +1,59 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import 'cfa_styleguide_main';
+
+.template--homepage {
+  .hero--apple {
+    h1, h2{
+      color: #000;
+    }
+    .slab--hero {
+      background: none;
+      @include media($tablet-up) {
+        background: none;
+      }
+      &:before {
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: 100% auto;
+        background-image: image-url('apple_mobile.svg');
+        @include media($tablet-up) { /*desktop*/
+          max-width: 99rem;
+          background-size: 90% auto;
+          background-position: bottom left;
+          background-image: image-url('apple.svg');
+        }
+      }
+    }
+    .main-header {
+      background: none;
+      .toolbar__item {
+        color: #000;
+      }
+    }
+    .main-header__title a {
+      color: #000;
+      &:before {
+        background-image: image-url("gcf_logomark_black.png");
+        @media only screen and (min-resolution: 1.3dppx), only screen and (min-resolution: 125dpi) {
+          background-image: image-url("gcf_logomark_black@2x.png");
+          background-size: 100% auto;
+        }
+      }
+    }
+  }
+}

@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9"> <![endif]-->
+<!--[if IE 9]>    <html class="lt-ie10"> <![endif]-->
+<html lang="en">
   <head>
-    <title>PandemicEbt</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#ffffff">
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+
+    <%= csrf_meta_tags %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="template--<%= content_for(:template_name) if content_for?(:template_name) %>">
+    <div class="page-wrapper">
+      <%= content_for?(:content) ? yield(:content) : yield %>
+    </div>
   </body>
 </html>

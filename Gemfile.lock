@@ -1,3 +1,13 @@
+GIT
+  remote: https://github.com/codeforamerica/honeycrisp-gem
+  revision: 2e646843b8c6c1d7d8f657de94606fe3574c6a3b
+  specs:
+    cfa-styleguide (0.9.2)
+      autoprefixer-rails
+      bourbon
+      jquery-rails
+      neat (~> 1.8.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -220,6 +230,7 @@ DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
   capybara (>= 2.15)
+  cfa-styleguide!
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)
