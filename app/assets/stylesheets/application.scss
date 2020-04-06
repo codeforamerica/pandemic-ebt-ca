@@ -17,6 +17,8 @@
 @import 'cfa_styleguide_main';
 
 .template--homepage {
+  margin-bottom: 0;
+
   .hero--apple {
     h1, h2{
       color: #000;
@@ -57,7 +59,7 @@
     }
   }
   .main-footer {
-    height: unset;
-    position: unset;
+    height: inherit;
+    position: inherit;
   }
 }
