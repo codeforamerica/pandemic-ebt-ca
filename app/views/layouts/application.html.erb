@@ -33,5 +33,21 @@
         <%= content_for?(:content) ? yield(:content) : yield %>
       <% end %>
     </div>
+    <footer class="main-footer">
+      <% if controller.controller_name == "pages" && controller.action_name == "index" %>
+        <div class="grid">
+          <div class="grid__item width-one-fourth shift-one-twelfth">
+            <div class="main-footer__cfa-logo">
+              <a href="https://www.codeforamerica.org" class="illustration illustration--cfa-logo__dark">Code for America</a>
+            </div>
+          </div>
+        </div>
+      <% end %>
+      <div class="grid">
+        <div class="grid__item">
+          <p class="text--small">This is a service delivered by <a class="link--subtle" href="https://www.codeforamerica.org">Code for America</a> on behalf of the people of California.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
