@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: pandemic-ebt_production
-  username: pandemic-ebt
-  password: <%= ENV['PANDEMIC-EBT_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
