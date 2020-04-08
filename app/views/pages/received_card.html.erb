@@ -1,0 +1,23 @@
+<% content_for(:template_name, "card") %>
+
+<div class="form-card__header spacing-below-15">
+  <h2 class="form-card__title">Have you received a P-EBT card? </h2>
+</div>
+<div class="form-card__content">
+  <div class="grid">
+    <div class="grid__item">
+      <p class="text--small with-padding-small text--left"></p>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="grid__item text--left">
+      <%= form_with url: households_path, method: :post, local: true do %>
+        <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>
+
+        <%= f.submit "Continue", class: "button button--small button--primary" %>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,35 @@
+<% content_for(:template_name, "card") %>
+
+<div class="form-card__header spacing-below-15">
+  <div class="emoji emoji--big emoji--backpack"></div>
+  <h2 class="form-card__title">Is your child able to receive free or reduced price meals during the school year?</h2>
+</div>
+<div class="form-card__content">
+  <div class="grid">
+    <div class="grid__item">
+      <p class="text--small with-padding-small text--left">Even if your child does not eat school meals, we need to know
+        if they are eligible for this program.</p>
+      <p class="text--small with-padding-small text--left">If your child goes to a school that serves free breakfast and
+        lunch to everyone, answer yes.</p>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="grid__item text--left">
+      <%= form_with url: households_path, method: :post, local: true do %>
+        <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>
+          <%= f.cfa_radio_set(
+                  :is_eligible,
+                  collection: [
+                      {value: :yes, label: "Yes"},
+                      {value: :no, label: "No"},
+                      {value: :dont_know, label: "I don't know"},
+                  ]
+              )
+          %>
+        <%= f.submit "Continue", class: "button button--small button--primary" %>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+
+</div>
