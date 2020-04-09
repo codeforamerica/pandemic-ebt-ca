@@ -1,0 +1,2 @@
+class MealEligibilityForm < Form
+end

@@ -8,10 +8,7 @@ class PagesController < ApplicationController
   def meal_eligibility
   end
 
-  def received_card
-  end
-
-  def sorry
+  def edit
   end
 
   def eligible

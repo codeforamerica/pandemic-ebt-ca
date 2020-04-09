@@ -1,0 +1,2 @@
+class SorryForm < Form
+end

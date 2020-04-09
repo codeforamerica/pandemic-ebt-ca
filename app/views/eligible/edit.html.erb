@@ -15,7 +15,7 @@
   </div>
   <div class="grid">
     <div class="grid__item text--left">
-      <%= form_with url: households_path, method: :post, local: true do %>
+      <%= form_with url: eligible_steps_path, method: :put, local: true do %>
         <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>
           <%= f.cfa_radio_set(
                   :is_eligible,
@@ -26,7 +26,7 @@
                   ]
               )
           %>
-        <%= f.submit "Continue", class: "button button--small button--primary" %>
+          <%= f.submit "Continue", class: "button button--small button--primary" %>
         <% end %>
       <% end %>
     </div>

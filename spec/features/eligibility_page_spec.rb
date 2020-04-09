@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.feature "Eligibility page", type: :feature do
   describe "Chooses no" do
     it "should show the Sorry page" do
-      visit "/eligible"
+      visit "/steps/eligible"
       expect(page).to have_text "Is your child able to receive free or reduced price meals"
       choose "No"
       click_on "Continue"
@@ -14,7 +14,7 @@ RSpec.feature "Eligibility page", type: :feature do
 
   describe "Chooses I don't know" do
     it "should show the Sorry page" do
-      visit "/eligible"
+      visit "/steps/eligible"
       expect(page).to have_text "Is your child able to receive free or reduced price meals"
       choose "I don't know"
       click_on "Continue"

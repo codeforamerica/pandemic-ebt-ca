@@ -1,0 +1,2 @@
+class ReceivedCardForm < Form
+end
