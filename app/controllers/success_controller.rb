@@ -1,0 +1,2 @@
+class SuccessController < FormsController
+end

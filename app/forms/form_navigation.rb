@@ -3,7 +3,8 @@ class FormNavigation
       EligibleController,
       SorryController,
       MealEligibilityController,
-      ReceivedCardController
+      ReceivedCardController,
+      SuccessController
   ].freeze
 
   class << self

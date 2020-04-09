@@ -11,6 +11,9 @@ RSpec.feature "Journey", type: :feature do
       expect(page).to have_text "Is your child able to receive free or reduced price meals"
       choose "Yes"
       click_on "Continue"
+      expect(page).to have_text "Have you received a P-EBT card?"
+      click_on "Continue"
+      expect(page).to have_text "Success!"
     end
   end
 end

@@ -1,0 +1,2 @@
+class SuccessForm < Form
+end
