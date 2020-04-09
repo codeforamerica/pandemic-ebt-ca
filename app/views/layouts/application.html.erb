@@ -34,6 +34,11 @@
       <% end %>
     </div>
     <footer class="main-footer">
+      <div class="grid">
+        <div class="grid__item">
+          <p class="text--small">ca.p-ebt.org is a service delivered by <a class="link--subtle" href="https://www.codeforamerica.org">Code for America</a> on behalf of the people of California.</p>
+        </div>
+      </div>
       <% if controller.controller_name == "pages" && controller.action_name == "index" %>
         <div class="grid">
           <div class="grid__item width-one-fourth">
@@ -43,11 +48,6 @@
           </div>
         </div>
       <% end %>
-      <div class="grid">
-        <div class="grid__item">
-          <p class="text--small">This is a service delivered by <a class="link--subtle" href="https://www.codeforamerica.org">Code for America</a> on behalf of the people of California.</p>
-        </div>
-      </div>
     </footer>
   </body>
 </html>
