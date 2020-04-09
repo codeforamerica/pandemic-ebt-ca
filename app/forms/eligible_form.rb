@@ -3,6 +3,10 @@ class EligibleForm < Form
   validates_presence_of :is_eligible, message: "Please choose an option."
 
   def save
-    self.household = Household.create(attributes_for(:household))
+    if self.household.present?
+      self.household.update(attributes_for(:household))
+    else
+      self.household = Household.create(attributes_for(:household))
+    end
   end
 end
