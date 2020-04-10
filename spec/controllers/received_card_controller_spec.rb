@@ -1,9 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe ReceivedCardController do
-  xdescribe 'should work like a normal controller' do
-    # it_behaves_like "form controller base behavior", Household.create({is_eligible: :yes})
-  end
+  it_behaves_like "form controller base behavior", Household.create({is_eligible: :yes})
 
   context "household is eligible" do
     it 'should show' do

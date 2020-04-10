@@ -1,8 +1,8 @@
 require 'rails_helper'
 
 RSpec.feature "Journey", type: :feature do
-  describe "Full journey" do
-    it "should run the full journey" do
+  describe "selecting yes on received card page" do
+    it "should show all done page" do
       visit "/"
       expect(page).to have_text "Get money to buy healthy food while schools are closed."
       click_on "Sign up now"
@@ -12,8 +12,8 @@ RSpec.feature "Journey", type: :feature do
       choose "Yes"
       click_on "Continue"
       expect(page).to have_text "Have you received a P-EBT card?"
-      click_on "No"
-      expect(page).to have_text "Success"
+      click_on "Yes"
+      expect(page).to have_text "You’re all done"
     end
   end
 end

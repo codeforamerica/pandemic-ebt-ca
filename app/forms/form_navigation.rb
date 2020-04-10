@@ -4,6 +4,7 @@ class FormNavigation
       SorryController,
       MealEligibilityController,
       ReceivedCardController,
+      AlreadyReceivedController,
       SuccessController
   ].freeze
 

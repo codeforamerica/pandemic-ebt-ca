@@ -1,0 +1,2 @@
+class AlreadyReceivedForm < Form
+end
