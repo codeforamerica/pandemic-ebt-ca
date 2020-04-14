@@ -1,0 +1,33 @@
+<% content_for(:template_name, "card") %>
+<%= form_with url: children_steps_path, method: :put, local: true do %>
+  <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>
+    <div class="form-card__header spacing-below-15">
+      <div class="emoji emoji--big emoji--bust"></div>
+      <h2 class="form-card__title">Tell us about your child.</h2>
+    </div>
+    <div class="form-card__content">
+      <div class="grid">
+        <div class="grid__item">
+          <p class="text with-padding-small text--left">One at a time, add all children in elementary, middle, and high
+            school.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="grid__item text--left">
+          <%= f.cfa_input_field(:first_name, "First name", help_text: "Legally as it appears on school records.") %>
+          <%= f.cfa_input_field(:last_name, "Last name", help_text: "Legally as it appears on school records.") %>
+          <%= f.cfa_date_select(
+                  :dob,
+                  'What is their date of birth?',
+                  options: {
+                      start_year: 1900,
+                      end_year: Time.now.year,
+                  }
+              ) %>
+        </div>
+      </div>
+      <div class="form-card__footer">
+        <%= f.button "Continue", class: "button button--primary" %>
+      </div>
+  <% end %>
+<% end %>

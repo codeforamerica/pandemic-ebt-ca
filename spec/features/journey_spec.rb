@@ -13,7 +13,14 @@ RSpec.feature "Journey", type: :feature do
       click_on "Continue"
       expect(page).to have_text "Have you received a P-EBT card?"
       click_on "No"
-      expect(page).to have_text "Success"
+      expect(page).to have_text "Tell us about your child"
+      fill_in("First name", with: "Jane")
+      fill_in("Last name", with: "Johnson")
+      select("January", from: "Month")
+      select("2", from: "Day")
+      select("2010", from: "Year")
+      click_on "Continue"
+      expect(page).to have_text "Success!"
     end
   end
 end

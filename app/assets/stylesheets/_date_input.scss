@@ -1,0 +1,57 @@
+@import 'atoms/variables';
+
+$width-form-year: $s95;
+$width-form-month: $s60;
+$width-form-day: $s60;
+
+.input-group--inline .form-group {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.form-padding--month {
+  padding: 0 1rem
+}
+
+.form-padding--day {
+  padding: 0 1rem;
+}
+
+.form-padding--year {
+  padding: 0 1.5rem;
+}
+
+.date-input--fieldset{
+  margin-bottom: 0 !important;
+}
+
+.date-input--fieldset > p{
+  margin-bottom: $s10 !important;
+  margin-top: $s5 !important;
+}
+
+.date-input--fieldset > .form-question{
+  margin: 0;
+}
+
+.form-width--year {
+  min-width: $width-form-year;
+}
+
+.form-width--month {
+  min-width: $width-form-month;
+}
+
+.form-width--day {
+  min-width: $width-form-day;
+}
+
+.date-input--separator {
+  display: inline-block;
+  font-size: 30px;
+  margin: auto $s5;
+}
+
+.form-group legend.form-question {
+  float: none;
+}

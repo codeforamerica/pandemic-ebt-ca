@@ -5,6 +5,7 @@ class FormNavigation
       MealEligibilityController,
       ReceivedCardController,
       AlreadyReceivedController,
+      ChildrenController,
       SuccessController
   ].freeze
 
