@@ -10,6 +10,13 @@
         <div class="grid__item">
           <p class="text with-padding-small text--left">One at a time, add all children in elementary, middle, and high
             school.</p>
+          <% if current_household.children.present? %>
+            <div class="notice">
+              <% current_household.children.each do |child| %>
+                <p><i class="emoji emoji--checkmark"></i> <%= child.first_name + " " + child.last_name %> </p>
+              <% end %>
+            </div>
+          <% end %>
         </div>
       </div>
       <div class="grid">
@@ -24,6 +31,7 @@
                       end_year: Time.now.year,
                   }
               ) %>
+          <%= f.cfa_single_tap_button(:add_child, "Add another child", true) %>
         </div>
       </div>
       <div class="form-card__footer">

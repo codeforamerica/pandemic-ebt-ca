@@ -1,5 +1,5 @@
 class ChildrenForm < Form
-  set_attributes_for :child, :first_name, :last_name, :dob_day, :dob_month, :dob_year
+  set_attributes_for :child, :first_name, :last_name, :dob_day, :dob_month, :dob_year, :add_child
   validates_presence_of :first_name, message: "Please fill in their first name."
   validates_presence_of :last_name, message: "Please fill in their last name."
   validate :presence_of_dob_fields
