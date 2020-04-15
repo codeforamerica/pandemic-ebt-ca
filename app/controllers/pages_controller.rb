@@ -1,23 +1,17 @@
 class PagesController < ApplicationController
+  before_action :clear_household
+
   def index
+
   end
 
   def how
-  end
 
-  def meal_eligibility
-  end
-
-  def edit
-  end
-
-  def eligible
-    @form = current_household
   end
 
   private
 
-  def current_household
-    @household ||= Household.new
+  def clear_household
+    session[:current_household_id] = nil
   end
 end
