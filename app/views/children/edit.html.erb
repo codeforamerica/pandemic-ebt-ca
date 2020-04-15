@@ -27,8 +27,8 @@
                   :dob,
                   'What is their date of birth?',
                   options: {
-                      start_year: 1900,
-                      end_year: Time.now.year,
+                      start_year: Time.now.year,
+                      end_year: Time.now.year - 30,
                   }
               ) %>
           <%= f.cfa_single_tap_button(:add_child, "Add another child", true) %>
