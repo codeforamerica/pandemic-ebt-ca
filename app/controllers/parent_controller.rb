@@ -1,0 +1,3 @@
+class ParentController < FormsController
+
+end
