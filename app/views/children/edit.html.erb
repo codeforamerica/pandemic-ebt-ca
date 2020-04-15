@@ -13,10 +13,19 @@
           <% if current_household.children.present? %>
             <div class="notice">
               <% current_household.children.each do |child| %>
-                <p><i class="emoji emoji--checkmark"></i> <%= child.first_name + " " + child.last_name %> </p>
+                <p>
+                  <i class="emoji emoji--checkmark"></i>
+                  <%= child.first_name + " " + child.last_name %>
+                  <%= link_to "(remove)", remove_child_path(id: child.id), method: :delete %>
+                </p>
               <% end %>
             </div>
           <% end %>
+          <% if flash[:notice].present? %>
+            <div class="notice--warning">
+              <p><%= flash[:notice] %></p>
+            </div>
+          <% end  %>
         </div>
       </div>
       <div class="grid">

@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   root "pages#index"
   get "/how" => "pages#how", as: "how"
-  get "/edit" => "pages#edit", as: "edit"
-  get "/meal_eligibility" => "pages#meal_eligibility", as: "meal_eligibility"
 
   resources :steps, controller: :forms, only: (Rails.env.production? ? %i[show] : %i[show index]) do
     collection do
@@ -16,6 +14,8 @@ Rails.application.routes.draw do
       end
     end
   end
+
+  delete "/steps/children/:id" => "children#destroy", as: "remove_child"
 
   mount Cfa::Styleguide::Engine => "/cfa"
 end

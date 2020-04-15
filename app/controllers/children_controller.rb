@@ -14,4 +14,13 @@ class ChildrenController < FormsController
       render :edit
     end
   end
+
+  def destroy
+    child = Child.find(params[:id])
+    if child.household.id == session[:current_household_id]
+      child.destroy!
+    end
+    flash[:notice] = "Child has been removed"
+    redirect_to(children_steps_path)
+  end
 end
