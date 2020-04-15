@@ -19,7 +19,7 @@ class ChildrenForm < Form
 
   def presence_of_dob_fields
     [:dob_year, :dob_month, :dob_day].detect do |attr|
-      errors.add(attr, "Please fill in their date of birth.") if public_send(attr).blank?
+      errors.add(:dob, "Please fill in their date of birth.") if public_send(attr).blank?
     end
   end
 end
