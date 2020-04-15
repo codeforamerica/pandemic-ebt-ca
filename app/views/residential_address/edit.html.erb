@@ -15,7 +15,7 @@
         <div class="grid__item text--left">
           <%= f.cfa_input_field(:residential_street, "What is the street address?") %>
           <%= f.cfa_input_field(:residential_city, "What is the city?") %>
-          <%= f.cfa_input_field(:residential_zip_code, "What is the ZIP code?") %>
+          <%= f.cfa_input_field(:residential_zip_code, "What is the ZIP code?", classes: ['form-width--zip']) %>
           <%= f.cfa_radio_set(
                   :has_mailing_address,
                   label_text: "Is this the best place for you to get mail for the next two weeks?",

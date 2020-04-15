@@ -37,6 +37,11 @@ RSpec.feature "Journey", type: :feature do
       fill_in "What is the ZIP code?", with: "90123"
       choose "No, use a different address for mail"
       click_on "Continue"
+      expect(page).to have_text "Where should we mail your P-EBT card?"
+      fill_in "What is the street address?", with: "948 Baker Street"
+      fill_in "What is the city?", with: "San Francisco"
+      fill_in "What is the ZIP code?", with: "94103"
+      click_on "Continue"
       expect(page).to have_text "Success!"
     end
   end

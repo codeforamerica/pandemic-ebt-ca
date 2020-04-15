@@ -8,6 +8,7 @@ class FormNavigation
       ChildrenController,
       ParentController,
       ResidentialAddressController,
+      MailingAddressController,
       SuccessController
   ].freeze
 
