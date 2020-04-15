@@ -42,6 +42,8 @@ RSpec.feature "Journey", type: :feature do
       fill_in "What is the city?", with: "San Francisco"
       fill_in "What is the ZIP code?", with: "94103"
       click_on "Continue"
+      fill_in "form_signature", with: "Julia Johnson"
+      click_on "Continue"
       expect(page).to have_text "Success!"
     end
   end

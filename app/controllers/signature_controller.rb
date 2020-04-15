@@ -1,0 +1,3 @@
+class SignatureController < FormsController
+
+end
