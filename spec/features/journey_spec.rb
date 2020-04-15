@@ -31,6 +31,12 @@ RSpec.feature "Journey", type: :feature do
       fill_in "First name", with: "Julia"
       fill_in "Last name", with: "Johnson"
       click_on "Continue"
+      expect(page).to have_text "What address are you registered at the school with"
+      fill_in "What is the street address?", with: "123 Elm Street"
+      fill_in "What is the city?", with: "Oakland"
+      fill_in "What is the ZIP code?", with: "90123"
+      choose "No, use a different address for mail"
+      click_on "Continue"
       expect(page).to have_text "Success!"
     end
   end

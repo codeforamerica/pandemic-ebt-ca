@@ -7,6 +7,7 @@ class FormNavigation
       AlreadyReceivedController,
       ChildrenController,
       ParentController,
+      ResidentialAddressController,
       SuccessController
   ].freeze
 

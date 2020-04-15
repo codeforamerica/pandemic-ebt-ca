@@ -1,0 +1,3 @@
+class ResidentialAddressController < FormsController
+
+end
