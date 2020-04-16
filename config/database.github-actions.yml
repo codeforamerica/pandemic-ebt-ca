@@ -1,0 +1,8 @@
+test:
+  adapter: postgresql
+  host: localhost
+  encoding: unicode
+  database: pebt-test
+  pool: 20
+  username: postgres
+  password: postgres
