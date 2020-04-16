@@ -18,7 +18,7 @@ RSpec.feature "Eligibility page", type: :feature do
       choose "I don't know"
       click_on "Continue"
       expect(page).to have_text "Who can get free and reduced price school meals?"
-      click_on "Back"
+      click_on "Go back"
       expect(page).to have_text "Is your child able to receive free or reduced price meals"
     end
   end

@@ -2,7 +2,7 @@
 <%= form_with url: residential_address_steps_path, method: :put, local: true do %>
   <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>
     <div class="form-card__header spacing-below-15">
-      <div class="emoji emoji--big emoji--clipboard"></div>
+      <div class="emoji emoji--big spacing-below-25 emoji--clipboard"></div>
       <h2 class="form-card__title">What address are you registered at the school with?</h2>
     </div>
     <div class="form-card__content">

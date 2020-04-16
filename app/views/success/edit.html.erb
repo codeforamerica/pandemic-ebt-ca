@@ -2,7 +2,7 @@
 <%= form_with url: success_steps_path, method: :put, local: true do %>
   <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>
     <div class="form-card__header">
-      <div class="emoji emoji--big emoji--star"></div>
+      <div class="emoji emoji--big spacing-below-25 emoji--star"></div>
       <h2 class="form-card__title">Your application has been submitted!</h2>
     </div>
     <div class="form-card__content text--centered">

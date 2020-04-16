@@ -2,7 +2,7 @@
 <%= form_with url: mailing_address_steps_path, method: :put, local: true do %>
   <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>
     <div class="form-card__header spacing-below-15">
-      <div class="emoji emoji--big emoji--mail"></div>
+      <div class="emoji emoji--big spacing-below-25 emoji--mail"></div>
       <h2 class="form-card__title">Where should we mail your P-EBT card?</h2>
     </div>
     <div class="form-card__content">
