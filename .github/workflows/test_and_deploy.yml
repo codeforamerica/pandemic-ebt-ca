@@ -16,6 +16,12 @@ jobs:
       with:
         ruby-version: 2.6.3
     - run: ruby -v
+    - name: Cache Gems
+      uses: actions/cache@v1.1.2
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: ${{ runner.os }}-gems-
     - name: Build and test with Rake
       run: |
         gem install bundler
