@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     services:
       postgres:
@@ -43,3 +43,18 @@ jobs:
         bundle exec rake
       env:
         RAILS_ENV: test
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Ruby 2.6.3
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6.3
+      - name: Deploy to aptible
+        run: |
+          gem install aptible-cli
+          git remote add aptible git@beta.aptible.com:p-ebt-ca/app-staging.git
+          git push aptible
+        env:
+          RAILS_ENV: test
