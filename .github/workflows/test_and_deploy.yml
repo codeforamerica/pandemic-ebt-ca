@@ -11,12 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Ruby 2.6.3
-      uses: actions/setup-ruby@v1
+    - name: Setup Ruby 2.6.3
+      uses: ruby/setup-ruby@v1
       with:
         ruby-version: 2.6.3
-    - name: Build and test with Rake
-      run: |
-        gem install bundler
-        bundle install --jobs 4 --retry 3
-        bundle exec rake
+    - run: ruby -v
