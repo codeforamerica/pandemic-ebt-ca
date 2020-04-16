@@ -167,3 +167,7 @@
 .slab--grey-light {
   background-color: $color-grey-light;
 }
+
+.with-no-padding {
+  padding-bottom: 0 !important;
+}
