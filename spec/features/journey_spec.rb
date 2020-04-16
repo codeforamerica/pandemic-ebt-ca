@@ -44,7 +44,9 @@ RSpec.feature "Journey", type: :feature do
       click_on "Continue"
       fill_in "form_signature", with: "Julia Johnson"
       click_on "Continue"
-      expect(page).to have_text "Success!"
+      expect(page).to have_text "Your application has been submitted!"
+      click_on "Good"
+      expect(page).to have_text "Thank you for your feedback!"
     end
   end
 end

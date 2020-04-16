@@ -26,10 +26,10 @@ class FormsController < ApplicationController
     end
   end
 
-  # def current_path(params = nil)
-  #   screen_path(self.class.to_param, params)
-  # end
-  #
+  def current_path(params = nil)
+    step_path(self.class.to_param, params)
+  end
+
   def next_path(params = {})
     next_step = form_navigation.next
     if next_step

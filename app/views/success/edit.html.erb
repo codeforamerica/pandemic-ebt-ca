@@ -1,1 +1,60 @@
-Success!
+<% content_for(:template_name, "card") %>
+<%= form_with url: success_steps_path, method: :put, local: true do %>
+  <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>
+    <div class="form-card__header">
+      <div class="emoji emoji--big emoji--star"></div>
+      <h2 class="form-card__title">Your application has been submitted!</h2>
+    </div>
+    <div class="form-card__content text--centered">
+      <div class="grid grid--how">
+        <div class="grid__item">
+          <p class="text--small with-padding-small text--left">Write down your confirmation number:</p>
+          <div class="notice"><%= current_household.id %></div>
+          <p class="text--small with-padding-small text--left">If approved, you'll get a P-EBT card with money for groceries
+            within 10days.</p>
+          <p class="text--small with-padding-small text--left">Learn more about the P-EBT program.</p>
+          <h5 class="text--left">How much in P-EBT benefits will I get?</h5>
+          <p class="text--small with-padding-small text--left">You can get up to $338 for each child who is eligible for
+            P-EBT benefits. As long as you apply before June 30th, 2020, you will get the full amount of benefits for all
+            four months.
+            Each eligible child will get the following amount for each month:</p>
+          <ul class="list--bulleted">
+            <li class="text--small text--left">March 2020: $63 per child</li>
+            <li class="text--small text--left">April 2020: $111 per child</li>
+            <li class="text--small text--left">May 2020: $111 per child</li>
+            <li class="text--small text--left">June 2020: $53 per child</li>
+          </ul>
+        </div>
+        <% if current_household.unfilled_application_experience? %>
+          <div class="grid__item">
+            <h5 class="text--left">How was your experience with this application?</h5>
+              <%= f.cfa_single_tap_button(
+                      :application_experience,
+                      raw("<i class=\"emoji emoji-size-35 emoji--grinning-face\"></i><span class=\"sr-only\">Good</span>"),
+                      :good,
+                      classes: ["button--small"]
+                  ) %>
+              <%= f.cfa_single_tap_button(
+                      :application_experience,
+                      raw("<i class=\"emoji emoji-size-35 emoji--neutral-face\"></i><span class=\"sr-only\">Okay</span>"),
+                      :ok,
+                      classes: ["button--small"]
+                  ) %>
+              <%= f.cfa_single_tap_button(
+                      :application_experience,
+                      raw("<i class=\"emoji emoji-size-35 emoji--frowning-face\"></i><span class=\"sr-only\">Bad</span>"),
+                      :bad,
+                      classes: ["button--small"]
+                  ) %>
+
+          </div>
+        <% end  %>
+        <% if flash[:notice].present? %>
+          <div class="notice">
+            <p><%= flash[:notice] %></p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+<% end %>
