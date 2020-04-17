@@ -54,6 +54,7 @@ jobs:
       - name: Deploy to aptible
         run: |
           gem install aptible-cli
+          ssh-keygen -R hostname
           git remote add aptible git@beta.aptible.com:p-ebt-ca/app-staging.git
           git push aptible
         env:
