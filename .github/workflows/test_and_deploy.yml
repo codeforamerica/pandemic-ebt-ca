@@ -51,6 +51,11 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.6.3
+      - name: Install SSH key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.APTIBLE_SSH_KEY }}
+          known_hosts: ${{ secrets.APTIBLE_KNOWN_HOSTS }}
       - name: Deploy to aptible
         run: |
           gem install aptible-cli
