@@ -2,7 +2,7 @@
 <%= form_with url: eligible_steps_path, method: :put, local: true do %>
   <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>
     <div class="form-card__header spacing-below-15">
-      <div class="emoji emoji--big emoji--backpack spacing-below-35"></div>
+      <div class="emoji emoji--bigger emoji--backpack spacing-below-35"></div>
       <h2 class="form-card__title">Is your child able to receive free or reduced price meals during the school
         year?</h2>
     </div>

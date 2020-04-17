@@ -2,7 +2,7 @@
 <%= form_with url: signature_steps_path, method: :put, local: true do %>
   <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>
     <div class="form-card__header spacing-below-15">
-      <div class="emoji emoji--big spacing-below-25 emoji--fountain-pen"></div>
+      <div class="emoji emoji--bigger spacing-below-25 emoji--fountain-pen"></div>
       <h2 class="form-card__title">Type your full legal name here to sign this form.</h2>
     </div>
     <div class="form-card__content">

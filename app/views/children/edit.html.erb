@@ -2,7 +2,7 @@
 <%= form_with url: children_steps_path, method: :put, local: true do %>
   <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>
     <div class="form-card__header spacing-below-15">
-      <div class="emoji emoji--big spacing-below-25 spacing-below-25 emoji--bust"></div>
+      <div class="emoji emoji--bigger spacing-below-25 spacing-below-25 emoji--bust"></div>
       <h2 class="form-card__title">Tell us about your child.</h2>
     </div>
     <div class="form-card__content">
