@@ -15,5 +15,10 @@
   </div>
 </div>
 <div class="form-card__footer">
-  <%= link_to "Apply for CalFresh", "https://www.getcalfresh.org", class: "button button--primary" %>
+  <div class="grid__item spacing-below-35">
+    <%= link_to "Apply for CalFresh", "https://www.getcalfresh.org", class: "button button--primary" %>
+  </div>
+  <div class="grid__item">
+    <%= link_to raw("<i class=\"icon-arrow_back\"></i>Go back"), :back, class: "button" %>
+  </div>
 </div>

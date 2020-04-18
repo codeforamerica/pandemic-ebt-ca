@@ -175,3 +175,20 @@
 body {
   font-family: -apple-system, "Helvetica Neue", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
 }
+
+.form-card {
+  max-width: 55rem;
+  margin: 0 auto;
+}
+
+.slab {
+  padding-bottom: 2.5rem;
+}
+
+fieldset.form-group:last-of-type {
+  margin-bottom: 0;
+}
+
+.select__element {
+  padding: 0 $s60 0 $s15;
+}
