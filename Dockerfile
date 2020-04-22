@@ -24,8 +24,8 @@ ADD . /app
 # Review http://go.aptible.com/assets for production-ready advice.
 RUN set -a \
  && . ./.aptible.env \
- && bundle exec rake assets:precompile \
- && bundle exec rake db:migrate
+ && bin/rails assets:precompile \
+ && bin/rails db:migrate
 
 EXPOSE 3000
 

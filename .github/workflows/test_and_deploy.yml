@@ -57,5 +57,4 @@ jobs:
           ssh-keygen -R hostname
           git push git@beta.aptible.com:p-ebt/app-staging.git master
         env:
-          RAILS_ENV: test
           APTIBLE_SSH_KEY: ${{ secrets.APTIBLE_SSH_KEY }}
