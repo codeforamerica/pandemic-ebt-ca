@@ -58,4 +58,4 @@ jobs:
           known_hosts: ${{ secrets.APTIBLE_KNOWN_HOSTS }}
       - name: Deploy to aptible
         run: |
-          git push git@beta.aptible.com:p-ebt/app-staging.git master
+          git push -f git@beta.aptible.com:p-ebt/app-staging.git master
