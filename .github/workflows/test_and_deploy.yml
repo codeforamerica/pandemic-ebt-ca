@@ -33,17 +33,21 @@ jobs:
         path: vendor/bundle
         key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
         restore-keys: ${{ runner.os }}-gems-
-    - name: Build and test with Rake
+    - name: Install and configure bundler
       run: |
-        cp config/database.github-actions.yml config/database.yml
         gem install bundler
         bundle config path vendor/bundle
         bundle install --jobs 4 --retry 3
+    - name: Setup test DB
+      run: |
+        cp config/database.github-actions.yml config/database.yml
         bundle exec rake db:setup
-        bundle exec rake
       env:
         RAILS_ENV: test
+    - name: Run rake
+      run: bundle exec rake
   deploy:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -54,7 +58,4 @@ jobs:
           known_hosts: ${{ secrets.APTIBLE_KNOWN_HOSTS }}
       - name: Deploy to aptible
         run: |
-          ssh-keygen -R hostname
           git push git@beta.aptible.com:p-ebt/app-staging.git master
-        env:
-          APTIBLE_SSH_KEY: ${{ secrets.APTIBLE_SSH_KEY }}
