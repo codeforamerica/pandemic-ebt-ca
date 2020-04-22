@@ -8,7 +8,9 @@
     <div class="form-card__content">
       <div class="grid">
         <div class="grid__item">
-          <div class="notice--warning text--left">It’s important to tell us the address your school has on file. You can give us a separate mailing address.</div>
+          <div class="notice--warning text--left">It’s important to tell us the address your school has on file. You can
+            give us a separate mailing address.
+          </div>
         </div>
       </div>
       <div class="grid">
@@ -20,8 +22,8 @@
                   :has_mailing_address,
                   label_text: "Is this the best place for you to get mail for the next two weeks?",
                   collection: [
-                      { value: :no, label: "Yes send mail there" },
-                      { value: :yes, label: "No, use a different address for mail" },
+                      {value: :no, label: "Yes send mail there"},
+                      {value: :yes, label: "No, use a different address for mail"},
                   ]
               )
           %>
@@ -30,5 +32,6 @@
       <div class="form-card__footer">
         <%= f.button "Continue", class: "button button--primary" %>
       </div>
+    </div>
   <% end %>
 <% end %>
