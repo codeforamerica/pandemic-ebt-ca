@@ -4,11 +4,11 @@ describe EligibleForm do
   describe "#save" do
     context "no household" do
       it 'should create a household' do
-        expect { EligibleForm.new({}).save }.to change { Household.count }.by(1)
+        expect { EligibleForm.new(Household.new).save }.to change { Household.count }.by(1)
       end
 
       it 'should set a suid' do
-        form = EligibleForm.new({}).save
+        form = EligibleForm.new(Household.new).save
         expect(form.suid).to be_present
       end
     end
