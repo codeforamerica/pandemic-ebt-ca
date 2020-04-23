@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_16_034640) do
+ActiveRecord::Schema.define(version: 2020_04_22_230237) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 2020_04_16_034640) do
     t.string "signature"
     t.datetime "submitted_at"
     t.integer "application_experience", default: 0
+    t.string "suid"
   end
 
 end

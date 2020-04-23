@@ -6,7 +6,7 @@ class EligibleForm < Form
     if self.household.present?
       self.household.update(attributes_for(:household))
     else
-      self.household = Household.create(attributes_for(:household))
+      self.household = Household.create(attributes_for(:household).merge({suid: SuidGenerator.generate}))
     end
   end
 end
