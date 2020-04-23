@@ -1,24 +1,8 @@
-# README
+# P-EBT
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Staging Environment: [app-19965.on-aptible.com](https://app-19965.on-aptible.com)
 
-Things you may want to cover:
+### Development
+Run tests with `rake`.
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
