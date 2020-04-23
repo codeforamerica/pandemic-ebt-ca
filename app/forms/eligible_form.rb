@@ -3,7 +3,7 @@ class EligibleForm < Form
   validates_presence_of :is_eligible, message: "Please choose an option."
 
   def save
-    if self.household.present?
+    if self.household.persisted?
       self.household.update(attributes_for(:household))
     else
       self.household = Household.create(attributes_for(:household).merge({suid: SuidGenerator.generate}))
