@@ -16,7 +16,7 @@ describe SuidGenerator do
     end
 
     it 'should not contain 0, O, 1, or I' do
-      suid = SuidGenerator.generate
+      suid = SuidGenerator.generate("1112222000")
       expect(suid[2..15]).not_to include("0","O","I","1")
     end
   end
