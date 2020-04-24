@@ -1,0 +1,48 @@
+@import 'neat';
+@import 'atoms/variables';
+
+.hero--food {
+  h1, h2 {
+    color: #000;
+  }
+
+  .slab--hero {
+    background: none;
+    @include media($tablet-up) {
+      background: none;
+    }
+
+    &:before {
+      background-repeat: no-repeat;
+      background-position: bottom left;
+      background-size: 100% auto;
+      background-image: image-url('food.svg');
+      @include media($tablet-up) { /*desktop*/
+        max-width: 99rem;
+        background-size: 90% auto;
+        background-position: bottom left;
+        background-image: image-url('food.svg');
+      }
+    }
+  }
+
+  .main-header {
+    background: none;
+
+    .toolbar__item {
+      color: #000;
+    }
+  }
+
+  .main-header__title a {
+    color: #000;
+
+    &:before {
+      background-image: image-url("gcf_logomark_black.png");
+      @media only screen and (min-resolution: 1.3dppx), only screen and (min-resolution: 125dpi) {
+        background-image: image-url("gcf_logomark_black@2x.png");
+        background-size: 100% auto;
+      }
+    }
+  }
+}

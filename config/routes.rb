@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root "pages#index"
   get "/how" => "pages#how", as: "how"
+  get "/info" => "pages#info", as: "info"
 
   resources :steps, controller: :forms, only: (Rails.env.production? ? %i[show] : %i[show index]) do
     collection do
