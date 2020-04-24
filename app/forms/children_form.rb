@@ -9,7 +9,8 @@ class ChildrenForm < Form
     attributes = {
         first_name: form_attributes[:first_name],
         last_name: form_attributes[:last_name],
-        dob: [form_attributes[:dob_month], form_attributes[:dob_day], form_attributes[:dob_year]].join("/")
+        dob: [form_attributes[:dob_month], form_attributes[:dob_day], form_attributes[:dob_year]].join("/"),
+        suid: SuidGenerator.generate
     }
     self.household.children.create(attributes)
     self.household.save

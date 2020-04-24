@@ -22,6 +22,7 @@ describe ChildrenForm do
 
       expect(@household.children.first.first_name).to eq("Jane")
       expect(@household.children.first.dob).to eq(Date.parse("01/09/2010"))
+      expect(@household.children.first.suid).to be_present
     end
   end
 

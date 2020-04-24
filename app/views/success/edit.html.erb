@@ -9,7 +9,7 @@
       <div class="grid grid--how">
         <div class="grid__item">
           <p class="text--small with-padding-small text--left">Write down your confirmation number:</p>
-          <div class="notice"><%= current_household.suid %></div>
+          <div class="notice"><%= current_household.confirmation_code %></div>
           <p class="text--small with-padding-small text--left">If approved, you'll get a P-EBT card with money for groceries
             within 10days.</p>
           <p class="text--small with-padding-small text--left">Learn more about the P-EBT program.</p>
@@ -46,7 +46,6 @@
                       :bad,
                       classes: ["button--small"]
                   ) %>
-
           </div>
         <% end  %>
         <% if flash[:notice].present? %>
