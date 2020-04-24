@@ -1,0 +1,56 @@
+@import 'neat';
+@import 'atoms/variables';
+
+.template--homepage {
+  margin-bottom: 0;
+
+  .hero--apple {
+    h1, h2{
+      color: #000;
+    }
+    .slab--hero {
+      background: none;
+      @include media($tablet-up) {
+        background: none;
+      }
+      &:before {
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: 100% auto;
+        background-image: image-url('apple_mobile.svg');
+        @include media($tablet-up) { /*desktop*/
+          max-width: 99rem;
+          background-size: 90% auto;
+          background-position: bottom left;
+          background-image: image-url('apple.svg');
+        }
+      }
+    }
+    .main-header {
+      background: none;
+      .toolbar__item {
+        color: #000;
+      }
+    }
+    .main-header__title a {
+      color: #000;
+      &:before {
+        background-image: image-url("gcf_logomark_black.png");
+        @media only screen and (min-resolution: 1.3dppx), only screen and (min-resolution: 125dpi) {
+          background-image: image-url("gcf_logomark_black@2x.png");
+          background-size: 100% auto;
+        }
+      }
+    }
+  }
+  .main-footer {
+    height: inherit;
+    position: inherit;
+  }
+
+  .main-footer__cfa-logo {
+    @include media($tablet-up) {
+      float: none;
+    }
+  }
+}
