@@ -7,6 +7,6 @@ class Household < ApplicationRecord
   enum application_experience: [ :unfilled, :good, :ok, :bad ], _suffix: true
 
   def confirmation_code
-    children.order(:dob).first.suid
+    children.order(:dob).first.suid.scan(/.{5}/).join("-")
   end
 end
