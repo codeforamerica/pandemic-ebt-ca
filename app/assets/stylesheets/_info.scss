@@ -14,34 +14,44 @@
 
     &:before {
       background-repeat: no-repeat;
-      background-position: bottom left;
-      background-size: 100% auto;
+      background-position: bottom;
+      background-size: 80% 80%;
       background-image: image-url('food.svg');
+      content: '';
+      display: block;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: .3;
+
       @include media($tablet-up) { /*desktop*/
         max-width: 99rem;
-        background-size: 90% auto;
-        background-position: bottom left;
         background-image: image-url('food.svg');
+        background-size: auto auto;
+        background-position: right;
       }
     }
-  }
 
-  .main-header {
-    background: none;
+    .main-header {
+      background: none;
 
-    .toolbar__item {
-      color: #000;
+      .toolbar__item {
+        color: #000;
+      }
     }
-  }
 
-  .main-header__title a {
-    color: #000;
+    .main-header__title a {
+      color: #000;
 
-    &:before {
-      background-image: image-url("gcf_logomark_black.png");
-      @media only screen and (min-resolution: 1.3dppx), only screen and (min-resolution: 125dpi) {
-        background-image: image-url("gcf_logomark_black@2x.png");
-        background-size: 100% auto;
+      &:before {
+        background-image: image-url("gcf_logomark_black.png");
+        @media only screen and (min-resolution: 1.3dppx), only screen and (min-resolution: 125dpi) {
+          background-image: image-url("gcf_logomark_black@2x.png");
+          background-size: 100% auto;
+        }
       }
     }
   }
