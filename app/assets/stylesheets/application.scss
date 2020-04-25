@@ -28,10 +28,6 @@
   background-color: $color-grey-light;
 }
 
-.with-no-padding {
-  padding-bottom: 0 !important;
-}
-
 body {
   font-family: -apple-system, "Helvetica Neue", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
 }
@@ -41,10 +37,6 @@ body {
   margin: 0 auto;
 }
 
-.slab {
-  padding-bottom: 2.5rem;
-}
-
 fieldset.form-group:last-of-type {
   margin-bottom: 0;
 }
@@ -52,3 +44,9 @@ fieldset.form-group:last-of-type {
 .select__element {
   padding: 0 $s60 0 $s15;
 }
+
+.toolbar {
+  max-width: 55rem;
+  margin: 0 auto;
+}
+

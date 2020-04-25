@@ -1,64 +1,71 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>    <html class="lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>    <html class="lt-ie9"> <![endif]-->
-<!--[if IE 9]>    <html class="lt-ie10"> <![endif]-->
+<!--[if lt IE 7]>
+<html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="lt-ie9"> <![endif]-->
+<!--[if IE 9]>
+<html class="lt-ie10"> <![endif]-->
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#ffffff">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#ffffff">
 
-    <%= stylesheet_link_tag 'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
 
-    <%= csrf_meta_tags %>
-  </head>
+  <%= csrf_meta_tags %>
+</head>
 
-  <body class="template--<%= content_for(:template_name) if content_for?(:template_name) %>">
-    <div class="page-wrapper">
-      <% if content_for(:template_name) == "card" %>
-        <header class="main-header">
-          <div class="toolbar toolbar--wrap-when-small spacing-above-10">
+<body class="template--<%= content_for(:template_name) if content_for?(:template_name) %>">
+<div class="page-wrapper">
+  <% if content_for(:template_name) == "card" %>
+    <div class="slab padding-above-10 padding-below-25">
+      <div class="grid">
+        <div class="grid__item width-five-sixths shift-one-twelfth">
+          <div class="toolbar toolbar--wrap-when-small">
             <div class="toolbar__left">
-              <%= link_to(raw("<i class=\"icon-arrow_back\"></i>Go back"), url_for(:back), class: "button button--primary") %>
+              <a class="button button--primary button--small" href="javascript:history.back()">
+                <i class="icon-arrow_back"></i> Go back
+              </a>
             </div>
             <div class="toolbar__right>">
               <a class="toolbar__item text--small link--subtle" lang="zh" href="?new_locale=zh">中文</a>
               <a class="toolbar__item text--small link--subtle" lang="es" href="?new_locale=es">Español</a>
             </div>
           </div>
-        </header>
-        <div class="slab">
-          <div class="grid">
-            <div class="grid__item width-five-sixths shift-one-twelfth">
-              <div class="form-card">
-                <div class="form-card__content">
-                  <%= yield %>
-                </div>
-              </div>
+          <div class="form-card">
+            <div class="form-card__content">
+              <%= yield %>
             </div>
           </div>
-        </div>
-      <% else  %>
-        <%= content_for?(:content) ? yield(:content) : yield %>
-      <% end %>
-    </div>
-    <footer class="main-footer">
-      <div class="grid">
-        <div class="grid__item">
-          <p class="text--small">ca.p-ebt.org is a service delivered by <a class="link--subtle" href="https://www.codeforamerica.org">Code for America</a> on behalf of the people of California.</p>
         </div>
       </div>
-      <% if controller.controller_name == "pages" && controller.action_name == "index" %>
-        <div class="grid">
-          <div class="grid__item width-one-fourth">
-            <div class="main-footer__cfa-logo">
-              <a href="https://www.codeforamerica.org" class="illustration illustration--cfa-logo__dark">Code for America</a>
-            </div>
-          </div>
+    </div>
+  <% else %>
+    <%= content_for?(:content) ? yield(:content) : yield %>
+  <% end %>
+</div>
+<footer class="main-footer">
+  <div class="grid">
+    <div class="grid__item">
+      <p class="text--small">ca.p-ebt.org is a service delivered by
+        <a class="link--subtle" href="https://www.codeforamerica.org">Code for America</a> on behalf of the people of
+        California.</p>
+    </div>
+  </div>
+  <% if controller.controller_name == "pages" && controller.action_name == "index" %>
+    <div class="grid">
+      <div class="grid__item width-one-fourth">
+        <div class="main-footer__cfa-logo">
+          <a href="https://www.codeforamerica.org" class="illustration illustration--cfa-logo__dark">Code for
+            America</a>
         </div>
-      <% end %>
-    </footer>
-  </body>
+      </div>
+    </div>
+  <% end %>
+</footer>
+</body>
 </html>

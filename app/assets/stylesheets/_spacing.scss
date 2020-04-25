@@ -1,0 +1,13 @@
+@import 'atoms/variables';
+
+.with-no-padding {
+  padding-bottom: 0 !important;
+}
+
+.padding-above-10 {
+  padding-top: $s10 !important;
+}
+
+.padding-below-25 {
+  padding-bottom: $s25 !important;
+}
