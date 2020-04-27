@@ -14,7 +14,7 @@
   <meta name="theme-color" content="#ffffff">
   <title>Apply for P-EBT (Pandemic EBT)</title>
   <%= stylesheet_link_tag 'application', media: 'all' %>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-20825280-44"></script>
+  <%= render 'analytics/google-analytics' if Rails.env.production? %>
   <%= javascript_include_tag 'application' %>
 
   <%= csrf_meta_tags %>
