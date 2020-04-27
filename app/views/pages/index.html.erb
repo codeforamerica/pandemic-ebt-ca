@@ -15,12 +15,12 @@
   <section class="slab slab--hero with-no-padding">
     <div class="grid">
       <div class="grid__item width-three-fourths">
-        <h2 class="heading-60">Get money to buy healthy food while schools are closed.</h2>
-        <h1 class="text-25">Sign up for P-EBT in 5 minutes by June 30th.</h1>
+        <h2 class="heading-60">Get money to buy food while schools are closed.</h2>
+        <h1 class="text-25">Apply for P-EBT by June 30th.</h1>
         <% if ENV["COMING_SOON"] == "1" %>
           <button class="button button--primary button--disabled" disabled>Applications will open soon</button>
       <% else  %>
-          <%= link_to(raw("Sign up now <i class=\"button__icon icon-arrow_forward\"></i>"), how_path, class: "button button--primary") %>
+          <%= link_to(raw("Apply now <i class=\"button__icon icon-arrow_forward\"></i>"), how_path, class: "button button--primary") %>
         <% end %>
       </div>
     </div>
@@ -28,7 +28,7 @@
   <section class="slab slab--white">
     <div class="grid">
       <div class="grid__item width-seven-twelfths">
-        <p class="form-card__body-text">This program, called P-EBT, is for children who are normally able to get free or reduced price school lunches. Apply and get up to $TK a month to spend on groceries.</p>
+        <p class="form-card__body-text">This program, called P-EBT, is for students who are normally able to get free or reduced price school meals. Apply and get $338 per child to spend on groceries.</p>
       </div>
     </div>
   </section>
@@ -36,15 +36,15 @@
     <div class="grid">
       <div class="grid__item width-seven-twelfths">
         <h2>Questions about P-EBT?</h2>
-        <p class="form-card__body-text">TKTK</p>
-        <button class="button">Learn more</button>
+        <p class="form-card__body-text">Learn more about this program.</p>
+        <a href="<%= info_path %>"><button class="button">Learn more</button></a>
       </div>
     </div>
   </section>
   <section class="slab slab--white">
     <div class="grid">
       <div class="grid__item width-seven-twelfths">
-        <p class="form-card__body-text">This is a program of the California Department of Education.</p>
+        <p class="form-card__body-text">This is a joint program of the California Departments of Education and Social Services.</p>
       </div>
     </div>
   </section>
