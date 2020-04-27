@@ -109,4 +109,5 @@ Rails.application.configure do
   # Host Whitelists
   config.hosts << "app-20048.on-aptible.com" # Demo
   config.hosts << "app-19965.on-aptible.com" # Demo
+  config.hosts << "ca.p-ebt.org"
 end
