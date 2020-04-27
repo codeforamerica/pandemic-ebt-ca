@@ -107,8 +107,12 @@ Rails.application.configure do
   config.force_ssl = true
 
   # Host Whitelists
-  config.hosts << "app-20048.on-aptible.com" # Demo
-  config.hosts << "app-19965.on-aptible.com" # Demo
+  # Staging
+  config.hosts << "app-19965.on-aptible.com"
+  config.hosts << "ca-staging.p-ebt.org"
+  # Demo
+  config.hosts << "app-20048.on-aptible.com"
   config.hosts << "ca-demo.p-ebt.org"
+  # Prod
   config.hosts << "ca.p-ebt.org"
 end
