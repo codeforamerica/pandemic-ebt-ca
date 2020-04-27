@@ -46,7 +46,7 @@ jobs:
         RAILS_ENV: test
     - name: Run rake
       run: bundle exec rake
-  deploy-staging:
+  deploy:
     needs: test
     runs-on: ubuntu-latest
     steps:
@@ -60,17 +60,3 @@ jobs:
       - name: Deploy to aptible
         run: |
           git push git@beta.aptible.com:p-ebt/app-staging.git master
-  deploy-demo:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - run: git fetch --prune --unshallow
-      - name: Install SSH key
-        uses: shimataro/ssh-key-action@v2
-        with:
-          key: ${{ secrets.APTIBLE_SSH_KEY }}
-          known_hosts: ${{ secrets.APTIBLE_KNOWN_HOSTS }}
-      - name: Deploy to aptible
-        run: |
-          git push git@beta.aptible.com:p-ebt/app-demo.git master
