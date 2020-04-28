@@ -50,3 +50,13 @@ fieldset.form-group:last-of-type {
   margin: 0 auto;
 }
 
+.button {
+  @media screen and (max-width: 380px) {
+    margin-left: 0px;
+  }
+}
+
+.slab--success {
+  background-color: $color-grey-dark;
+}
+

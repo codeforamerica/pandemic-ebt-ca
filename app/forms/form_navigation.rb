@@ -1,8 +1,8 @@
 class FormNavigation
   FLOW = [
       EligibleController,
-      SorryController,
       MealEligibilityController,
+      SorryController,
       ReceivedCardController,
       AlreadyReceivedController,
       ChildrenController,

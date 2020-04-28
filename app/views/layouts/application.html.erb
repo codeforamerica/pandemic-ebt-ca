@@ -45,6 +45,18 @@
         </div>
       </div>
     </div>
+  <% elsif content_for(:template_name) == "success" %>
+    <div class="slab padding-above-10 padding-below-25 slab--success">
+      <div class="grid">
+        <div class="grid__item width-five-sixths shift-one-twelfth">
+          <div class="form-card">
+            <div class="form-card__content">
+              <%= yield %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   <% else %>
     <%= content_for?(:content) ? yield(:content) : yield %>
   <% end %>

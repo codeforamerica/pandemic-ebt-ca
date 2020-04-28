@@ -1,14 +1,14 @@
 <% content_for(:template_name, "card") %>
 <%= form_with url: children_steps_path, method: :put, local: true do %>
   <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>
-    <div class="form-card__header spacing-below-15">
+    <div class="form-card__header spacing-below-35">
       <div class="emoji emoji--bigger spacing-below-25 spacing-below-25 emoji--bust"></div>
-      <h2 class="form-card__title">Tell us about your child.</h2>
+      <h2 class="form-card__title">Tell us about the student.</h2>
     </div>
     <div class="form-card__content">
       <div class="grid">
         <div class="grid__item">
-          <p class="text with-padding-small text--left">One at a time, add all children in elementary, middle, and high
+          <p class="text text--left">One at a time, add all students in elementary, middle, and high
             school.</p>
           <% if current_household.children.present? %>
             <div class="notice">

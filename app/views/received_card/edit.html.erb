@@ -2,7 +2,7 @@
 
 <%= form_with url: received_card_steps_path, method: :put, local: true do %>
   <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>
-    <div class="form-card__header spacing-below-15">
+    <div class="form-card__header spacing-below-35">
       <h2 class="form-card__title">Have you received a P-EBT card? </h2>
     </div>
     <div class="form-card__content">
@@ -10,7 +10,7 @@
         <div class="grid__item">
           <h3>It looks like this:</h3>
           <%= image_tag("ca-p-ebt.png") %>
-          <p class="text--small with-padding-small text--left">
+          <p class="with-padding-small text--left">
             If you already got this card, you don't need to fill out this form. You will get money on this card.
           </p>
         </div>
