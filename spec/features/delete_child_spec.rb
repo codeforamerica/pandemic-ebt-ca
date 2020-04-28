@@ -4,7 +4,7 @@ RSpec.feature "Deleting a child", type: :feature do
   describe "Deleting a child" do
     it "should delete the child from the household" do
       visit "/"
-      expect(page).to have_text "Get money to buy food while schools are closed."
+      expect(page).to have_text "Get help to buy food while schools are closed."
       click_on "Apply now"
       expect(page).to have_text "Here's how it works:"
       click_on "Continue"
