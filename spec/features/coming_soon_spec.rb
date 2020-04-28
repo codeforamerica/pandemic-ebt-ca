@@ -5,7 +5,7 @@ RSpec.feature "Coming Soon", type: :feature do
     it "should say coming soon when the environment variable is set" do
       stub_const "ENV", ENV.to_h.merge("COMING_SOON" => "1")
       visit "/"
-      expect(page).to have_text "Applications will open soon"
+      expect(page).to have_text "Coming soon"
     end
   end
 end
