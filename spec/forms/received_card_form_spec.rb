@@ -1,16 +1,16 @@
-require "rails_helper"
+require 'rails_helper'
 
 describe ReceivedCardForm do
-  describe "#save" do
-    it 'should update the existing household' do
+  describe '#save' do
+    it 'updates the existing household' do
       household = Household.create(is_eligible: :yes)
-      form = ReceivedCardForm.new(household, {received_card: :yes})
+      form = described_class.new(household, { received_card: :yes })
       form.valid?
-      expect { form.save }.to_not change { Household.count }
+      expect { form.save }.not_to change(Household, :count)
 
       household.reload
 
-      expect(household.received_card_yes?).to be_truthy
+      expect(household).to be_received_card_yes
     end
   end
 end

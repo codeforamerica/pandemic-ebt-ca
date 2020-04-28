@@ -1,8 +1,10 @@
 class AddResidentialAddressToHousehold < ActiveRecord::Migration[6.0]
   def change
-    add_column :households, :residential_street, :string
-    add_column :households, :residential_city, :string
-    add_column :households, :residential_zip_code, :string
-    add_column :households, :has_mailing_address, :integer, default: 0
+    change_table :households, bulk: true do |t|
+      t.string :residential_street
+      t.string :residential_city
+      t.string :residential_zip_code
+      t.string :has_mailing_address, default: 0
+    end
   end
 end

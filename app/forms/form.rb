@@ -16,9 +16,8 @@ class Form
   # end
   #
   def attributes_for(model)
-    self.class.scoped_attributes[model].reduce({}) do |hash, attribute_name|
-      hash[attribute_name] = send(attribute_name)
-      hash
+    self.class.scoped_attributes[model].index_with do |attribute_name|
+      send(attribute_name)
     end
   end
 
@@ -39,13 +38,14 @@ class Form
     def scoped_attributes
       @scoped_attributes ||= {}
     end
-  #
-  #   def analytics_event_name
-  #     name.underscore.gsub("_form", "")
-  #   end
-  #
-  #   # Override in subclasses if needed
-  #
+
+    #
+    #   def analytics_event_name
+    #     name.underscore.gsub("_form", "")
+    #   end
+    #
+    #   # Override in subclasses if needed
+    #
     def existing_attributes(household)
       HashWithIndifferentAccess.new(household.attributes)
     end

@@ -1,16 +1,16 @@
-require "rails_helper"
+require 'rails_helper'
 
-describe 'SuccessForm' do
-  describe "#save" do
-    it 'should update the existing household' do
+RSpec.describe SuccessForm do
+  describe '#save' do
+    it 'updates the existing household' do
       household = Household.create(is_eligible: :yes)
-      form = SuccessForm.new(household, { application_experience: "good" })
+      form = described_class.new(household, { application_experience: 'good' })
       form.valid?
       form.save
 
       household.reload
 
-      expect(household.good_application_experience?).to be_truthy
+      expect(household).to be_good_application_experience
     end
   end
 end

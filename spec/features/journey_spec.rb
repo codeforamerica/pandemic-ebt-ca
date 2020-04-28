@@ -1,52 +1,52 @@
 require 'rails_helper'
 
-RSpec.feature "Journey", type: :feature do
-  describe "Full journey" do
-    it "should run the full journey" do
-      visit "/"
-      expect(page).to have_text "Get help to buy food while schools are closed."
-      click_on "Apply now"
+RSpec.describe 'Journey', type: :feature do
+  describe 'Full journey' do
+    it 'runs the full journey' do
+      visit '/'
+      expect(page).to have_text 'Get help to buy food while schools are closed.'
+      click_on 'Apply now'
       expect(page).to have_text "Here's how it works:"
-      click_on "Continue"
-      expect(page).to have_text "Is your child able to receive free or reduced price meals"
-      choose "Yes"
-      click_on "Continue"
-      expect(page).to have_text "Have you received a P-EBT card?"
-      click_on "No"
-      expect(page).to have_text "Tell us about the student"
-      fill_in "First name", with: "Jane"
-      fill_in "Last name", with: "Johnson"
-      select "January", from: "Month"
-      select "2", from: "Day"
-      select "2010", from: "Year"
-      click_on "Add another child"
-      expect(page).to have_text "Jane Johnson"
-      fill_in "First name", with: "Joe"
-      fill_in "Last name", with: "Johnson"
-      select "January", from: "Month"
-      select "2", from: "Day"
-      select "2010", from: "Year"
-      click_on "Continue"
-      expect(page).to have_text "Add the name of one parent or guardian"
-      fill_in "First name", with: "Julia"
-      fill_in "Last name", with: "Johnson"
-      click_on "Continue"
-      expect(page).to have_text "What address are you registered at the school with"
-      fill_in "What is the street address?", with: "123 Elm Street"
-      fill_in "What is the city?", with: "Oakland"
-      fill_in "What is the ZIP code?", with: "90123"
-      choose "No, use a different address for mail"
-      click_on "Continue"
-      expect(page).to have_text "Where should we mail your P-EBT card?"
-      fill_in "What is the street address?", with: "948 Baker Street"
-      fill_in "What is the city?", with: "San Francisco"
-      fill_in "What is the ZIP code?", with: "94103"
-      click_on "Continue"
-      fill_in "form_signature", with: "Julia Johnson"
-      click_on "Continue"
-      expect(page).to have_text "Your application has been submitted!"
-      click_on "Good"
-      expect(page).to have_text "Thank you for your feedback!"
+      click_on 'Continue'
+      expect(page).to have_text 'Is your child able to receive free or reduced price meals'
+      choose 'Yes'
+      click_on 'Continue'
+      expect(page).to have_text 'Have you received a P-EBT card?'
+      click_on 'No'
+      expect(page).to have_text 'Tell us about the student'
+      fill_in 'First name', with: 'Jane'
+      fill_in 'Last name', with: 'Johnson'
+      select 'January', from: 'Month'
+      select '2', from: 'Day'
+      select '2010', from: 'Year'
+      click_on 'Add another child'
+      expect(page).to have_text 'Jane Johnson'
+      fill_in 'First name', with: 'Joe'
+      fill_in 'Last name', with: 'Johnson'
+      select 'January', from: 'Month'
+      select '2', from: 'Day'
+      select '2010', from: 'Year'
+      click_on 'Continue'
+      expect(page).to have_text 'Add the name of one parent or guardian'
+      fill_in 'First name', with: 'Julia'
+      fill_in 'Last name', with: 'Johnson'
+      click_on 'Continue'
+      expect(page).to have_text 'What address are you registered at the school with'
+      fill_in 'What is the street address?', with: '123 Elm Street'
+      fill_in 'What is the city?', with: 'Oakland'
+      fill_in 'What is the ZIP code?', with: '90123'
+      choose 'No, use a different address for mail'
+      click_on 'Continue'
+      expect(page).to have_text 'Where should we mail your P-EBT card?'
+      fill_in 'What is the street address?', with: '948 Baker Street'
+      fill_in 'What is the city?', with: 'San Francisco'
+      fill_in 'What is the ZIP code?', with: '94103'
+      click_on 'Continue'
+      fill_in 'form_signature', with: 'Julia Johnson'
+      click_on 'Continue'
+      expect(page).to have_text 'Your application has been submitted!'
+      click_on 'Good'
+      expect(page).to have_text 'Thank you for your feedback!'
     end
   end
 end

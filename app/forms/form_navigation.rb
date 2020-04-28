@@ -1,20 +1,19 @@
 class FormNavigation
   FLOW = [
-      EligibleController,
-      MealEligibilityController,
-      SorryController,
-      ReceivedCardController,
-      AlreadyReceivedController,
-      ChildrenController,
-      ParentController,
-      ResidentialAddressController,
-      MailingAddressController,
-      SignatureController,
-      SuccessController
+    EligibleController,
+    MealEligibilityController,
+    SorryController,
+    ReceivedCardController,
+    AlreadyReceivedController,
+    ChildrenController,
+    ParentController,
+    ResidentialAddressController,
+    MailingAddressController,
+    SignatureController,
+    SuccessController
   ].freeze
 
   class << self
-
     delegate :first, to: :controllers
 
     def controllers

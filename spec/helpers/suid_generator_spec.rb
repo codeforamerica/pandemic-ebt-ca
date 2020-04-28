@@ -1,23 +1,23 @@
-require "rails_helper"
+require 'rails_helper'
 
 describe SuidGenerator do
-  describe "#generate" do
-    it 'should generate a string starting with 70CFA' do
-      expect(SuidGenerator.generate[0..4]).to eq("70CFA")
+  describe '#generate' do
+    it 'generates a string starting with 70CFA' do
+      expect(described_class.generate[0..4]).to eq('70CFA')
     end
 
-    it 'should be 15 characters long' do
-      expect(SuidGenerator.generate.length).to eq(15)
+    it 'is 15 characters long' do
+      expect(described_class.generate.length).to eq(15)
     end
 
-    it 'should be uppercase' do
-      suid = SuidGenerator.generate
+    it 'is uppercase' do
+      suid = described_class.generate
       expect(suid).to eq(suid.upcase)
     end
 
-    it 'should not contain 0, O, 1, or I' do
-      suid = SuidGenerator.generate("1112222000")
-      expect(suid[2..15]).not_to include("0","O","I","1")
+    it 'does not contain 0, O, 1, or I' do
+      suid = described_class.generate('1112222000')
+      expect(suid[2..15]).not_to include('0', 'O', 'I', '1')
     end
   end
 end

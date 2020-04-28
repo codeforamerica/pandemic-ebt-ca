@@ -46,7 +46,7 @@ Rails.application.configure do
   config.log_level = :debug
 
   # Prepend all log lines with the following tags.
-  config.log_tags = [ :request_id ]
+  config.log_tags = [:request_id]
 
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
@@ -75,7 +75,7 @@ Rails.application.configure do
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
-  if ENV["RAILS_LOG_TO_STDOUT"].present?
+  if ENV['RAILS_LOG_TO_STDOUT'].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
     logger.formatter = config.log_formatter
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
@@ -108,11 +108,11 @@ Rails.application.configure do
 
   # Host Whitelists
   # Staging
-  config.hosts << "app-19965.on-aptible.com"
-  config.hosts << "ca-staging.p-ebt.org"
+  config.hosts << 'app-19965.on-aptible.com'
+  config.hosts << 'ca-staging.p-ebt.org'
   # Demo
-  config.hosts << "app-20048.on-aptible.com"
-  config.hosts << "ca-demo.p-ebt.org"
+  config.hosts << 'app-20048.on-aptible.com'
+  config.hosts << 'ca-demo.p-ebt.org'
   # Prod
-  config.hosts << "ca.p-ebt.org"
+  config.hosts << 'ca.p-ebt.org'
 end

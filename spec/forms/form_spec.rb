@@ -1,8 +1,8 @@
-require "rails_helper"
+require 'rails_helper'
 
 RSpec.describe Form do
-  describe ".attribute_names" do
-    it "returns what is set by application and member attributes" do
+  describe '.attribute_names' do
+    it 'returns what is set by application and member attributes' do
       class FourthTestForm < Form; end
 
       FourthTestForm.set_attributes_for :application, :foo

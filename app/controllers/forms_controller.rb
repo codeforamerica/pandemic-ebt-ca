@@ -32,18 +32,17 @@ class FormsController < ApplicationController
 
   def next_path(params = {})
     next_step = form_navigation.next
-    if next_step
-      step_path(next_step.to_param, params)
-    end
+    step_path(next_step.to_param, params) if next_step
   end
-  #
-  def self.show?(household)
+
+  def self.show?(_household)
     true
   end
-  #
+
   def current_household
     Household.find_by(id: session[:current_household_id]) || Household.new
   end
+
   #
   # def current_percentage
   #   index_of_screens = form_navigation.form_controllers.index(self.class)
@@ -77,6 +76,7 @@ class FormsController < ApplicationController
   def form_params
     params.fetch(:form, {}).permit(*form_class.attribute_names)
   end
+
   #
   # # Don't override in subclasses
   #
@@ -89,6 +89,7 @@ class FormsController < ApplicationController
   def form_navigation
     @form_navigation ||= FormNavigation.new(self)
   end
+
   #
   # def send_mixpanel_event
   #   MixpanelService.instance.run(
@@ -133,11 +134,11 @@ class FormsController < ApplicationController
     end
 
     def form_class
-      (controller_name + "_form").classify.constantize
+      (controller_name + '_form').classify.constantize
     end
-  #
-  #   def show_rule_sets(_)
-  #     [ShowRules.defaults_to_true]
-  #   end
+    #
+    #   def show_rule_sets(_)
+    #     [ShowRules.defaults_to_true]
+    #   end
   end
 end

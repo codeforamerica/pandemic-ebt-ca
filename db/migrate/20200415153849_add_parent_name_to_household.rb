@@ -1,6 +1,8 @@
 class AddParentNameToHousehold < ActiveRecord::Migration[6.0]
   def change
-    add_column :households, :parent_first_name, :string
-    add_column :households, :parent_last_name, :string
+    change_table :households, bulk: true do |t|
+      t.string :parent_first_name
+      t.string :parent_last_name
+    end
   end
 end

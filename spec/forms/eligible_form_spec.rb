@@ -1,23 +1,23 @@
-require "rails_helper"
+require 'rails_helper'
 
 describe EligibleForm do
-  describe "#save" do
-    context "no household" do
-      it 'should create a household' do
-        expect { EligibleForm.new(Household.new).save }.to change { Household.count }.by(1)
+  describe '#save' do
+    context 'no household' do
+      it 'creates a household' do
+        expect { described_class.new(Household.new).save }.to change(Household, :count).by(1)
       end
     end
 
-    context "existing household" do
-      it 'should update the existing household' do
+    context 'existing household' do
+      it 'updates the existing household' do
         household = Household.create(is_eligible: :yes)
-        form = EligibleForm.new(household, { is_eligible: :no})
+        form = described_class.new(household, { is_eligible: :no })
         form.valid?
-        expect { form.save }.to_not change { Household.count }
+        expect { form.save }.not_to change(Household, :count)
 
         household.reload
 
-        expect(household.is_eligible_no?).to be_truthy
+        expect(household).to be_is_eligible_no
       end
     end
   end

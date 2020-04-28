@@ -1,5 +1,4 @@
 class ChildrenController < FormsController
-
   def update
     @form = form_class.new(current_household, form_params)
     if @form.valid?
@@ -17,10 +16,8 @@ class ChildrenController < FormsController
 
   def destroy
     child = Child.find(params[:id])
-    if child.household.id == session[:current_household_id]
-      child.destroy!
-    end
-    flash[:notice] = "Child has been removed"
+    child.destroy! if child.household.id == session[:current_household_id]
+    flash[:notice] = 'Child has been removed'
     redirect_to(children_steps_path)
   end
 end

@@ -2,7 +2,9 @@ class PagesController < ApplicationController
   before_action :clear_household
 
   def index; end
+
   def how; end
+
   def info; end
 
   private
