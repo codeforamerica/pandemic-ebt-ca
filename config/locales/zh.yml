@@ -1,0 +1,94 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at https://guides.rubyonrails.org/i18n.html.
+
+zh:
+  info:
+    heading: 有關P-EBT的資料
+    what_are_question: 什麽是「P-EBT」或Pandemic EBT福利？
+    what_are_answer_html: 因應新冠狀肺炎疫情(COVID 19)的影響，在學校符合資格領取免費或低價早/午餐的兒童將會領取到額外的食物福利。
+      這項食物福利稱為Pandemic EBT或P-EBT福利。當學校關閉時，P-EBT福利能幫助加州家庭購買食物。
+    who_is_eligible_question: 誰符合資格領取P-EBT福利？
+    who_is_eligible_answer_html: 符合以下條件的兒童可領取P-EBT福利&colon;
+      <ul class="list--bulleted">
+        <li>學校因新冠肺炎疫情(COVID 19)而關閉</li>
+        <li>兒童符合資格領取免費或低價的學校早/午餐</li>
+      </ul>
+    how_do_get_question: How do I get P-EBT benefits?
+    how_do_get_answer_1_html: Most families with children who receive CalFresh, Medi-Cal or Foster Care benefits do not
+      need to apply online. They will get their P-EBT card in the mail between May 7- 22, 2020.
+    how_do_get_answer_2_html: Families with children who are eligible for free or reduced-price meals and who do NOT get
+      CalFresh, Medi-Cal or Foster Care benefits <u>must apply online before June 30, 2020</u>.
+    already_got_question: 如果我已經從郵寄收到P-EBT卡，我還需再次上網申請嗎？
+    already_got_answer_html: 不用。如果您已經從郵寄收到P-EBT卡，則無需再次上網申請。請根據P-EBT卡寄來的指示設置您的卡密碼。
+      完成密碼設置後，P-EBT卡即可使用。
+    what_if_to_go_question: 如果我的孩子有在其他地點領取由學校提供的「外帶」早/午餐呢？
+    what_if_to_go_answer_html: 如果符合以下條件，有在領取由學校提供的「外帶」早/午餐的兒童也符合領取P-EBT福利&colon;
+      <ul class="list--bulleted">
+        <li>學校因新冠肺炎疫情(COVID 19)而關閉</li>
+        <li>兒童符合資格領取免費或低價的學校早/午餐</li>
+      </ul>
+    how_much_question: 我可以領取多少金額的P-EBT福利？
+    how_much_answer_1_html: 每個符合資格的兒童可領取到高達 $365的P-EBT福利。只要在2020年6月30日前提交申請，
+      您都能在這四個月中領取到當月的最高金額福利。
+    how_much_answer_2_html: 福利金額的總數將取決於您家中符合領取資格的兒童數量。每一個符合資格的兒童將會領取到以下金額的福利&colon;
+      <ul class="list--bulleted">
+        <li>2020年3月：每個兒童 $68</li>
+        <li>2020年4月：每個兒童 $120</li>
+        <li>2020年5月：每個兒童 $120</li>
+        <li>2020年6月：每個兒童 $57</li>
+      </ul>
+      這說明每一個符合資格的兒童都可以在這四個月期間總共領取到 $365的P-EBT福利。
+    what_can_i_buy_question: 我可以用P-EBT福利購買什麼東西？
+    what_can_i_buy_answer_1_html: 您可以用P-EBT福利在大多數的雜貨店和農夫市場購買食物。
+    what_can_i_buy_answer_2_html: P-EBT卡的使用方式和借記卡一樣&colon;
+      <ul class="list--bulleted">
+        <li>選擇「EBT」</li>
+        <li>刷卡</li>
+        <li>輸入您的卡密碼</li>
+      </ul>
+    what_is_the_deadline_question: 申請P-EBT福利的截止日期是？
+    what_is_the_deadline_answer_html: 您必須在2020年6月30日前申請P-EBT福利。
+      P-EBT福利是爲了學校因新冠肺炎疫情(COVID 19)關閉而臨時設立。如果您沒有從郵寄收到P-EBT卡，
+      也沒有在2020年6月30日前提交申請，則無法領取到P-EBT福利。
+    what_if_i_applied_question: 如果我上網申請了，但沒有收到P-EBT卡該怎麼辦？
+    what_if_i_applied_answer_html: 請致電加州EBT客戶服務中心 (877) 328-9677。熱線電話每週7天，24小時為您服務。
+    how_long_question: How long do I have to use my P-EBT benefits?
+    how_long_answer: 您在收到P-EBT卡那天開始的一年內可以使用您的P-EBT福利。
+    if_i_get_question: 如果我領取P-EBT福利，這會影響我的移民身份或被列為「公共負擔」審查的範圍嗎？
+    if_i_get_answer_1_html: P-EBT is a disaster emergency benefit based on free and reduced fee school meals
+      eligibility, similar to other benefits that DHS has said would not be considered for public charge purposes.
+      However, USCIS can consider several factors under their public charge test.
+    if_i_get_answer_2_html: Public charge does not apply to all immigrants. If you have questions about your immigration
+      status and this food benefit, more information is available <a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__covid19.ca.gov_img_wp_covid-2D19-2Dimmigrant-2Dguidance-2Daccessible-2D1.pdf&d=DwMFAg&c=uASjV29gZuJt5_5J5CPRuQ&r=8R-cSKwMRKVQ8RlrsVEwub2ambB3pAUafrkOocCUwuw&m=zPw4azKOYZF_a34l3RNTMWy3ZGnar6BxiYo2of5MC20&s=C5kfHk9vuZa85KToIulnjpsTdZk8hH7VIz4PiTWGyx4&e"
+      target="_blank">here</a>, including a list of free and low-cost immigration services providers.
+  footer:
+    delivered_by_html: ca.p-ebt.org is a service delivered by <a class="link--subtle"
+      href="https://www.codeforamerica.org/" target="_blank">Code for America</a> on behalf of the people of California.

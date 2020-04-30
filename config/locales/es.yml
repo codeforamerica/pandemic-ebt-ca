@@ -1,0 +1,102 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at https://guides.rubyonrails.org/i18n.html.
+
+es:
+  info:
+    heading: Información sobre P-EBT
+    what_are_question: ¿Qué es 'P-EBT' o beneficios de Pandemia EBT?
+    what_are_answer_html: Debido al coronavirus (COVID-19), los niños que son elegibles para recibir alimentos gratis o
+      a costo reducido en la escuela vana recibir beneficios a manera de alimentos extras. Estos beneficios se llaman
+      "Pandemic EBT" (Pandemia EBT) o beneficios "P-EBT". Los beneficios P-EBT ayudan a las familias de California a
+      comprar comida cuando la escuela está cerrada.
+    who_is_eligible_question: ¿Quién es elegible para recibir beneficios P-EBT?
+    who_is_eligible_answer_html: Los niños son elegibles para recibir los beneficios P-EBT si es que&colon;
+      <ul class="list--bulleted">
+        <li>su escuela está cerrada debido al coronavirus (COVID-19)</li>
+        <li>son elegibles para recibir alimentos en la escuela gratis o a precios reducidos</li>
+      </ul>
+    how_do_get_question: How do I get P-EBT benefits?
+    how_do_get_answer_1_html: Most families with children who receive CalFresh, Medi-Cal or Foster Care benefits do not
+      need to apply online. They will get their P-EBT card in the mail between May 7- 22, 2020.
+    how_do_get_answer_2_html: Families with children who are eligible for free or reduced-price meals and who do NOT get
+      CalFresh, Medi-Cal or Foster Care benefits <u>must apply online before June 30, 2020</u>.
+    already_got_question: If I already got a P-EBT card in the mail do I need to apply online?
+    already_got_answer_html: No. If you already got a P-EBT card in the mail do not apply online. Follow the
+      instructions that came with your P-EBT card and create your private PIN number. Then your card will be ready to use.
+    what_if_to_go_question: ¿Qué pasa si mis hijos están recibiendo comidas de escuela 'para llevar' de otro sitio?
+    what_if_to_go_answer_html: Los niños que reciben comidas 'para llevar' en su comunidad siguen siendo elegibles para
+      recibir beneficios EBT si es que&colon;
+      <ul class="list--bulleted">
+        <li>su escuela está cerrada debido a (COVID-19)</li>
+        <li>son elegibles para recibir alimentos en la escuela gratis o a precios reducidos</li>
+      </ul>
+    how_much_question: ¿Cuánto voy a recibir de beneficios P-EBT?
+    how_much_answer_1_html: Puede recibir hasta $365 por cada niño elegible para beneficios P-EBT. Siempre y cuando
+      usted solicite antes del 30 de junio, 2020, recibirá la cantidad entera de beneficios por los cuatro meses.
+    how_much_answer_2_html: La cantidad total de beneficios que usted recibirá depende de cuántos niños elegibles viven
+      en el hogar. Por cada niño elegible, recibirá el siguiente pago en su tarjeta mensualmente:&colon;
+      <ul class="list--bulleted">
+        <li>Marzo 2020&colon; $68 por niño</li>
+        <li>Abril 2020&colon; $120 por niño</li>
+        <li>Mayo 2020&colon; $120 por niño</li>
+        <li>Junio 2020&colon; $57 por niño</li>
+      </ul>
+      Esto significa que cada niño elegible recibirá un total de $365 en beneficios P-EBT durante un periodo de cuatro
+      meses.
+    what_can_i_buy_question: ¿Qué puedo comprar con los beneficios P-EBT?
+    what_can_i_buy_answer_1_html: Sus beneficios P-EBT sirven para comprar alimentos en la mayoría de mercados y
+      mercados de agricultores.
+    what_can_i_buy_answer_2_html: Use su tarjeta P-EBT como una tarjeta de crédito&colon;
+      <ul class="list--bulleted">
+        <li>Seleccione "EBT"</li>
+        <li>Pase la tarjeta</li>
+        <li>Introduzca su número de PIN</li>
+      </ul>
+    what_is_the_deadline_question: ¿Hasta cuándo tengo para solicitar beneficios P-EBT?
+    what_is_the_deadline_answer_html: Debe solicitar a más tardar el 30 de junio, 2020 para recibir beneficios P-EBT.
+      Los beneficios P-EBT están disponibles solamente durante el tiempo que están cerradas las escuelas por el
+      coronavirus (COVID-19). Si no recibió una carta P-EBT en el correo y no solicitó a más tardar el 30 de junio,
+      2020 no podrá recibir los beneficios P-EBT.
+    what_if_i_applied_question: ¿Qué pasa si solicité en línea y no he recibido mi tarjeta P-EBT?
+    what_if_i_applied_answer_html: Llame al centro de servicio al público de EBT de California al (877) 328-9677. Puede
+      llamar las 24 horas al día, 7 días a la semana.
+    how_long_question: How long do I have to use my P-EBT benefits?
+    how_long_answer: Puede usar sus beneficios por un año a partir de cuando haya recibido su tarjeta P-EBT.
+    if_i_get_question: If I get P-EBT benefits, will it affect my immigration status or make me a public charge?
+    if_i_get_answer_1_html: P-EBT is a disaster emergency benefit based on free and reduced fee school meals
+      eligibility, similar to other benefits that DHS has said would not be considered for public charge purposes.
+      However, USCIS can consider several factors under their public charge test.
+    if_i_get_answer_2_html: Public charge does not apply to all immigrants. If you have questions about your immigration
+      status and this food benefit, more information is available <a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__covid19.ca.gov_img_wp_covid-2D19-2Dimmigrant-2Dguidance-2Daccessible-2D1.pdf&d=DwMFAg&c=uASjV29gZuJt5_5J5CPRuQ&r=8R-cSKwMRKVQ8RlrsVEwub2ambB3pAUafrkOocCUwuw&m=zPw4azKOYZF_a34l3RNTMWy3ZGnar6BxiYo2of5MC20&s=C5kfHk9vuZa85KToIulnjpsTdZk8hH7VIz4PiTWGyx4&e"
+      target="_blank">here</a>, including a list of free and low-cost immigration services providers.
+  footer:
+    delivered_by_html: ca.p-ebt.org is a service delivered by <a class="link--subtle"
+      href="https://www.codeforamerica.org/" target="_blank">Code for America</a> on behalf of the people of California.
