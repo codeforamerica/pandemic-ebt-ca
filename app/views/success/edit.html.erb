@@ -8,26 +8,29 @@
     <div class="form-card__content text--centered">
       <div class="grid grid--how">
         <div class="grid__item">
-          <p class="with-padding-small text--left">Write down your confirmation number:</p>
+          <p class="text--left">Write down your confirmation number:</p>
           <div class="notice"><%= current_household.confirmation_code %></div>
-          <p class="with-padding-small text--left">If approved, you'll get a P-EBT card with money for groceries
-            within 10days.</p>
-          <p class="with-padding-small text--left">Learn more about the P-EBT program.</p>
-          <h5 class="text--left">If approved, how much in P-EBT benefits will I get?</h5>
-          <p class="with-padding-small text--left">You can get up to $365 for each child who is eligible for
+          <p class="text--left">If approved, you'll get a P-EBT card with money for groceries
+            within 10 days.</p>
+          <p class="text--left"><%= link_to "Learn more", info_path %> about the P-EBT program.</p>
+          <h3 class="text--left">If approved, how much in P-EBT benefits will I get?</h3>
+          <p class="text--left">You can get up to $365 for each child who is eligible for
             P-EBT benefits. As long as you apply before June 30th, 2020, you will get the full amount of benefits for all
             four months.
-            Each eligible child will get the following amount for each month:</p>
-          <ul class="list--bulleted">
-            <li>March 2020: $68 per child</li>
-            <li>April 2020: $120 per child</li>
-            <li>May 2020: $120 per child</li>
-            <li>June 2020: $57 per child</li>
-          </ul>
+          </p>
+          <p class="text--left">
+            Each eligible child will get the following amount for each month:
+            <ul class="list--bulleted text--left">
+              <li>March 2020: $68 per child</li>
+              <li>April 2020: $120 per child</li>
+              <li>May 2020: $120 per child</li>
+              <li>June 2020: $57 per child</li>
+            </ul>
+          </p>
         </div>
         <% if current_household.unfilled_application_experience? %>
           <div class="grid__item">
-            <h5 class="text--left">How was your experience with this application?</h5>
+            <h3 class="text--left">How was your experience with this application?</h3>
               <%= f.cfa_single_tap_button(
                       :application_experience,
                       raw("<i class=\"emoji emoji-size-35 emoji--grinning-face\"></i><span class=\"sr-only\">Good</span>"),
