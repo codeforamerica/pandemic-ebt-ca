@@ -16,6 +16,7 @@
   <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= render 'analytics/google-analytics' if Rails.env.production? %>
   <%= javascript_include_tag 'application' %>
+  <%= render 'analytics/mixpanel' %>
 
   <%= csrf_meta_tags %>
 </head>

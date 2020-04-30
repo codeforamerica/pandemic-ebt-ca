@@ -5,6 +5,7 @@ Staging Environment: [https://ca-staging.p-ebt.org/](https://ca-staging.p-ebt.or
 
 ### Development
 - `bundle`
+- `yarn install`
 - `rake db:setup`
 - Run tests with `rake`.
 
