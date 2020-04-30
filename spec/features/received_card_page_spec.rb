@@ -4,7 +4,7 @@ RSpec.describe 'Journey', type: :feature do
   describe 'selecting yes on received card page' do
     it 'shows all done page' do
       visit '/'
-      expect(page).to have_text 'Get help to buy food while schools are closed.'
+      expect(page).to have_text 'Get help buying food while schools are closed.'
       click_on 'Apply now'
       expect(page).to have_text "Here's how it works:"
       click_on 'Continue'

@@ -65,7 +65,11 @@
 </div>
 <footer class="main-footer">
   <div class="grid">
-    <div class="grid__item width-three-fourths shift-one-sixth">
+    <% if (content_for(:template_name) == "card") || (content_for(:template_name) == "success")  %>
+      <div class="grid__item width-three-fourths shift-one-sixth">
+    <% else %>
+      <div class="grid__item">
+    <% end %>
       <p class="text--small">ca.p-ebt.org is a service delivered by
         <a class="link--subtle" href="https://www.codeforamerica.org">Code for America</a> on behalf of the people of
         California.</p>
