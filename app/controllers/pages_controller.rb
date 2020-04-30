@@ -1,6 +1,8 @@
 class PagesController < ApplicationController
   before_action :clear_household
 
+  caches_page :index, :how, :info
+
   def index; end
 
   def how; end

@@ -31,3 +31,9 @@
 .generators
 .rakeTasks
 .DS_Store
+
+# Ignore cached pages inside public:
+/public/*.html
+!/public/404.html
+!/public/422.html
+!/public/500.html

@@ -9,6 +9,7 @@ gem 'puma', '~> 3.11'
 gem 'rails', '~> 6.0', '>= 6.0.2'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
+gem 'actionpack-page_caching', '>= 1.2.0'
 
 gem 'cfa-styleguide', git: 'https://github.com/codeforamerica/honeycrisp-gem'
 
