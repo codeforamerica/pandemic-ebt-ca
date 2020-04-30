@@ -2,4 +2,3 @@
 require_relative '../config/boot'
 require 'rake'
 Rake.application.run
-Rake::Task["rubocop:auto_correct"].invoke
