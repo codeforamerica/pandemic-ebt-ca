@@ -106,13 +106,6 @@ Rails.application.configure do
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
   config.force_ssl = true
 
-  # Host Whitelists
-  # Staging
-  config.hosts << 'app-19965.on-aptible.com'
-  config.hosts << 'ca-staging.p-ebt.org'
-  # Demo
-  config.hosts << 'app-20048.on-aptible.com'
-  config.hosts << 'ca-demo.p-ebt.org'
-  # Prod
+  # Host Whitelist
   config.hosts << 'ca.p-ebt.org'
 end
