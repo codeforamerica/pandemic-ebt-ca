@@ -66,26 +66,27 @@
 </div>
 <footer class="main-footer">
   <div class="grid">
-    <% if (content_for(:template_name) == "card") || (content_for(:template_name) == "success")  %>
+    <% if (content_for(:template_name) == "card") || (content_for(:template_name) == "success") %>
       <div class="grid__item width-three-fourths shift-one-sixth">
     <% else %>
       <div class="grid__item">
     <% end %>
-      <p class="text--small">ca.p-ebt.org is a service delivered by
-        <a class="link--subtle" href="https://www.codeforamerica.org">Code for America</a> on behalf of the people of
-        California.</p>
+    <p class="text--small">ca.p-ebt.org is a service delivered by
+      <a class="link--subtle" href="https://www.codeforamerica.org">Code for America</a> on behalf of the people of
+      California.</p>
     </div>
-  </div>
-  <% if controller.controller_name == "pages" && controller.action_name == "index" %>
-    <div class="grid">
-      <div class="grid__item width-one-fourth">
-        <div class="main-footer__cfa-logo">
-          <a href="https://www.codeforamerica.org" class="illustration illustration--cfa-logo__dark">Code for
-            America</a>
+    </div>
+    <% if controller.controller_name == "pages" && controller.action_name == "index" %>
+      <div class="grid">
+        <div class="grid__item width-one-fourth">
+          <div class="main-footer__cfa-logo">
+            <a href="https://www.codeforamerica.org" class="illustration illustration--cfa-logo__dark">Code for
+              America</a>
+          </div>
         </div>
       </div>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 </footer>
 </body>
 </html>
