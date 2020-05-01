@@ -1,21 +1,24 @@
 <% content_for(:template_name, "card") %>
 
-<div class="form-card__header spacing-below-35">
-  <div class="emoji emoji--bigger spacing-below-25 spacing-below-25 emoji--credit-card"></div>
-  <h2 class="form-card__title">
-    Tell us about the student.
-  </h2>
-</div>
-<div class="form-card__content">
-  <div class="grid">
-    <div class="grid__item">
-      <p class="with-padding-small text--left">
-        The card will have the oldest student’s name on it when it arrives. Adults in the household will be able to use it to shop for the whole family.
-      </p>
+<%= form_with url: just_so_you_know_steps_path, method: :put, local: true do %>
+  <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>
+    <div class="form-card__header spacing-below-35">
+      <div class="emoji emoji--bigger spacing-below-25 spacing-below-25 emoji--credit-card"></div>
+      <h2 class="form-card__title">
+        Just so you know.
+      </h2>
     </div>
-  </div>
-</div>
-<div class="form-card__footer">
-  <%# TODO: Fix path %>
-  <%= link_to("Continue", eligible_steps_path, class: "button button--primary") %>
-</div>
+    <div class="form-card__content">
+      <div class="grid">
+        <div class="grid__item">
+          <p class="with-padding-small text--left">
+            The card will have the oldest student&apos;s name on it when it arrives. Adults in the household will be able to use it to shop for the whole family.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="form-card__footer">
+      <%= f.button "Continue", class: "button button--primary" %>
+    </div>
+  <% end %>
+<% end %>
