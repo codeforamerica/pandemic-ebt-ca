@@ -52,25 +52,25 @@ es:
     already_got_answer_html: No. If you already got a P-EBT card in the mail do not apply online. Follow the
       instructions that came with your P-EBT card and create your private PIN number. Then your card will be ready to use.
     what_if_to_go_question: ¿Qué pasa si mis hijos están recibiendo comidas de escuela 'para llevar' de otro sitio?
-    what_if_to_go_answer_html: Los niños que reciben comidas 'para llevar' en su comunidad siguen siendo elegibles para
-      recibir beneficios EBT si es que&colon;
+    what_if_to_go_answer_html: Niños que recojen alimentos ‘para llevar’ en su comunidad aún son elegibles para
+      beneficios P-EBT si&colon;
       <ul class="list--bulleted">
-        <li>su escuela está cerrada debido a (COVID-19)</li>
-        <li>son elegibles para recibir alimentos en la escuela gratis o a precios reducidos</li>
+        <li>Su escuela está cerrada debido a coronavirus (COVID-19); y</li>
+        <li>Son elegibles para alimentos escolares gratis o a precio reducido</li>
       </ul>
     how_much_question: ¿Cuánto voy a recibir de beneficios P-EBT?
-    how_much_answer_1_html: Puede recibir hasta $365 por cada niño elegible para beneficios P-EBT. Siempre y cuando
-      usted solicite antes del 30 de junio, 2020, recibirá la cantidad entera de beneficios por los cuatro meses.
+    how_much_answer_1_html: Puede recibir hasta $365 por cada niño que es elegible para beneficios P-EBT. Mientras
+      solicite antes del 30 de junio 2020, recibirá la cantidad total de beneficios durante los cuatro meses.
     how_much_answer_2_html: La cantidad total de beneficios que usted recibirá depende de cuántos niños elegibles viven
       en el hogar. Por cada niño elegible, recibirá el siguiente pago en su tarjeta mensualmente:&colon;
       <ul class="list--bulleted">
-        <li>Marzo 2020&colon; $68 por niño</li>
-        <li>Abril 2020&colon; $120 por niño</li>
-        <li>Mayo 2020&colon; $120 por niño</li>
-        <li>Junio 2020&colon; $57 por niño</li>
+        <li>marzo 2020&colon; $68 por niño</li>
+        <li>abril 2020&colon; $120 por niño</li>
+        <li>mayo 2020&colon; $120 por niño</li>
+        <li>junio 2020&colon; $57 por niño</li>
       </ul>
-      Esto significa que cada niño elegible recibirá un total de $365 en beneficios P-EBT durante un periodo de cuatro
-      meses.
+      Esto significa que cada niño elegible recibirá un total de $365 en beneficios de P-EBT durante un periodo de
+      cuatro meses.
     what_can_i_buy_question: ¿Qué puedo comprar con los beneficios P-EBT?
     what_can_i_buy_answer_1_html: Sus beneficios P-EBT sirven para comprar alimentos en la mayoría de mercados y
       mercados de agricultores.
@@ -91,12 +91,12 @@ es:
     how_long_question: How long do I have to use my P-EBT benefits?
     how_long_answer: Puede usar sus beneficios por un año a partir de cuando haya recibido su tarjeta P-EBT.
     if_i_get_question: If I get P-EBT benefits, will it affect my immigration status or make me a public charge?
-    if_i_get_answer_1_html: P-EBT is a disaster emergency benefit based on free and reduced fee school meals
-      eligibility, similar to other benefits that DHS has said would not be considered for public charge purposes.
-      However, USCIS can consider several factors under their public charge test.
-    if_i_get_answer_2_html: Public charge does not apply to all immigrants. If you have questions about your immigration
-      status and this food benefit, more information is available <a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__covid19.ca.gov_img_wp_covid-2D19-2Dimmigrant-2Dguidance-2Daccessible-2D1.pdf&d=DwMFAg&c=uASjV29gZuJt5_5J5CPRuQ&r=8R-cSKwMRKVQ8RlrsVEwub2ambB3pAUafrkOocCUwuw&m=zPw4azKOYZF_a34l3RNTMWy3ZGnar6BxiYo2of5MC20&s=C5kfHk9vuZa85KToIulnjpsTdZk8hH7VIz4PiTWGyx4&e"
-      target="_blank">here</a>, including a list of free and low-cost immigration services providers.
+    if_i_get_answer_1_html: P-EBT es un beneficio de emergencia por desastre basado en la elegibilidad de comidas
+      escolares gratuitas o a precio reducido. Es similar a otros beneficios que el DHS ha dicho que no se consideran
+      como carga pública. Sin embargo, USCIS puede considerar varios factores bajo la prueba de carga pública.
+    if_i_get_answer_2_html: La carga pública no se aplica a todos los inmigrantes. Si tiene preguntas sobre su estado
+      migratorio y este beneficio de comida, más información esta disponible <a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__covid19.ca.gov_img_wp_covid-2D19-2Dimmigrant-2Dguidance-2Daccessible-2D1.pdf&d=DwMFAg&c=uASjV29gZuJt5_5J5CPRuQ&r=8R-cSKwMRKVQ8RlrsVEwub2ambB3pAUafrkOocCUwuw&m=zPw4azKOYZF_a34l3RNTMWy3ZGnar6BxiYo2of5MC20&s=C5kfHk9vuZa85KToIulnjpsTdZk8hH7VIz4PiTWGyx4&e"
+      target="_blank">aqui</a>, incluyendo una lista de proveedores de servicios de inmigracion gratis o a precio bajo.
   footer:
     delivered_by_html: ca.p-ebt.org is a service delivered by <a class="link--subtle"
       href="https://www.codeforamerica.org/" target="_blank">Code for America</a> on behalf of the people of California.
