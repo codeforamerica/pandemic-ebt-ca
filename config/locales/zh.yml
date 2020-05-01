@@ -1,34 +1,3 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 zh:
   info:
     heading: 有關P-EBT的資料
@@ -73,13 +42,16 @@ zh:
         <li>刷卡</li>
         <li>輸入您的卡密碼</li>
       </ul>
+    what_should_i_do_question: 當我從郵寄收到P-EBT卡時，我應該做些什麼？
+    what_should_i_do_answer_html: 收到P-EBT卡後請按照卡上的指示進行並設定一個密碼。設置密碼後，
+      您的卡可以在大部分的雜貨店和農民市場購買食物。
     what_is_the_deadline_question: 申請P-EBT福利的截止日期是？
     what_is_the_deadline_answer_html: 您必須在2020年6月30日前申請P-EBT福利。
       P-EBT福利是爲了學校因新冠肺炎疫情(COVID 19)關閉而臨時設立。如果您沒有從郵寄收到P-EBT卡，
       也沒有在2020年6月30日前提交申請，則無法領取到P-EBT福利。
     what_if_i_applied_question: 如果我上網申請了，但沒有收到P-EBT卡該怎麼辦？
     what_if_i_applied_answer_html: 請致電加州EBT客戶服務中心 (877) 328-9677。熱線電話每週7天，24小時為您服務。
-    how_long_question: How long do I have to use my P-EBT benefits?
+    how_long_question: 我有多長時間可以使用我的P-EBT福利？
     how_long_answer: 您在收到P-EBT卡那天開始的一年內可以使用您的P-EBT福利。
     if_i_get_question: 如果我領取P-EBT福利，這會影響我的移民身份或被列為「公共負擔」審查的範圍嗎？
     if_i_get_answer_1_html: P-EBT是根據符合獲取免費或優惠價校餐資格的災難緊急援助，相同於其他不會被國土安全局（DHS）
