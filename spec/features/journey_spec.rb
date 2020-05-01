@@ -27,6 +27,8 @@ RSpec.describe 'Journey', type: :feature do
       select '2', from: 'Day'
       select '2010', from: 'Year'
       click_on 'Continue'
+      expect(page).to have_text 'Just so you know'
+      click_on 'Continue'
       expect(page).to have_text 'Add the name of one parent or guardian'
       fill_in 'First name', with: 'Julia'
       fill_in 'Last name', with: 'Johnson'
