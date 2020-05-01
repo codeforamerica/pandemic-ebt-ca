@@ -6,6 +6,7 @@ class FormNavigation
     ReceivedCardController,
     AlreadyReceivedController,
     ChildrenController,
+    JustSoYouKnowController,
     ParentController,
     ResidentialAddressController,
     MailingAddressController,
