@@ -40,6 +40,13 @@
                       end_year: Time.now.year - 30,
                   }
               ) %>
+          <%= f.cfa_radio_set(:school_type,
+            label_text: 'What type of school does this student attend?',
+            collection: [
+              {value: :public_school, label: "Public school (including charter school)"},
+              {value: :private_school, label: "Private school (including religious school)"}
+            ]
+          )%>
           <%= f.cfa_single_tap_button(
                   :add_child,
                   raw("<i class=\"icon-add\"></i> Add another student"),
