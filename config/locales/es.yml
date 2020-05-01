@@ -1,4 +1,16 @@
 es:
+  index:
+    coming_soon_html: Próximamente&colon;
+    header: Reciba ayuda para comprar comida mientras escuelas están cerradas.
+    apply_starting: Solicite en este sitio web a partir del 22 de mayo.
+    apply_by: Registrese para P-EBT antes del 30 de junio.
+    apply_now: Registrese ahora
+    about: Este programa, llamado P-EBT, es para niños que normalmente reciben alimentos gratis o a precio reducido en
+      la escuela. Solicite para recibir $365 por cada niño para comprar alimentos.
+    questions_about: ¿Preguntas sobre P-EBT?
+    learn_more_about: Aprenda más sobre este programa.
+    learn_more: Aprenda más
+    joint_program: Este es un programa conjunto del Departamento de Educación y Servicios Sociales de California.
   info:
     heading: Información sobre P-EBT
     what_are_question: ¿Qué es 'P-EBT' o beneficios de Pandemia EBT?
@@ -72,5 +84,5 @@ es:
       migratorio y este beneficio de comida, más información esta disponible <a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__covid19.ca.gov_img_wp_covid-2D19-2Dimmigrant-2Dguidance-2Daccessible-2D1.pdf&d=DwMFAg&c=uASjV29gZuJt5_5J5CPRuQ&r=8R-cSKwMRKVQ8RlrsVEwub2ambB3pAUafrkOocCUwuw&m=zPw4azKOYZF_a34l3RNTMWy3ZGnar6BxiYo2of5MC20&s=C5kfHk9vuZa85KToIulnjpsTdZk8hH7VIz4PiTWGyx4&e"
       target="_blank">aqui</a>, incluyendo una lista de proveedores de servicios de inmigracion gratis o a precio bajo.
   footer:
-    delivered_by_html: ca.p-ebt.org is a service delivered by <a class="link--subtle"
-      href="https://www.codeforamerica.org/" target="_blank">Code for America</a> on behalf of the people of California.
+    delivered_by_html: ca.p-ebt.org es un servicio proporcionado por  <a class="link--subtle"
+      href="https://www.codeforamerica.org/" target="_blank">Code for America</a> de parte de la gente de California.

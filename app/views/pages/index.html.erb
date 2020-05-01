@@ -6,10 +6,9 @@
     <div class="toolbar toolbar--wrap-when-small">
       <div class="toolbar__left">
       </div>
-      <!--<div class="toolbar__right>">
-        <a class="toolbar__item text--small link--subtle" lang="zh" href="?new_locale=zh">中文</a>
-        <a class="toolbar__item text--small link--subtle" lang="es" href="?new_locale=es">Español</a>
-      </div>-->
+      <div class="toolbar__right>">
+        <%= render 'pages/locale' %>
+      </div>
     </div>
   </header>
   <section class="slab slab--hero">
@@ -17,19 +16,19 @@
       <div class="grid__item width-three-fourths">
         <h2 class="heading-60">
           <% if ENV["COMING_SOON"] == "1"%>
-            <em>Coming soon:</em>
+            <em><%= t("index.coming_soon_html") %></em>
           <% end %>
-          Get help buying food while schools are closed.
+          <%= t("index.header") %>
         </h2>
         <h1 class="text-25">
           <% if ENV["COMING_SOON"] == "1"%>
-            Apply on this website starting May 22nd.
+            <%= t("index.apply_starting") %>
           <% else %>
-            Apply for P-EBT by June 30th.
+            <%= t("index.apply_by") %>
           <% end %>
         </h1>
         <% if ENV["COMING_SOON"].blank? %>
-          <%= link_to(raw("Apply now <i class=\"button__icon icon-arrow_forward\"></i>"), how_path, class: "button button--primary") %>
+          <%= link_to(raw(t("index.apply_now") + " <i class=\"button__icon icon-arrow_forward\"></i>"), how_path, class: "button button--primary") %>
         <% end %>
       </div>
     </div>
@@ -37,23 +36,23 @@
   <section class="slab slab--white">
     <div class="grid">
       <div class="grid__item width-seven-twelfths">
-        <p class="form-card__body-text">This program, called P-EBT, is for students who are normally able to get free or reduced price school meals. Apply and get up to $365 per child to spend on groceries.</p>
+        <p class="form-card__body-text"><%= t("index.about") %></p>
       </div>
     </div>
   </section>
   <section class="slab slab--grey-light">
     <div class="grid">
       <div class="grid__item width-seven-twelfths">
-        <h2>Questions about P-EBT?</h2>
-        <p class="form-card__body-text">Learn more about this program.</p>
-        <a href="<%= info_path %>"><button class="button">Learn more</button></a>
+        <h2><%= t("index.questions_about") %></h2>
+        <p class="form-card__body-text"><%= t("index.learn_more_about") %></p>
+        <a href="<%= info_path %>"><button class="button"><%= t("index.learn_more") %></button></a>
       </div>
     </div>
   </section>
   <section class="slab slab--white">
     <div class="grid">
       <div class="grid__item width-seven-twelfths">
-        <p class="form-card__body-text">This is a joint program of the California Departments of Education and Social Services.</p>
+        <p class="form-card__body-text"><%= t("index.joint_program") %></p>
       </div>
     </div>
   </section>

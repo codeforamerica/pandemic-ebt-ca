@@ -1,4 +1,15 @@
 zh:
+  index:
+    coming_soon_html: 快來了：
+    header: 在學校停課期間獲取食物购买援助。
+    apply_starting: 從5月22日開始在此網站上申請。
+    apply_by: 6月30日前申請獲取P-EBT
+    apply_now: 立即申請
+    about: 該計劃 ，稱為P-EBT，適用於符合資格獲取免費或優惠價校餐的孩子。申請後每個孩子可以獲取$365，可用於購買雜貨。
+    questions_about: 有關P-EBT的問題？
+    learn_more_about: 了解有關該計劃更多的信息。
+    learn_more: 了解更多
+    joint_program: 該計劃是加州教育局和加州社會服務處的一項聯合計劃 。
   info:
     heading: 有關P-EBT的資料
     what_are_question: 什麽是「P-EBT」或Pandemic EBT福利？
@@ -59,5 +70,5 @@ zh:
     if_i_get_answer_2_html: 公共負擔不適用於所有移民者。如果您就您個人的移民身分和該福利有任何疑問，請瀏覽<a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__covid19.ca.gov_img_wp_covid-2D19-2Dimmigrant-2Dguidance-2Daccessible-2D1.pdf&d=DwMFAg&c=uASjV29gZuJt5_5J5CPRuQ&r=8R-cSKwMRKVQ8RlrsVEwub2ambB3pAUafrkOocCUwuw&m=zPw4azKOYZF_a34l3RNTMWy3ZGnar6BxiYo2of5MC20&s=C5kfHk9vuZa85KToIulnjpsTdZk8hH7VIz4PiTWGyx4&e"
       target="_blank">此</a>，獲知更多免費或低費用的移民服務。
   footer:
-    delivered_by_html: ca.p-ebt.org is a service delivered by <a class="link--subtle"
-      href="https://www.codeforamerica.org/" target="_blank">Code for America</a> on behalf of the people of California.
+    delivered_by_html: ca.p-ebt.org 是由 <a class="link--subtle"
+      href="https://www.codeforamerica.org/" target="_blank">Code for America</a> 提供給加州居民的服務 。
