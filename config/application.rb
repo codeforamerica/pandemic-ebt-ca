@@ -23,8 +23,8 @@ module PandemicEbt
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
-    config.hosts << ENV["APTIBLE_ENDPOINT"] if ENV["APTIBLE_ENDPOINT"]
-    config.hosts << ENV["EXTERNAL_ENDPOINT"] if ENV["EXTERNAL_ENDPOINT"]
+    config.hosts << ENV['APTIBLE_ENDPOINT'] if ENV['APTIBLE_ENDPOINT']
+    config.hosts << ENV['EXTERNAL_ENDPOINT'] if ENV['EXTERNAL_ENDPOINT']
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
