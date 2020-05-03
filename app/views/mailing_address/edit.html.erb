@@ -14,6 +14,7 @@
       <div class="grid">
         <div class="grid__item text--left">
           <%= f.cfa_input_field(:mailing_street, "What is the street address?") %>
+          <%= f.cfa_input_field(:mailing_street_2, "What is the unit or apartment (optional)?") %>
           <%= f.cfa_input_field(:mailing_city, "What is the city?") %>
           <%= f.cfa_input_field(:mailing_zip_code, "What is the ZIP code?", classes: ['form-width--zip']) %>
         </div>
