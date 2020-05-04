@@ -1,11 +1,10 @@
 const mixpanelLoader = function (lib = mixpanel, jQuery = $) {
     return {
         track_links() {
-            jQuery('a').click(function (e) {
+            jQuery('a, button').click(function (e) {
                 lib.track("Click", {
                     destination: e.currentTarget.href,
-                    text: e.currentTarget.text,
-                    current_location: window.location.href
+                    text: e.currentTarget.text
                 })
             });
         }

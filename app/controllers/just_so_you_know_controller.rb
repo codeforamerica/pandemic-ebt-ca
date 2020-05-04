@@ -1,0 +1,2 @@
+class JustSoYouKnowController < FormsController
+end

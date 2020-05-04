@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_24_163007) do
+ActiveRecord::Schema.define(version: 2020_05_03_202823) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2020_04_24_163007) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "suid"
+    t.integer "school_type", limit: 2
     t.index ["household_id"], name: "index_children_on_household_id"
   end
 
@@ -31,8 +32,6 @@ ActiveRecord::Schema.define(version: 2020_04_24_163007) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "received_card", default: 0
-    t.string "parent_first_name"
-    t.string "parent_last_name"
     t.string "residential_street"
     t.string "residential_city"
     t.string "residential_zip_code"
@@ -43,6 +42,8 @@ ActiveRecord::Schema.define(version: 2020_04_24_163007) do
     t.string "signature"
     t.datetime "submitted_at"
     t.integer "application_experience", default: 0
+    t.string "residential_street_2"
+    t.string "mailing_street_2"
   end
 
 end

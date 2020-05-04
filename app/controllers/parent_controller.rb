@@ -1,2 +1,0 @@
-class ParentController < FormsController
-end

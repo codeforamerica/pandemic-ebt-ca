@@ -19,9 +19,11 @@ RSpec.describe 'Deleting a child', type: :feature do
       select 'January', from: 'Month'
       select '2', from: 'Day'
       select '2010', from: 'Year'
+      choose 'Public school'
       click_on 'Add another student'
       expect(page).to have_text 'Jane Johnson'
       click_on '(remove)'
+      expect(page).not_to have_text 'Jane Johnson'
       expect(page).to have_text 'Child has been removed'
     end
   end
