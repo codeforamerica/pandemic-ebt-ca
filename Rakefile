@@ -6,3 +6,10 @@ require 'rubocop/rake_task'
 
 RuboCop::RakeTask.new
 Rails.application.load_tasks
+
+Rake::Task['default'].clear
+
+task :default do
+  Rake::Task['spec'].invoke
+  Rake::Task['rubocop'].invoke
+end
