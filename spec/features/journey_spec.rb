@@ -30,7 +30,6 @@ RSpec.describe 'Journey', type: :feature do
       choose 'Private school'
       click_on 'Continue'
       expect(page).to have_text 'Just so you know'
-      expect(page).to have_text "The card will have the oldest student's name on it when it arrives. If you applied for more than one child, all benefits will be on this one card. Adults in the household will be able to use it to shop for the whole family."
       click_on 'Continue'
       expect(page).to have_text 'What address are you registered at the school with'
       fill_in 'What is the street address?', with: '123 Elm Street'
