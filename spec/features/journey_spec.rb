@@ -5,6 +5,9 @@ RSpec.describe 'Journey', type: :feature do
     it 'runs the full journey' do
       visit '/'
       expect(page).to have_text 'Get help buying food while schools are closed.'
+      click_on('Learn more', match: :first)
+      expect(page).to have_text 'Information about P-EBT'
+      visit '/'
       click_on 'Apply now'
       expect(page).to have_text "Here's how it works:"
       click_on 'Continue'
