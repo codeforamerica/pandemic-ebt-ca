@@ -1,0 +1,62 @@
+name: Test + Deploy to Staging
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports: ["5432:5432"]
+        env:
+          POSTGRES_PASSWORD: postgres
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Ruby 2.6.3
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6.3
+      - run: ruby -v
+      - name: Cache Gems
+        uses: actions/cache@v1.1.2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: ${{ runner.os }}-gems-
+      - name: Install and configure bundler
+        run: |
+          gem install bundler
+          bundle config path vendor/bundle
+          bundle install --jobs 4 --retry 3
+      - name: Setup test DB
+        run: |
+          cp config/database.github-actions.yml config/database.yml
+          bundle exec rake db:setup
+        env:
+          RAILS_ENV: test
+      - name: Run rake
+        run: bundle exec rake
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v2
+      - run: git fetch --prune --unshallow
+      - name: Install SSH key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.APTIBLE_SSH_KEY }}
+          known_hosts: ${{ secrets.APTIBLE_KNOWN_HOSTS }}
+      - name: Deploy to aptible
+        run: |
+          git push git@beta.aptible.com:p-ebt/app-staging.git master

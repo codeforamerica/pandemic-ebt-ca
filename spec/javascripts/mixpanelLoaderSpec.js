@@ -19,14 +19,14 @@ describe('mixpanelLoader', function () {
         document.getElementById('testContainer').remove();
     })
 
-    describe('#track_links', function () {
+    describe('#trackLinks', function () {
         it('sets the click event', function () {
             let trackSpy = jasmine.createSpy();
             const mixpanelLib = {track: trackSpy};
             window.mixpanel = mixpanelLib;
 
             const mixpanel = mixpanelLoader(mixpanelLib)
-            mixpanel.track_links();
+            mixpanel.trackLinks();
 
             anchor.click();
             expect(trackSpy).toHaveBeenCalled();
@@ -38,7 +38,7 @@ describe('mixpanelLoader', function () {
             window.mixpanel = mixpanelLib;
 
             const mixpanel = mixpanelLoader(mixpanelLib)
-            mixpanel.track_links();
+            mixpanel.trackLinks();
 
             button.click();
             expect(trackSpy).toHaveBeenCalled();
@@ -51,8 +51,20 @@ describe('mixpanelLoader', function () {
             window.mixpanel = mixpanelLib;
 
             const mixpanel = mixpanelLoader(mixpanelLib, jquery)
-            mixpanel.track_links();
+            mixpanel.trackLinks();
             expect(clickSpy).toHaveBeenCalled();
         })
+    })
+
+    describe('#trackPageLoad', function () {
+        it('fires a page load track event', function () {
+            let trackSpy = jasmine.createSpy();
+            const mixpanelLib = {track: trackSpy};
+            window.mixpanel = mixpanelLib;
+
+            const mixpanel = mixpanelLoader(mixpanelLib)
+            mixpanel.trackPageLoad();
+            expect(trackSpy).toHaveBeenCalled()
+        });
     })
 })
