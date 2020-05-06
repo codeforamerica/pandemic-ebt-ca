@@ -27,9 +27,19 @@
             <%= t("index.apply_by") %>
           <% end %>
         </h1>
-        <% if ENV["COMING_SOON"].blank? %>
-          <%= link_to(raw(t("index.apply_now") + " <i class=\"button__icon icon-arrow_forward\"></i>"), how_path, class: "button button--primary") %>
-        <% end %>
+        <div class="buttons-group">
+          <div class="grid">
+            <div class="grid__item width-one-half">
+              <% if ENV["COMING_SOON"].blank? %>
+                <%= link_to(raw(t("index.apply_now") + " <i class=\"button__icon icon-arrow_forward\"></i>"), how_path, class: "button button--primary") %>
+              <% end %>
+            </div>
+            <div class="grid__item width-one-half">
+              <%# TODO: TEST THIS BUTTON %>
+              <a href="<%= info_path %>"><button class="button"><%= t("index.learn_more") %></button></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>

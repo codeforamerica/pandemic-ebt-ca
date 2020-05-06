@@ -11,3 +11,9 @@
 .padding-below-25 {
   padding-bottom: $s25 !important;
 }
+
+.button-spacer {
+  // Used in case we want to account for the space of where a button would be, but is not for some reason:
+  height: 64px;
+  margin-bottom: 2.5rem;
+}

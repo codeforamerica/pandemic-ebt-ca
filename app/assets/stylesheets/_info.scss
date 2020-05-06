@@ -8,15 +8,17 @@
 
   .slab--hero {
     background: none;
-    @include media($tablet-up) {
+    @include media($tablet-up) { // Desktop
       background: none;
+      padding-bottom: 2rem;
+    }
+    h2 {
+      @include media($tablet-up) { // Desktop
+        max-width: 48rem;
+      }
     }
 
     &:before {
-      background-repeat: no-repeat;
-      background-position: bottom;
-      background-size: 80% 80%;
-      background-image: image-url('food.svg');
       content: '';
       display: block;
       z-index: -1;
@@ -25,13 +27,15 @@
       left: 0;
       right: 0;
       bottom: 0;
-      opacity: .3;
-
-      @include media($tablet-up) { /*desktop*/
-        max-width: 99rem;
-        background-image: image-url('food.svg');
-        background-size: auto auto;
-        background-position: right;
+      background-color: $color-magenta-light;
+      background-repeat: no-repeat;
+      background-position: 80% 110%;
+      background-size: 24rem;
+      background-image: image-url('pebt-info.png');
+      @include media($tablet-up) { // Desktop
+        background-image: image-url('pebt-info.png');
+        background-size: 42.5rem;
+        background-position: 70% 130%;
       }
     }
 
