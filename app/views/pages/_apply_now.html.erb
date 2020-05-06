@@ -1,0 +1,3 @@
+<% unless ENV["COMING_SOON"].present? %>
+  <%= link_to(raw(t("index.apply_now") + " <i class=\"button__icon icon-arrow_forward\"></i>"), how_path, class: "button button--primary") %>
+<% end %>

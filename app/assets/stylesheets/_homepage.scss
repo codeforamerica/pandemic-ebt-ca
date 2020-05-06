@@ -4,27 +4,37 @@
 .template--homepage {
   margin-bottom: 0;
 
+  // TODO: Rename this class cause there's no more apple:
   .hero--apple {
     h1, h2{
       color: #000;
     }
     .slab--hero {
+      h1 {
+        margin-bottom: 3rem;
+      }
       background: none;
+      padding-bottom: 12.5rem;
       @include media($tablet-up) {
         background: none;
+        padding-bottom: 4rem;
       }
       &:before {
+        content: '';
         background-repeat: no-repeat;
-        background-position: bottom left;
-        background-size: 100% auto;
-        background-image: image-url('apple_mobile.svg');
-        @include media($tablet-up) { /*desktop*/
-          max-width: 99rem;
-          background-size: 90% auto;
-          background-position: bottom left;
-          background-image: image-url('apple.svg');
+        background-position: 175% 117%;
+        background-size: 90% auto;
+        background-color: $color-magenta-light;
+        background-image: image-url('pebt-hero.png');
+        @include media($tablet-up) { /* Desktop */
+          background-size: 57.5rem auto;
+          background-position: 70% -1300%;
+          background-image: image-url('pebt-hero.png');
         }
       }
+    }
+    .buttons-group {
+      max-width: 40rem;
     }
     .main-header {
       background: none;

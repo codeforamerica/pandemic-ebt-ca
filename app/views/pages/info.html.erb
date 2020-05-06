@@ -10,7 +10,15 @@
     </header>
     <div class="grid">
       <div class="grid__item width-three-fourths">
-        <h2 class="heading-60"><%= t("info.heading") %></h2>
+        <h2 class="heading-60">
+          <%= t("info.heading") %>
+        </h2>
+        <% if ENV["COMING_SOON"].blank? %>
+          <%# TODO: Test that this doesn't appear %>
+          <%= render 'apply_now' %>
+        <% else %>
+          <div class="button-spacer"></div>
+        <% end %>
       </div>
     </div>
   </section>
@@ -38,11 +46,15 @@
         <p class="form-card__body-text"><%= t("info.what_is_the_deadline_answer_html") %></p>
         <h3 class="spacing-above-60"><%= t("info.what_if_i_applied_question") %></h3>
         <p class="form-card__body-text"><%= t("info.what_if_i_applied_answer_html") %></p>
-        <h3 class="spacing-above-60"><%= t("info.how_long_question") %></h3>
+        <h3 class="spacing-above-6  0"><%= t("info.how_long_question") %></h3>
         <p class="form-card__body-text"><%= t("info.how_long_answer") %></p>
         <h3 class="spacing-above-60"><%= t("info.if_i_get_question") %></h3>
         <p class="form-card__body-text"><%= t("info.if_i_get_answer_1_html") %></p>
         <p class="form-card__body-text"><%= t("info.if_i_get_answer_2_html") %></p>
+        <p class="spacing-above-60">
+          <%# TODO: Test that this doesn't appear %>
+          <%= render 'apply_now' %>
+        </p>
       </div>
     </div>
   </section>
