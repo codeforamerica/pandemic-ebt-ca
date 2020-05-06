@@ -14,7 +14,6 @@
           <%= t("info.heading") %>
         </h2>
         <% if ENV["COMING_SOON"].blank? %>
-          <%# TODO: Test that this doesn't appear %>
           <%= render 'apply_now' %>
         <% else %>
           <div class="button-spacer"></div>
@@ -52,7 +51,6 @@
         <p class="form-card__body-text"><%= t("info.if_i_get_answer_1_html") %></p>
         <p class="form-card__body-text"><%= t("info.if_i_get_answer_2_html") %></p>
         <p class="spacing-above-60">
-          <%# TODO: Test that this doesn't appear %>
           <%= render 'apply_now' %>
         </p>
       </div>
