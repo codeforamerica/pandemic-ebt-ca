@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Journey', type: :feature do
   describe 'Full journey' do
     it 'runs the full journey' do
-      visit '/'
+      visit root_path
       expect(page).to have_text 'Get help buying food while schools are closed.'
       click_on('Learn more', match: :first)
       expect(page).to have_text 'Information about P-EBT'

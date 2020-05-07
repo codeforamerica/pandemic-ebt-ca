@@ -6,11 +6,7 @@ class ApplicationController < ActionController::Base
     I18n.with_locale(locale, &action)
   end
 
-  def default_url_options
-    if I18n.locale != :en
-      { locale: I18n.locale }
-    else
-      {}
-    end
+  def default_url_options(options = {})
+    { locale: I18n.locale }.merge options
   end
 end

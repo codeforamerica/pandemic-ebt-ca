@@ -26,7 +26,7 @@ class FormsController < ApplicationController
     end
   end
 
-  def current_path(params = nil)
+  def current_path(params = {})
     step_path(self.class.to_param, params)
   end
 
