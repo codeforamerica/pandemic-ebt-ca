@@ -11,5 +11,5 @@ Rake::Task['default'].clear
 
 task :default do
   Rake::Task['spec'].invoke
-  Rake::Task['rubocop'].invoke
+  Rake::Task['rubocop:auto_correct'].invoke
 end
