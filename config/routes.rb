@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   mount JasmineRails::Engine => '/specs' if defined?(JasmineRails)
   root 'pages#index'
   get '/early' => 'pages#early', as: 'early'
+  get '/:locale' => 'pages#index'
+  # get '/how' => 'pages#how', as: 'how'
+  # get '/info' => 'pages#info', as: 'info'
 
   scope '(:locale)', locale: /#{I18n.available_locales.join('|')}/ do
     get 'how' => 'pages#how', as: 'how'
