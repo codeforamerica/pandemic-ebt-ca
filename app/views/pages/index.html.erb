@@ -5,22 +5,24 @@
     <div class="toolbar toolbar--wrap-when-small">
       <div class="toolbar__left">
       </div>
-      <div class="toolbar__right>">
-        <%= render 'pages/locale' %>
-      </div>
+      <% unless @is_early %>
+        <div class="toolbar__right>">
+          <%= render 'pages/locale' %>
+        </div>
+      <% end %>
     </div>
   </header>
   <section class="slab slab--hero">
     <div class="grid">
       <div class="grid__item width-three-fourths">
         <h2 class="heading-60">
-          <% if ENV["COMING_SOON"] == "1"%>
+          <% if (ENV["COMING_SOON"] == "1") && !@is_early %>
             <em><%= t("index.coming_soon_html") %></em>
           <% end %>
           <%= t("index.header") %>
         </h2>
         <h1 class="text-25">
-          <% if ENV["COMING_SOON"] == "1"%>
+          <% if (ENV["COMING_SOON"] == "1") && !@is_early %>
             <%= t("index.apply_starting") %>
           <% else %>
             <%= t("index.apply_by") %>
@@ -29,7 +31,7 @@
         <div class="buttons-group">
           <div class="grid">
             <div class="grid__item width-one-half">
-              <%= render 'apply_now' %>
+              <%= render partial: 'apply_now', locals: { is_early: @is_early } %>
             </div>
             <div class="grid__item width-one-half">
               <a href="<%= info_path %>"><button class="button"><%= t("index.learn_more") %></button></a>

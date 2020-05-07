@@ -14,7 +14,7 @@
           <%= t("info.heading") %>
         </h2>
         <% if ENV["COMING_SOON"].blank? %>
-          <%= render 'apply_now' %>
+          <%= render partial: 'apply_now', locals: { is_early: false } %>
         <% else %>
           <div class="button-spacer"></div>
         <% end %>
@@ -53,7 +53,7 @@
         <p class="form-card__body-text"><%= t("info.if_i_get_answer_1_html") %></p>
         <p class="form-card__body-text"><%= t("info.if_i_get_answer_2_html") %></p>
         <p class="spacing-above-60">
-          <%= render 'apply_now' %>
+          <%= render partial: 'apply_now', locals: { is_early: false } %>
         </p>
       </div>
     </div>

@@ -7,6 +7,12 @@ class PagesController < ApplicationController
 
   def info; end
 
+  def early
+    @is_early = true
+    session[:experiment_group] = 'ca_early'
+    render 'index'
+  end
+
   private
 
   def clear_household
