@@ -9,6 +9,7 @@ class FormNavigation
     JustSoYouKnowController,
     ResidentialAddressController,
     MailingAddressController,
+    ContactController,
     SignatureController,
     SuccessController
   ].freeze
