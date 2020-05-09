@@ -1,15 +1,19 @@
 class ChildrenController < FormsController
+  helper_method :children
+
+  def children
+    current_household.children.presence || []
+  end
+
   def update
+    redirect_to(next_path) if form_params[:add_child]
     @form = form_class.new(current_household, form_params)
     if @form.valid?
       @form.save
       update_session
-      if form_params[:add_child]
-        redirect_to(children_steps_path)
-      else
-        redirect_to(next_path)
-      end
+      redirect_to(just_so_you_know_steps_path)
     else
+      flash.now[:errors] = @form.errors.messages.values.flatten
       render :edit
     end
   end

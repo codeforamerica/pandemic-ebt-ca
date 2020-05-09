@@ -16,6 +16,8 @@ Lint/RaiseException:
   Enabled: false
 Lint/StructNewOverride:
   Enabled: false
+Metrics/AbcSize:
+  Enabled: false
 Metrics/BlockLength:
   Enabled: false
 Metrics/MethodLength:
