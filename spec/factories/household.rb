@@ -7,6 +7,6 @@ FactoryBot.define do
     residential_zip_code { Faker::Address.zip }
     signature { Faker::Name.name }
     submitted_at { Faker::Time.backward(days: 14) }
-    application_experience { %w(unfilled good bad ok)[rand(4)] }
+    application_experience { %w[unfilled good bad ok][rand(4)] }
   end
 end

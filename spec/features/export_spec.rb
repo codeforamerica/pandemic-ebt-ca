@@ -2,7 +2,7 @@ require 'rails_helper'
 require 'csv'
 Rails.application.load_tasks
 
-HEADERS = ["suid", "household_id", "student_first_name", "student_last_name", "student_dob", "student_school_type", "parent_signature", "residential_street", "residential_street_2", "residential_city", "residential_state", "residential_zip_code", "mailing_street", "mailing_street_2", "mailing_city", "mailing_state", "mailing_zip_code", "phone_number", "email_address", "language", "submitted_at", "application_experience", "confirmation_code"]
+HEADERS = %w[suid household_id student_first_name student_last_name student_dob student_school_type parent_signature residential_street residential_street_2 residential_city residential_state residential_zip_code mailing_street mailing_street_2 mailing_city mailing_state mailing_zip_code phone_number email_address language submitted_at application_experience confirmation_code].freeze
 
 RSpec.describe 'Exporting Children as CSV', type: :feature do
   before(:all) do
@@ -14,7 +14,7 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     @original_stdout = $stdout
     @captured_stdout = StringIO.new
     $stdout = @captured_stdout
-    Rake::Task["export:csv:all"].invoke
+    Rake::Task['export:csv:all'].invoke
     $stdout = @original_stdout
   end
 
