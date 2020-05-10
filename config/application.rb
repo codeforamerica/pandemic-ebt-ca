@@ -37,6 +37,7 @@ module PandemicEbt
       g.factory_bot false
       g.helper      false
       g.jbuilder    false
+      g.fixtures    false
     end
   end
 end

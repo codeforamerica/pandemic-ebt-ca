@@ -9,7 +9,7 @@ namespace :export do
       File.open(file_name, 'w') do |file|
         file.puts output
       end
-      puts "EXPORT COMPLETE! 😀😀😀"
+      puts "EXPORT COMPLETE!"
     end
   end
 end
