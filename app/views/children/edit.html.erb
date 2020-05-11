@@ -2,57 +2,42 @@
 <%= form_with url: children_steps_path, method: :put, local: true do %>
   <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>
     <div class="form-card__header spacing-below-35">
-      <div class="emoji emoji--bigger spacing-below-25 spacing-below-25 emoji--bust"></div>
-      <h2 class="form-card__title">Tell us about the student.</h2>
+      <h2 class="form-card__title">List all the students in your house.</h2>
     </div>
     <div class="form-card__content">
       <div class="grid">
         <div class="grid__item">
           <p class="text text--left">One at a time, add all students in elementary, middle, and high
-            school.</p>
-          <% if current_household.children.present? %>
-            <div class="notice">
-              <% current_household.children.each do |child| %>
-                <p>
-                  <i class="emoji emoji--checkmark"></i>
-                  <%= child.first_name + " " + child.last_name %>
-                  <%= link_to "(remove)", remove_child_path(id: child.id), method: :delete %>
-                </p>
+            school. This can include pre-K or TK students who get free breakfast or lunch at school.</p>
+          <% if flash[:notice].present? %>
+            <div class="notice--warning">
+              <p><%= flash.now[:notice] %></p>
+            </div>
+          <% end %>
+          <% if flash[:errors].present? %>
+            <div class="notice--error">
+              <% flash.now[:errors].each do |error| %>
+                <p><%= error %></p>
               <% end %>
             </div>
           <% end %>
-          <% if flash[:notice].present? %>
-            <div class="notice--warning">
-              <p><%= flash[:notice] %></p>
-            </div>
-          <% end %>
-        </div>
-      </div>
-      <div class="grid">
-        <div class="grid__item text--left">
-          <%= f.cfa_input_field(:first_name, "First name", help_text: "Legally as it appears on school records.") %>
-          <%= f.cfa_input_field(:last_name, "Last name", help_text: "Legally as it appears on school records.") %>
-          <%= f.cfa_date_select(
-                  :dob,
-                  'What is their date of birth?',
-                  options: {
-                      start_year: Time.now.year,
-                      end_year: Time.now.year - 30,
-                  }
-              ) %>
-          <%= f.cfa_radio_set(:school_type,
-            label_text: 'What type of school does this student attend?',
-            collection: [
-              {value: :public_school, label: "Public school (including charter school)"},
-              {value: :private_school, label: "Private school (including religious school)"}
-            ]
-          )%>
-          <%= f.cfa_single_tap_button(
-                  :add_child,
-                  raw("<i class=\"icon-add\"></i> Add another student"),
-                  true,
-                  classes: ["spacing-below-0 spacing-above-25"]
-              ) %>
+          <div class="notice text--centered">
+            <h3>Students in your house</h3>
+            <% children.each do |child| %>
+              <p>
+                <i class="icon-check text--green"></i>
+                <%= child.first_name + " " + child.last_name %>
+                <%= link_to "(remove)", remove_child_path(id: child.id), method: :delete %>
+              </p>
+            <% end %>
+            <%= f.hidden_field :children_added, value: !children.empty? %>
+            <%= f.cfa_single_tap_button(
+                    :add_child,
+                    raw("<i class=\"icon-add\"></i> Add a student"),
+                    true,
+                    classes: ["spacing-below-25 spacing-above-25"]
+                ) %>
+          </div>
         </div>
       </div>
       <div class="form-card__footer">

@@ -1,0 +1,41 @@
+<% content_for(:template_name, "card") %>
+<%= form_with url: add_student_steps_path, method: :put, local: true do %>
+  <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>
+    <div class="form-card__header spacing-below-35">
+      <div class="emoji emoji--bigger spacing-below-25 spacing-below-25 emoji--bust"></div>
+      <h2 class="form-card__title">Tell us about the student.</h2>
+    </div>
+    <div class="form-card__content">
+      <div class="grid">
+        <div class="grid__item">
+          <p class="text text--left">One at a time, add all students in elementary, middle, and high
+            school.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="grid__item text--left">
+          <%= f.cfa_input_field(:first_name, "First name", help_text: "Legally as it appears on school records.") %>
+          <%= f.cfa_input_field(:last_name, "Last name", help_text: "Legally as it appears on school records.") %>
+          <%= f.cfa_date_select(
+                  :dob,
+                  'What is their date of birth?',
+                  options: {
+                      start_year: Time.now.year,
+                      end_year: Time.now.year - 30,
+                  }
+              ) %>
+          <%= f.cfa_radio_set(:school_type,
+                              label_text: 'What type of school does this student attend?',
+                              collection: [
+                                  {value: :public_school, label: "Public school (including charter school)"},
+                                  {value: :private_school, label: "Private school (including religious school)"}
+                              ]
+              )%>
+        </div>
+      </div>
+      <div class="form-card__footer">
+        <%= f.button "Continue", class: "button button--primary" %>
+      </div>
+    </div>
+  <% end %>
+<% end %>

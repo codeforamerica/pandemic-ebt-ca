@@ -1,10 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe 'Journey', type: :feature do
-  describe 'selecting yes on received card page' do
-    it 'shows all done page' do
+  describe 'trying to continue without adding children' do
+    it 'shows an error' do
       visit root_path
-      expect(page).to have_text 'Get help buying food while schools are closed.'
       click_on 'Apply now'
       expect(page).to have_text "Here's how it works:"
       click_on 'Continue'
@@ -12,8 +11,10 @@ RSpec.describe 'Journey', type: :feature do
       choose 'Yes'
       click_on 'Continue'
       expect(page).to have_text 'Have you received a P-EBT card?'
-      click_on 'Yes'
-      expect(page).to have_text 'You’re all done'
+      click_on 'No'
+      expect(page).to have_text 'List all the students in your house'
+      click_on 'Continue'
+      expect(page).to have_text 'Please add a student.'
     end
   end
 end

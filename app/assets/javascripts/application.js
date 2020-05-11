@@ -14,3 +14,31 @@
 //= require activestorage
 //= require_tree .
 //= require cfa_styleguide_main
+
+var followUpQuestionClear = (function() {
+    var fUQc = {
+        init: function() {
+            $('.question-with-follow-up').each(function(index, question) {
+                var self = this;
+
+                // add click listeners to initial question inputs
+                $(self).find('.question-with-follow-up__question input').click(function(e) {
+                    $(self).find('#email_address-follow-up').find(':input' ).val('');
+                    $(self).find('#form_email_address__errors').remove();
+                    $(self).find('#form_email_address').parent().parent().removeClass('form-group--error');
+
+                    $(self).find('#phone_number-follow-up').find(':input' ).val('');
+                    $(self).find('#form_phone_number__errors').remove();
+                    $(self).find('#form_phone_number').parent().parent().removeClass('form-group--error');
+                })
+            });
+        }
+    }
+    return {
+        init: fUQc.init
+    }
+})();
+
+$(document).ready(function() {
+    followUpQuestionClear.init();
+});
