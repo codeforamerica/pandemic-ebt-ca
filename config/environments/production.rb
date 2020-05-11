@@ -106,5 +106,5 @@ Rails.application.configure do
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
   config.force_ssl = true
 
-  config.action_controller.perform_caching = true
+  config.action_controller.perform_caching = ENV['CACHE_STATIC_PAGES'] || true
 end
