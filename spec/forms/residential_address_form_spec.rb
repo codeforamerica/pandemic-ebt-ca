@@ -35,7 +35,7 @@ describe ResidentialAddressForm do
     it 'is not valid if address 2 is too long' do
       household = Household.create(is_eligible: :yes)
       form = described_class.new(household, { residential_street: '123 Elm Street', residential_city: 'Oakland',
-                                              residential_zip_code: '90123', has_mailing_address: 'yes', residential_street_2: random_string_of_length(129) })
+                                              residential_zip_code: '90123', has_mailing_address: 'yes', residential_street_2: Faker::String.random(length: 129) })
       expect(form).not_to be_valid
       expect(form.errors.first[1]).to eq('Please enter a shorter unit or apartment.')
     end

@@ -14,6 +14,8 @@ gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'factory_bot_rails'
+  gem 'faker'
   gem 'jasmine-rails'
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false

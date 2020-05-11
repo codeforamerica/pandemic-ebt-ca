@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'faker'
 
 describe MailingAddressForm do
   describe '#save' do
@@ -34,7 +35,7 @@ describe MailingAddressForm do
     it 'is not valid if address 2 is too long' do
       household = Household.create(is_eligible: :yes)
       form = described_class.new(household, { mailing_street: '123 Elm Street', mailing_city: 'Oakland',
-                                              mailing_zip_code: '90123', has_mailing_address: 'yes', mailing_street_2: random_string_of_length(129) })
+                                              mailing_zip_code: '90123', has_mailing_address: 'yes', mailing_street_2: Faker::String.random(length: 129) })
       expect(form).not_to be_valid
       expect(form.errors.first[1]).to eq('Please enter a shorter unit or apartment.')
     end
