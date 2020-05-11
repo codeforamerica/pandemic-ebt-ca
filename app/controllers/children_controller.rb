@@ -6,15 +6,18 @@ class ChildrenController < FormsController
   end
 
   def update
-    redirect_to(next_path) if form_params[:add_child]
-    @form = form_class.new(current_household, form_params)
-    if @form.valid?
-      @form.save
-      update_session
-      redirect_to(just_so_you_know_steps_path)
+    if form_params[:add_child]
+      redirect_to(next_path)
     else
-      flash.now[:errors] = @form.errors.messages.values.flatten
-      render :edit
+      @form = form_class.new(current_household, form_params)
+      if @form.valid?
+        @form.save
+        update_session
+        redirect_to(just_so_you_know_steps_path)
+      else
+        flash.now[:errors] = @form.errors.messages.values.flatten
+        render :edit
+      end
     end
   end
 
