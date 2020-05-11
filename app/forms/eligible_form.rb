@@ -1,5 +1,5 @@
 class EligibleForm < Form
-  set_attributes_for :household, :is_eligible
+  set_attributes_for :household, :is_eligible, :language
   validates_presence_of :is_eligible, message: 'Please choose an option.'
 
   def save
