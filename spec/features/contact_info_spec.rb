@@ -12,10 +12,33 @@ RSpec.describe 'Journey', type: :feature do
       click_on 'Continue'
       expect(page).to have_text 'Please enter a valid email address'
       expect(page).to have_text 'Please enter a valid phone number.'
-      # expect valid phone number and no email to go to next page
-      # expect a valid email and no phone number to go to next page
-      # expect invalid phone number to throw error
-      # expect invalid email to throw error
+    end
+
+    it 'properly handles incorrect email' do
+      visit '/en/steps/contact'
+      expect(page).to have_text 'If there is a problem with your application, how would you like to be contacted?'
+      check 'Email (recommended)'
+      fill_in 'Email address', with: 'bad-email'
+      click_on 'Continue'
+      expect(page).to have_text 'Please enter a valid email address.'
+      expect(page).not_to have_text 'Please enter a valid phone number.'
+    end
+
+    it 'properly handles incorrect phone number' do
+      visit '/en/steps/contact'
+      expect(page).to have_text 'If there is a problem with your application, how would you like to be contacted?'
+      check 'Phone number'
+      fill_in 'Phone number', with: '555'
+      click_on 'Continue'
+      expect(page).to have_text 'Please enter a valid phone number.'
+      expect(page).not_to have_text 'Please enter a valid email address.'
+    end
+
+    it 'continues without validation if nothing is entered' do
+      visit '/en/steps/contact'
+      expect(page).to have_text 'If there is a problem with your application, how would you like to be contacted?'
+      click_on 'Continue'
+      expect(page).to have_text 'Add a parent or guardian’s signature.'
     end
   end
 end
