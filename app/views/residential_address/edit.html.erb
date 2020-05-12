@@ -17,6 +17,9 @@
       </div>
       <div class="grid">
         <div class="grid__item text--left">
+          <%= f.cfa_checkbox(:registered_homeless, "Student was homeless at time of registration",
+                             options: {checked_value: :yes, unchecked_value: :unfilled})
+          %>
           <%= f.cfa_input_field(:residential_street, t("shared.what_is_the_street")) %>
           <%= f.cfa_input_field(:residential_street_2, t("shared.what_is_the_unit")) %>
           <%= f.cfa_input_field(:residential_city, t("shared.what_is_the_city")) %>
@@ -38,3 +41,17 @@
     </div>
   <% end %>
 <% end %>
+
+<script>
+    const homelessnessCheckbox = $('#form_registered_homeless');
+    const otherInputs = $('.form-group').not(homelessnessCheckbox.parent().parent());
+
+    if (homelessnessCheckbox.parent().hasClass('is-selected')) {
+      otherInputs.hide();
+    }
+
+    homelessnessCheckbox.click(function () {
+        otherInputs.toggle()
+        otherInputs.children('input').val('')
+    })
+</script>
