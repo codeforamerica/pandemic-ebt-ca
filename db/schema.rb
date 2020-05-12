@@ -47,6 +47,7 @@ ActiveRecord::Schema.define(version: 2020_05_13_224624) do
     t.integer "experiment_group", default: 0
     t.string "email_address"
     t.string "language", limit: 2
+    t.integer "registered_homeless", default: 0
   end
 
 end
