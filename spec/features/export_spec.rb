@@ -22,6 +22,12 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     $stdout = @original_stdout
   end
 
+  after(:all) do
+    # prevent data leakage:
+    Child.destroy_all
+    Household.destroy_all
+  end
+
   it 'Shows a confirmation message on the console' do
     expect(@captured_stdout.string).to have_text('EXPORT COMPLETE')
   end
@@ -52,5 +58,10 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     no_mailing_address_row = csv_data.find { |r| r['suid'] == @child_without_mailing_address.suid }
     expect(no_mailing_address_row['mailing_street']).not_to be_blank
     expect(no_mailing_address_row['mailing_street']).to eq(no_mailing_address_row['residential_street'])
+  end
+
+  it 'Exports the language' do
+    csv_data = CSV.read(@output_file_name, headers: true)
+    expect(csv_data.map { |r| r['language'] }).to all(be_present)
   end
 end

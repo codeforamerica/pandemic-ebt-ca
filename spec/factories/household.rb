@@ -8,6 +8,7 @@ FactoryBot.define do
     signature { Faker::Name.name }
     submitted_at { Faker::Time.backward(days: 14) }
     application_experience { %w[unfilled good bad ok][rand(4)] }
+    language { I18n.available_locales[rand(I18n.available_locales.count)] }
 
     trait :without_mailing_address do
       has_mailing_address { :no }

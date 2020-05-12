@@ -43,7 +43,7 @@
 <%= csv_field(child.household.mailing_zip_code.or_if_blank(child.household.residential_zip_code)) -%>
 <%= csv_field('') -%>
 <%= csv_field('') -%>
-<%= csv_field('') -%>
+<%= csv_field(child.household.language) -%>
 <%= csv_field(child.household.submitted_at) -%>
 <%= csv_field(child.household.application_experience) -%>
 <%= csv_field(child.household.confirmation_code, last: true) -%>
