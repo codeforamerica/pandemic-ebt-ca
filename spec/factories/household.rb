@@ -21,4 +21,12 @@ FactoryBot.define do
       mailing_zip_code { Faker::Address.zip }
     end
   end
+
+  trait :with_phone_number do
+    phone_number { Faker::PhoneNumber.phone_number }
+  end
+
+  trait :with_email do
+    email_address { Faker::Internet.email }
+  end
 end

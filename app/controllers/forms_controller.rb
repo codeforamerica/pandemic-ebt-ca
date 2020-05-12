@@ -14,14 +14,16 @@ class FormsController < ApplicationController
   end
 
   def update
+    if current_household.submitted_at.present?
+      redirect_to(success_steps_path)
+      return
+    end
     @form = form_class.new(current_household, form_params)
     if @form.valid?
       @form.save
       update_session
-      # send_mixpanel_event
       redirect_to(next_path)
     else
-      # send_mixpanel_validation_errors
       render :edit
     end
   end
