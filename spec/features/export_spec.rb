@@ -7,6 +7,10 @@ HEADERS = %w[suid household_id student_first_name student_last_name student_dob 
 RSpec.describe 'Exporting Children as CSV', type: :feature do
   before(:all) do
     @output_file_name = Rails.root.join('tmp', 'all.csv')
+    @household_with_mailing_address = create :household, :with_mailing_address
+    @household_without_mailing_address = create :household, :without_mailing_address
+    @child_with_mailing_address = create(:child, household_id: @household_with_mailing_address.id, first_name: 'Mailing', last_name: 'Kid')
+    @child_without_mailing_address = create(:child, household_id: @household_without_mailing_address.id, first_name: 'NoMailing', last_name: 'Kid')
     create_list(:child, 20)
     File.delete(@output_file_name) if File.exist?(@output_file_name)
 
@@ -39,5 +43,14 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
   it 'Fills all mailing addresses, duplicating residential data where required' do
     csv_data = CSV.read(@output_file_name, headers: true)
     expect(csv_data.map { |r| r['mailing_street'] }).to all(be_present)
+
+    mailing_address_row = csv_data.find { |r| r['suid'] == @child_with_mailing_address.suid }
+    expect(mailing_address_row['mailing_street']).to eq(@household_with_mailing_address.mailing_street)
+    expect(mailing_address_row['mailing_street']).not_to eq(mailing_address_row['residential_street'])
+
+    expect(@child_without_mailing_address.household.mailing_street).to be_blank
+    no_mailing_address_row = csv_data.find { |r| r['suid'] == @child_without_mailing_address.suid }
+    expect(no_mailing_address_row['mailing_street']).not_to be_blank
+    expect(no_mailing_address_row['mailing_street']).to eq(no_mailing_address_row['residential_street'])
   end
 end
