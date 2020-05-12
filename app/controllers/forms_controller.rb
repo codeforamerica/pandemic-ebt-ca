@@ -15,7 +15,7 @@ class FormsController < ApplicationController
 
   def update
     if current_household.submitted_at.present?
-      redirect_to(root_path)
+      redirect_to(success_steps_path)
       return
     end
     @form = form_class.new(current_household, form_params)

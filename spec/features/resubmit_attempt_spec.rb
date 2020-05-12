@@ -67,7 +67,7 @@ RSpec.describe 'Journey', type: :feature do
       expect(page).to have_text 'Thank you for your feedback!'
       visit residential_address_steps_path
       click_on 'Continue'
-      expect(page).to have_text 'Get help buying food while schools are closed.'
+      expect(page).to have_text 'Your application has been submitted!'
     end
   end
 end
