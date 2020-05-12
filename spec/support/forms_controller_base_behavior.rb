@@ -14,7 +14,7 @@ RSpec.shared_examples_for 'form controller base behavior' do |household|
 
     describe '#edit' do
       it 'sets the form and renders the template' do
-        get :edit
+        get :edit, params: { locale: I18n.default_locale }
 
         expect(response).to render_template(:edit)
         expect(assigns[:form]).to be_a Form

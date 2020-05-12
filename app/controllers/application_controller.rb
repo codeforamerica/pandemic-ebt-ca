@@ -1,9 +1,16 @@
 class ApplicationController < ActionController::Base
+  before_action :check_locale
   around_action :switch_locale
 
   def switch_locale(&action)
     locale = params[:locale] || I18n.default_locale
     I18n.with_locale(locale, &action)
+  end
+
+  def check_locale
+    return if I18n.available_locales.map(&:to_s).include?(params[:locale]) && params[:locale].present?
+
+    redirect_to "/en#{request.fullpath}"
   end
 
   def default_url_options(options = {})

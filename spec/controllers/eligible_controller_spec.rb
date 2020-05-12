@@ -8,7 +8,7 @@ RSpec.describe EligibleController do
       household = Household.create({ is_eligible: :yes })
       session[:experiment_group] = 'ca_early'
       session[:current_household_id] = household.id
-      put :update, params: { form: { is_eligible: 'no' } }
+      put :update, params: { form: { is_eligible: 'no' }, locale: I18n.default_locale }
 
       household.reload
 

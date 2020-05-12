@@ -10,7 +10,7 @@ RSpec.describe ChildrenController do
       household.children.create(first_name: 'Jan', last_name: 'Jones')
       session[:current_household_id] = household.id
 
-      delete :destroy, params: { id: household.children.first.id }
+      delete :destroy, params: { id: household.children.first.id, locale: I18n.default_locale }
 
       household.reload
 
