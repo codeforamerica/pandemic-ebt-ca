@@ -36,3 +36,11 @@
 /config/credentials/development.key
 
 /config/credentials/demo.key
+
+# Ignore cached pages
+/public/en
+/public/en.html
+/public/es
+/public/es.html
+/public/zh
+/public/zh.html

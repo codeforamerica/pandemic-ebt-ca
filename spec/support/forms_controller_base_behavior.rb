@@ -14,24 +14,24 @@ RSpec.shared_examples_for 'form controller base behavior' do |household|
 
     describe '#edit' do
       it 'sets the form and renders the template' do
-        get :edit
+        get :edit, params: { locale: I18n.default_locale }
 
         expect(response).to render_template(:edit)
         expect(assigns[:form]).to be_a Form
       end
     end
 
-    # describe "#current_path" do
-    #   it "returns the path for this route" do
-    #     expect(controller.current_path).to eq "/steps/#{controller.class.to_param}"
-    #   end
-    # end
+    describe '#current_path' do
+      it 'returns the path for this route' do
+        expect(controller.current_path).to eq "/en/steps/#{controller.class.to_param}"
+      end
+    end
 
     describe '#next_path' do
       it 'returns the next path from this controller' do
         form_navigation = FormNavigation.new(controller)
 
-        expect(controller.next_path).to eq "/steps/#{form_navigation.next.to_param}"
+        expect(controller.next_path).to eq "/en/steps/#{form_navigation.next.to_param}"
       end
     end
   end

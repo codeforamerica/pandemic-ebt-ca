@@ -1,9 +1,9 @@
 <% if I18n.locale != :en %>
-  <a class="toolbar__item text--small link--subtle" lang="es" href="?locale=en">English</a>
+  <%= link_to "English", url_for(locale: :en), class: "toolbar__item text--small link--subtle" %>
 <% end %>
 <% if I18n.locale != :es %>
-  <a class="toolbar__item text--small link--subtle" lang="es" href="?locale=es">Español</a>
+  <%= link_to "Español", url_for(locale: :es), class: "toolbar__item text--small link--subtle" %>
 <% end %>
 <% if I18n.locale != :zh %>
-  <a class="toolbar__item text--small link--subtle" lang="es" href="?locale=zh">中文</a>
+  <%= link_to "中文", url_for(locale: :zh), class: "toolbar__item text--small link--subtle" %>
 <% end %>

@@ -3,17 +3,19 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
+gem 'actionpack-page_caching'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'cfa-styleguide', git: 'https://github.com/codeforamerica/honeycrisp-gem'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 6.0', '>= 6.0.2'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 
-gem 'cfa-styleguide', git: 'https://github.com/codeforamerica/honeycrisp-gem'
-
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'factory_bot_rails'
+  gem 'faker'
   gem 'jasmine-rails'
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false

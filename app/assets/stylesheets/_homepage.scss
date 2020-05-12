@@ -9,27 +9,27 @@
       color: #000;
     }
     .slab--hero {
+      padding-bottom: 12.5rem;
+      padding-top: $s60;
+      background-size: 90% auto;
+      background-color: $color-magenta-light;
+      background-image: image-url('pebt-hero.png');
+      background-repeat: no-repeat;
+      background-position: 80% 120%;
+
+      @include media($tablet-up) {
+        padding-bottom: 4rem;
+        background-size: 50rem;
+        background-image: image-url('pebt-hero.png');
+        background-position: 70% -1080%;
+      }
+
+      &:before {
+        background-image: none; // Prevent loading default Honeycrisp hero image
+      }
+
       h1 {
         margin-bottom: 3rem;
-      }
-      background: none;
-      padding-bottom: 12.5rem;
-      @include media($tablet-up) {
-        background: none;
-        padding-bottom: 4rem;
-      }
-      &:before {
-        content: '';
-        background-repeat: no-repeat;
-        background-position: 175% 117%;
-        background-size: 90% auto;
-        background-color: $color-magenta-light;
-        background-image: image-url('pebt-hero.png');
-        @include media($tablet-up) { /* Desktop */
-          background-size: 57.5rem auto;
-          background-position: 70% -1300%;
-          background-image: image-url('pebt-hero.png');
-        }
       }
     }
     .buttons-group {

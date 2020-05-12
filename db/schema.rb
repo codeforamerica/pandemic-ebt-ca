@@ -44,6 +44,9 @@ ActiveRecord::Schema.define(version: 2020_05_10_153202) do
     t.integer "application_experience", default: 0
     t.string "residential_street_2"
     t.string "mailing_street_2"
+    t.integer "experiment_group", default: 0
+    t.string "email_address"
+    t.string "phone_number"
     t.string "language", limit: 2
   end
 

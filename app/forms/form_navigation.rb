@@ -6,9 +6,11 @@ class FormNavigation
     ReceivedCardController,
     AlreadyReceivedController,
     ChildrenController,
+    AddStudentController,
     JustSoYouKnowController,
     ResidentialAddressController,
     MailingAddressController,
+    ContactController,
     SignatureController,
     SuccessController
   ].freeze

@@ -8,6 +8,8 @@ AllCops:
     - db/**/*
     - vendor/**/*
 
+Layout/EndOfLine:
+  Enabled: false
 Layout/LineLength:
   Enabled: false
 Layout/SpaceAroundMethodCallOperator:
@@ -15,6 +17,8 @@ Layout/SpaceAroundMethodCallOperator:
 Lint/RaiseException:
   Enabled: false
 Lint/StructNewOverride:
+  Enabled: false
+Metrics/AbcSize:
   Enabled: false
 Metrics/BlockLength:
   Enabled: false
@@ -24,6 +28,9 @@ Rails/FilePath:
   Enabled: false
 Rails/HasManyOrHasOneDependent:
   Enabled: false
+Rails/OutputSafety:
+  Exclude:
+    - app/helpers/csv_helper.rb
 RSpec/ContextWording:
   Enabled: false
 RSpec/ExampleLength:
@@ -36,6 +43,9 @@ RSpec/MultipleExpectations:
   Enabled: false
 RSpec/NamedSubject:
   Enabled: false
+RSpec/BeforeAfterAll:
+  Exclude:
+    - spec/features/export_spec.rb
 Style/Documentation:
   Enabled: false
 Style/ExponentialNotation:
