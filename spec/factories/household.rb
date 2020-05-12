@@ -9,4 +9,12 @@ FactoryBot.define do
     submitted_at { Faker::Time.backward(days: 14) }
     application_experience { %w[unfilled good bad ok][rand(4)] }
   end
+
+  trait :with_phone_number do
+    phone_number { Faker::PhoneNumber.phone_number }
+  end
+
+  trait :with_email do
+    email_address { Faker::Internet.email }
+  end
 end
