@@ -22,25 +22,17 @@ es:
         <li>son elegibles para recibir alimentos en la escuela gratis o a precios reducidos</li>
       </ul>
     how_do_get_question: ¿Cómo recibo los beneficios de P-EBT?
-    how_do_get_answer_1_html: La mayoría de las familias con niños que son elegibles para comidas escolares gratuitas o de precio reducido recibirán $365 por cada niño. Si no recibe su tarjeta P-EBT por correo y presenta la solicitud antes del 30 de junio de 2020, obtendrá la cantidad total de beneficios.
+    how_do_get_answer_1_html: La mayoría de las familias con niños que reciben beneficios de CalFresh, Medi-Cal o Foster Care no necesitan aplicar en línea. Recibirán su tarjeta P-EBT por correo durante el mes de mayo. Las tarjetas P-EBT comenzarán a llegar desde el 11 de mayo de 2020 hasta el 22 de mayo de 2020.
     how_do_get_answer_2_html: Las familias con niños que solicitaron los beneficios de CalFresh, Medi-Cal o Foster Care después del cierre de su escuela recibirán su tarjeta P-EBT por correo antes del 30 de junio de 2020.
+    how_do_get_answer_3_html: Las familias con niños que califican para recibir comidas escolares gratis o a precio reducido y que NO reciben los beneficios de CalFresh, Medi-Cal o Foster Care, <u>deben aplicar en línea antes del 30 de junio de 2020</u>.
     already_got_question: Si ya recibí una tarjeta P-EBT por correo, ¿todavía necesito solicitar en línea?
     already_got_answer_html: No. Si ya recibió su tarjeta de P-EBT por correo, no haga su solicitud en línea. Siga las instrucciones que vienen junto su tarjeta P-EBT y cree su número de PIN privado. Después, su tarjeta estará lista para usar.
-    what_if_to_go_question: ¿Qué pasa si mis hijos están recibiendo comidas escolares &apos;para llevar&apos; de otro sitio?
+    what_if_to_go_question: ¿Qué pasa si mis hijos están recibiendo comidas escolares 'para llevar' de otro sitio?
     what_if_to_go_answer_html: Si. Los beneficios de P-EBT son beneficios adicionales que no reemplazan otros programas de nutrición infantil que ofrecen comidas. Los niños pueden continuar recibiendo comidas “para llevar” o alimentos en los sitios de alimentación de emergencia ofrecidos por las escuelas y espacios comunitarios, incluso si están recibiendo beneficios de P-EBT.
     how_much_question: ¿Cuánto voy a recibir de beneficios P-EBT?
     how_much_answer_1_html: Puede obtener hasta $365 por cada niño que sea elegible para los beneficios de P-EBT. La cantidad total que recibirá depende del número de niños que vivan en su hogar que son elegibles para el programa.
     how_much_answer_2_html: La mayoría de las familias con niños que son elegibles para comidas escolares gratuitas o de precio reducido recibirán $365 por cada niño. Si no recibe su tarjeta P-EBT por correo y presenta la solicitud antes del 30 de junio de 2020, obtendrá la cantidad total de beneficios.
-    how_much_answer_3_html: La cantidad total de beneficios que usted recibirá depende de cuántos niños elegibles viven
-      en el hogar. Por cada niño elegible, recibirá el siguiente pago en su tarjeta mensualmente:&colon;
-      <ul class="list--bulleted">
-        <li>marzo 2020&colon; $68 por niño</li>
-        <li>abril 2020&colon; $120 por niño</li>
-        <li>mayo 2020&colon; $120 por niño</li>
-        <li>junio 2020&colon; $57 por niño</li>
-      </ul>
-      Esto significa que cada niño elegible recibirá un total de $365 en beneficios de P-EBT durante un periodo de
-      cuatro meses.
+    how_much_answer_3_html: Las familias con niños que solicitaron y obtuvieron los beneficios de CalFresh, Medi-Cal o Foster Care después del cierre de la escuela pueden recibir menos de $365 por cada niño. Esto depende de la fecha en que usted solicitó CalFresh, Medi-Cal o Foster Care.
     what_can_i_buy_question: ¿Qué puedo comprar con los beneficios P-EBT?
     what_can_i_buy_answer_1_html: Sus beneficios de P-EBT se pueden usar para comprar alimentos en la mayoría de los supermercados y mercados de agricultores y para comprar alimentos en línea en
       <a target="_blank" href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818">Amazon</a>
@@ -66,6 +58,8 @@ es:
     if_i_get_answer_2_html: La carga pública no se aplica a todos los inmigrantes. Si tiene preguntas sobre su estado
       migratorio y este beneficio de comida, más información esta disponible <a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__covid19.ca.gov_img_wp_covid-2D19-2Dimmigrant-2Dguidance-2Daccessible-2D1.pdf&d=DwMFAg&c=uASjV29gZuJt5_5J5CPRuQ&r=8R-cSKwMRKVQ8RlrsVEwub2ambB3pAUafrkOocCUwuw&m=zPw4azKOYZF_a34l3RNTMWy3ZGnar6BxiYo2of5MC20&s=C5kfHk9vuZa85KToIulnjpsTdZk8hH7VIz4PiTWGyx4&e"
       target="_blank">aqui</a>, incluyendo una lista de proveedores de servicios de inmigracion gratis o a precio bajo.
+    what_if_i_should_get_q: What if I'm supposed to get a P-EBT card sent without applying, but had a recent change in address?
+    what_if_i_should_get_a_html: If you have not received a P-EBT card by May 25 AND you currently receive CalFresh, CalWORKs, Medi-Cal, or Foster Care benefits we may not have your most recent address. Do NOT apply online to report a change of address. Instead, you can call the EBT Customer Service Center (<a href="tel:8773289677">877-328-9677</a>) to request a change of address beginning the week of May 25. After confirming eligibility, a new card can be issued to your new address.
   footer:
     delivered_by_html: ca.p-ebt.org es un servicio proporcionado por  <a class="link--subtle"
       href="https://www.codeforamerica.org/" target="_blank">Code for America</a> de parte de la gente de California.
