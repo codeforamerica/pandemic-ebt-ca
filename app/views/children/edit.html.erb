@@ -2,13 +2,14 @@
 <%= form_with url: children_steps_path, method: :put, local: true do %>
   <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>
     <div class="form-card__header spacing-below-35">
-      <h2 class="form-card__title">List all the students in your house.</h2>
+      <h2 class="form-card__title">
+        <%= t("children.header") %>
+      </h2>
     </div>
     <div class="form-card__content">
       <div class="grid">
         <div class="grid__item">
-          <p class="text text--left">One at a time, add all students in elementary, middle, and high
-            school. This can include pre-K or TK students who get free breakfast or lunch at school.</p>
+          <p class="text text--left"><%= t("children.one_at_a_time") %></p>
           <% if flash[:notice].present? %>
             <div class="notice--warning">
               <p><%= flash.now[:notice] %></p>
@@ -22,18 +23,18 @@
             </div>
           <% end %>
           <div class="notice text--centered">
-            <h3>Students in your house</h3>
+            <h3><%= t("children.students") %></h3>
             <% children.each do |child| %>
               <p>
                 <i class="icon-check text--green"></i>
                 <%= child.first_name + " " + child.last_name %>
-                <%= link_to "(remove)", remove_child_path(id: child.id), method: :delete %>
+                <%= link_to t("children.remove"), remove_child_path(id: child.id), method: :delete %>
               </p>
             <% end %>
             <%= f.hidden_field :children_added, value: !children.empty? %>
             <%= f.cfa_single_tap_button(
                     :add_child,
-                    raw("<i class=\"icon-add\"></i> Add a student"),
+                    raw("<i class=\"icon-add\"></i> #{t("children.add")}"),
                     true,
                     classes: ["spacing-below-25 spacing-above-25"]
                 ) %>
@@ -41,7 +42,7 @@
         </div>
       </div>
       <div class="form-card__footer">
-        <%= f.button "Continue", class: "button button--primary" %>
+        <%= f.button t("shared.continue"), class: "button button--primary" %>
       </div>
     </div>
   <% end %>

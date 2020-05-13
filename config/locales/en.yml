@@ -104,7 +104,7 @@ en:
     many_immigrants_can_html: Many immigrants can get CalFresh. <a href="https://www.getcalfresh.org/en/immigrants">Learn more about CalFresh and immigration.</a>
   received_card:
     header: Have you received a P-EBT card?
-    it_looks_like_html: <b>It looks like this&colon;</b>
+    it_looks_like_html: It looks like this&colon;
     if_you_already_got: If you already got this card, you don't need to fill out this form.
       You will get money on this card.
   already_received:
@@ -118,54 +118,56 @@ en:
       TK students who get free breakfast or lunch at school.
     students: Students in your house
     child_has_been: Child has been removed
-    remove_html: remove
+    remove: (remove)
     add: Add a student
   add_student:
     header: Tell us about the student.
     one_at_a_time_add: One at a time, add all students in elementary, middle, and high school.
     first_name: First name
-    legally_1: Legally as it appears on school records.
+    legally: Legally as it appears on school records.
     last_name: Last name
-    legally_2: Legally as it appears on school records.
     what_is_their_dob: What is their date of birth?
     what_type_of_school: What type of school does this student attend?
     public_school: Public school (including charter school)
     private_school: Private school (including religious school)
+    please_add_student: Please add a student.
   just_so_you_know:
-    just_so_you_know: Just so you know.
+    header: Just so you know.
     the_card_will: The card will have the oldest student's name on it when it arrives. If you applied for more than
       one child, all benefits will be on this one card. Adults in the household will be able to use it to shop for the
       whole family.
   residential_address:
-    what_address: What address are you registered at the school with?
+    header: What address are you registered at the school with?
     what_address_notice: It’s important to tell us the address your school has on file. You can give us a separate
       mailing address.
     is_this_the_best: Is this the best place for you to get mail for the next two weeks?
     yes_send_mail: Yes, send mail there
     no_use_different: No, use a different address for mail
   mailing_address:
-    where_should_we: Where should we mail your P-EBT card?
+    header: Where should we mail your P-EBT card?
     this_card_can: This card can only be mailed to an address in California.
   contact:
-    if_there_is_a_problem: If there is a problem with your application, how would you like to be contacted? (optional)
-    email_address_html: Email (recommended)
-    email_address_selected_html: Email address
-    phone_number_html: Phone number
-    phone_number_selected_html: Phone number
+    if_there_is_a_problem_html: If there is a problem with your application, how would you like to be contacted?
+      <span class="not-bold">(optional)</span>
+    email_address: Email (recommended)
+    email_address_selected: Email address
+    email_address_error: Please enter a valid email address.
+    we_need_your_email: We need your email address to get in touch with you if there are any problems with your application.
   signature:
-    add_a_parent: Add a parent or guardian’s signature.
+    header: Add a parent or guardian’s signature.
     type_your_full: Type your full legal name here to sign this form. By entering your name you agree you have been
       honest on this form.
+    submit: Submit Application
   success:
-    your_application: Your application has been submitted!
-    write_down_your: Write down your confirmation number&colon;
+    header: Your application has been submitted!
+    write_down_your_html: Write down your confirmation number&colon;
     if_approved: If approved, you'll get a P-EBT card with money for groceries within 10 days.
     learn_more_html: <a href="/en/info">Learn more</a> about the P-EBT program.
     if_approved_question: If approved, how much in P-EBT benefits will I get?
     if_approved_answer_1_html: You can get up to $365 for each child who is eligible for P-EBT benefits. As long as
       you apply before June 30th, 2020, you will get the full amount of benefits for all four months.
     if_approved_answer_2_html: Each eligible child will get the following amount for each month&colon;
-      <ul class="list--bulleted">
+      <ul class="list--bulleted text--left">
         <li>March 2020&colon; $68 per child</li>
         <li>April 2020&colon; $120 per child</li>
         <li>May 2020&colon; $120 per child</li>
@@ -176,8 +178,5 @@ en:
   footer:
     delivered_by_html: ca.p-ebt.org is a service delivered by <a class="link--subtle"
       href="https://www.codeforamerica.org/" target="_blank">Code for America</a> on behalf of the people of California.
-  errors:
-    email_address: Please enter a valid email address.
-    phone_number: Please enter a valid phone number.
 
 

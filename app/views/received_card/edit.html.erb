@@ -15,7 +15,7 @@
             <%= image_tag("ca-p-ebt.png") %>
           </div>
           <p class="with-padding-small text--left">
-            If you already got this card, you don't need to fill out this form. You will get money on this card.
+            <%= t("received_card.if_you_already_got") %>
           </p>
         </div>
       </div>
@@ -24,12 +24,12 @@
       <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>
         <%= f.cfa_single_tap_button(
                 :received_card,
-                raw("<i class=\"button__icon emoji emoji--checkmark\"></i> Yes"),
+                raw("<i class=\"button__icon emoji emoji--checkmark\"></i> #{t("shared.yes")}"),
                 :yes
             ) %>
         <%= f.cfa_single_tap_button(
                 :received_card,
-                raw("<i class=\"button__icon emoji emoji--crossmark\"></i> No"),
+                raw("<i class=\"button__icon emoji emoji--crossmark\"></i> #{t("shared.no")}"),
                 :no
             ) %>
       <% end %>

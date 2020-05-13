@@ -46,5 +46,7 @@ module PandemicEbt
         config.dsn = ENV['SENTRY_DSN']
       end
     end
+
+    config.i18n.fallbacks = [:en]
   end
 end

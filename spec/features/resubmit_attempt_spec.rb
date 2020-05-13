@@ -9,7 +9,7 @@ RSpec.describe 'Journey', type: :feature do
       expect(page).to have_text 'Information about P-EBT'
       visit root_path
       click_on 'Apply now'
-      expect(page).to have_text "Here's how it works:"
+      expect(page).to have_text "Here's how it works"
       click_on 'Continue'
       expect(page).to have_text 'Is the student able to receive free or reduced price meals'
       choose 'Yes'
