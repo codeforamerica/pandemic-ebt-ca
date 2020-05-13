@@ -57,7 +57,7 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     expect(@csv_data.map { |r| r['mailing_street'] }).to all(be_present)
 
     mailing_address_row = row_for_child @child_with_mailing_address
-    expect(mailing_address_row['mailing_street']).to eq(@household_with_mailing_address.mailing_street)
+    expect(mailing_address_row['mailing_street']).to eq(@child_with_mailing_address.household.mailing_street)
     expect(mailing_address_row['mailing_street']).not_to eq(mailing_address_row['residential_street'])
 
     expect(@child_without_mailing_address.household.mailing_street).to be_blank
