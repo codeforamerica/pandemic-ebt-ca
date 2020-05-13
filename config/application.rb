@@ -39,5 +39,12 @@ module PandemicEbt
       g.jbuilder    false
       g.fixtures    false
     end
+
+    # Sentry
+    if ENV['SENTRY_DSN'].present?
+      Raven.configure do |config|
+        config.dsn = ENV['SENTRY_DSN']
+      end
+    end
   end
 end
