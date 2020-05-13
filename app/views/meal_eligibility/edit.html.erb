@@ -3,28 +3,26 @@
   <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>
     <div class="form-card__header spacing-below-35">
       <div class="emoji emoji--bigger spacing-below-25 emoji--pita"></div>
-      <h2 class="form-card__title">Are any of these true for your family?</h2>
+      <h2 class="form-card__title">
+        <%= t("meal_eligibility.header_question") %>
+      </h2>
     </div>
     <div class="form-card__content">
       <div class="grid">
         <div class="grid__item">
           <p class="with-padding-small text--left">
-            <ul class="list--bulleted">
-              <li>In our school enrollment packet, we filled out an application for free or reduced price meals </li>
-              <li>Our school serves free lunch or breakfast to the student</li>
-              <li>Our school serves free breakfast and  lunch to all students</li>
-            </ul>
+            <%= t("meal_eligibility.header_answer_html") %>
         </div>
         <div class="form-card__footer">
           <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>
             <%= f.cfa_single_tap_button(
                     :is_eligible,
-                    raw("<i class=\"button__icon emoji emoji--checkmark\"></i> Yes"),
+                    raw("<i class=\"button__icon emoji emoji--checkmark\"></i> #{t("shared.yes")}"),
                     :yes
                 ) %>
             <%= f.cfa_single_tap_button(
                     :is_eligible,
-                    raw("<i class=\"button__icon emoji emoji--crossmark\"></i> No"),
+                    raw("<i class=\"button__icon emoji emoji--crossmark\"></i> #{t("shared.no")}"),
                     :no
                 ) %>
           <% end %>

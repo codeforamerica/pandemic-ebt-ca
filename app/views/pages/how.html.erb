@@ -2,7 +2,9 @@
 <% content_for(:no_back, "1") %>
 
 <div class="form-card__header">
-  <h1 class="form-card__title">Here's how it works:</h1>
+  <h1 class="form-card__title">
+    <%= t("how.header_html") %>
+  </h1>
 </div>
 <div class="form-card__content text--centered">
   <div class="grid grid--how spacing-below-35">
@@ -10,9 +12,8 @@
       <div class="emoji emoji--big spacing-below-25 emoji--page-facing-up"></div>
     </div>
     <div class="grid__item width-three-fourths">
-      <p class="with-no-padding text--left"><b>Give us your basic information.</b></p>
-      <p class="with-padding-small text--left">We’ll ask the students’ names and birthdates, the name of a parent or
-        guardian, and the address you’re registered at the school with.</p>
+      <p class="with-no-padding text--left"><%= t("how.give_us_your_basic_html") %></p>
+      <p class="with-padding-small text--left"><%= t("how.we_will_ask") %></p>
     </div>
   </div>
   <div class="grid grid--how spacing-below-35">
@@ -20,8 +21,8 @@
       <div class="emoji emoji--big spacing-below-25 emoji--clipboard"></div>
     </div>
     <div class="grid__item width-three-fourths">
-      <p class="with-no-padding text--left"><b>Your school will make sure you’re eligible.</b></p>
-      <p class="with-padding-small text--left">School districts will check to make sure your family can get P-EBT.</p>
+      <p class="with-no-padding text--left"><%= t("how.your_school_will_make_sure_html") %></p>
+      <p class="with-padding-small text--left"><%= t("how.school_districts") %></p>
     </div>
   </div>
   <div class="grid grid--how spacing-below-35">
@@ -29,12 +30,11 @@
       <div class="emoji emoji--big spacing-below-25 emoji--mail-open"></div>
     </div>
     <div class="grid__item width-three-fourths">
-      <p class="with-no-padding text--left"><b>Get a P-EBT card in the mail.</b></p>
-      <p class="with-padding-small text--left">If approved, you’ll get a P-EBT card with money on it for groceries
-        within 10 days. The card will be loaded with money each month until the end of the school year.</p>
+      <p class="with-no-padding text--left"><%= t("how.get_a_p_ebt_card_html") %></p>
+      <p class="with-padding-small text--left"><%= t("how.if_approved") %></p>
     </div>
   </div>
 </div>
 <div class="form-card__footer">
-  <%= link_to("Continue", eligible_steps_path, class: "button button--primary") %>
+  <%= link_to(t("shared.continue"), eligible_steps_path, class: "button button--primary") %>
 </div>
