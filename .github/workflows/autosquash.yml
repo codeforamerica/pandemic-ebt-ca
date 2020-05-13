@@ -7,9 +7,6 @@ on:
     types:
       - closed
       - labeled
-  pull_request_review:
-    types:
-      - submitted
   status: {}
 
 jobs:

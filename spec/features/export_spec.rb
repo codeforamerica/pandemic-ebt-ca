@@ -5,12 +5,17 @@ Rails.application.load_tasks
 HEADERS = %w[suid household_id student_first_name student_last_name student_dob student_school_type parent_signature residential_street residential_street_2 residential_city residential_state residential_zip_code mailing_street mailing_street_2 mailing_city mailing_state mailing_zip_code phone_number email_address language submitted_at application_experience confirmation_code].freeze
 
 RSpec.describe 'Exporting Children as CSV', type: :feature do
+  def row_for_child(child)
+    @csv_data.find { |r| r['suid'] == child.suid }
+  end
+
   before(:all) do
     @output_file_name = Rails.root.join('tmp', 'all.csv')
-    @household_with_mailing_address = create :household, :with_mailing_address
-    @household_without_mailing_address = create :household, :without_mailing_address
-    @child_with_mailing_address = create(:child, household_id: @household_with_mailing_address.id, first_name: 'Mailing', last_name: 'Kid')
-    @child_without_mailing_address = create(:child, household_id: @household_without_mailing_address.id, first_name: 'NoMailing', last_name: 'Kid')
+    @child_with_email = create(:child, household_id: create(:household, :with_email).id)
+    @child_with_phone_number = create(:child, household_id: create(:household, :with_phone_number).id)
+    @child_with_mailing_address = create(:child, household_id: create(:household, :with_mailing_address).id)
+    @child_without_mailing_address = create(:child, household_id: create(:household, :without_mailing_address).id)
+
     create_list(:child, 20)
     File.delete(@output_file_name) if File.exist?(@output_file_name)
 
@@ -20,6 +25,10 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     $stdout = @captured_stdout
     Rake::Task['export:csv:all'].invoke
     $stdout = @original_stdout
+  end
+
+  before(:each) do
+    @csv_data = CSV.read(@output_file_name, headers: true)
   end
 
   after(:all) do
@@ -37,31 +46,39 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
   end
 
   it 'Exports all children' do
-    csv_data = CSV.read(@output_file_name, headers: true)
-    expect(csv_data.count).to eq(Child.all.count)
+    expect(@csv_data.count).to eq(Child.all.count)
   end
 
   it 'Has the proper headers' do
-    csv_data = CSV.read(@output_file_name, headers: true)
-    expect(csv_data.headers).to eq(HEADERS)
+    expect(@csv_data.headers).to eq(HEADERS)
   end
 
   it 'Fills all mailing addresses, duplicating residential data where required' do
-    csv_data = CSV.read(@output_file_name, headers: true)
-    expect(csv_data.map { |r| r['mailing_street'] }).to all(be_present)
+    expect(@csv_data.map { |r| r['mailing_street'] }).to all(be_present)
 
-    mailing_address_row = csv_data.find { |r| r['suid'] == @child_with_mailing_address.suid }
+    mailing_address_row = row_for_child @child_with_mailing_address
     expect(mailing_address_row['mailing_street']).to eq(@household_with_mailing_address.mailing_street)
     expect(mailing_address_row['mailing_street']).not_to eq(mailing_address_row['residential_street'])
 
     expect(@child_without_mailing_address.household.mailing_street).to be_blank
-    no_mailing_address_row = csv_data.find { |r| r['suid'] == @child_without_mailing_address.suid }
+    no_mailing_address_row = row_for_child @child_without_mailing_address
     expect(no_mailing_address_row['mailing_street']).not_to be_blank
     expect(no_mailing_address_row['mailing_street']).to eq(no_mailing_address_row['residential_street'])
   end
 
   it 'Exports the language' do
-    csv_data = CSV.read(@output_file_name, headers: true)
-    expect(csv_data.map { |r| r['language'] }).to all(be_present)
+    expect(@csv_data.map { |r| r['language'] }).to all(be_present)
+  end
+
+  it 'Exports email address if present' do
+    email_row = row_for_child @child_with_email
+    expect(@child_with_email.household.email_address).to be_present
+    expect(email_row['email_address']).to eq(@child_with_email.household.email_address)
+  end
+
+  it 'Exports phone number if present' do
+    phone_row = row_for_child @child_with_phone_number
+    expect(@child_with_phone_number.household.phone_number).to be_present
+    expect(phone_row['phone_number']).to eq(@child_with_phone_number.household.phone_number)
   end
 end

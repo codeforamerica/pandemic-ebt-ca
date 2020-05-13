@@ -14,36 +14,24 @@ es:
   info:
     heading: Información sobre P-EBT
     what_are_question: ¿Qué es 'P-EBT' o beneficios de Pandemia EBT?
-    what_are_answer_html: Debido al coronavirus (COVID-19), los niños que son elegibles para recibir alimentos gratis o
-      a costo reducido en la escuela vana recibir beneficios a manera de alimentos extras. Estos beneficios se llaman
-      "Pandemic EBT" (Pandemia EBT) o beneficios "P-EBT". Los beneficios P-EBT ayudan a las familias de California a
-      comprar comida cuando la escuela está cerrada.
+    what_are_answer_html: Debido al coronavirus (COVID-19), los niños que son elegibles para recibir alimentos gratis o a precio reducido en la escuela van a recibir beneficios adicionales para acceder a alimentos. Estos beneficios se llaman &quot;Pandemic EBT&quot; (Pandemia EBT) o beneficios &quot;P-EBT&quot;. Los beneficios P-EBT ayudan a las familias de California a comprar comida cuando la escuela está cerrada.
     who_is_eligible_question: ¿Quién es elegible para recibir beneficios P-EBT?
     who_is_eligible_answer_html: Los niños son elegibles para recibir los beneficios P-EBT si es que&colon;
       <ul class="list--bulleted">
         <li>su escuela está cerrada debido al coronavirus (COVID-19)</li>
         <li>son elegibles para recibir alimentos en la escuela gratis o a precios reducidos</li>
       </ul>
-    how_do_get_question: How do I get P-EBT benefits?
-    how_do_get_answer_1_html: Most families with children who receive CalFresh, Medi-Cal or Foster Care benefits do not
-      need to apply online. They will get their P-EBT card in the mail between May 7 - 22, 2020.
-    how_do_get_answer_2_html: Families with children who are eligible for free or reduced-price meals and who do NOT get
-      CalFresh, Medi-Cal or Foster Care benefits <u>must apply online before June 30, 2020</u>.
+    how_do_get_question: ¿Cómo recibo los beneficios de P-EBT?
+    how_do_get_answer_1_html: La mayoría de las familias con niños que son elegibles para comidas escolares gratuitas o de precio reducido recibirán $365 por cada niño. Si no recibe su tarjeta P-EBT por correo y presenta la solicitud antes del 30 de junio de 2020, obtendrá la cantidad total de beneficios.
+    how_do_get_answer_2_html: Las familias con niños que solicitaron los beneficios de CalFresh, Medi-Cal o Foster Care después del cierre de su escuela recibirán su tarjeta P-EBT por correo antes del 30 de junio de 2020.
     already_got_question: Si ya recibí una tarjeta P-EBT por correo, ¿todavía necesito solicitar en línea?
-    already_got_answer_html: No. Si ya ha recibido su tarjeta P-EBT por correo no solicite en línea.
-      Siga las instrucciones que vienen con su tarjeta P-EBT y cree su número PIN privado. Después de esto su tarjeta
-      está lista para usarse.
-    what_if_to_go_question: ¿Qué pasa si mis hijos están recibiendo comidas de escuela 'para llevar' de otro sitio?
-    what_if_to_go_answer_html: Niños que recojen alimentos ‘para llevar’ en su comunidad aún son elegibles para
-      beneficios P-EBT si&colon;
-      <ul class="list--bulleted">
-        <li>Su escuela está cerrada debido a coronavirus (COVID-19); y</li>
-        <li>Son elegibles para alimentos escolares gratis o a precio reducido</li>
-      </ul>
+    already_got_answer_html: No. Si ya recibió su tarjeta de P-EBT por correo, no haga su solicitud en línea. Siga las instrucciones que vienen junto su tarjeta P-EBT y cree su número de PIN privado. Después, su tarjeta estará lista para usar.
+    what_if_to_go_question: ¿Qué pasa si mis hijos están recibiendo comidas escolares &apos;para llevar&apos; de otro sitio?
+    what_if_to_go_answer_html: Si. Los beneficios de P-EBT son beneficios adicionales que no reemplazan otros programas de nutrición infantil que ofrecen comidas. Los niños pueden continuar recibiendo comidas “para llevar” o alimentos en los sitios de alimentación de emergencia ofrecidos por las escuelas y espacios comunitarios, incluso si están recibiendo beneficios de P-EBT.
     how_much_question: ¿Cuánto voy a recibir de beneficios P-EBT?
-    how_much_answer_1_html: Puede recibir hasta $365 por cada niño que es elegible para beneficios P-EBT. Mientras
-      solicite antes del 30 de junio 2020, recibirá la cantidad total de beneficios durante los cuatro meses.
-    how_much_answer_2_html: La cantidad total de beneficios que usted recibirá depende de cuántos niños elegibles viven
+    how_much_answer_1_html: Puede obtener hasta $365 por cada niño que sea elegible para los beneficios de P-EBT. La cantidad total que recibirá depende del número de niños que vivan en su hogar que son elegibles para el programa.
+    how_much_answer_2_html: La mayoría de las familias con niños que son elegibles para comidas escolares gratuitas o de precio reducido recibirán $365 por cada niño. Si no recibe su tarjeta P-EBT por correo y presenta la solicitud antes del 30 de junio de 2020, obtendrá la cantidad total de beneficios.
+    how_much_answer_3_html: La cantidad total de beneficios que usted recibirá depende de cuántos niños elegibles viven
       en el hogar. Por cada niño elegible, recibirá el siguiente pago en su tarjeta mensualmente:&colon;
       <ul class="list--bulleted">
         <li>marzo 2020&colon; $68 por niño</li>
@@ -54,8 +42,10 @@ es:
       Esto significa que cada niño elegible recibirá un total de $365 en beneficios de P-EBT durante un periodo de
       cuatro meses.
     what_can_i_buy_question: ¿Qué puedo comprar con los beneficios P-EBT?
-    what_can_i_buy_answer_1_html: Sus beneficios P-EBT sirven para comprar alimentos en la mayoría de mercados y
-      mercados de agricultores.
+    what_can_i_buy_answer_1_html: Sus beneficios de P-EBT se pueden usar para comprar alimentos en la mayoría de los supermercados y mercados de agricultores y para comprar alimentos en línea en
+      <a target="_blank" href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818">Amazon</a>
+      y
+      <a target="_blank" href="https://www.walmart.com/ideas/discover-grocery-pickup-delivery/walmart-grocery-pickup-accepts-snap-ebt-payments/355540">Walmart</a>.
     what_can_i_buy_answer_2_html: Use su tarjeta P-EBT como una tarjeta de crédito&colon;
       <ul class="list--bulleted">
         <li>Seleccione "EBT"</li>
@@ -63,23 +53,16 @@ es:
         <li>Introduzca su número de PIN</li>
       </ul>
     what_should_i_do_question: ¿Qué debo hacer cuando reciba mi tarjeta P-EBT por correo?
-    what_should_i_do_answer_html: Siga las instrucciones que recibo con su tarjeta P-EBT y haga su numero de PIN
-      privado. Luego, su tarjeta puede ser usada para comprar comida en la mayoría de las tiendas de alimento y
-      mercados de agricultores.
+    what_should_i_do_answer_html: Siga las instrucciones que vienen junto su tarjeta P-EBT y cree su número de PIN privado. Luego, podrá usar su tarjeta para comprar alimentos en la mayoría de los supermercados y en los mercados de agricultores.
     what_is_the_deadline_question: ¿Hasta cuándo tengo para solicitar beneficios P-EBT?
-    what_is_the_deadline_answer_html: Debe solicitar a más tardar el 30 de junio, 2020 para recibir beneficios P-EBT.
-      Los beneficios P-EBT están disponibles solamente durante el tiempo que están cerradas las escuelas por el
-      coronavirus (COVID-19). Si no recibió una carta P-EBT en el correo y no solicitó a más tardar el 30 de junio,
-      2020 no podrá recibir los beneficios P-EBT.
+    what_is_the_deadline_answer_html: Si no recibe una tarjeta P-EBT por correo, debe presentar una solicitud en línea antes del 30 de junio de 2020 para obtener los beneficios P-EBT. Los beneficios de P-EBT solo están disponibles mientras las escuelas están cerradas debido al coronavirus (COVID 19). Si no recibió una tarjeta P-EBT por correo y no presentó la solicitud antes del 30 de junio de 2020, no podrá obtener los beneficios P-EBT.
     what_if_i_applied_question: ¿Qué pasa si solicité en línea y no he recibido mi tarjeta P-EBT?
     what_if_i_applied_answer_html: Llame al centro de servicio al público de EBT de California al (877) 328-9677. Puede
       llamar las 24 horas al día, 7 días a la semana.
-    how_long_question: ¿Cuánto tiempo tengo para gastar mis beneficios P-EBT?
+    how_long_question: ¿Cuánto tiempo tengo para usar mis beneficios P-EBT?
     how_long_answer: Puede usar sus beneficios por un año a partir de cuando haya recibido su tarjeta P-EBT.
-    if_i_get_question: Si recibo beneficios P-EBT, ¿afecta mi estado migratorio o me convierte en un cargo público?
-    if_i_get_answer_1_html: P-EBT es un beneficio de emergencia por desastre basado en la elegibilidad de comidas
-      escolares gratuitas o a precio reducido. Es similar a otros beneficios que el DHS ha dicho que no se consideran
-      como carga pública. Sin embargo, USCIS puede considerar varios factores bajo la prueba de carga pública.
+    if_i_get_question: Si obtengo beneficios de P-EBT, ¿me convertiré en una carga pública?
+    if_i_get_answer_1_html: P-EBT es un beneficio de emergencia por desastre basado en su elegibilidad para acceder a  comidas escolares gratuitas o a precio reducido. Este beneficio es similar a otros beneficios que el DHS ha dicho <strong class="extra-strong">que no se considerarán como carga pública</strong>. Sin embargo, USCIS puede considerar varios factores para su prueba de carga pública.
     if_i_get_answer_2_html: La carga pública no se aplica a todos los inmigrantes. Si tiene preguntas sobre su estado
       migratorio y este beneficio de comida, más información esta disponible <a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__covid19.ca.gov_img_wp_covid-2D19-2Dimmigrant-2Dguidance-2Daccessible-2D1.pdf&d=DwMFAg&c=uASjV29gZuJt5_5J5CPRuQ&r=8R-cSKwMRKVQ8RlrsVEwub2ambB3pAUafrkOocCUwuw&m=zPw4azKOYZF_a34l3RNTMWy3ZGnar6BxiYo2of5MC20&s=C5kfHk9vuZa85KToIulnjpsTdZk8hH7VIz4PiTWGyx4&e"
       target="_blank">aqui</a>, incluyendo una lista de proveedores de servicios de inmigracion gratis o a precio bajo.
