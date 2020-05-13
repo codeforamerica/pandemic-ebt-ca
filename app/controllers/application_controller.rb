@@ -1,6 +1,12 @@
 class ApplicationController < ActionController::Base
+  before_action :set_sentry_context
   before_action :check_locale
   around_action :switch_locale
+
+  def set_sentry_context
+    Raven.user_context(id: session[:current_household_id])
+    Raven.extra_context(params: params.to_unsafe_h, url: request.url)
+  end
 
   def switch_locale(&action)
     locale = params[:locale] || I18n.default_locale
