@@ -29,7 +29,7 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     $stdout = @original_stdout
   end
 
-  before(:each) do
+  before do
     @csv_data = CSV.read(@output_file_name, headers: true)
   end
 
