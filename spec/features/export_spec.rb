@@ -10,6 +10,8 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
   end
 
   before(:all) do
+    Child.delete_all
+    Household.delete_all
     @output_file_name = Rails.root.join('tmp', 'all.csv')
     @child_with_email = create(:child, household_id: create(:household, :with_email).id)
     @child_with_phone_number = create(:child, household_id: create(:household, :with_phone_number).id)
