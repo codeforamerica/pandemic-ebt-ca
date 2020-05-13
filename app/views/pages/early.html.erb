@@ -1,0 +1,39 @@
+<div class="hero--food">
+  <section class="slab slab--hero">
+    <header class="main-header">
+      <div class="toolbar toolbar--wrap-when-small">
+        <div class="toolbar__left"></div>
+        <div class="toolbar__right>">
+          <%= render 'pages/locale' %>
+        </div>
+      </div>
+    </header>
+    <div class="grid">
+      <div class="grid__item width-three-fourths">
+        <h2 class="heading-60">
+          This test link is now closed
+        </h2>
+      </div>
+    </div>
+  </section>
+  <section class="slab slab--white">
+    <div class="grid">
+      <div class="grid__item width-seven-twelfths">
+        <p class="form-card__body-text">
+          If you already completed your P-EBT application on this website, you will receive your card in the mail in
+          early June.
+        </p>
+        <p class="form-card__body-text">
+          Some families will receive their P-EBT card automatically by May 22nd even without applying.
+        </p>
+        <p class="form-card__body-text">
+          If you do not get your card by May 22nd AND you have not completed an application,
+          <%= link_to "you can apply here", root_path %> starting on May 22nd.
+        </p>
+        <p class="form-card__body-text">
+          If you have questions, please <%= link_to "click here to learn more", info_path %>.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>

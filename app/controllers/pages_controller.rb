@@ -9,9 +9,13 @@ class PagesController < ApplicationController
   def info; end
 
   def early
-    @is_early = true
-    session[:experiment_group] = 'ca_early'
-    render 'index'
+    if ENV['EXPERIMENT_OVER'] == '1'
+      render 'early'
+    else
+      @is_early = true
+      session[:experiment_group] = 'ca_early'
+      render 'index'
+    end
   end
 
   private
