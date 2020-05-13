@@ -7,7 +7,7 @@ RSpec.describe 'Early Screen', type: :feature do
   end
 
   describe 'Early page when experiment is over' do
-    it 'does show apply now when the environment variable is set' do
+    it 'shows closed message when the EXPERIMENT_OVER environment variable is set' do
       visit '/early'
       expect(page).to have_text 'This test link is now closed'
     end
