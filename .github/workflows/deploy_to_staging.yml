@@ -63,6 +63,7 @@ jobs:
     needs: deploy
     steps:
       - uses: actions/checkout@v2
+      - run: git fetch --prune --unshallow
       - uses: weareyipyip/walking-tag-action@v1
         with:
           TAG_NAME: staging
