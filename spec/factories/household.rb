@@ -22,10 +22,6 @@ FactoryBot.define do
     end
   end
 
-  trait :with_phone_number do
-    phone_number { Faker::PhoneNumber.phone_number }
-  end
-
   trait :with_email do
     email_address { Faker::Internet.email }
   end

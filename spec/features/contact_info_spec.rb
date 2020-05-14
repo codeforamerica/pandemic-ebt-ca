@@ -1,42 +1,29 @@
 require 'rails_helper'
 
 RSpec.describe 'Journey', type: :feature do
+  before { visit '/en/steps/contact' }
+
   describe 'inputting invalid phone number or email' do
     it 'properly displays error messages' do
-      visit '/en/steps/contact'
-      expect(page).to have_text 'If there is a problem with your application, how would you like to be contacted?'
-      check 'Email (recommended)'
-      check 'Phone number'
-      fill_in 'Email address', with: 'bad-email'
-      fill_in 'Phone number', with: '555'
+      expect(page).to have_text 'How can we contact you?'
+      fill_in :form_email_address, with: 'bad-email'
       click_on 'Continue'
       expect(page).to have_text 'Please enter a valid email address'
-      expect(page).to have_text 'Please enter a valid phone number.'
     end
+  end
 
-    it 'properly handles incorrect email' do
-      visit '/en/steps/contact'
-      expect(page).to have_text 'If there is a problem with your application, how would you like to be contacted?'
-      check 'Email (recommended)'
-      fill_in 'Email address', with: 'bad-email'
-      click_on 'Continue'
-      expect(page).to have_text 'Please enter a valid email address.'
-      expect(page).not_to have_text 'Please enter a valid phone number.'
-    end
-
-    it 'properly handles incorrect phone number' do
-      visit '/en/steps/contact'
-      expect(page).to have_text 'If there is a problem with your application, how would you like to be contacted?'
-      check 'Phone number'
-      fill_in 'Phone number', with: '555'
-      click_on 'Continue'
-      expect(page).to have_text 'Please enter a valid phone number.'
-      expect(page).not_to have_text 'Please enter a valid email address.'
-    end
-
+  describe 'continuing with no email' do
     it 'continues without validation if nothing is entered' do
-      visit '/en/steps/contact'
-      expect(page).to have_text 'If there is a problem with your application, how would you like to be contacted?'
+      expect(page).to have_text 'How can we contact you?'
+      click_on 'Continue'
+      expect(page).to have_text 'Add a parent or guardian’s signature.'
+    end
+  end
+
+  describe 'inputting valid email' do
+    it 'continues without validation if nothing is entered' do
+      expect(page).to have_text 'How can we contact you?'
+      fill_in :form_email_address, with: 'test@test.test'
       click_on 'Continue'
       expect(page).to have_text 'Add a parent or guardian’s signature.'
     end

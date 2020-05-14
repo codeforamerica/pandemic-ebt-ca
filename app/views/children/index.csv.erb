@@ -16,7 +16,6 @@
 <%= csv_field(:mailing_city) -%>
 <%= csv_field(:mailing_state) -%>
 <%= csv_field(:mailing_zip_code) -%>
-<%= csv_field(:phone_number) -%>
 <%= csv_field(:email_address) -%>
 <%= csv_field(:language) -%>
 <%= csv_field(:submitted_at) -%>
@@ -41,7 +40,6 @@
 <%= csv_field(child.household.mailing_city.or_if_blank(child.household.residential_city)) -%>
 <%= csv_field('CA') -%>
 <%= csv_field(child.household.mailing_zip_code.or_if_blank(child.household.residential_zip_code)) -%>
-<%= csv_field(child.household.phone_number) -%>
 <%= csv_field(child.household.email_address) -%>
 <%= csv_field(child.household.language) -%>
 <%= csv_field(child.household.submitted_at) -%>

@@ -2,7 +2,7 @@ require 'rails_helper'
 require 'csv'
 Rails.application.load_tasks
 
-HEADERS = %w[suid household_id student_first_name student_last_name student_dob student_school_type parent_signature residential_street residential_street_2 residential_city residential_state residential_zip_code mailing_street mailing_street_2 mailing_city mailing_state mailing_zip_code phone_number email_address language submitted_at application_experience confirmation_code].freeze
+HEADERS = %w[suid household_id student_first_name student_last_name student_dob student_school_type parent_signature residential_street residential_street_2 residential_city residential_state residential_zip_code mailing_street mailing_street_2 mailing_city mailing_state mailing_zip_code email_address language submitted_at application_experience confirmation_code].freeze
 
 RSpec.describe 'Exporting Children as CSV', type: :feature do
   def row_for_child(child)
@@ -14,7 +14,6 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     Household.delete_all
     @output_file_name = Rails.root.join('tmp', 'all.csv')
     @child_with_email = create(:child, household_id: create(:household, :with_email).id)
-    @child_with_phone_number = create(:child, household_id: create(:household, :with_phone_number).id)
     @child_with_mailing_address = create(:child, household_id: create(:household, :with_mailing_address).id)
     @child_without_mailing_address = create(:child, household_id: create(:household, :without_mailing_address).id)
 
@@ -76,11 +75,5 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     email_row = row_for_child @child_with_email
     expect(@child_with_email.household.email_address).to be_present
     expect(email_row['email_address']).to eq(@child_with_email.household.email_address)
-  end
-
-  it 'Exports phone number if present' do
-    phone_row = row_for_child @child_with_phone_number
-    expect(@child_with_phone_number.household.phone_number).to be_present
-    expect(phone_row['phone_number']).to eq(@child_with_phone_number.household.phone_number)
   end
 end

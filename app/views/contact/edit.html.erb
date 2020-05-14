@@ -2,35 +2,17 @@
 <%= form_with url: contact_steps_path, method: :put, local: true do %>
   <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>
     <div class="form-card__header spacing-below-35">
-      <h2 class="form-card__title">If there is a problem with your application, how would you like to be contacted? <span class="not-bold">(optional)</span></h2>
+      <div class="spacing-below-35">
+        <%= image_tag('speech-balloon.svg') %>
+      </div>
+      <h2 class="form-card__title">How can we contact you?</h2>
     </div>
     <div class="form-card__content">
       <div class="grid">
-        <div class="grid__item text--left">
-          <div class="question-with-follow-up">
-            <div class="question-with-follow-up__question">
-              <fieldset class="form-group">
-                <%= f.cfa_checkbox(:email_address_check, "Email (recommended)", options: { "data-follow-up" => "#email_address-follow-up" } ) %>
-              </fieldset>
-            </div>
-            <div class="question-with-follow-up__follow-up" id="email_address-follow-up">
-              <div class="form-group">
-                <%= f.cfa_input_field(:email_address, "Email address") %>
-              </div>
-            </div>
-          </div>
-          <div class="question-with-follow-up">
-            <div class="question-with-follow-up__question">
-              <fieldset class="form-group">
-                <%= f.cfa_checkbox(:phone_number_check, "Phone number", options: { "data-follow-up" => "#phone_number-follow-up" } ) %>
-              </fieldset>
-            </div>
-            <div class="question-with-follow-up__follow-up" id="phone_number-follow-up">
-              <div class="form-group">
-                <%= f.cfa_input_field(:phone_number, "Phone number") %>
-              </div>
-            </div>
-          </div>
+        <div class="grid__item">
+          <h3>What is your email address? (optional)</h3>
+          <p class="form-card__body-text">We need your email address to get in touch with you if there are any problems with your application.</p>
+          <%= f.cfa_input_field(:email_address, '') %>
         </div>
       </div>
       <div class="form-card__footer">
