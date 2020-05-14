@@ -12,7 +12,7 @@ RSpec.describe 'Residential address page', type: :feature do
       expect(page).not_to have_text('What is the ZIP code?')
       expect(page).not_to have_text('Is this the best place for you to get mail for the next two weeks?')
       click_on 'Continue'
-      expect(page).to have_text('If there is a problem with your application, how would you like to be contacted?')
+      expect(page).to have_text('How can we contact you?')
     end
   end
 end

@@ -147,9 +147,8 @@ en:
     header: Where should we mail your P-EBT card?
     this_card_can: This card can only be mailed to an address in California.
   contact:
-    if_there_is_a_problem_html: If there is a problem with your application, how would you like to be contacted?
-      <span class="not-bold">(optional)</span>
-    email_address: Email (recommended)
+    header: How can we contact you?
+    email_address: What is your email address? (optional)
     email_address_selected: Email address
     email_address_error: Please enter a valid email address.
     we_need_your_email: We need your email address to get in touch with you if there are any problems with your application.

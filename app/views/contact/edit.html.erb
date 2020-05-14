@@ -5,14 +5,12 @@
       <div class="spacing-below-35">
         <%= image_tag('speech-balloon.svg') %>
       </div>
-      <h2 class="form-card__title"><%= t("contact.if_there_is_a_problem_html") %></h2>
+      <h2 class="form-card__title"><%= t("contact.header") %></h2>
     </div>
     <div class="form-card__content">
       <div class="grid">
         <div class="grid__item">
-          <h3><%= t("contact.email_address") %></h3>
-          <p class="form-card__body-text"><%= t("contact.we_need_your_email") %></p>
-          <%= f.cfa_input_field(:email_address, '') %>
+          <%= f.cfa_input_field(:email_address, t("contact.email_address"), help_text: t("contact.we_need_your_email") ) %>
         </div>
       </div>
       <div class="form-card__footer">

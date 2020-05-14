@@ -52,7 +52,7 @@ RSpec.describe 'Journey', type: :feature do
       fill_in 'What is the city?', with: 'San Francisco'
       fill_in 'What is the ZIP code?', with: '94103'
       click_on 'Continue'
-      expect(page).to have_text 'If there is a problem with your application, how would you like to be contacted?'
+      expect(page).to have_text 'How can we contact you?'
       fill_in :form_email_address, with: 'test@test.com'
       click_on 'Continue'
       expect(page).to have_text 'Add a parent or guardian’s signature.'
