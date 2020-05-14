@@ -9,7 +9,7 @@ gem 'cfa-styleguide', git: 'https://github.com/codeforamerica/honeycrisp-gem'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 4.3'
 gem 'rails', '~> 6.0'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 6.0'
 gem 'sentry-raven'
 gem 'uglifier', '>= 1.3.0'
 
