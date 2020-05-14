@@ -4,17 +4,15 @@
     <%= f.hidden_field(:language, value: I18n.locale) %>
     <div class="form-card__header spacing-below-35">
       <div class="emoji emoji--bigger emoji--backpack spacing-below-35"></div>
-      <h2 class="form-card__title">Is the student able to receive free or reduced price meals during the school
-        year?</h2>
+      <h2 class="form-card__title">
+        <%= t("eligible.header") %>
+      </h2>
     </div>
     <div class="form-card__content">
       <div class="grid">
         <div class="grid__item">
-          <p class="with-padding-small text--left">Even if the student does not eat school meals, we need to know if
-            they are eligible for this program.
-            </p>
-          <p class="with-padding-small text--left">If the student goes to a school that serves free meals to everyone,
-            answer yes.</p>
+          <p class="with-padding-small text--left"><%= t("eligible.even_if_the_student") %></p>
+          <p class="with-padding-small text--left"><%= t("eligible.if_the_student") %></p>
         </div>
       </div>
       <div class="grid">
@@ -22,9 +20,9 @@
           <%= f.cfa_radio_set(
                   :is_eligible,
                   collection: [
-                      {value: :yes, label: "Yes"},
-                      {value: :no, label: "No"},
-                      {value: :dont_know, label: "I don't know"},
+                      {value: :yes, label: t("shared.yes")},
+                      {value: :no, label: t("shared.no")},
+                      {value: :dont_know, label: t("shared.i_dont_know")},
                   ]
               )
           %>
@@ -32,7 +30,7 @@
       </div>
     </div>
     <div class="form-card__footer">
-      <%= f.button "Continue", class: "button button--primary" %>
+      <%= f.button t("shared.continue"), class: "button button--primary" %>
     </div>
   <% end %>
 <% end %>

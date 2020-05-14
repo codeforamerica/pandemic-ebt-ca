@@ -9,7 +9,7 @@ RSpec.describe 'Journey', type: :feature do
       expect(page).to have_text 'Information about P-EBT'
       visit root_path
       click_on 'Apply now'
-      expect(page).to have_text "Here's how it works:"
+      expect(page).to have_text "Here's how it works"
       click_on 'Continue'
       expect(page).to have_text 'Is the student able to receive free or reduced price meals'
       choose 'Yes'
@@ -52,7 +52,7 @@ RSpec.describe 'Journey', type: :feature do
       fill_in 'What is the city?', with: 'San Francisco'
       fill_in 'What is the ZIP code?', with: '94103'
       click_on 'Continue'
-      expect(page).to have_text 'How can we contact you?'
+      expect(page).to have_text 'If there is a problem with your application, how would you like to be contacted?'
       fill_in :form_email_address, with: 'test@test.com'
       click_on 'Continue'
       expect(page).to have_text 'Add a parent or guardian’s signature.'

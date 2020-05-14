@@ -6,7 +6,7 @@ RSpec.describe 'Journey', type: :feature do
       visit root_path
       expect(page).to have_text 'Get help buying food while schools are closed.'
       click_on 'Apply now'
-      expect(page).to have_text "Here's how it works:"
+      expect(page).to have_text "Here's how it works"
       click_on 'Continue'
       expect(page).to have_text 'Is the student able to receive free or reduced price meals'
       choose 'Yes'

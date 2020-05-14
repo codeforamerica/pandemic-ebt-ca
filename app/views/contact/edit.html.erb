@@ -5,18 +5,18 @@
       <div class="spacing-below-35">
         <%= image_tag('speech-balloon.svg') %>
       </div>
-      <h2 class="form-card__title">How can we contact you?</h2>
+      <h2 class="form-card__title"><%= t("contact.if_there_is_a_problem_html") %></h2>
     </div>
     <div class="form-card__content">
       <div class="grid">
         <div class="grid__item">
-          <h3>What is your email address? (optional)</h3>
-          <p class="form-card__body-text">We need your email address to get in touch with you if there are any problems with your application.</p>
+          <h3><%= t("contact.email_address") %></h3>
+          <p class="form-card__body-text"><%= t("contact.we_need_your_email") %></p>
           <%= f.cfa_input_field(:email_address, '') %>
         </div>
       </div>
       <div class="form-card__footer">
-        <%= f.button "Continue", class: "button button--primary" %>
+        <%= f.button t("shared.continue"), class: "button button--primary" %>
       </div>
     </div>
   <% end %>

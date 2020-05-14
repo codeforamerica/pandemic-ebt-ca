@@ -1,4 +1,15 @@
 en:
+  shared:
+    yes: Yes
+    no: No
+    i_dont_know: I don't know
+    continue: Continue
+    apply_for_cf: Apply for CalFresh
+    what_is_the_street: What is the street address?
+    what_is_the_unit: What is the unit or apartment (optional)?
+    what_is_the_city: What is the city?
+    what_is_the_zip: What is the ZIP code?
+    go_back: Go back
   index:
     coming_soon_html: Coming soon&colon;
     header: Get help buying food while schools are closed.
@@ -63,6 +74,109 @@ en:
       target="_blank">here</a>, including a list of free and low-cost immigration services providers.
     what_if_i_should_get_q: What if I'm supposed to get a P-EBT card sent without applying, but had a recent change in address?
     what_if_i_should_get_a_html: If you have not received a P-EBT card by May 25 AND you currently receive CalFresh, CalWORKs, Medi-Cal, or Foster Care benefits we may not have your most recent address. Do NOT apply online to report a change of address. Instead, you can call the EBT Customer Service Center (<a href="tel:8773289677">877-328-9677</a>) to request a change of address beginning the week of May 25. After confirming eligibility, a new card can be issued to your new address.
+  how:
+    header_html: Here's how it works&colon;
+    give_us_your_basic_html: <b>Give us your basic information.</b>
+    we_will_ask: We’ll ask the students’ names and birthdates, the name of a parent or guardian, and the
+      address you’re registered at the school with.
+    your_school_will_make_sure_html: <b>Your school will make sure you’re eligible.</b>
+    school_districts: School districts will check to make sure your family can get P-EBT.
+    get_a_p_ebt_card_html: <b>Get a P-EBT card in the mail.</b>
+    if_approved: If approved, you’ll get a P-EBT card with money on it for groceries within 10 days. The card will
+      be loaded with money each month until the end of the school year.
+  eligible:
+    header: Is the student able to receive free or reduced price meals during the school year?
+    even_if_the_student: Even if the student does not eat school meals, we need to know if they are eligible for
+      this program.
+    if_the_student: If the student goes to a school that serves free meals to everyone, answer yes.
+  meal_eligibility:
+    header_question: Are any of these true for your family?
+    header_answer_html: |
+      <ul class="list--bulleted">
+        <li>In our school enrollment packet, we filled out an application for free or reduced price meals </li>
+        <li>Our school serves free lunch or breakfast to the student</li>
+        <li>Our school serves free breakfast and  lunch to all students</li>
+      </ul>
+  sorry:
+    header: This program is only for students who can get free and reduced price school meals.
+    if_your_family: If your family still needs help buying groceries, you can apply for CalFresh (also known as Food
+      Stamps).
+    many_immigrants_can_html: Many immigrants can get CalFresh. <a href="https://www.getcalfresh.org/en/immigrants">Learn more about CalFresh and immigration.</a>
+  received_card:
+    header: Have you received a P-EBT card?
+    it_looks_like_html: It looks like this&colon;
+    if_you_already_got: If you already got this card, you don't need to fill out this form.
+      You will get money on this card.
+  already_received:
+    header: You’re all done!
+    you_dont_need: You don’t need to fill this form out. You’ll get money automatically on your P-EBT card.
+    if_theres_a_problem_html: If there’s a problem with your card, you can call California’s EBT customer service
+      center at <a href="tel:+18773289677">(877) 328-9677</a>, 24 hours a day, 7 days a week.
+  children:
+    header: List all the students in your house.
+    one_at_a_time: One at a time, add all students in elementary, middle, and high school. This can include pre-K or
+      TK students who get free breakfast or lunch at school.
+    students: Students in your house
+    child_has_been: Child has been removed
+    remove: (remove)
+    add: Add a student
+  add_student:
+    header: Tell us about the student.
+    one_at_a_time_add: One at a time, add all students in elementary, middle, and high school.
+    first_name: First name
+    legally: Legally as it appears on school records.
+    last_name: Last name
+    what_is_their_dob: What is their date of birth?
+    what_type_of_school: What type of school does this student attend?
+    public_school: Public school (including charter school)
+    private_school: Private school (including religious school)
+    please_add_student: Please add a student.
+  just_so_you_know:
+    header: Just so you know.
+    the_card_will: The card will have the oldest student's name on it when it arrives. If you applied for more than
+      one child, all benefits will be on this one card. Adults in the household will be able to use it to shop for the
+      whole family.
+  residential_address:
+    header: What address are you registered at the school with?
+    what_address_notice: It’s important to tell us the address your school has on file. You can give us a separate
+      mailing address.
+    is_this_the_best: Is this the best place for you to get mail for the next two weeks?
+    yes_send_mail: Yes, send mail there
+    no_use_different: No, use a different address for mail
+  mailing_address:
+    header: Where should we mail your P-EBT card?
+    this_card_can: This card can only be mailed to an address in California.
+  contact:
+    if_there_is_a_problem_html: If there is a problem with your application, how would you like to be contacted?
+      <span class="not-bold">(optional)</span>
+    email_address: Email (recommended)
+    email_address_selected: Email address
+    email_address_error: Please enter a valid email address.
+    we_need_your_email: We need your email address to get in touch with you if there are any problems with your application.
+  signature:
+    header: Add a parent or guardian’s signature.
+    type_your_full: Type your full legal name here to sign this form. By entering your name you agree you have been
+      honest on this form.
+    submit: Submit Application
+  success:
+    header: Your application has been submitted!
+    write_down_your_html: Write down your confirmation number&colon;
+    if_approved: If approved, you'll get a P-EBT card with money for groceries within 10 days.
+    learn_more_html: <a href="/en/info">Learn more</a> about the P-EBT program.
+    if_approved_question: If approved, how much in P-EBT benefits will I get?
+    if_approved_answer_1_html: You can get up to $365 for each child who is eligible for P-EBT benefits. As long as
+      you apply before June 30th, 2020, you will get the full amount of benefits for all four months.
+    if_approved_answer_2_html: Each eligible child will get the following amount for each month&colon;
+      <ul class="list--bulleted text--left">
+        <li>March 2020&colon; $68 per child</li>
+        <li>April 2020&colon; $120 per child</li>
+        <li>May 2020&colon; $120 per child</li>
+        <li>June 2020&colon; $57 per child</li>
+      </ul>
+    how_was_your_experience: How was your experience with this application?
+    thank_you: Thank you for your feedback!
   footer:
     delivered_by_html: ca.p-ebt.org is a service delivered by <a class="link--subtle"
       href="https://www.codeforamerica.org/" target="_blank">Code for America</a> on behalf of the people of California.
+
+

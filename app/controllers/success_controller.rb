@@ -4,7 +4,7 @@ class SuccessController < FormsController
     if @form.valid?
       @form.save
       update_session
-      flash[:notice] = 'Thank you for your feedback!'
+      flash[:notice] = I18n.t('success.thank_you')
       redirect_to current_path
     else
       render :edit

@@ -5,12 +5,14 @@
       <div class="spacing-below-35">
         <%= image_tag("pen-emoji.png") %>
       </div>
-      <h2 class="form-card__title">Add a parent or guardian’s signature.</h2>
+      <h2 class="form-card__title">
+        <%= t("signature.header") %>
+      </h2>
     </div>
     <div class="form-card__content">
       <div class="grid">
         <div class="grid__item">
-          <p class="text--left">Type your full legal name here to sign this form. By entering your name you agree you have been honest on this form.</p>
+          <p class="text--left"><%= t("signature.type_your_full") %></p>
         </div>
       </div>
       <div class="grid">
@@ -19,7 +21,7 @@
         </div>
       </div>
       <div class="form-card__footer">
-        <%= f.button "Submit Application", class: "button button--primary" %>
+        <%= f.button t("signature.submit"), class: "button button--primary" %>
       </div>
     </div>
   <% end %>
