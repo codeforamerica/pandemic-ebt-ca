@@ -11,6 +11,7 @@
 <%= csv_field(:residential_city) -%>
 <%= csv_field(:residential_state) -%>
 <%= csv_field(:residential_zip_code) -%>
+<%= csv_field(:registered_homeless) -%>
 <%= csv_field(:mailing_street) -%>
 <%= csv_field(:mailing_street_2) -%>
 <%= csv_field(:mailing_city) -%>
@@ -35,6 +36,7 @@
 <%= csv_field(child.household.residential_city) -%>
 <%= csv_field('CA') -%>
 <%= csv_field(child.household.residential_zip_code) -%>
+<%= csv_field(child.household.registered_homeless) -%>
 <%= csv_field(child.household.mailing_street.or_if_blank(child.household.residential_street)) -%>
 <%= csv_field(child.household.mailing_street_2.or_if_blank(child.household.residential_street_2)) -%>
 <%= csv_field(child.household.mailing_city.or_if_blank(child.household.residential_city)) -%>
