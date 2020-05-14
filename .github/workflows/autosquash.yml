@@ -11,7 +11,7 @@ on:
 
 jobs:
   autosquash:
-    if: contains(github.event.pull_request.labels.*.name, 'autosquash')
+    if: github.event.label.name == 'autosquash'
     name: Autosquash
     runs-on: ubuntu-18.04
     steps:
