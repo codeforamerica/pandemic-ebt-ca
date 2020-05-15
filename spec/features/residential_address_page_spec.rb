@@ -1,8 +1,15 @@
 require 'rails_helper'
 
 RSpec.describe 'Residential address page', type: :feature do
+  def start_application
+    visit 'en/steps/eligible'
+    choose 'Yes'
+    click_on 'Continue'
+  end
+
   describe 'deselecting homeless checkbox', :js do
     it 'allows you to continue without selecting' do
+      start_application
       visit '/en/steps/residential-address'
       expect(page).to have_text 'What address are you registered at the school with?'
       check 'Student was homeless at time of registration'

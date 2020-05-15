@@ -1,7 +1,16 @@
 require 'rails_helper'
 
 RSpec.describe 'Journey', type: :feature do
-  before { visit '/en/steps/contact' }
+  def start_application
+    visit 'en/steps/eligible'
+    choose 'Yes'
+    click_on 'Continue'
+  end
+
+  before do
+    start_application
+    visit '/en/steps/contact'
+  end
 
   describe 'inputting invalid email' do
     it 'properly displays error messages' do
