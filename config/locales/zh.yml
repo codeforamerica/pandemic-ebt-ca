@@ -21,32 +21,28 @@ zh:
         <li>學校因新冠肺炎疫情(COVID 19)而關閉</li>
         <li>兒童符合資格領取免費或低價的學校早/午餐</li>
       </ul>
-    how_do_get_question: How do I get P-EBT benefits?
-    how_do_get_answer_1_html: Most families with children who receive CalFresh, Medi-Cal or Foster Care benefits do not
-      need to apply online. They will get their P-EBT card in the mail between May 7- 22, 2020.
-    how_do_get_answer_2_html: Families with children who are eligible for free or reduced-price meals and who do NOT get
-      CalFresh, Medi-Cal or Foster Care benefits <u>must apply online before June 30, 2020</u>.
+    how_do_get_question: 如何申請P-EBT福利？
+    how_do_get_answer_1_html: 大多數已在領取CalFresh糧食券, Medi-Cal 白卡或 Foster
+      Care寄養福利的兒童家長無需上網申請。兒童的P-EBT卡將在5月份陸續寄出。家長預計在2020年5月11日至2020年5月22日期間收到P-EBT卡。
+    how_do_get_answer_2_html: 在學校關閉後才申請CalFresh 糧食券, Medi-Cal 白卡或 Foster
+      Care 寄養福利的兒童家長將在2020年6月30日前收到郵寄P-EBT卡。
+    how_do_get_answer_3_html: 在學校符合資格領取免費或低價的早/午餐，但沒有領取CalFresh糧食券, Medi-Cal 白卡或 Foster
+      Care寄養福利的兒童家長必須在2020年6月30日前上網申請。
     already_got_question: 如果我已經從郵寄收到P-EBT卡，我還需再次上網申請嗎？
     already_got_answer_html: 不用。如果您已經從郵寄收到P-EBT卡，則無需再次上網申請。請根據P-EBT卡寄來的指示設置您的卡密碼。
       完成密碼設置後，P-EBT卡即可使用。
-    what_if_to_go_question: 如果我的孩子有在其他地點領取由學校提供的「外帶」早/午餐呢？
-    what_if_to_go_answer_html: 即使孩子正在領取校區提供的免費午餐，如果他們符合以下條件，依然符合資格獲取P-EBT福利：
-      <ul class="list--bulleted">
-        <li>如果孩子在讀的學校是因為新冠病毒（COVID-19）關閉；並</li>
-        <li>如果孩子符合資格領取免費或優惠價校餐</li>
-      </ul>
+    what_if_to_go_question: 如果我們家庭領取了P-EBT福利，同時還可以在COVID-19緊急食物站參與由學校提供的早/午餐計劃嗎？
+    what_if_to_go_answer_html: 可以。P-EBT福利是一項額外的福利，它不會取代兒童現已享有的任何食物營養計劃。即使兒童正在領取P-EBT福利，仍然可以繼續領取由學校提供的「外帶」早/午餐或在COVID-19緊急食物站領取由學校和社區提供的緊急食物。
     how_much_question: 我可以領取多少金額的P-EBT福利？
-    how_much_answer_1_html: 每位符合領取P-EBT的孩子最高可以獲取$365。只要您在6月30日2020年前申請，就會獲取四個月的全額。
-    how_much_answer_2_html: 福利金額的總數將取決於您家中符合領取資格的兒童數量。每一個符合資格的兒童將會領取到以下金額的福利&colon;
-      <ul class="list--bulleted">
-        <li>3月2020年：$68</li>
-        <li>4月2020年：$120</li>
-        <li>5月2020年：$120</li>
-        <li>6月2020年：$57</li>
-      </ul>
-      每位符合资格获取的孩子会在4个月的过程中領取合共$365的P-EBT福利。
+    how_much_answer_1_html: 每個符合資格的兒童可領取高達 $365的P-EBT福利。福利金額的總數將取決於您家中符合領取資格的兒童人數。
+    how_much_answer_2_html: 在學校符合資格領取免費或低價早/午餐的大多數兒童家庭，每個兒童可領取到 $365福利。如果您沒有收到郵寄P-EBT卡，只要在2020年6月30日前提交申請，您將會領取到全額福利。
+    how_much_answer_3_html: 家長在學校關閉後才申請並領取到CalFresh 糧食券, Medi-Cal 白卡或 Foster
+      Care 寄養福利，每個兒童或領取到少於$365 福利。這取決於您何時申請CalFresh 糧食券, Medi-Cal 白卡或 Foster Care 寄養福利。
     what_can_i_buy_question: 我可以用P-EBT福利購買什麼東西？
-    what_can_i_buy_answer_1_html: 您可以用P-EBT福利在大多數的雜貨店和農夫市場購買食物。
+    what_can_i_buy_answer_1_html: P-EBT福利可以在大多數的雜貨店，農夫市場和網站
+      <a href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818">Amazon</a> 和
+      <a href="https://www.walmart.com/ideas/discover-grocery-pickup-delivery/walmart-grocery-pickup-accepts-snap-ebt-payments/355540">Walmart</a>
+      購買食物。
     what_can_i_buy_answer_2_html: P-EBT卡的使用方式和借記卡一樣&colon;
       <ul class="list--bulleted">
         <li>選擇「EBT」</li>
@@ -54,19 +50,16 @@ zh:
         <li>輸入您的卡密碼</li>
       </ul>
     what_should_i_do_question: 當我從郵寄收到P-EBT卡時，我應該做些什麼？
-    what_should_i_do_answer_html: 收到P-EBT卡後請按照卡上的指示進行並設定一個密碼。設置密碼後，
-      您的卡可以在大部分的雜貨店和農民市場購買食物。
+    what_should_i_do_answer_html: 請根據P-EBT卡寄來的指示設置您的卡密碼。完成密碼設置後，P-EBT卡即可在大多數的雜貨店和農夫市場購買食物。
     what_is_the_deadline_question: 申請P-EBT福利的截止日期是？
-    what_is_the_deadline_answer_html: 您必須在2020年6月30日前申請P-EBT福利。
-      P-EBT福利是爲了學校因新冠肺炎疫情(COVID 19)關閉而臨時設立。如果您沒有從郵寄收到P-EBT卡，
-      也沒有在2020年6月30日前提交申請，則無法領取到P-EBT福利。
+    what_is_the_deadline_answer_html: 如果您沒有收到郵寄P-EBT卡，則必須在2020年6月30日前上網申請P-EBT福利。P-EBT福利是爲了學校因新冠肺炎疫情(COVID
+      19)關閉而臨時設立。如果您沒有收到郵寄P-EBT卡，也沒有在2020年6月30日前提交申請，則無法領取到P-EBT福利。
     what_if_i_applied_question: 如果我上網申請了，但沒有收到P-EBT卡該怎麼辦？
     what_if_i_applied_answer_html: 請致電加州EBT客戶服務中心 (877) 328-9677。熱線電話每週7天，24小時為您服務。
-    how_long_question: 我有多長時間可以使用我的P-EBT福利？
+    how_long_question: 我有多長時間可以使用我的P-EBT 福利？
     how_long_answer: 您在收到P-EBT卡那天開始的一年內可以使用您的P-EBT福利。
-    if_i_get_question: 如果我領取P-EBT福利，這會影響我的移民身份或被列為「公共負擔」審查的範圍嗎？
-    if_i_get_answer_1_html: P-EBT是根據符合獲取免費或優惠價校餐資格的災難緊急援助，相同於其他不會被國土安全局（DHS）
-      考慮在公共負擔測試中的福利。然而 ，美國公民及移民服務局可以在公共負擔測試中考慮其他因素。
+    if_i_get_question: 如果我領取P-EBT福利，會因此被列為「公共負擔」審查的範圍嗎？
+    if_i_get_answer_1_html: P-EBT是一項基於符合獲取免費或低價學校早/午餐資格的災難緊急援助，國土安全局（DHS）將類似的福利並未列為「公共負擔」。但是，美國公民及移民服務局（USCIS）可以將許多因素列為「公共負擔」審查範圍之內。
     if_i_get_answer_2_html: 公共負擔不適用於所有移民者。如果您就您個人的移民身分和該福利有任何疑問，請瀏覽<a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__covid19.ca.gov_img_wp_covid-2D19-2Dimmigrant-2Dguidance-2Daccessible-2D1.pdf&d=DwMFAg&c=uASjV29gZuJt5_5J5CPRuQ&r=8R-cSKwMRKVQ8RlrsVEwub2ambB3pAUafrkOocCUwuw&m=zPw4azKOYZF_a34l3RNTMWy3ZGnar6BxiYo2of5MC20&s=C5kfHk9vuZa85KToIulnjpsTdZk8hH7VIz4PiTWGyx4&e"
       target="_blank">此</a>，獲知更多免費或低費用的移民服務。
   footer:
