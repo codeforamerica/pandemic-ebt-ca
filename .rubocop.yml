@@ -8,6 +8,8 @@ AllCops:
     - db/**/*
     - vendor/**/*
 
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: true
 Layout/EndOfLine:
   Enabled: false
 Layout/LineLength:
@@ -60,3 +62,5 @@ Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
   Enabled: false
+Style/SlicingWithRange:
+  Enabled: true
