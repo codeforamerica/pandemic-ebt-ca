@@ -15,13 +15,18 @@
       background-color: $color-magenta-light;
       background-image: image-url('pebt-hero.png');
       background-repeat: no-repeat;
-      background-position: 80% 120%;
+      background-position: bottom -5rem right -2.8rem;
 
       @include media($tablet-up) {
-        padding-bottom: 4rem;
+        padding-bottom: 15rem;
         background-size: 50rem;
         background-image: image-url('pebt-hero.png');
-        background-position: 70% -1080%;
+        background-position: bottom -10rem right 5%
+      }
+
+      @include media($site-max-up) {
+        padding-bottom: 4rem;
+        background-position: bottom -10rem right 25%
       }
 
       &:before {
