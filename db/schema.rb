@@ -10,20 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_18_163223) do
+ActiveRecord::Schema.define(version: 2020_05_18_175035) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "children", force: :cascade do |t|
-    t.string "first_name", null: false
-    t.string "last_name", null: false
-    t.date "dob", null: false
-    t.bigint "household_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.string "suid", null: false
-    t.integer "school_type", limit: 2, null: false
+    t.string "first_name"
+    t.string "last_name"
+    t.date "dob"
+    t.bigint "household_id"
+    t.datetime "created_at", precision: 6
+    t.datetime "updated_at", precision: 6
+    t.string "suid"
+    t.integer "school_type", limit: 2
     t.index ["household_id"], name: "index_children_on_household_id"
   end
 

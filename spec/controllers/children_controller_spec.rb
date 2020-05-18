@@ -7,7 +7,7 @@ RSpec.describe ChildrenController do
   describe '#destroy' do
     it 'deletes the child' do
       household = Household.create({ is_eligible: :yes })
-      create(:child, first_name: 'Jan', last_name: 'Jones', household_id: household.id)
+      household.children.create(first_name: 'Jan', last_name: 'Jones')
       session[:current_household_id] = household.id
 
       delete :destroy, params: { id: household.children.first.id, locale: I18n.default_locale }
