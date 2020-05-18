@@ -33,11 +33,11 @@ module PandemicEbt
 
     # Configure generators:
     config.generators do |g|
-      g.assets      false
+      g.assets false
       g.factory_bot false
-      g.helper      false
-      g.jbuilder    false
-      g.fixtures    false
+      g.helper false
+      g.jbuilder false
+      g.fixtures false
     end
 
     # Sentry
@@ -48,5 +48,9 @@ module PandemicEbt
     end
 
     config.i18n.fallbacks = [:en]
+
+    config.action_dispatch.default_headers = {
+      'X-Frame-Options' => 'DENY'
+    }
   end
 end
