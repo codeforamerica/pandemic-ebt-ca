@@ -1,4 +1,15 @@
 es:
+  shared:
+    yes: Sí
+    no: No
+    i_dont_know: No sé
+    continue: Continuar
+    apply_for_cf: Solicite CalFresh
+    what_is_the_street: ¿Cual es su dirección?
+    what_is_the_unit: ¿Cual es el numero de apartamento (Opcional)?
+    what_is_the_city: ¿Cual es la ciudad?
+    what_is_the_zip: ¿Cual es el código postal?
+    go_back: Regresa
   index:
     coming_soon_html: Próximamente&colon;
     header: Reciba ayuda para comprar comida mientras escuelas están cerradas.
@@ -60,6 +71,109 @@ es:
       target="_blank">aqui</a>, incluyendo una lista de proveedores de servicios de inmigracion gratis o a precio bajo.
     what_if_i_should_get_q: ¿Qué pasa si yo debería de haber recibido una tarjeta P-EBT sin aplicar por ella, pero mi dirección cambió recientemente?
     what_if_i_should_get_a_html: Si no ha recibido una tarjeta P-EBT antes del 25 de mayo Y actualmente recibe los beneficios de CalFresh, CalWORKs, Medi-Cal o Foster Care, es posible que no tengamos su dirección más reciente. NO aplique en línea para reportar un cambio de dirección. En cambio, puede llamar al Centro de Servicio al Cliente de EBT (<a href="tel:8773289677">877-328-9677</a>) para solicitar un cambio de dirección a partir de la semana del 25 de mayo. Después de confirmar su elegibilidad, una nueva tarjeta puede ser enviada a su nueva dirección.
+  how:
+    header_html: Así es como funciona&colon;
+    give_us_your_basic_html: <b>Comparta información básica.</b>
+    we_will_ask: Nosotros aseguramos que usted sea elegible. Le preguntaremos por los nombres de sus hijos y fechas de
+      nacimiento, el nombre de un padre o guardian, y la dirección que está registrada con la escuela.
+    your_school_will_make_sure_html: <b>Nosotros nos aseguraremos de que usted sea elegible.</b>
+    we_will_check: Verificaremos si su familia puede obtener P-EBT.
+    get_a_p_ebt_card_html: <b>Reciba la tarjeta de P-EBT por correo.</b>
+    if_approved: Si su solicitud es aprobada, recibirá una tarjeta P-EBT con dinero para comprar alimentos en un plazo
+      de 10 días. La tarjeta vendrá cargada con dinero para alimentos y con instrucciones sobre cómo usarla.
+  eligible:
+    header: ¿Su hijo es elegible para recibir comidas gratis o a precio reducido durante el año escolar?
+    even_if_the_student: Incluso si el estudiante no come desayuno o almuerzo escolar, necesitamos saber si es elegible
+      para este programa.
+    if_the_student: Si su hijo va a una escuela que sirve comida gratis para todos, conteste que sí.
+  meal_eligibility:
+    header_question: ¿Alguno de estos es cierto para su familia?
+    header_answer_html: |
+      <ul class="list--bulleted">
+        <li>Llenamos una solicitud en papel para comidas escolares gratuitas o de precio reducido como parte de la
+        inscripción escolar.</li>
+        <li>Llenamos una solicitud en papel o en línea para comidas escolares gratuitas o de precio reducido durante
+        este año escolar.</li>
+        <li>Nuestra escuela sirve almuerzo o desayuno gratis para el estudiante.</li>
+        <li>Nuestra escuela ofrece desayuno o almuerzo gratis a todos los estudiantes en la escuela sin necesidad de una
+        solicitud.</li>
+      </ul>
+  sorry:
+    header: Este programa es solamente para niños que reciben comidas escolares gratis o a precio reducido.
+    if_your_family: Si su familiar aún necesita ayuda comprando alimentos, puede solicitar CalFresh
+      (también conocido como estampillas de comida).
+    many_immigrants_can_html: La mayoría de inmigrantes pueden obtener CalFresh. <a href="https://www.getcalfresh.org/en/immigrants">Aprenda más sobre CalFresh e inmigración.</a>
+    you_can_also_html: También puede encontrar su <a href="http://www.cafoodbanks.org/find-food-bank" target="_blank">banco de alimentos más cercano.</a>
+  received_card:
+    header: ¿Ya ha recibido la tarjeta de P-EBT?
+    it_looks_like_html: Se parece a esto&colon;
+    if_you_already_got: Si ya recibió esta tarjeta, no necesita completar este formulario. Usted recibirá dinero en esta
+      tarjeta.
+  already_received:
+    header: ¡Ya terminó!
+    you_dont_need: Si ya recibió esta tarjeta, no necesita completar este formulario. Puede usarla como una tarjeta de
+      débito para comprar alimentos.
+    if_theres_a_problem_html: Si hay un problema con su tarjeta, puede llamar al número de servicio EBT al
+      <a href="tel:+18773289677">(877) 328-9677</a>, 24 horas al día, 7 días a la semana.
+  children:
+    header: Enumere a todos los estudiantes en su casa.
+    one_at_a_time: Uno a uno, agregue a todos los estudiantes de primaria, secundaria y preparatoria. Esto puede incluir
+      a estudiantes de pre-K o TK que reciben desayuno o almuerzo gratis en la escuela.
+    students: Estudiantes en su casa
+    child_has_been: Sacamos el niño de la lista
+    remove: (eliminar)
+    add: Agregue un estudiante.
+  add_student:
+    header: Agregue un estudiante.
+    one_at_a_time_add: Uno a uno, agregue a todos los estudiantes de primaria, secundaria y preparatoria. Esto puede
+      incluir a estudiantes de pre-K o TK que reciben desayuno o almuerzo gratis en la escuela.
+    first_name: Primer nombre
+    legally: Legalmente como aparece en registros escolares.
+    last_name: Apellido
+    what_is_their_dob: ¿Cual es su fecha de nacimiento?
+    what_type_of_school: ¿A qué tipo de escuela atiende este niño?
+    public_school: Escuela pública (incluyendo escuela autónoma)
+    private_school: Escuela privada (incluyendo escuela religiosa)
+    please_add_student: Por favor agregue un estudiante.
+  just_so_you_know:
+    header: Solo para que sepas
+    the_card_will: La tarjeta tendrá el nombre del estudiante más viejo cuando llegue. Si solicitó más de un hijo, todos
+      los beneficios estarán en esta tarjeta. Los adultos en el hogar podrán usarlo para comprar para toda la familia.
+  residential_address:
+    header: ¿Que dirección está registrada con la escuela?
+    what_address_notice: Es importante que nos de la dirección que su escuela tiene en sus registros. Nos puede dar una
+      dirección diferente para recibir correo más adelante.
+    student_was_homeless: El estudiante no tenía hogar al momento de la registro
+    is_this_the_best: ¿Es este el mejor lugar para recibir correo durante las próximas dos semanas?
+    yes_send_mail: Sí, envíe el correo ahí
+    no_use_different: No, uso una dirección diferente para el correo
+  mailing_address:
+    header: ¿Donde deberíamos enviar su tarjeta de P-EBT?
+    this_card_can: Esta tarjeta solamente puede ser enviada a una dirección en California.
+  contact:
+    header: ¿Cómo podemos contactarlo?
+    email_address: ¿Cuál es su dirección de correo electrónico? (opcional)
+    email_address_selected: Dirección de correo electrónico
+    email_address_error: Por favor, introduce una dirección de correo electrónico válida.
+    we_need_your_email: Necesitaríamos su dirección de correo electrónico para comunicarnos con usted si hay algún
+      problema con su aplicación.
+  signature:
+    header: Agregar la firma de un padre o guardián.
+    type_your_full: Ingrese su nombre legal completo aquí para firmar este formulario. Al ingresar su nombre usted
+      acepta que ha sido honesto en este formulario.
+    submit: Presentar la solicitud
+  success:
+    header: ¡Su solicitud está lista!
+    write_down_your_html: Escriba su número de confirmación&colon;
+    if_approved: Si su solicitud es aprobada, recibirá una tarjeta P-EBT que puede usar para comprar alimentos dentro de
+      los siguientes 10 días.
+    learn_more_html: <a href="/es/info">Aprenda más</a> sobre el programa P-EBT.
+    if_approved_question: If approved, how much in P-EBT benefits will I get?
+    if_approved_answer_1_html: Recibirá una tarjeta P-EBT a nombre del niño mayor en su hogar que se cargará con $365
+      por cada niño aprobado para comprar alimentos en la mayoría de los supermercados y mercados de alimentos.
+    if_approved_answer_2_html: También puede usar la tarjeta P-EBT para comprar alimentos en línea en Amazon y Walmart.
+    how_was_your_experience: ¿Que tal estuvo su experiencia con esta solicitud?
+    thank_you: ¡Gracias por su opinión!
   footer:
     delivered_by_html: ca.p-ebt.org es un servicio proporcionado por  <a class="link--subtle"
       href="https://www.codeforamerica.org/" target="_blank">Code for America</a> de parte de la gente de California.

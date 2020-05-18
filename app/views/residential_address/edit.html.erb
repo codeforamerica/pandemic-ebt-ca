@@ -17,7 +17,7 @@
       </div>
       <div class="grid">
         <div class="grid__item text--left">
-          <%= f.cfa_checkbox(:registered_homeless, "Student was homeless at time of registration",
+          <%= f.cfa_checkbox(:registered_homeless, t("residential_address.student_was_homeless"),
                              options: {checked_value: :yes, unchecked_value: :unfilled})
           %>
           <%= f.cfa_input_field(:residential_street, t("shared.what_is_the_street")) %>

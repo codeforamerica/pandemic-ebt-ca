@@ -15,7 +15,7 @@ RSpec.describe 'Deleting a child', type: :feature do
       click_on 'No'
       expect(page).to have_text 'List all the students in your house'
       click_on 'Add a student'
-      expect(page).to have_text 'Tell us about the student'
+      expect(page).to have_text 'Add a student.'
       fill_in 'First name', with: 'Jane'
       fill_in 'Last name', with: 'Johnson'
       select 'January', from: 'Month'
