@@ -3,7 +3,7 @@ require 'rails_helper'
 describe AddStudentForm do
   before do
     @household = Household.create(is_eligible: :yes)
-    @valid_form = described_class.new(@household, { first_name: 'Jane', last_name: 'Smith', dob_month: '12', dob_day: '12', dob_year: '2010', school_type: 'public_school' })
+    @valid_form = described_class.new(@household, { first_name: 'Jane', last_name: 'Smith', dob_month: '12', dob_day: '10', dob_year: '2010', school_type: 'public_school' })
   end
 
   after do
@@ -21,7 +21,9 @@ describe AddStudentForm do
       @household.children.first
 
       expect(@household.children.first.first_name).to eq('Jane')
-      expect(@household.children.first.dob).to eq(Date.parse('12/12/2010'))
+      expect(@household.children.first.dob.day).to eq(10)
+      expect(@household.children.first.dob.month).to eq(12)
+      expect(@household.children.first.dob.year).to eq(2010)
       expect(@household.children.first.suid).to be_present
     end
   end

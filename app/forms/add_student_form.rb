@@ -10,7 +10,7 @@ class AddStudentForm < Form
     attributes = {
       first_name: form_attributes[:first_name],
       last_name: form_attributes[:last_name],
-      dob: [form_attributes[:dob_month], form_attributes[:dob_day], form_attributes[:dob_year]].join('/'),
+      dob: [form_attributes[:dob_day], form_attributes[:dob_month], form_attributes[:dob_year]].join('/'),
       school_type: form_attributes[:school_type],
       suid: SuidGenerator.generate
     }
