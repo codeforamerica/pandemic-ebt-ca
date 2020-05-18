@@ -64,7 +64,18 @@ zh:
       target="_blank">此</a>，獲知更多免費或低費用的移民服務。
     what_if_i_should_get_q: 我本來應該無需提交申請，P-EBT卡會寄給我的，但是我最近更改了地址，我該怎麼辦？
     what_if_i_should_get_a_html: 如果您在5月25日還未收到P-EBT卡並正在領取CalFresh 糧食券, CalWORKs 加州就業及兒童照護計劃, Medi-Cal 白卡, 或Foster Care 寄養福利，我們或沒有您最新的地址。請不要上網申請和更改地址。在5月25日後，您可以致電EBT客戶服務中心 (877-328-9677)要求更改地址。待確認符合資格後，新卡將會寄至您的新地址。
-
+  how:
+    header_html: 以下是該服務的流程 &colon;
+    give_us_your_basic_html: <b>分享一些基本的資料。</b>
+    we_will_ask: 我們會確認您是否符合資格，並要求您提供孩子們的姓名和出生日期，家人或監護人的姓名，和您在學校註冊時提供 的地址。
+    your_school_will_make_sure_html: <b>我們將會確認您是否符合申請資格。</b>
+    we_will_check: 我們將會確認您的家庭是否可以領取P-EBT。
+    get_a_p_ebt_card_html: <b>通過信件獲取您的P-EBT卡。</b>
+    if_approved: 如果獲批，您將在10天內收到用作購買食物的P-EBT卡。福利已自動轉至卡內，請根據連同寄來的指示下使用福利卡。
+  eligible:
+    header: 您的孩子符合獲取免費或優惠價校餐嗎？
+    even_if_the_student: 即使學生不在學校吃早餐或午餐，我們也需要知道他們是否符合資格。
+    if_the_student: 如果您孩子所在的學校為每個人提供免費校餐，請選擇是。
   footer:
     delivered_by_html: ca.p-ebt.org 是由 <a class="link--subtle"
       href="https://www.codeforamerica.org/" target="_blank">Code for America</a> 提供給加州居民的服務 。

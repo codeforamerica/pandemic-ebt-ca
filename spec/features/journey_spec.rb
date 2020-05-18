@@ -18,7 +18,7 @@ RSpec.describe 'Journey', type: :feature do
       click_on 'No'
       expect(page).to have_text 'List all the students in your house'
       click_on 'Add a student'
-      expect(page).to have_text 'Tell us about the student'
+      expect(page).to have_text 'Add a student.'
       fill_in 'First name', with: 'Jane'
       fill_in 'Last name', with: 'Johnson'
       select 'January', from: 'Month'
@@ -59,7 +59,7 @@ RSpec.describe 'Journey', type: :feature do
       expect(page).to have_text 'Type your full legal name here to sign this form. By entering your name you agree you have been honest on this form.'
       fill_in 'form_signature', with: 'Julia Johnson'
       click_on 'Submit Application'
-      expect(page).to have_text 'Your application has been submitted!'
+      expect(page).to have_text 'Your application is done!'
       click_on 'Good'
       expect(page).to have_text 'Thank you for your feedback!'
     end
