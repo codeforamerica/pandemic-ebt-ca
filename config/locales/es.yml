@@ -1,7 +1,7 @@
 es:
   shared:
-    yes: Sí
-    no: No
+    'yes': 'Sí'
+    'no': 'No'
     i_dont_know: No sé
     continue: Continuar
     apply_for_cf: Solicite CalFresh

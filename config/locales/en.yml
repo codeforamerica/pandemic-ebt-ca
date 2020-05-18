@@ -1,7 +1,7 @@
 en:
   shared:
-    yes: Yes
-    no: No
+    'yes': 'Yes'
+    'no': 'No'
     i_dont_know: I don't know
     continue: Continue
     apply_for_cf: Apply for CalFresh
