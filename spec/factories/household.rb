@@ -20,6 +20,11 @@ FactoryBot.define do
       mailing_city { Faker::Address.city }
       mailing_zip_code { Faker::Address.zip }
     end
+
+    trait :unsubmitted do
+      submitted_at { nil }
+      signature { nil }
+    end
   end
 
   trait :with_email do
