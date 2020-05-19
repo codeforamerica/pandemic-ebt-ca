@@ -16,8 +16,13 @@ describe SuidGenerator do
     end
 
     it 'does not contain 0, O, 1, or I' do
-      suid = described_class.generate('1112222000')
+      suid = described_class.generate
       expect(suid[2..15]).not_to include('0', 'O', 'I', '1')
+    end
+
+    it 'generates unique suids' do
+      100.times { create(:child) }
+      expect(Child.all.map(&:suid).uniq.count).to eq(Child.count)
     end
   end
 end
