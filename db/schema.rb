@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_13_224624) do
+ActiveRecord::Schema.define(version: 2020_05_19_180727) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2020_05_13_224624) do
     t.string "suid"
     t.integer "school_type", limit: 2
     t.index ["household_id"], name: "index_children_on_household_id"
+    t.index ["suid"], name: "index_children_on_suid", unique: true
   end
 
   create_table "households", force: :cascade do |t|

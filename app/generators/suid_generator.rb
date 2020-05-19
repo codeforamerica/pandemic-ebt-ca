@@ -1,21 +1,19 @@
 class SuidGenerator
-  BLACKLISTED_LETTERS = %w[o i].freeze
-  BLACKLISTED_NUMBERS = %w[0 1].freeze
-  CHARACTERS = ('a'..'z').to_a.delete_if { |c| BLACKLISTED_LETTERS.any?(c) }
+  CHARS = %w[A B C D E F G H J K L M N P Q R S T U V W X Y Z 2 3 4 5 6 7 8 9].freeze
+  PREFIX = '70CFA'.freeze
 
-  def self.generate(seed = DateTime.now.strftime('%Q')[2...-1])
-    '70CFA' + alphanumeric_string(seed)
+  def self.generate
+    loop do
+      output = PREFIX + random_string_of_length(10)
+      return output unless Child.where(suid: output).any?
+    end
   end
 
   class << self
     private
 
-    def alphanumeric_string(seed)
-      seed.split('').map { |c| BLACKLISTED_NUMBERS.any?(c) ? random_letter : c }.join
-    end
-
-    def random_letter
-      CHARACTERS.sample.upcase
+    def random_string_of_length(string_length)
+      (0...string_length).map { CHARS[rand(CHARS.length)] }.join
     end
   end
 end
