@@ -142,8 +142,8 @@ es:
   residential_address:
     header: ¿Que dirección está registrada con la escuela?
     what_address_notice: Es importante que nos de la dirección que su escuela tiene en sus registros. Nos puede dar una
-      dirección diferente para recibir correo más adelante.
-    student_was_homeless: El estudiante no tenía hogar al momento de la registro
+      dirección diferente para recibir correo.
+    student_was_homeless: El estudiante no tenía hogar al momento de registro
     is_this_the_best: ¿Es este el mejor lugar para recibir correo durante las próximas dos semanas?
     yes_send_mail: Sí, envíe el correo ahí
     no_use_different: No, uso una dirección diferente para el correo
@@ -153,7 +153,6 @@ es:
   contact:
     header: ¿Cómo podemos contactarlo?
     email_address: ¿Cuál es su dirección de correo electrónico? (opcional)
-    email_address_selected: Dirección de correo electrónico
     email_address_error: Por favor, introduce una dirección de correo electrónico válida.
     we_need_your_email: Necesitaríamos su dirección de correo electrónico para comunicarnos con usted si hay algún
       problema con su aplicación.
@@ -168,7 +167,7 @@ es:
     if_approved: Si su solicitud es aprobada, recibirá una tarjeta P-EBT que puede usar para comprar alimentos dentro de
       los siguientes 10 días.
     learn_more_html: <a href="/es/info">Aprenda más</a> sobre el programa P-EBT.
-    if_approved_question: If approved, how much in P-EBT benefits will I get?
+    if_approved_question: Si se aprueba, ¿cuánto recibiré en beneficios P-EBT?
     if_approved_answer_1_html: Recibirá una tarjeta P-EBT a nombre del niño mayor en su hogar que se cargará con $365
       por cada niño aprobado para comprar alimentos en la mayoría de los supermercados y mercados de alimentos.
     if_approved_answer_2_html: También puede usar la tarjeta P-EBT para comprar alimentos en línea en Amazon y Walmart.

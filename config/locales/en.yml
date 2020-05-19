@@ -164,7 +164,6 @@ en:
   contact:
     header: How can we contact you?
     email_address: What is your email address? (optional)
-    email_address_selected: Email address
     email_address_error: Please enter a valid email address.
     we_need_your_email: We need your email address to get in touch with you if there are any problems with your application.
   signature:
