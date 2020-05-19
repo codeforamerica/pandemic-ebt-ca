@@ -13,6 +13,7 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     Child.delete_all
     Household.delete_all
     @output_file_name = Rails.root.join('tmp', 'all.csv')
+    @unsubmitted_child = create(:child, household: create(:household, :unsubmitted))
     @child_with_email = create(:child, household_id: create(:household, :with_email).id)
     @child_with_mailing_address = create(:child, household_id: create(:household, :with_mailing_address).id)
     @child_without_mailing_address = create(:child, household_id: create(:household, :without_mailing_address).id)
@@ -47,7 +48,7 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
   end
 
   it 'Exports all children' do
-    expect(@csv_data.count).to eq(Child.all.count)
+    expect(@csv_data.count).to eq(Child.submitted.count)
   end
 
   it 'Has the proper headers' do
@@ -75,5 +76,10 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     email_row = row_for_child @child_with_email
     expect(@child_with_email.household.email_address).to be_present
     expect(email_row['email_address']).to eq(@child_with_email.household.email_address)
+  end
+
+  it 'Only exports submitted children' do
+    unsubmitted_child_row = row_for_child @unsubmitted_child
+    expect(unsubmitted_child_row).to eq(nil)
   end
 end

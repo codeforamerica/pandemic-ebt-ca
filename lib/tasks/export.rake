@@ -2,7 +2,7 @@ namespace :export do
   namespace :csv do
     desc 'Export all children as a csv file to /tmp/all.csv'
     task all: :environment do
-      output = ChildrenController.render :index, assigns: { children: Child.all }
+      output = ChildrenController.render :index, assigns: { children: Child.submitted }
 
       file_name = Rails.root.join('tmp', 'all.csv')
       File.delete(file_name) if File.exist?(file_name)
