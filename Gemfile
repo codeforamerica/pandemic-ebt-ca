@@ -11,6 +11,7 @@ gem 'puma', '~> 4.3'
 gem 'rails', '~> 6.0'
 gem 'sass-rails', '~> 6.0'
 gem 'sentry-raven'
+gem 'skylight'
 gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do

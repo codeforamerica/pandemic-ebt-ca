@@ -52,5 +52,6 @@ module PandemicEbt
     config.action_dispatch.default_headers = {
       'X-Frame-Options' => 'DENY'
     }
+    config.skylight.environments += %w[staging demo]
   end
 end
