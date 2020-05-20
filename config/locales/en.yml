@@ -92,7 +92,7 @@ en:
     your_school_will_make_sure_html: <b>We will make sure you're eligible.</b>
     we_will_check: We'll check to make sure your family can get P-EBT.
     get_a_p_ebt_card_html: <b>Get a P-EBT card in the mail.</b>
-    if_approved: If approved, you'll get a P-EBT card with money on it for groceries within 10 days. The card will be
+    if_approved: If approved, you'll get a P-EBT card with money on it for groceries within 12 days. The card will be
       loaded with grocery money and come with instructions on how to use it.
   eligible:
     header: Is the student able to receive free or reduced price meals during the school year?

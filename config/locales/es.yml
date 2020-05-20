@@ -80,7 +80,7 @@ es:
     we_will_check: Verificaremos si su familia puede obtener P-EBT.
     get_a_p_ebt_card_html: <b>Reciba la tarjeta de P-EBT por correo.</b>
     if_approved: Si su solicitud es aprobada, recibirá una tarjeta P-EBT con dinero para comprar alimentos en un plazo
-      de 10 días. La tarjeta vendrá cargada con dinero para alimentos y con instrucciones sobre cómo usarla.
+      de 12 días. La tarjeta vendrá cargada con dinero para alimentos y con instrucciones sobre cómo usarla.
   eligible:
     header: ¿Su hijo es elegible para recibir comidas gratis o a precio reducido durante el año escolar?
     even_if_the_student: Incluso si el estudiante no come desayuno o almuerzo escolar, necesitamos saber si es elegible
