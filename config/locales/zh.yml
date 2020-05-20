@@ -154,7 +154,7 @@ zh:
   success:
     header: Your application is done!
     write_down_your_html: Write down your confirmation number&colon;
-    if_approved: If approved, you'll get a P-EBT card that you can use to buy groceries within 10 days.
+    if_approved: If approved, you'll get a P-EBT card that you can use to buy groceries within 12 days.
     learn_more_html: <a href="/en/info">了解更多P-EBT計劃相關的信息。</a>
     if_approved_question: If approved, how much in P-EBT benefits will I get?
     if_approved_answer_1_html: P-EBT卡上將顯示您最年長的孩子姓名，每一個合資格的兒童將領取到 $365福利，福利卡可在大多數的雜貨店和超市購買食物。

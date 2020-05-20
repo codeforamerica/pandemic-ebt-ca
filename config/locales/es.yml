@@ -165,7 +165,7 @@ es:
     header: ¡Su solicitud está lista!
     write_down_your_html: Escriba su número de confirmación&colon;
     if_approved: Si su solicitud es aprobada, recibirá una tarjeta P-EBT que puede usar para comprar alimentos dentro de
-      los siguientes 10 días.
+      los siguientes 12 días.
     learn_more_html: <a href="/es/info">Aprenda más</a> sobre el programa P-EBT.
     if_approved_question: Si se aprueba, ¿cuánto recibiré en beneficios P-EBT?
     if_approved_answer_1_html: Recibirá una tarjeta P-EBT a nombre del niño mayor en su hogar que se cargará con $365

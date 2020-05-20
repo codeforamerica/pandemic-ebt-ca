@@ -174,7 +174,7 @@ en:
   success:
     header: Your application is done!
     write_down_your_html: Write down your confirmation number&colon;
-    if_approved: If approved, you'll get a P-EBT card that you can use to buy groceries within 10 days.
+    if_approved: If approved, you'll get a P-EBT card that you can use to buy groceries within 12 days.
     learn_more_html: <a href="/en/info">Learn more</a> about the P-EBT program.
     if_approved_question: If approved, how much in P-EBT benefits will I get?
     if_approved_answer_1_html: You will receive one P-EBT card in the oldest child's name that will be loaded with $365
