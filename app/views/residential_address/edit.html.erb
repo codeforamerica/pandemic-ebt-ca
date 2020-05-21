@@ -42,16 +42,19 @@
   <% end %>
 <% end %>
 
+<%= javascript_include_tag  "https://maps.googleapis.com/maps/api/js?key=#{ENV['GOOGLE_PLACES_API_KEY']}&libraries=places"%>
+<%= javascript_include_tag 'addressAutocomplete' %>
 <script>
     const homelessnessCheckbox = $('#form_registered_homeless');
     const otherInputs = $('.form-group').not(homelessnessCheckbox.parent().parent());
 
     if (homelessnessCheckbox.parent().hasClass('is-selected')) {
-      otherInputs.hide();
+        otherInputs.hide();
     }
 
     homelessnessCheckbox.click(function () {
         otherInputs.toggle()
         otherInputs.children('input').val('')
     })
+    addressAutocomplete('residential');
 </script>

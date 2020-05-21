@@ -12,7 +12,7 @@
 //
 //= require rails-ujs
 //= require activestorage
-//= require_tree .
+//= require mixpanel_loader
 //= require cfa_styleguide_main
 
 var followUpQuestionClear = (function() {
