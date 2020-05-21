@@ -61,4 +61,5 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   config.action_controller.perform_caching = false
+  ENV['GOOGLE_PLACES_API_KEY'] = Rails.application.credentials[:google_places_api_key]
 end
