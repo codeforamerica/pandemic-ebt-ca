@@ -9,6 +9,7 @@ class FormNavigation
     AddStudentController,
     JustSoYouKnowController,
     ResidentialAddressController,
+    SameAddressController,
     MailingAddressController,
     ContactController,
     SignatureController,

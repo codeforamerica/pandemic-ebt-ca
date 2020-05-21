@@ -1,0 +1,42 @@
+<% content_for(:template_name, "card") %>
+<%= form_with url: same_address_steps_path, method: :put, local: true do %>
+  <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>
+    <%= f.hidden_field(:language, value: I18n.locale) %>
+    <div class="form-card__header spacing-below-35">
+      <div class="emoji emoji--bigger emoji--clipboard spacing-below-35"></div>
+      <h2 class="form-card__title">
+        <%= t("same_address.header") %>
+      </h2>
+    </div>
+    <div class="form-card__content">
+      <div class="grid">
+        <div class="grid__item">
+          <div class="notice">
+            <%= current_household.residential_street %><br>
+            <% if current_household.residential_street_2.present? %>
+              <%= current_household.residential_street_2 %><br>
+            <% end %>
+            <%= current_household.residential_city %>, CA <%= current_household.residential_zip_code %>
+          </div>
+          <p class="with-padding-small text--left"><%= t('same_address.help_text') %></p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="grid__item text--left spacing-below-60">
+          <%= f.cfa_radio_set(
+                  :same_residential_address,
+                  collection: [
+                      {value: :yes, label: t("shared.yes")},
+                      {value: :no, label: t("shared.no")},
+                      {value: :not_sure, label: t("shared.not_sure")},
+                  ]
+              )
+          %>
+        </div>
+      </div>
+    </div>
+    <div class="form-card__footer">
+      <%= f.button t("shared.continue"), class: "button button--primary" %>
+    </div>
+  <% end %>
+<% end %>
