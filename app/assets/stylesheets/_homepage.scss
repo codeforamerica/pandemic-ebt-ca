@@ -57,14 +57,4 @@
       }
     }
   }
-  .main-footer {
-    height: inherit;
-    position: inherit;
-  }
-
-  .main-footer__cfa-logo {
-    @include media($tablet-up) {
-      float: none;
-    }
-  }
 }

@@ -178,5 +178,6 @@ es:
     thank_you: ¡Gracias por su opinión!
     back_home: Volver a página principal
   footer:
+    info: Información sobre P-EBT
     delivered_by_html: ca.p-ebt.org es un servicio proporcionado por  <a class="link--subtle"
       href="https://www.codeforamerica.org/" target="_blank">Code for America</a> de parte de la gente de California.
