@@ -12,6 +12,7 @@ es:
     go_back: Regresa
     if_your_family: Si su familiar aún necesita ayuda comprando alimentos, puede solicitar CalFresh
       (también conocido como estampillas de comida).
+    general_error: Ha habido un problema de nuesta parte.
   index:
     coming_soon_html: Próximamente&colon;
     header: Reciba ayuda para comprar comida mientras escuelas están cerradas.
@@ -24,6 +25,10 @@ es:
     learn_more_about: Aprenda más sobre este programa.
     learn_more: Aprenda más
     joint_program: Este es un programa conjunto del Departamento de Educación y Servicios Sociales de California.
+    with_a_pebt_html: Con una tarjeta P-EBT, puede comprar despensa&colon;
+    most_groceries: En la mayoria de supermercados
+    most_farmers: En la mayoria de mercados de agricultores
+    online: En línea en Amazon y Walmart
   info:
     heading: Información sobre P-EBT
     what_are_question: ¿Qué es 'P-EBT' o beneficios de Pandemia EBT?
@@ -141,13 +146,17 @@ es:
       todos los beneficios estarán en esta tarjeta. Los adultos en el hogar podrán usar la tarjeta para comprar
       alimentos para toda la familia.
   residential_address:
-    header: What address does %{full_name}’s school have on file?
+    header: ¿Cual es la dirección que %{full_name} tiene en el registro de la escuela?
     what_address_notice: Es importante que nos de la dirección que su escuela tiene en sus registros. Nos puede dar una
       dirección diferente para recibir correo.
     student_was_homeless: El estudiante no tenía hogar al momento de la registracíon.
     is_this_the_best: ¿Es este el mejor lugar para recibir correo durante las próximas dos semanas?
     yes_send_mail: Sí, envíe el correo ahí
     no_use_different: No, uso una dirección diferente para el correo
+  same_address:
+    header: Todos los estudiantes en su casa estan registrados en la escuela con esta dirección?
+    help_text: Nada mas necesitamos saber si todos los estudiantes en su hogar usan estan registrados con esta dirección
+      en su escuela.
   mailing_address:
     header: ¿Donde deberíamos enviar su tarjeta de P-EBT?
     this_card_can: Esta tarjeta solamente puede ser enviada a una dirección en California.
