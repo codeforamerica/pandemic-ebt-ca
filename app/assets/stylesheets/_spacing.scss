@@ -1,5 +1,8 @@
 @import 'atoms/variables';
 
+$s20: 2.0rem !default;
+$s45: 4.5rem !default;
+
 .with-no-padding {
   padding-bottom: 0 !important;
 }
@@ -10,6 +13,16 @@
 
 .padding-below-25 {
   padding-bottom: $s25 !important;
+}
+
+.padding-vertical-20 {
+  padding-top: $s20 !important;
+  padding-bottom: $s20 !important;
+}
+
+.padding-horizontal-45 {
+  padding-left: $s45 !important;
+  padding-right: $s45 !important;
 }
 
 .button-spacer {

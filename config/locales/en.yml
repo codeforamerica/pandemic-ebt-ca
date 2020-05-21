@@ -13,6 +13,7 @@ en:
     go_back: Go back
     if_your_family: If your family still needs help buying groceries, you can apply for CalFresh (also known as Food
       Stamps).
+    please_choose: Please choose an option.
   index:
     coming_soon_html: Coming soon&colon;
     header: Get help buying food while schools are closed.
@@ -161,7 +162,8 @@ en:
     no_use_different: No, use a different address for mail
   same_address:
     header: Are all students in your house registered at school using this address?
-    help_text: TK TK TK
+    help_text: We just need to know if all students in your house use this address for school. We won’t ask for every
+      address.
   mailing_address:
     header: Where should we mail your P-EBT card?
     this_card_can: This card can only be mailed to an address in California.
