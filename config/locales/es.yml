@@ -3,6 +3,7 @@ es:
     'yes': 'Sí'
     'no': 'No'
     i_dont_know: No sé
+    not_sure: No estoy seguro/a.
     continue: Continuar
     apply_for_cf: Solicite CalFresh
     what_is_the_street: ¿Cual es su dirección?
@@ -12,6 +13,7 @@ es:
     go_back: Regresa
     if_your_family: Si su familiar aún necesita ayuda comprando alimentos, puede solicitar CalFresh
       (también conocido como estampillas de comida).
+    please_choose: Por favor escoja una opción
     general_error: Ha habido un problema de nuesta parte.
   index:
     coming_soon_html: Próximamente&colon;
