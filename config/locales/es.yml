@@ -170,7 +170,10 @@ es:
     if_approved_question: ¿Si se aprueba, ¿cuánto recibiré en beneficios de P-EBT?
     if_approved_answer_1_html: Recibirá una tarjeta P-EBT a nombre del niño mayor en su hogar que se cargará con $365
       por cada niño aprobado para comprar alimentos en la mayoría de los supermercados y mercados de alimentos.
-    if_approved_answer_2_html: También puede usar la tarjeta P-EBT para comprar alimentos en línea en Amazon y Walmart.
+    if_approved_answer_2_html: También puede usar la tarjeta P-EBT para comprar alimentos en línea en
+      <a target="_blank" href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818">Amazon</a>
+      y
+      <a target="_blank" href="https://www.walmart.com/ideas/discover-grocery-pickup-delivery/walmart-grocery-pickup-accepts-snap-ebt-payments/355540">Walmart</a>.
     how_was_your_experience: ¿Que tal estuvo su experiencia con esta solicitud?
     thank_you: ¡Gracias por su opinión!
     back_home: Volver a página principal

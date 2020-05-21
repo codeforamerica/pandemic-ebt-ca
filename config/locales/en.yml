@@ -179,7 +179,10 @@ en:
     if_approved_question: If approved, how much in P-EBT benefits will I get?
     if_approved_answer_1_html: You will receive one P-EBT card in the oldest child's name that will be loaded with $365
       for each approved child to purchase food at most grocery stores and food markets.
-    if_approved_answer_2_html: You can also use the P-EBT card to order groceries online at Amazon and Walmart.
+    if_approved_answer_2_html: You can also use the P-EBT card to order groceries online at
+      <a target="_blank" href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818">Amazon</a>
+      and
+      <a target="_blank" href="https://www.walmart.com/ideas/discover-grocery-pickup-delivery/walmart-grocery-pickup-accepts-snap-ebt-payments/355540">Walmart</a>.
     how_was_your_experience: How was your experience with this application?
     thank_you: Thank you for your feedback!
     back_home: Back to home

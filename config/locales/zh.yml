@@ -156,7 +156,8 @@ zh:
     learn_more_html: <a href="/en/info">了解</a>更多有關P-EBT計劃。
     if_approved_question: 如果獲批 ，我會得到多少P-EBT福利？
     if_approved_answer_1_html: P-EBT卡上將顯示您最年長的孩子姓名，每一個合資格的兒童將領取到 $365福利，福利卡可在大多數的雜貨店和超市購買食物。
-    if_approved_answer_2_html: 您也可以用P-EBT卡在網站Amazon和Walmart 購買食物。
+    if_approved_answer_2_html: 您也可以用P-EBT卡在網站<a href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818">Amazon</a>和<a href="https://www.walmart.com/ideas/discover-grocery-pickup-delivery/walmart-grocery-pickup-accepts-snap-ebt-payments/355540">Walmart</a>
+      購買食物。
     how_was_your_experience: 請問您對這份申請的體驗如何 ？
     thank_you: 感謝您的反饋意見！
     back_home: 回到首頁
