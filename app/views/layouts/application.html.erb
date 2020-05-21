@@ -38,13 +38,13 @@
       <div class="grid">
         <div class="grid__item width-five-sixths shift-one-twelfth">
           <div class="toolbar toolbar--wrap-when-small">
-            <% unless content_for?(:no_back) %>
               <div class="toolbar__left">
+                <% unless content_for?(:no_back) %>
                 <a class="button button--primary button--small" href="javascript:history.back()">
                   <i class="icon-arrow_back"></i> <%= t("shared.go_back") %>
                 </a>
+                <% end %>
               </div>
-            <% end %>
             <div class="toolbar__right>">
               <%= render 'pages/locale' %>
             </div>
@@ -75,24 +75,17 @@
 </div>
 <footer class="main-footer">
   <div class="grid">
-    <% if (content_for(:template_name) == "card") || (content_for(:template_name) == "success") %>
-      <div class="grid__item width-three-fourths shift-one-sixth">
-    <% else %>
-      <div class="grid__item">
-    <% end %>
+    <div class="grid__item width-one-half">
+      <p class="text--small"><%= link_to t("footer.info"), info_path, class: "link--subtle" %></p>
       <p class="text--small"><%= t("footer.delivered_by_html") %></p>
     </div>
-  </div>
-    <% if controller.controller_name == "pages" && controller.action_name == "index" %>
-      <div class="grid">
-        <div class="grid__item width-one-fourth">
-          <div class="main-footer__cfa-logo">
-            <a href="https://www.codeforamerica.org" class="illustration illustration--cfa-logo__dark">Code for
-              America</a>
-          </div>
-        </div>
+
+    <div class="grid__item shift-one-sixth width-one-fourth">
+      <div class="main-footer__cfa-logo">
+        <a href="https://www.codeforamerica.org" class="illustration illustration--cfa-logo__dark">Code for America</a>
       </div>
-    <% end %>
+    </div>
+  </div>
   </div>
 </footer>
 </body>

@@ -30,6 +30,7 @@
 
 body {
   font-family: -apple-system, "Helvetica Neue", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
+  margin-bottom: 0;
 }
 
 .form-card {
@@ -96,5 +97,25 @@ strong.extra-strong {
   margin-left: 15px;
   .flash__message {
     margin-right: 2rem;
+  }
+}
+
+.main-footer {
+  position: relative;
+  font-weight: normal;
+  height: auto !important;
+
+  p.text--small {
+    margin-bottom: 3.0rem;
+  }
+
+  .illustration {
+    margin-bottom: 0;
+  }
+}
+
+@include media($tablet-up) {
+  .main-footer__cfa-logo {
+    margin-top: 5.7rem;
   }
 }
