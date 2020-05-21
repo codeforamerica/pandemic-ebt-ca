@@ -33,6 +33,9 @@
   </div>
 <% end -%>
 <div class="page-wrapper">
+  <% if ENV['DEMO_BANNER'] == '1' %>
+    <div class="demo-banner"><%= t('shared.demo') %> <a class="link--subtle" href="https://ca.p-ebt.org/">ca.p-ebt.org</a>.</div>
+  <% end %>
   <% if content_for(:template_name) == "card" %>
     <div class="slab padding-above-10 padding-below-25">
       <div class="grid">
