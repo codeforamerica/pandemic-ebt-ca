@@ -131,8 +131,8 @@ zh:
     header: 須知事項。
     the_card_will: 您收到的卡會顯示年紀最大的學生的名字。如果您為了多個孩子申請，合共的福利都會發放到同一張卡裡。家中的成年人可以用這張卡給全家購買食物或雜貨。
   residential_address:
-    header: 您孩子註冊就讀的學校的地址是？
-    what_address_notice: 請務必告訴我們在學校紀錄中的地址。您可以提供另外的通信地址。
+    header: What address does %{full_name}’s school have on file?
+    what_address_notice: 請務必告訴我們您在學校紀錄中的地址 。您可以提供另外一個通信地址 。
     student_was_homeless: 學生在註冊時是無家可歸的
     is_this_the_best: 在未來兩個星期您可以在此收到信件嗎？
     yes_send_mail: 是，將信件寄到該地址

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_19_180727) do
+ActiveRecord::Schema.define(version: 2020_05_21_134637) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 2020_05_19_180727) do
     t.string "email_address"
     t.string "language", limit: 2
     t.integer "registered_homeless", default: 0
+    t.integer "same_residential_address", default: 0
   end
 
 end

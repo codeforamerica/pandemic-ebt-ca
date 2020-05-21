@@ -141,7 +141,7 @@ es:
       todos los beneficios estarán en esta tarjeta. Los adultos en el hogar podrán usar la tarjeta para comprar
       alimentos para toda la familia.
   residential_address:
-    header: ¿Que dirección está registrada con la escuela?
+    header: What address does %{full_name}’s school have on file?
     what_address_notice: Es importante que nos de la dirección que su escuela tiene en sus registros. Nos puede dar una
       dirección diferente para recibir correo.
     student_was_homeless: El estudiante no tenía hogar al momento de la registracíon.

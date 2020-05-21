@@ -3,6 +3,7 @@ en:
     'yes': 'Yes'
     'no': 'No'
     i_dont_know: I don't know
+    not_sure: I'm not sure
     continue: Continue
     apply_for_cf: Apply for CalFresh
     what_is_the_street: What is the street address?
@@ -151,13 +152,16 @@ en:
       one child, all benefits will be on this one card. Adults in the household will be able to use it to shop for the
       whole family.
   residential_address:
-    header: What address are you registered at the school with?
+    header: What address does %{full_name}’s school have on file?
     what_address_notice: It’s important to tell us the address your school has on file. You can give us a separate
       mailing address.
     student_was_homeless: Student was homeless at time of registration
     is_this_the_best: Is this the best place for you to get mail for the next two weeks?
     yes_send_mail: Yes, send mail there
     no_use_different: No, use a different address for mail
+  same_address:
+    header: Are all students in your house registered at school using this address?
+    help_text: TK TK TK
   mailing_address:
     header: Where should we mail your P-EBT card?
     this_card_can: This card can only be mailed to an address in California.
@@ -189,5 +193,3 @@ en:
   footer:
     delivered_by_html: ca.p-ebt.org is a service delivered by <a class="link--subtle"
       href="https://www.codeforamerica.org/" target="_blank">Code for America</a> on behalf of the people of California.
-
-

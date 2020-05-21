@@ -10,7 +10,7 @@ RSpec.describe MailingAddressController do
       expect(show_page).to eq(false)
     end
 
-    it 'hows when the household indicates they have a mailing address' do
+    it 'shows when the household indicates they have a mailing address' do
       household = Household.create({ has_mailing_address: 'yes' })
       show_page = subject.class.show?(household)
       expect(show_page).to eq(true)

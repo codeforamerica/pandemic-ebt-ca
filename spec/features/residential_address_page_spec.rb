@@ -10,8 +10,22 @@ RSpec.describe 'Residential address page', type: :feature do
   describe 'deselecting homeless checkbox', :js do
     it 'allows you to continue without selecting' do
       start_application
-      visit '/en/steps/residential-address'
-      expect(page).to have_text 'What address are you registered at the school with?'
+      visit '/en/steps/children'
+      expect(page).to have_text 'List all the students in your house'
+      click_on 'Add a student'
+      expect(page).to have_text 'Add a student.'
+      fill_in 'First name', with: 'Joe'
+      fill_in 'Last name', with: 'Johnson'
+      select 'January', from: 'Month'
+      select '2', from: 'Day'
+      select '2010', from: 'Year'
+      choose 'Public school'
+      click_on 'Continue'
+      expect(page).to have_text 'List all the students in your house'
+      click_on 'Continue'
+      expect(page).to have_text 'Just so you know'
+      click_on 'Continue'
+      expect(page).to have_text 'What address does Joe Johnson’s school have on file?'
       check 'Student was homeless at time of registration'
       expect(page).not_to have_text('What is the street address?')
       expect(page).not_to have_text('What is the unit or apartment (optional)?')

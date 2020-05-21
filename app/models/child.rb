@@ -7,4 +7,8 @@ class Child < ApplicationRecord
   }
 
   scope :submitted, -> { joins(:household).where.not(households: { submitted_at: nil }) }
+
+  def full_name
+    "#{first_name} #{last_name}"
+  end
 end
