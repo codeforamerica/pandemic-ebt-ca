@@ -52,8 +52,8 @@ zh:
       Care 寄養福利，每個兒童或領取到少於$365 福利。這取決於您何時申請CalFresh 糧食券, Medi-Cal 白卡或 Foster Care 寄養福利。
     what_can_i_buy_question: 我可以用P-EBT福利購買什麼東西？
     what_can_i_buy_answer_1_html: P-EBT福利可以在大多數的雜貨店，農夫市場和網站
-      <a href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818">Amazon</a> 和
-      <a href="https://www.walmart.com/ideas/discover-grocery-pickup-delivery/walmart-grocery-pickup-accepts-snap-ebt-payments/355540">Walmart</a>
+      <a href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818" target="_blank">Amazon</a> 和
+      <a href="https://www.walmart.com/ideas/discover-grocery-pickup-delivery/walmart-grocery-pickup-accepts-snap-ebt-payments/355540" target="_blank">Walmart</a>
       購買食物。
     what_can_i_buy_answer_2_html: P-EBT卡的使用方式和借記卡一樣：
       <ul class="list--bulleted">
@@ -99,7 +99,7 @@ zh:
       </ul>
   sorry:
     header: 該計劃僅限於符合資格獲取免費或優惠價校餐的孩子。
-    many_immigrants_can_html: 大多數移民者都可以獲取CalFresh。 <a href="https://www.getcalfresh.org/en/immigrants">了解更多CalFresh及移民相關的信息。 </a>
+    many_immigrants_can_html: 大多數移民者都可以獲取CalFresh。 <a href="https://www.getcalfresh.org/en/immigrants" target="_blank">了解更多CalFresh及移民相關的信息。 </a>
     you_can_also_html: 您可以查找<a href="http://www.cafoodbanks.org/find-food-bank" target="_blank">最鄰近您的食物銀行。</a>
   received_card:
     header: 請問您已經收到P-EBT卡了嗎？
@@ -156,7 +156,7 @@ zh:
     learn_more_html: <a href="/en/info">了解</a>更多有關P-EBT計劃。
     if_approved_question: 如果獲批 ，我會得到多少P-EBT福利？
     if_approved_answer_1_html: P-EBT卡上將顯示您最年長的孩子姓名，每一個合資格的兒童將領取到 $365福利，福利卡可在大多數的雜貨店和超市購買食物。
-    if_approved_answer_2_html: 您也可以用P-EBT卡在網站<a href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818">Amazon</a>和<a href="https://www.walmart.com/ideas/discover-grocery-pickup-delivery/walmart-grocery-pickup-accepts-snap-ebt-payments/355540">Walmart</a>
+    if_approved_answer_2_html: 您也可以用P-EBT卡在網站<a href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818" target="_blank">Amazon</a>和<a href="https://www.walmart.com/ideas/discover-grocery-pickup-delivery/walmart-grocery-pickup-accepts-snap-ebt-payments/355540" target="_blank">Walmart</a>
       購買食物。
     how_was_your_experience: 請問您對這份申請的體驗如何 ？
     thank_you: 感謝您的反饋意見！

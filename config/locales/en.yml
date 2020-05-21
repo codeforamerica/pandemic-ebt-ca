@@ -114,7 +114,7 @@ en:
       </ul>
   sorry:
     header: This program is only for students who can get free and reduced price school meals.
-    many_immigrants_can_html: Many immigrants can get CalFresh. <a href="https://www.getcalfresh.org/en/immigrants">Learn more about CalFresh and immigration.</a>
+    many_immigrants_can_html: Many immigrants can get CalFresh. <a href="https://www.getcalfresh.org/en/immigrants" target="_blank">Learn more about CalFresh and immigration.</a>
     you_can_also_html: You can also find your <a href="http://www.cafoodbanks.org/find-food-bank" target="_blank">nearest food bank.</a>
   received_card:
     header: Have you received a P-EBT card?
