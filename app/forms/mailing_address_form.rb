@@ -3,7 +3,7 @@ class MailingAddressForm < Form
   validates_presence_of :mailing_street, message: 'Please fill in the street address.'
   validates :mailing_street_2, length: { maximum: 128, too_long: 'Please enter a shorter unit or apartment.' }
   validates_presence_of :mailing_city, message: 'Please fill in the city.'
-  validates_presence_of :mailing_zip_code, message: 'Please fill in the ZIP code.'
+  validates :mailing_zip_code, inclusion: { in: VALID_ZIP_CODES, message: 'Please fill in a valid CA ZIP code.' }
 
   def save
     household.update(attributes_for(:household))
