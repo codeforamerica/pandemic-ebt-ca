@@ -89,3 +89,12 @@ fieldset.form-group:last-of-type {
 strong.extra-strong {
   text-decoration: underline;
 }
+
+.flash {
+  position: absolute;
+  z-index: 9999;
+  margin-left: 15px;
+  .flash__message {
+    margin-right: 2rem;
+  }
+}

@@ -41,4 +41,8 @@ var followUpQuestionClear = (function() {
 
 $(document).ready(function() {
     followUpQuestionClear.init();
+    $('.flash__dismiss').click(function(event) {
+      event.preventDefault();
+      $(this).parents('.flash').slideUp();
+    });
 });

@@ -24,4 +24,5 @@ Rails.application.routes.draw do
     delete '/steps/children/:id' => 'children#destroy', as: 'remove_child'
   end
   mount Cfa::Styleguide::Engine => '/cfa'
+  match '*path', to: redirect { |_path, req| req.flash[:error] = 'There has been a problem on our end.'; '/en' }, via: :all
 end

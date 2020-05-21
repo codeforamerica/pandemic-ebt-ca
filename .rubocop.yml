@@ -65,5 +65,8 @@ Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
   Enabled: false
+Style/Semicolon:
+  Exclude:
+    - config/routes.rb
 Style/SlicingWithRange:
   Enabled: true

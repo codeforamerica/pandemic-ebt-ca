@@ -24,6 +24,14 @@
 </head>
 
 <body class="template--<%= content_for(:template_name) if content_for?(:template_name) %>">
+<% if flash[:error].present? -%>
+  <div class="grid">
+    <div class="flash flash--error">
+      <p class="flash__message">There has been a problem on our end.</p>
+      <a href="#" class="flash__dismiss" aria-label="Dismiss"><span class="icon icon-close"></span></a>
+    </div>
+  </div>
+<% end -%>
 <div class="page-wrapper">
   <% if content_for(:template_name) == "card" %>
     <div class="slab padding-above-10 padding-below-25">
