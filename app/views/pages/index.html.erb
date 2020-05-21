@@ -43,23 +43,34 @@
   </section>
   <section class="slab slab--white">
     <div class="grid">
-      <div class="grid__item width-seven-twelfths">
+      <div class="grid__item width-five-twelfths">
         <p class="form-card__body-text"><%= t("index.about") %></p>
+      </div>
+      <div class="grid__item shift-one-twelfth width-five-twelfths">
+        <p class="form-card__body-text"><%= t("index.children_may") %></p>
       </div>
     </div>
   </section>
   <section class="slab slab--grey-light">
     <div class="grid">
-      <div class="grid__item width-seven-twelfths">
-        <h2><%= t("index.questions_about") %></h2>
+      <div class="grid__item width-five-twelfths">
+        <h3><%= t("index.questions_about") %></h3>
         <p class="form-card__body-text"><%= t("index.learn_more_about") %></p>
-        <a href="<%= info_path %>"><button class="button"><%= t("index.learn_more") %></button></a>
+        <a href="<%= info_path %>"><button class="button spacing-below-35"><%= t("index.learn_more") %></button></a>
+      </div>
+      <div class="grid__item shift-one-twelfth width-five-twelfths">
+        <h3><%= t("index.with_a_pebt_html") %></h3>
+        <ul class="list--checkmark">
+          <li><%= t("index.most_groceries") %></li>
+          <li><%= t("index.most_farmers") %></li>
+          <li><%= t("index.online") %></li>
+        </ul>
       </div>
     </div>
   </section>
   <section class="slab slab--white">
     <div class="grid">
-      <div class="grid__item width-seven-twelfths">
+      <div class="grid__item">
         <p class="form-card__body-text"><%= t("index.joint_program") %></p>
       </div>
     </div>
