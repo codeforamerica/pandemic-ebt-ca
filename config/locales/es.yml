@@ -10,6 +10,8 @@ es:
     what_is_the_city: ¿Cual es la ciudad?
     what_is_the_zip: ¿Cual es el código postal?
     go_back: Regresa
+    if_your_family: Si su familiar aún necesita ayuda comprando alimentos, puede solicitar CalFresh
+      (también conocido como estampillas de comida).
   index:
     coming_soon_html: Próximamente&colon;
     header: Reciba ayuda para comprar comida mientras escuelas están cerradas.
@@ -100,8 +102,6 @@ es:
       </ul>
   sorry:
     header: Este programa es solamente para niños que reciben comidas escolares gratis o a precio reducido.
-    if_your_family: Si su familiar aún necesita ayuda comprando alimentos, puede solicitar CalFresh
-      (también conocido como estampillas de comida).
     many_immigrants_can_html: La mayoría de inmigrantes pueden obtener CalFresh. <a href="https://www.getcalfresh.org/en/immigrants">Aprenda más sobre CalFresh e inmigración.</a>
     you_can_also_html: También puede encontrar su <a href="http://www.cafoodbanks.org/find-food-bank" target="_blank">banco de alimentos más cercano.</a>
   received_card:
@@ -131,19 +131,20 @@ es:
     legally: Legalmente como aparece en registros escolares.
     last_name: Apellido
     what_is_their_dob: ¿Cual es su fecha de nacimiento?
-    what_type_of_school: ¿A qué tipo de escuela atiende este niño?
-    public_school: Escuela pública (incluyendo escuela autónoma)
+    what_type_of_school: ¿Qué tipo de escuela atiende este estudiante?
+    public_school: Escuela pública (incluyendo escuela autónoma o escuela "charter")
     private_school: Escuela privada (incluyendo escuela religiosa)
     please_add_student: Por favor agregue un estudiante.
   just_so_you_know:
     header: Solo para que sepas
-    the_card_will: La tarjeta tendrá el nombre del estudiante más viejo cuando llegue. Si solicitó más de un hijo, todos
-      los beneficios estarán en esta tarjeta. Los adultos en el hogar podrán usarlo para comprar para toda la familia.
+    the_card_will: La tarjeta tendrá el nombre del estudiante más grande cuando llegue. Si solicitó más de un hijo,
+      todos los beneficios estarán en esta tarjeta. Los adultos en el hogar podrán usar la tarjeta para comprar
+      alimentos para toda la familia.
   residential_address:
     header: ¿Que dirección está registrada con la escuela?
     what_address_notice: Es importante que nos de la dirección que su escuela tiene en sus registros. Nos puede dar una
       dirección diferente para recibir correo.
-    student_was_homeless: El estudiante no tenía hogar al momento de registro
+    student_was_homeless: El estudiante no tenía hogar al momento de la registracíon.
     is_this_the_best: ¿Es este el mejor lugar para recibir correo durante las próximas dos semanas?
     yes_send_mail: Sí, envíe el correo ahí
     no_use_different: No, uso una dirección diferente para el correo
@@ -154,25 +155,25 @@ es:
     header: ¿Cómo podemos contactarlo?
     email_address: ¿Cuál es su dirección de correo electrónico? (opcional)
     email_address_error: Por favor, introduce una dirección de correo electrónico válida.
-    we_need_your_email: Necesitaríamos su dirección de correo electrónico para comunicarnos con usted si hay algún
-      problema con su aplicación.
+    we_need_your_email: Necesitamos su dirección de correo electrónico para comunicarnos con usted si hay algún problema
+      con su solicitud.
   signature:
-    header: Agregar la firma de un padre o guardián.
+    header: Agrega la firma de un padre o guardián.
     type_your_full: Ingrese su nombre legal completo aquí para firmar este formulario. Al ingresar su nombre usted
       acepta que ha sido honesto en este formulario.
-    submit: Presentar la solicitud
+    submit: Entrege la solicitud
   success:
     header: ¡Su solicitud está lista!
     write_down_your_html: Escriba su número de confirmación&colon;
-    if_approved: Si su solicitud es aprobada, recibirá una tarjeta P-EBT que puede usar para comprar alimentos dentro de
-      los siguientes 12 días.
+    if_approved: Si su solicitud es aprobada, recibirá una tarjeta P-EBT dentro de los siguientes 12 días que puede usar para comprar alimentos.
     learn_more_html: <a href="/es/info">Aprenda más</a> sobre el programa P-EBT.
-    if_approved_question: Si se aprueba, ¿cuánto recibiré en beneficios P-EBT?
+    if_approved_question: ¿Si se aprueba, ¿cuánto recibiré en beneficios de P-EBT?
     if_approved_answer_1_html: Recibirá una tarjeta P-EBT a nombre del niño mayor en su hogar que se cargará con $365
       por cada niño aprobado para comprar alimentos en la mayoría de los supermercados y mercados de alimentos.
     if_approved_answer_2_html: También puede usar la tarjeta P-EBT para comprar alimentos en línea en Amazon y Walmart.
     how_was_your_experience: ¿Que tal estuvo su experiencia con esta solicitud?
     thank_you: ¡Gracias por su opinión!
+    back_home: Volver a página principal
   footer:
     delivered_by_html: ca.p-ebt.org es un servicio proporcionado por  <a class="link--subtle"
       href="https://www.codeforamerica.org/" target="_blank">Code for America</a> de parte de la gente de California.

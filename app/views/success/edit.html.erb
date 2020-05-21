@@ -7,16 +7,20 @@
         <%= t("success.header") %>
       </h2>
     </div>
-    <div class="form-card__content text--centered">
+    <div class="form-card__content">
       <div class="grid grid--how">
         <div class="grid__item">
           <p class="text--left"><%= t("success.write_down_your_html") %></p>
-          <div class="notice"><%= current_household.confirmation_code %></div>
+          <div class="notice text--centered"><%= current_household.confirmation_code %></div>
           <p class="text--left"><%= t("success.if_approved") %></p>
           <p class="text--left"><%= t("success.learn_more_html") %></p>
           <h3 class="text--left"><%= t("success.if_approved") %></h3>
           <p class="text--left"><%= t("success.if_approved_answer_1_html") %></p>
           <p class="text--left"><%= t("success.if_approved_answer_2_html") %></p>
+          <div class="grid__item">
+            <%= link_to t("shared.apply_for_cf"), "https://www.getcalfresh.org", class: "button button--primary" %>
+          </div>
+          <p class="text--left"><%= t("shared.if_your_family") %></p>
         </div>
         <% if current_household.unfilled_application_experience? %>
           <div class="grid__item">
@@ -41,6 +45,9 @@
                   ) %>
           </div>
         <% end  %>
+        <div class="grid__item spacing-above-25">
+          <%= link_to raw("#{t("success.back_home")}"), :root, class: "button" %>
+        </div>
         <% if flash[:notice].present? %>
           <div class="notice">
             <p><%= flash[:notice] %></p>

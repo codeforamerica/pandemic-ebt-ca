@@ -10,6 +10,8 @@ en:
     what_is_the_city: What is the city?
     what_is_the_zip: What is the ZIP code?
     go_back: Go back
+    if_your_family: If your family still needs help buying groceries, you can apply for CalFresh (also known as Food
+      Stamps).
   index:
     coming_soon_html: Coming soon&colon;
     header: Get help buying food while schools are closed.
@@ -110,8 +112,6 @@ en:
       </ul>
   sorry:
     header: This program is only for students who can get free and reduced price school meals.
-    if_your_family: If your family still needs help buying groceries, you can apply for CalFresh (also known as Food
-      Stamps).
     many_immigrants_can_html: Many immigrants can get CalFresh. <a href="https://www.getcalfresh.org/en/immigrants">Learn more about CalFresh and immigration.</a>
     you_can_also_html: You can also find your <a href="http://www.cafoodbanks.org/find-food-bank" target="_blank">nearest food bank.</a>
   received_card:
@@ -182,6 +182,7 @@ en:
     if_approved_answer_2_html: You can also use the P-EBT card to order groceries online at Amazon and Walmart.
     how_was_your_experience: How was your experience with this application?
     thank_you: Thank you for your feedback!
+    back_home: Back to home
   footer:
     delivered_by_html: ca.p-ebt.org is a service delivered by <a class="link--subtle"
       href="https://www.codeforamerica.org/" target="_blank">Code for America</a> on behalf of the people of California.

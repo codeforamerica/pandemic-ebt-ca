@@ -6,10 +6,11 @@ zh:
     continue: 繼續
     apply_for_cf: 申請CalFresh
     what_is_the_street: 街道是？
-    what_is_the_unit: What is the unit or apartment (optional)?
+    what_is_the_unit: 單元或公寓號碼 （可選擇提供）？
     what_is_the_city: 城市是？
     what_is_the_zip: 郵政編碼是？
     go_back: 返回
+    if_your_family: 如果您的家庭仍然需要幫助購買雜貨，您也可以申請 CalFresh（糧食卷）。
   index:
     coming_soon_html: 快來了：
     header: 在學校停課期間獲取食物购买援助。
@@ -88,7 +89,7 @@ zh:
     even_if_the_student: 即使學生不在學校吃早餐或午餐，我們也需要知道他們是否符合資格。
     if_the_student: 如果您孩子所在的學校為每個人提供免費校餐，請選擇是。
   meal_eligibility:
-    header_question: Are any of these true for your family?
+    header_question: 請問以下與您的家庭現況相符嗎？
     header_answer_html: |
       <ul class="list--bulleted">
         <li>在入學時，我們曾經提交過書面申請免費或低價早/午餐。</li>
@@ -98,7 +99,6 @@ zh:
       </ul>
   sorry:
     header: 該計劃僅限於符合資格獲取免費或優惠價校餐的孩子。
-    if_your_family: 如果您的家庭仍然需要幫助購買雜貨，您也可以申請 CalFresh（糧食卷）。
     many_immigrants_can_html: 大多數移民者都可以獲取CalFresh。 <a href="https://www.getcalfresh.org/en/immigrants">了解更多CalFresh及移民相關的信息。 </a>
     you_can_also_html: 您可以查找<a href="http://www.cafoodbanks.org/find-food-bank" target="_blank">最鄰近您的食物銀行。</a>
   received_card:
@@ -110,11 +110,11 @@ zh:
     you_dont_need: Y您不必填寫這份表格。P-EBT福利將自動轉至卡內，使用方式和借記卡一樣，但只限於購買食物。
     if_theres_a_problem_html: 如果在使用卡的過程中遇到任何問題 ，您可以致電<a href="tel:+18773289677">(877) 328-9677</a>聯繫加州EBT的客服中心，每天24小時，每週 7天。
   children:
-    header: List all the students in your house.
+    header: 請列出您住所中所有的學生。
     one_at_a_time: 以每次添加一個人的方式，將所有在小學，中學和高中的在讀學童的資料都添加在申請表內。在學校符合資格領取免費早餐或午餐的pre-K和TK學童也可以申請。
-    students: Students in your house
-    child_has_been: Child has been removed
-    remove: (remove)
+    students: 您住所中所有的學生
+    child_has_been: 該孩子已被除去
+    remove: （除去）
     add: 添加學童資料
   add_student:
     header: 添加學童資料。
@@ -123,19 +123,17 @@ zh:
     legally: 請按照學校法定紀錄中填寫。
     last_name: 姓氏
     what_is_their_dob: 他們的出生日期是？
-    what_type_of_school: What type of school does this student attend?
-    public_school: Public school (including charter school)
-    private_school: Private school (including religious school)
-    please_add_student: Please add a student.
+    what_type_of_school: 這位學生就讀的學校是？
+    public_school: 公立學校（包括特許學校）
+    private_school: 私立學校（包括宗教學校）
+    please_add_student: 請添加一位學生。
   just_so_you_know:
-    header: Just so you know.
-    the_card_will: The card will have the oldest student's name on it when it arrives. If you applied for more than
-      one child, all benefits will be on this one card. Adults in the household will be able to use it to shop for the
-      whole family.
+    header: 須知事項。
+    the_card_will: 您收到的卡會顯示年紀最大的學生的名字。如果您為了多個孩子申請，合共的福利都會發放到同一張卡裡。家中的成年人可以用這張卡給全家購買食物或雜貨。
   residential_address:
-    header: 您孩子註冊就讀的學校的地址是 ？
-    what_address_notice: 請務必告訴我們您在學校紀錄中的地址 。您可以提供另外一個通信地址 。
-    student_was_homeless: Student was homeless at time of registration
+    header: 您孩子註冊就讀的學校的地址是？
+    what_address_notice: 請務必告訴我們在學校紀錄中的地址。您可以提供另外的通信地址。
+    student_was_homeless: 學生在註冊時是無家可歸的
     is_this_the_best: 在未來兩個星期您可以在此收到信件嗎？
     yes_send_mail: 是，將信件寄到該地址
     no_use_different: 否 ，使用另外的通信地址。
@@ -144,23 +142,24 @@ zh:
     this_card_can: 該卡只能寄送到加州以內的地址。
   contact:
     header: 我們如何能聯繫到您？
-    email_address: 您的電子郵件地址是？
-    email_address_error: Please enter a valid email address.
-    we_need_your_email: We need your email address to get in touch with you if there are any problems with your application.
+    email_address: 您的電郵地址是？（可選擇提供）
+    email_address_error: 請提供一個有效的電郵地址。
+    we_need_your_email: 我們需要您的電郵地址，因為如果您的申請表格出現任何問題，我們會通過電郵跟您聯繫。
   signature:
-    header: Add a parent or guardian’s signature.
+    header: 添加家長或監護人的簽名。
     type_your_full: 請在此輸入您的法定全名以簽署此表格。在輸入您的姓名時，您承諾申請表格上的資料都是真實的。
-    submit: Submit Application
+    submit: 提交申請表格
   success:
-    header: Your application is done!
-    write_down_your_html: Write down your confirmation number&colon;
-    if_approved: If approved, you'll get a P-EBT card that you can use to buy groceries within 12 days.
-    learn_more_html: <a href="/en/info">了解更多P-EBT計劃相關的信息。</a>
-    if_approved_question: If approved, how much in P-EBT benefits will I get?
+    header: 您的申請表格已完成！
+    write_down_your_html: 寫下您的確認號碼：
+    if_approved: 如果獲批，您將會在12天內收到一張可用於購買雜貨的P-EBT卡。
+    learn_more_html: <a href="/en/info">了解</a>更多有關P-EBT計劃。
+    if_approved_question: 如果獲批 ，我會得到多少P-EBT福利？
     if_approved_answer_1_html: P-EBT卡上將顯示您最年長的孩子姓名，每一個合資格的兒童將領取到 $365福利，福利卡可在大多數的雜貨店和超市購買食物。
     if_approved_answer_2_html: 您也可以用P-EBT卡在網站Amazon和Walmart 購買食物。
     how_was_your_experience: 請問您對這份申請的體驗如何 ？
     thank_you: 感謝您的反饋意見！
+    back_home: 回到首頁
   footer:
     delivered_by_html: ca.p-ebt.org 是由 <a class="link--subtle"
       href="https://www.codeforamerica.org/" target="_blank">Code for America</a> 提供給加州居民的服務 。
