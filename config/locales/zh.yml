@@ -12,6 +12,7 @@ zh:
     go_back: 返回
     if_your_family: 如果您的家庭仍然需要幫助購買雜貨，您也可以申請 CalFresh（糧食卷）。
     demo: 此網址僅用作示範用途。請在
+    general_error: 我們這邊出現了問題。
   index:
     coming_soon_html: 快來了：
     header: 在學校停課期間獲取食物购买援助。
@@ -23,6 +24,10 @@ zh:
     learn_more_about: 了解有關該計劃更多的信息。
     learn_more: 了解更多
     joint_program: 該計劃是加州教育局和加州社會服務處的一項聯合計劃 。
+    with_a_pebt_html: 您可以通過以下方式使用P-EBT卡購買雜貨：
+    most_groceries: 在大部分的雜貨店
+    most_farmers: 在大部分的農民市場
+    online: 在Amazon和Walmart的網站
   info:
     heading: 有關P-EBT的資料
     what_are_question: 什麽是「P-EBT」或Pandemic EBT福利？
@@ -132,12 +137,15 @@ zh:
     header: 須知事項。
     the_card_will: 您收到的卡會顯示年紀最大的學生的名字。如果您為了多個孩子申請，合共的福利都會發放到同一張卡裡。家中的成年人可以用這張卡給全家購買食物或雜貨。
   residential_address:
-    header: What address does %{full_name}’s school have on file?
-    what_address_notice: 請務必告訴我們您在學校紀錄中的地址 。您可以提供另外一個通信地址 。
+    header: 請問%{full_name}在學校紀錄中的地址是？
+    what_address_notice: 請務必告訴我們在學校紀錄中的地址。您可以提供另外的通信地址。
     student_was_homeless: 學生在註冊時是無家可歸的
     is_this_the_best: 在未來兩個星期您可以在此收到信件嗎？
     yes_send_mail: 是，將信件寄到該地址
     no_use_different: 否 ，使用另外的通信地址。
+  same_address:
+    header: 您家中所有的學生都在使用該地址在學校註冊嗎？
+    help_text: 我們只需要知道所有在您家的學生是否使用該地址在學校註冊。我們不會就每個地址提問。
   mailing_address:
     header: 我們應該將您的P-EBT寄送到哪裡？
     this_card_can: 該卡只能寄送到加州以內的地址。

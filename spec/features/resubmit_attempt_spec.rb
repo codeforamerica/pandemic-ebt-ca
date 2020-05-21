@@ -46,7 +46,7 @@ RSpec.describe 'Journey', type: :feature do
       fill_in 'What is the ZIP code?', with: '96021'
       choose 'No, use a different address for mail'
       click_on 'Continue'
-      expect(page).to have_text 'Are all students in your house registered at school using this address?'
+      expect(page).to have_text 'Are all students at your house registered at school using this address?'
       choose "I'm not sure"
       click_on 'Continue'
       expect(page).to have_text 'Where should we mail your P-EBT card?'

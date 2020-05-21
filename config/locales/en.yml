@@ -15,6 +15,7 @@ en:
       Stamps).
     please_choose: Please choose an option.
     demo: This site is for example purposes only. Please apply on
+    general_error: There has been a problem on our end.
   index:
     coming_soon_html: Coming soon&colon;
     header: Get help buying food while schools are closed.
@@ -27,6 +28,10 @@ en:
     learn_more_about: Learn more about this program.
     learn_more: Learn more
     joint_program: This is a joint program of the California Departments of Education and Social Services.
+    with_a_pebt_html: With a P-EBT card you can buy groceries&colon;
+    most_groceries: At most grocery stores
+    most_farmers: At most farmer's markets
+    online: Online at Amazon and Walmart
   info:
     heading: Information about P-EBT
     what_are_question: What are ‘P-EBT’ or Pandemic EBT benefits?
@@ -162,7 +167,7 @@ en:
     yes_send_mail: Yes, send mail there
     no_use_different: No, use a different address for mail
   same_address:
-    header: Are all students in your house registered at school using this address?
+    header: Are all students at your house registered at school using this address?
     help_text: We just need to know if all students in your house use this address for school. We won’t ask for every
       address.
   mailing_address:
