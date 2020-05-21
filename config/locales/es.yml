@@ -102,7 +102,7 @@ es:
       </ul>
   sorry:
     header: Este programa es solamente para niños que reciben comidas escolares gratis o a precio reducido.
-    many_immigrants_can_html: La mayoría de inmigrantes pueden obtener CalFresh. <a href="https://www.getcalfresh.org/en/immigrants">Aprenda más sobre CalFresh e inmigración.</a>
+    many_immigrants_can_html: La mayoría de inmigrantes pueden obtener CalFresh. <a href="https://www.getcalfresh.org/en/immigrants" target="_blank">Aprenda más sobre CalFresh e inmigración.</a>
     you_can_also_html: También puede encontrar su <a href="http://www.cafoodbanks.org/find-food-bank" target="_blank">banco de alimentos más cercano.</a>
   received_card:
     header: ¿Ya ha recibido la tarjeta de P-EBT?
