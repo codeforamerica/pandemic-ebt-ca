@@ -70,3 +70,5 @@ jobs:
           tag-message: Current Staging Deployment
         env:
           GITHUB_TOKEN: ${{ secrets.BOT_GITHUB_KEY }}
+          TAG_NAME: staging
+          TAG_MESSAGE: Current Staging Deployment
