@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_21_134637) do
+ActiveRecord::Schema.define(version: 2020_05_22_231342) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 2020_05_21_134637) do
     t.string "language", limit: 2
     t.integer "registered_homeless", default: 0
     t.integer "same_residential_address", default: 0
+    t.index ["submitted_at"], name: "index_households_on_submitted_at"
   end
 
 end
