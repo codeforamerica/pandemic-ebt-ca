@@ -154,7 +154,6 @@ en:
     what_type_of_school: What type of school does this student attend?
     public_school: Public school (including charter school)
     private_school: Private school (including religious school)
-    please_add_student: Please add a student.
   just_so_you_know:
     header: Just so you know.
     the_card_will: The card will have the oldest student's name on it when it arrives. If you applied for more than
@@ -178,7 +177,6 @@ en:
   contact:
     header: How can we contact you?
     email_address: What is your email address? (optional)
-    email_address_error: Please enter a valid email address.
     we_need_your_email: We need your email address to get in touch with you if there are any problems with your application.
   signature:
     header: Add a parent or guardian’s signature.
@@ -204,3 +202,16 @@ en:
     info: Information about P-EBT
     delivered_by_html: ca.p-ebt.org is a service delivered by <a class="link--subtle"
       href="https://www.codeforamerica.org/" target="_blank">Code for America</a> on behalf of the people of California.
+  validations:
+    please_add_student: Please add a student.
+    email_address: Please enter a valid email address.
+    first_name: Please fill in their last name.
+    last_name: Please fill in their last name.
+    school_type: Please select which type of school they attend.
+    dob: Please fill in their date of birth.
+    address: Please fill in the street address.
+    address_2: Please enter a shorter unit or apartment.
+    city: Please fill in the city.
+    zip_code: Please fill in a valid CA ZIP code.
+    signature: Please enter your signature.
+    choose_address: Please choose where to send mail.

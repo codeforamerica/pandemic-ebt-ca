@@ -21,7 +21,7 @@ zh:
     apply_starting: 從5月22日開始在此網站上申請。
     apply_by: 6月30日前申請獲取P-EBT
     apply_now: 立即申請
-    about: 該計劃 ，稱為P-EBT，適用於符合資格獲取免費或優惠價校餐的孩子。申請後每個孩子可以獲取$365，可用於購買雜貨。
+    about: 該計劃 ，稱為P-EBT，適用於符合資格獲取免費或優惠價校餐的孩子。申請後每個孩子可領取高達$365，可用於購買雜貨。
     children_may: 即使兒童正在領取P-EBT福利，仍然可以繼續領取由學校提供的「外帶」早/午餐或在COVID-19緊急食物站領取由學校和社區提供的緊急食物。
     questions_about: 有關P-EBT的問題？
     learn_more_about: 了解有關該計劃更多的信息。
@@ -88,7 +88,7 @@ zh:
   how:
     header_html: 以下是該服務的流程：
     give_us_your_basic_html: <b>分享一些基本的資料。</b>
-    we_will_ask: 我們會確認您是否符合資格，並要求您提供孩子們的姓名和出生日期，家人或監護人的姓名，和您在學校註冊時提供 的地址。
+    we_will_ask: 我們會確認您是否符合資格，並要求您提供孩子們的姓名和出生日期，家人或監護人的姓名，和您在學校註冊時提供的地址。
     your_school_will_make_sure_html: <b>我們將會確認您是否符合申請資格。</b>
     we_will_check: 我們將會確認您的家庭是否可以領取P-EBT。
     get_a_p_ebt_card_html: <b>通過信件獲取您的P-EBT卡。</b>
@@ -113,21 +113,21 @@ zh:
   received_card:
     header: 請問您已經收到P-EBT卡了嗎？
     it_looks_like_html: 卡應該如下：
-    if_you_already_got: 需要填寫這份表格。可購買雜貨的金額會直接存入卡裡。
+    if_you_already_got: 如果您已經收到這張卡，您不需要填寫這份申請表格。您可以當作借記卡一樣使用，用於購買食物。
   already_received:
     header: 您已完成 ！
     you_dont_need: Y您不必填寫這份表格。P-EBT福利將自動轉至卡內，使用方式和借記卡一樣，但只限於購買食物。
     if_theres_a_problem_html: 如果在使用卡的過程中遇到任何問題 ，您可以致電<a href="tel:+18773289677">(877) 328-9677</a>聯繫加州EBT的客服中心，每天24小時，每週 7天。
   children:
     header: 請列出您住所中所有的學生。
-    one_at_a_time: 以每次添加一個人的方式，將所有在小學，中學和高中的在讀學童的資料都添加在申請表內。在學校符合資格領取免費早餐或午餐的pre-K和TK學童也可以申請。
+    one_at_a_time: 以每次添加一個人的方式，將所有在小學，中學和高中的在讀學生/兒童的資料都添加在申請表內。在學校符合資格領取免費早餐或午餐的pre-K和TK學生/兒童也可以申請。
     students: 您住所中所有的學生
     child_has_been: 該孩子已被除去
     remove: （除去）
-    add: 添加學童資料
+    add: 添加學生/兒童資料
   add_student:
-    header: 添加學童資料。
-    one_at_a_time_add: 以每次添加一個人的方式，將所有在小學，中學和高中的在讀學童的資料都添加在申請表內。在學校符合資格領取免費早餐或午餐的pre-K和TK學童也可以申請。
+    header: 添加學生/兒童資料。
+    one_at_a_time_add: 以每次添加一個人的方式，將所有在小學，中學和高中的在讀學生/兒童的資料都添加在申請表內。在學校符合資格領取免費早餐或午餐的pre-K和TK學生/兒童也可以申請。
     first_name: 名字
     legally: 請按照學校法定紀錄中填寫。
     last_name: 姓氏
@@ -135,7 +135,6 @@ zh:
     what_type_of_school: 這位學生就讀的學校是？
     public_school: 公立學校（包括特許學校）
     private_school: 私立學校（包括宗教學校）
-    please_add_student: 請添加一位學生。
   just_so_you_know:
     header: 須知事項。
     the_card_will: 您收到的卡會顯示年紀最大的學生的名字。如果您為了多個孩子申請，合共的福利都會發放到同一張卡裡。家中的成年人可以用這張卡給全家購買食物或雜貨。
@@ -155,7 +154,6 @@ zh:
   contact:
     header: 我們如何能聯繫到您？
     email_address: 您的電郵地址是？（可選擇提供）
-    email_address_error: 請提供一個有效的電郵地址。
     we_need_your_email: 我們需要您的電郵地址，因為如果您的申請表格出現任何問題，我們會通過電郵跟您聯繫。
   signature:
     header: 添加家長或監護人的簽名。
@@ -177,3 +175,16 @@ zh:
     info: 有關P-EBT的資料
     delivered_by_html: ca.p-ebt.org 是由 <a class="link--subtle"
       href="https://www.codeforamerica.org/" target="_blank">Code for America</a> 提供給加州居民的服務 。
+  validations:
+    please_add_student: 請添加一位學生
+    email_address: 請輸入有效的電郵地址
+    first_name: 請填寫名字
+    last_name: 請填寫姓氏
+    school_type: 請選擇他們就讀的學校的類型
+    dob: 請填寫出生日期
+    address: 請填寫街道地址
+    address_2: 請輸入短一點的單元或公寓號碼
+    city: 請填寫城市
+    zip_code: 請填寫有效的加州郵編號碼
+    signature: 請輸入您的簽名
+    choose_address: 請選擇一個可收到信件的選項

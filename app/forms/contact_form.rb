@@ -1,6 +1,6 @@
 class ContactForm < Form
   set_attributes_for :household, :email_address
-  validates :email_address, format: { with: URI::MailTo::EMAIL_REGEXP, message: I18n.t('contact.email_address_error'),
+  validates :email_address, format: { with: URI::MailTo::EMAIL_REGEXP, message: I18n.t('validations.email_address'),
                                       if: :email_address_present? }
 
   def save
