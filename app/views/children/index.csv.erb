@@ -24,7 +24,7 @@
 <%= csv_field(:application_experience) -%>
 <%= csv_field(:confirmation_code, last: true) -%>
 <% # Data -%>
-<%- @children.each do |child| -%>
+<%- @children.in_batches.each_record do |child| -%>
 <%= csv_field(child.suid) -%>
 <%= csv_field(child.household_id) -%>
 <%= csv_field(child.first_name) -%>
