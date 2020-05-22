@@ -51,7 +51,6 @@
     const otherInputs = $('.form-group').not(homelessnessCheckbox.parent().parent());
 
     const toggleBox = function () {
-      console.log('toggle box');
       if(homelessnessCheckbox.prop('checked')) {
         otherInputs.hide();
         mailingAddress.prop("checked", true);
