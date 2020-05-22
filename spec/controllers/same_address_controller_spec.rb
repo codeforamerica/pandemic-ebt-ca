@@ -18,5 +18,13 @@ RSpec.describe SameAddressController do
       show_page = subject.class.show?(household)
       expect(show_page).to eq(true)
     end
+
+    it 'does not show when the household is registered homeless' do
+      household = Household.create(registered_homeless: 'yes')
+      household.children.create(first_name: 'Jane')
+      household.children.create(first_name: 'John')
+      show_page = subject.class.show?(household)
+      expect(show_page).to eq(false)
+    end
   end
 end
