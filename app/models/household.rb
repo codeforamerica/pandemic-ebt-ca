@@ -16,4 +16,8 @@ class Household < ApplicationRecord
   def youngest_child
     children.order(:dob).last
   end
+
+  def not_homeless?
+    registered_homeless != 'yes'
+  end
 end

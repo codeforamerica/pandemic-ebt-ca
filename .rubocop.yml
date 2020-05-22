@@ -19,6 +19,8 @@ Layout/LineLength:
   Enabled: false
 Layout/SpaceAroundMethodCallOperator:
   Enabled: false
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: true
 Lint/RaiseException:
   Enabled: false
 Lint/StructNewOverride:
