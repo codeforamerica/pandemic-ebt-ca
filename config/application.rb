@@ -57,7 +57,7 @@ module PandemicEbt
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins '*'
-        resource '/assets/*', methods: :get, headers: :any
+        resource '*', methods: :get, headers: :any
       end
     end
   end
