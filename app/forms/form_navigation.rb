@@ -33,7 +33,7 @@ class FormNavigation
   def next
     return unless index
 
-    controller_until_end = controllers[index + 1..-1]
+    controller_until_end = controllers[index + 1..]
     seek(controller_until_end)
   end
 

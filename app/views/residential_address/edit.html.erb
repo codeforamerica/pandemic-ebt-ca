@@ -50,8 +50,8 @@
     const mailingAddress = $("#form_has_mailing_address_yes");
     const otherInputs = $('.form-group').not(homelessnessCheckbox.parent().parent());
 
-    homelessnessCheckbox.change(function () {
-      if(this.checked) {
+    const toggleBox = function () {
+      if(homelessnessCheckbox.prop('checked')) {
         otherInputs.hide();
         mailingAddress.prop("checked", true);
       } else {
@@ -59,6 +59,11 @@
         noMailingAddress.prop("checked", false);
         mailingAddress.prop("checked", false);
       }
+    };
+
+    $(document).ready(function() {
+      toggleBox();
+      homelessnessCheckbox.change(toggleBox);
     });
 
     addressAutocomplete('residential');
