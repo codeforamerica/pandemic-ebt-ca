@@ -46,15 +46,20 @@
 <%= javascript_include_tag 'addressAutocomplete' %>
 <script>
     const homelessnessCheckbox = $('#form_registered_homeless');
+    const noMailingAddress = $("#form_has_mailing_address_no");
+    const mailingAddress = $("#form_has_mailing_address_yes");
     const otherInputs = $('.form-group').not(homelessnessCheckbox.parent().parent());
 
-    if (homelessnessCheckbox.parent().hasClass('is-selected')) {
+    homelessnessCheckbox.change(function () {
+      if(this.checked) {
         otherInputs.hide();
-    }
+        mailingAddress.prop("checked", true);
+      } else {
+        otherInputs.show();
+        noMailingAddress.prop("checked", false);
+        mailingAddress.prop("checked", false);
+      }
+    });
 
-    homelessnessCheckbox.click(function () {
-        otherInputs.toggle()
-        otherInputs.children('input').val('')
-    })
     addressAutocomplete('residential');
 </script>
