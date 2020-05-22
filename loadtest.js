@@ -4,10 +4,16 @@ import http from 'k6/http';
 // Version: 1.2
 // Creator: WebInspector
 
-export let options = {
-    maxRedirects: 5,
-};
+export let options = {maxRedirects: 5};
 let auth_token, cookies;
+const envMap = {
+    'development': 'http://localhost:3000',
+    'staging': 'http://ca-staging.p-ebt.org',
+    'demo': 'https://ca-demo.p-ebt.org',
+    'production': 'https://ca.p-ebt.org',
+};
+const ENVIRONMENT = envMap[__ENV.ENVIRONMENT]
+console.log(`Running load test against ${ENVIRONMENT}`)
 
 export default function () {
     group("Journey Load Test", function () {
@@ -17,7 +23,7 @@ export default function () {
         }
         req = [{
             "method": "get",
-            "url": "http://localhost:3000/en/",
+            "url": `${ENVIRONMENT}/en/`,
             "params": {
                 "cookies": {},
                 "headers": {
@@ -38,7 +44,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css",
+            "url": `${ENVIRONMENT}/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/",
@@ -47,7 +53,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js",
+            "url": `${ENVIRONMENT}/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/",
@@ -56,7 +62,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -64,7 +70,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -72,7 +78,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/pebt-hero-2e4518170998987dc0bcf451411245271594e0a022f26e8ed28841019278bfe9.png",
+            "url": `${ENVIRONMENT}/assets/pebt-hero-2e4518170998987dc0bcf451411245271594e0a022f26e8ed28841019278bfe9.png`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -80,7 +86,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/cfa_logo_dark-b1695f4140b7b67ddbf958f8a74ea218590020d3fd48617b5039c0bb80250842.png",
+            "url": `${ENVIRONMENT}/assets/cfa_logo_dark-b1695f4140b7b67ddbf958f8a74ea218590020d3fd48617b5039c0bb80250842.png`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -95,7 +101,7 @@ export default function () {
 
         req = [{
             "method": "get",
-            "url": "http://localhost:3000/en/info",
+            "url": `${ENVIRONMENT}/en/info`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -115,7 +121,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css",
+            "url": `${ENVIRONMENT}/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/info",
@@ -124,7 +130,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js",
+            "url": `${ENVIRONMENT}/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/info",
@@ -133,7 +139,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -141,7 +147,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -149,7 +155,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/pebt-info-33a4eed008d711a82a9f65b4b98919447b1bc1ef4f71abaee415234100fb1c4a.png",
+            "url": `${ENVIRONMENT}/assets/pebt-info-33a4eed008d711a82a9f65b4b98919447b1bc1ef4f71abaee415234100fb1c4a.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -173,7 +179,7 @@ export default function () {
 
         req = [{
             "method": "get",
-            "url": "http://localhost:3000/en/how",
+            "url": `${ENVIRONMENT}/en/how`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -193,7 +199,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css",
+            "url": `${ENVIRONMENT}/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/how",
@@ -202,7 +208,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js",
+            "url": `${ENVIRONMENT}/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/how",
@@ -211,7 +217,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -219,7 +225,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -227,7 +233,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/1f4c4-ffcf76b5df8a4899d83a78a5d5027d4e25dbc930b2dd6a2d7394840b8f0f19cc.png",
+            "url": `${ENVIRONMENT}/assets/emojis/1f4c4-ffcf76b5df8a4899d83a78a5d5027d4e25dbc930b2dd6a2d7394840b8f0f19cc.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -245,7 +251,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/1f4cb-dd697e17f2dbf9718777e493c68511d2a6983cd1ccd0023e2b7d70af78c789d4.png",
+            "url": `${ENVIRONMENT}/assets/emojis/1f4cb-dd697e17f2dbf9718777e493c68511d2a6983cd1ccd0023e2b7d70af78c789d4.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -263,7 +269,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/1f4ec-b92ff2b23b052fb9e195a10af14a0d8ae82dc754187508d9a5f10a0e53525d35.png",
+            "url": `${ENVIRONMENT}/assets/emojis/1f4ec-b92ff2b23b052fb9e195a10af14a0d8ae82dc754187508d9a5f10a0e53525d35.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -287,7 +293,7 @@ export default function () {
 
         req = [{
             "method": "get",
-            "url": "http://localhost:3000/en/steps/eligible",
+            "url": `${ENVIRONMENT}/en/steps/eligible`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -307,7 +313,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css",
+            "url": `${ENVIRONMENT}/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/eligible",
@@ -316,7 +322,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js",
+            "url": `${ENVIRONMENT}/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/eligible",
@@ -325,7 +331,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -333,7 +339,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -341,7 +347,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/1f392-2f9a61f9bb09ac21ccd20832fa37c1ddbc8d750a51d8fc9590a4be478fb5b99f.png",
+            "url": `${ENVIRONMENT}/assets/emojis/1f392-2f9a61f9bb09ac21ccd20832fa37c1ddbc8d750a51d8fc9590a4be478fb5b99f.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -366,7 +372,7 @@ export default function () {
 
         req = [{
             "method": "post",
-            "url": "http://localhost:3000/en/steps/eligible",
+            "url": `${ENVIRONMENT}/en/steps/eligible`,
             "body": {
                 "utf8": "✓",
                 "_method": "put",
@@ -397,7 +403,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/en/steps/meal-eligibility",
+            "url": `${ENVIRONMENT}/en/steps/meal-eligibility`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -418,7 +424,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css",
+            "url": `${ENVIRONMENT}/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/meal-eligibility",
@@ -427,7 +433,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js",
+            "url": `${ENVIRONMENT}/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/meal-eligibility",
@@ -436,7 +442,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -444,7 +450,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -452,7 +458,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/pita-emoji-83028997753e744731ce8d10d174683544dd254c971ec65d604295437b0e86a0.png",
+            "url": `${ENVIRONMENT}/assets/pita-emoji-83028997753e744731ce8d10d174683544dd254c971ec65d604295437b0e86a0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -470,7 +476,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/checkmark-5b981632cefe31ece2a4f47f362ae6377e815c1415945092d0ff97814df5a4c7.png",
+            "url": `${ENVIRONMENT}/assets/emojis/checkmark-5b981632cefe31ece2a4f47f362ae6377e815c1415945092d0ff97814df5a4c7.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -488,7 +494,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -513,7 +519,7 @@ export default function () {
 
         req = [{
             "method": "post",
-            "url": "http://localhost:3000/en/steps/meal-eligibility",
+            "url": `${ENVIRONMENT}/en/steps/meal-eligibility`,
             "body": {
                 "utf8": "✓",
                 "_method": "put",
@@ -542,7 +548,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/en/steps/received-card",
+            "url": `${ENVIRONMENT}/en/steps/received-card`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -563,7 +569,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css",
+            "url": `${ENVIRONMENT}/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/received-card",
@@ -572,7 +578,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js",
+            "url": `${ENVIRONMENT}/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/received-card",
@@ -581,7 +587,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/ca-p-ebt-9911d001f7d600243ce40b11b8a674c8275ea2b3e34c35bb1407129364b21652.png",
+            "url": `${ENVIRONMENT}/assets/ca-p-ebt-9911d001f7d600243ce40b11b8a674c8275ea2b3e34c35bb1407129364b21652.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -599,7 +605,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -607,7 +613,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -615,7 +621,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/checkmark-5b981632cefe31ece2a4f47f362ae6377e815c1415945092d0ff97814df5a4c7.png",
+            "url": `${ENVIRONMENT}/assets/emojis/checkmark-5b981632cefe31ece2a4f47f362ae6377e815c1415945092d0ff97814df5a4c7.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -633,7 +639,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -658,7 +664,7 @@ export default function () {
 
         req = [{
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -676,7 +682,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -694,7 +700,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -712,7 +718,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -730,7 +736,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -748,7 +754,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -770,7 +776,7 @@ export default function () {
 
         req = [{
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -788,7 +794,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -806,7 +812,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -824,7 +830,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -842,7 +848,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -860,7 +866,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -878,7 +884,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -896,7 +902,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -914,7 +920,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -932,7 +938,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -950,7 +956,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -968,7 +974,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -986,7 +992,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -1004,7 +1010,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -1022,7 +1028,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -1040,7 +1046,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -1058,7 +1064,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -1076,7 +1082,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -1094,7 +1100,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -1112,7 +1118,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -1130,7 +1136,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png",
+            "url": `${ENVIRONMENT}/assets/emojis/crossmark-b2c7a8f0e1afbb9171f36f13e87336d4e70399d95a726111b9a9337a1e5c11c0.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -1151,7 +1157,7 @@ export default function () {
 
         req = [{
             "method": "post",
-            "url": "http://localhost:3000/en/steps/received-card",
+            "url": `${ENVIRONMENT}/en/steps/received-card`,
             "body": {
                 "utf8": "✓",
                 "_method": "put",
@@ -1180,7 +1186,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/en/steps/children",
+            "url": `${ENVIRONMENT}/en/steps/children`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -1201,7 +1207,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css",
+            "url": `${ENVIRONMENT}/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/children",
@@ -1210,7 +1216,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js",
+            "url": `${ENVIRONMENT}/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/children",
@@ -1219,7 +1225,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -1227,7 +1233,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -1242,7 +1248,7 @@ export default function () {
 
         req = [{
             "method": "post",
-            "url": "http://localhost:3000/en/steps/children",
+            "url": `${ENVIRONMENT}/en/steps/children`,
             "body": {
                 "utf8": "✓",
                 "_method": "put",
@@ -1272,7 +1278,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/en/steps/add-student",
+            "url": `${ENVIRONMENT}/en/steps/add-student`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -1293,7 +1299,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css",
+            "url": `${ENVIRONMENT}/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/add-student",
@@ -1302,7 +1308,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js",
+            "url": `${ENVIRONMENT}/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/add-student",
@@ -1311,7 +1317,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -1319,7 +1325,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -1327,7 +1333,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/1f464-750b79756ed480d7447a7665da08f827b853b4c7298e20ca1b27a62833c64d44.png",
+            "url": `${ENVIRONMENT}/assets/emojis/1f464-750b79756ed480d7447a7665da08f827b853b4c7298e20ca1b27a62833c64d44.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -1352,7 +1358,7 @@ export default function () {
 
         req = [{
             "method": "post",
-            "url": "http://localhost:3000/en/steps/add-student",
+            "url": `${ENVIRONMENT}/en/steps/add-student`,
             "body": {
                 "utf8": "✓",
                 "_method": "put",
@@ -1387,7 +1393,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/en/steps/children",
+            "url": `${ENVIRONMENT}/en/steps/children`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -1408,7 +1414,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css",
+            "url": `${ENVIRONMENT}/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/children",
@@ -1417,7 +1423,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js",
+            "url": `${ENVIRONMENT}/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/children",
@@ -1426,7 +1432,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -1434,7 +1440,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -1449,7 +1455,7 @@ export default function () {
 
         req = [{
             "method": "post",
-            "url": "http://localhost:3000/en/steps/children",
+            "url": `${ENVIRONMENT}/en/steps/children`,
             "body": {
                 "utf8": "✓",
                 "_method": "put",
@@ -1479,7 +1485,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/en/steps/add-student",
+            "url": `${ENVIRONMENT}/en/steps/add-student`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -1500,7 +1506,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css",
+            "url": `${ENVIRONMENT}/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/add-student",
@@ -1509,7 +1515,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js",
+            "url": `${ENVIRONMENT}/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/add-student",
@@ -1518,7 +1524,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -1526,7 +1532,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -1534,7 +1540,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/1f464-750b79756ed480d7447a7665da08f827b853b4c7298e20ca1b27a62833c64d44.png",
+            "url": `${ENVIRONMENT}/assets/emojis/1f464-750b79756ed480d7447a7665da08f827b853b4c7298e20ca1b27a62833c64d44.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -1559,7 +1565,7 @@ export default function () {
 
         req = [{
             "method": "post",
-            "url": "http://localhost:3000/en/steps/add-student",
+            "url": `${ENVIRONMENT}/en/steps/add-student`,
             "body": {
                 "utf8": "✓",
                 "_method": "put",
@@ -1594,7 +1600,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/en/steps/children",
+            "url": `${ENVIRONMENT}/en/steps/children`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -1615,7 +1621,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css",
+            "url": `${ENVIRONMENT}/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/children",
@@ -1624,7 +1630,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js",
+            "url": `${ENVIRONMENT}/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/children",
@@ -1633,7 +1639,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -1641,7 +1647,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -1656,7 +1662,7 @@ export default function () {
 
         req = [{
             "method": "post",
-            "url": "http://localhost:3000/en/steps/children",
+            "url": `${ENVIRONMENT}/en/steps/children`,
             "body": {
                 "utf8": "✓",
                 "_method": "put",
@@ -1686,7 +1692,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/en/steps/just-so-you-know",
+            "url": `${ENVIRONMENT}/en/steps/just-so-you-know`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -1707,7 +1713,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css",
+            "url": `${ENVIRONMENT}/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/just-so-you-know",
@@ -1716,7 +1722,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js",
+            "url": `${ENVIRONMENT}/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/just-so-you-know",
@@ -1725,7 +1731,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -1733,7 +1739,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -1741,7 +1747,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/1f4b3-2874cfdacbccf57c2c616b3496556fa6526eb299d72c79bb019254d2bf0e96d8.png",
+            "url": `${ENVIRONMENT}/assets/emojis/1f4b3-2874cfdacbccf57c2c616b3496556fa6526eb299d72c79bb019254d2bf0e96d8.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -1766,7 +1772,7 @@ export default function () {
 
         req = [{
             "method": "post",
-            "url": "http://localhost:3000/en/steps/just-so-you-know",
+            "url": `${ENVIRONMENT}/en/steps/just-so-you-know`,
             "body": {
                 "utf8": "✓",
                 "_method": "put",
@@ -1795,7 +1801,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/en/steps/residential-address",
+            "url": `${ENVIRONMENT}/en/steps/residential-address`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -1816,7 +1822,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css",
+            "url": `${ENVIRONMENT}/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/residential-address",
@@ -1825,7 +1831,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js",
+            "url": `${ENVIRONMENT}/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/residential-address",
@@ -1834,7 +1840,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/addressAutocomplete.debug-063fb5a00827cbecfeaf3061cef060f3a53bc8cb412b6fc6f187c3ca3098a62d.js",
+            "url": `${ENVIRONMENT}/assets/addressAutocomplete.debug-063fb5a00827cbecfeaf3061cef060f3a53bc8cb412b6fc6f187c3ca3098a62d.js`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -1852,7 +1858,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -1860,7 +1866,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -1868,7 +1874,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/1f4cb-dd697e17f2dbf9718777e493c68511d2a6983cd1ccd0023e2b7d70af78c789d4.png",
+            "url": `${ENVIRONMENT}/assets/emojis/1f4cb-dd697e17f2dbf9718777e493c68511d2a6983cd1ccd0023e2b7d70af78c789d4.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -1886,7 +1892,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -1894,7 +1900,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -1909,7 +1915,7 @@ export default function () {
 
         req = [{
             "method": "post",
-            "url": "http://localhost:3000/en/steps/residential-address",
+            "url": `${ENVIRONMENT}/en/steps/residential-address`,
             "body": {
                 "utf8": "✓",
                 "_method": "put",
@@ -1944,7 +1950,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/en/steps/mailing-address",
+            "url": `${ENVIRONMENT}/en/steps/mailing-address`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -1965,7 +1971,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css",
+            "url": `${ENVIRONMENT}/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/mailing-address",
@@ -1974,7 +1980,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js",
+            "url": `${ENVIRONMENT}/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/mailing-address",
@@ -1983,7 +1989,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/addressAutocomplete.debug-063fb5a00827cbecfeaf3061cef060f3a53bc8cb412b6fc6f187c3ca3098a62d.js",
+            "url": `${ENVIRONMENT}/assets/addressAutocomplete.debug-063fb5a00827cbecfeaf3061cef060f3a53bc8cb412b6fc6f187c3ca3098a62d.js`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -2001,7 +2007,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -2009,7 +2015,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -2017,7 +2023,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/1f4eb-d67f4dac343f96f4650e61d11bf68125438ed5f8dfc39025331855cab25eb757.png",
+            "url": `${ENVIRONMENT}/assets/emojis/1f4eb-d67f4dac343f96f4650e61d11bf68125438ed5f8dfc39025331855cab25eb757.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -2035,7 +2041,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -2043,7 +2049,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -2058,7 +2064,7 @@ export default function () {
 
         req = [{
             "method": "post",
-            "url": "http://localhost:3000/en/steps/mailing-address",
+            "url": `${ENVIRONMENT}/en/steps/mailing-address`,
             "body": {
                 "utf8": "✓",
                 "_method": "put",
@@ -2091,7 +2097,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/en/steps/contact",
+            "url": `${ENVIRONMENT}/en/steps/contact`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -2112,7 +2118,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css",
+            "url": `${ENVIRONMENT}/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/contact",
@@ -2121,7 +2127,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js",
+            "url": `${ENVIRONMENT}/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/contact",
@@ -2130,7 +2136,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/speech-balloon-f18e38576d7e835ffe542b6fd5a95266035e6a0adc3f24822bdbb90e93db7c9b.svg",
+            "url": `${ENVIRONMENT}/assets/speech-balloon-f18e38576d7e835ffe542b6fd5a95266035e6a0adc3f24822bdbb90e93db7c9b.svg`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -2148,7 +2154,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -2156,7 +2162,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -2171,7 +2177,7 @@ export default function () {
 
         req = [{
             "method": "post",
-            "url": "http://localhost:3000/en/steps/contact",
+            "url": `${ENVIRONMENT}/en/steps/contact`,
             "body": {
                 "utf8": "✓",
                 "_method": "put",
@@ -2201,7 +2207,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/en/steps/signature",
+            "url": `${ENVIRONMENT}/en/steps/signature`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -2222,7 +2228,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css",
+            "url": `${ENVIRONMENT}/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/signature",
@@ -2231,7 +2237,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js",
+            "url": `${ENVIRONMENT}/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/signature",
@@ -2240,7 +2246,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/pen-emoji-9b73f9034d5bcb53d16582dd93bd4da90db55c3a0fd4de406ade54c7a0a310c2.png",
+            "url": `${ENVIRONMENT}/assets/pen-emoji-9b73f9034d5bcb53d16582dd93bd4da90db55c3a0fd4de406ade54c7a0a310c2.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -2258,7 +2264,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -2266,7 +2272,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -2281,7 +2287,7 @@ export default function () {
 
         req = [{
             "method": "post",
-            "url": "http://localhost:3000/en/steps/signature",
+            "url": `${ENVIRONMENT}/en/steps/signature`,
             "body": {
                 "utf8": "✓",
                 "_method": "put",
@@ -2311,7 +2317,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/en/steps/success",
+            "url": `${ENVIRONMENT}/en/steps/success`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -2332,7 +2338,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css",
+            "url": `${ENVIRONMENT}/assets/application.debug-ed6a3d5ca4991f3342d7d7058606d35926cd800aeab856f9db4c4db30016f88c.css`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/success",
@@ -2341,7 +2347,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js",
+            "url": `${ENVIRONMENT}/assets/application.debug-4cd1f29cd4e36c904eed54af2dac3b037489c174de76f143490e2485b3eec336.js`,
             "params": {
                 "headers": {
                     "Referer": "http://localhost:3000/en/steps/success",
@@ -2350,7 +2356,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-1155e5358e3b9aac349b540651cdff0b55346084da1d53504dff8828b2ae1c4a.ttf?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -2358,7 +2364,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh",
+            "url": `${ENVIRONMENT}/assets/icomoon-7d54982e06750508f66b2a810e3dd169ab26f4c006f8a712c834b854d9201859.woff?ia7soh`,
             "params": {
                 "headers": {
                     "Referer": ""
@@ -2366,7 +2372,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/1f31f-74acfc534bd4079b698a07ccd9883087b874a8e180b1a19db67e36a14e4bf602.png",
+            "url": `${ENVIRONMENT}/assets/emojis/1f31f-74acfc534bd4079b698a07ccd9883087b874a8e180b1a19db67e36a14e4bf602.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -2384,7 +2390,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/1f600-3a2138c299ea089e9e3f055a9b088f0a5989133e14d78a6e0d68cec30d9c25b5.png",
+            "url": `${ENVIRONMENT}/assets/emojis/1f600-3a2138c299ea089e9e3f055a9b088f0a5989133e14d78a6e0d68cec30d9c25b5.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -2402,7 +2408,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/1f610-b21e70b26a37709d06f6c6a8ea4c89b1a07fe2d729594e3a08127c75ec5a1f45.png",
+            "url": `${ENVIRONMENT}/assets/emojis/1f610-b21e70b26a37709d06f6c6a8ea4c89b1a07fe2d729594e3a08127c75ec5a1f45.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {
@@ -2420,7 +2426,7 @@ export default function () {
             }
         }, {
             "method": "get",
-            "url": "http://localhost:3000/assets/emojis/1f641-ccfde83b4da1247ddbab5eb064ac0c7b728142c83fbc5da15155c50380b45fba.png",
+            "url": `${ENVIRONMENT}/assets/emojis/1f641-ccfde83b4da1247ddbab5eb064ac0c7b728142c83fbc5da15155c50380b45fba.png`,
             "params": {
                 "cookies": cookies,
                 "headers": {

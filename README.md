@@ -10,6 +10,10 @@ Staging Environment: [https://ca-staging.p-ebt.org/](https://ca-staging.p-ebt.or
 - Run tests with `rake`.
 - `rails s` to run the server.
 
+### Run load tests
+- `brew install k6`
+- `k6 run -e ENVIRONMENT=<development|staging|demo|production> --vus <number of virtual users> --iterations <number of iterations> loadtest.js`
+
 ### Implementing New Screens
 
 This Rails app has a few unique constructs:
