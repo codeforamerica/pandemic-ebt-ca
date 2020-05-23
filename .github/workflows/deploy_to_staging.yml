@@ -58,17 +58,3 @@ jobs:
       - name: Deploy to aptible
         run: |
           git push git@beta.aptible.com:p-ebt/app-staging.git master
-  tag_staging:
-    runs-on: ubuntu-latest
-    needs: deploy
-    steps:
-      - uses: actions/checkout@v2
-      - run: git fetch --prune --unshallow
-      - uses: weareyipyip/walking-tag-action@v1
-        with:
-          tag-name: staging
-          tag-message: Current Staging Deployment
-        env:
-          GITHUB_TOKEN: ${{ secrets.BOT_GITHUB_KEY }}
-          TAG_NAME: staging
-          TAG_MESSAGE: Current Staging Deployment
