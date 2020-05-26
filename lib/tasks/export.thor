@@ -14,6 +14,6 @@ class Export < Thor
     File.open(file_name, 'w') do |file|
       file.puts output
     end
-    puts "EXPORT COMPLETE! Exported to #{filename}"
+    puts "EXPORT COMPLETE! Exported to #{file_name}"
   end
 end
