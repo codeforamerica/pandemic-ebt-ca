@@ -18,10 +18,10 @@ Staging Environment: [https://ca-staging.p-ebt.org/](https://ca-staging.p-ebt.or
 
 This Rails app has a few unique constructs:
 
-- Because each screen asks only limited questions, validations on the ActiveRecord models can't be run on each save. 
+- Because each screen asks only limited questions, validations on the ActiveRecord models can't be run on each save.
   Therefore, we use a `Form` Model (which subclasses ActiveModel) to perform validations and param whitelisting.
 - A corresponding `FormsController` works in tandem with the `Form` model.
-- The `FormNavigation` holds the logic for flow control: the order of the screens as well as the next screen. 
+- The `FormNavigation` holds the logic for flow control: the order of the screens as well as the next screen.
 
 Use Outside-In Test-Driven Development to implement a new screen:
 
@@ -35,3 +35,8 @@ Use Outside-In Test-Driven Development to implement a new screen:
 
 `CACHE_STATIC_PAGES`
 : Set to `false` to turn off page caching, `true` to enable. Default is `true`.
+
+### CLI
+
+`thor export:children FILE`
+: Export children (by default, only completely submitted children) to FILE (by default `tmp/all.csv`). Run `thor help export:children` for more options
