@@ -29,12 +29,6 @@ Metrics/AbcSize:
   Enabled: false
 Metrics/BlockLength:
   Enabled: false
-Metrics/CyclomaticComplexity:
-  Exclude:
-    - lib/tasks/export.thor
-Metrics/PerceivedComplexity:
-  Exclude:
-    - lib/tasks/export.thor
 Metrics/MethodLength:
   Enabled: false
 Rails/FilePath:
