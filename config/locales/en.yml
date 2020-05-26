@@ -127,6 +127,7 @@ en:
     many_immigrants_can_html: Many immigrants can get CalFresh. <a href="https://www.getcalfresh.org/en/immigrants" target="_blank">Learn more about CalFresh and immigration.</a>
     you_can_also_html: You can also find your <a href="http://www.cafoodbanks.org/find-food-bank" target="_blank">nearest food bank.</a>
   received_card:
+    alt_text_card: A white card that says P-EBT on it
     header: Have you received a P-EBT card?
     it_looks_like_html: It looks like this&colon;
     if_you_already_got: If you already got this card, you don't need to fill out this form. You can use this like a
@@ -177,10 +178,12 @@ en:
     header: Where should we mail your P-EBT card?
     this_card_can: This card can only be mailed to an address in California.
   contact:
+    alt_text_bubble: a speech balloon with three dots
     header: How can we contact you?
     email_address: What is your email address? (optional)
     we_need_your_email: We need your email address to get in touch with you if there are any problems with your application.
   signature:
+    alt_text_pen: a black and silver pen
     header: Add a parent or guardian’s signature.
     type_your_full: Type your full legal name here to sign this form. By entering your name you agree you have been
       honest on this form.
