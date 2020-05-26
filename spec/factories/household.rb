@@ -25,6 +25,14 @@ FactoryBot.define do
       submitted_at { nil }
       signature { nil }
     end
+
+    trait :submitted_today do
+      submitted_at { 0.seconds.ago }
+    end
+
+    trait :submitted_yesterday do
+      submitted_at { 24.hours.ago }
+    end
   end
 
   trait :with_email do

@@ -31,15 +31,15 @@ class Export < Thor
     )
     children = children.submitted_before(end_at) if end_at
 
-    unless options["count"]
+    if options['count']
+      puts "Counted #{children.count} children"
+    else
       output = ChildrenController.render :index, assigns: { children: children }
       File.delete(file_name) if File.exist?(file_name)
       File.open(file_name, 'w') do |file|
         file.puts output
       end
       puts "EXPORT COMPLETE! Exported to #{file_name}"
-    else
-      puts "Counted #{children.count} children"
     end
   end
 end
