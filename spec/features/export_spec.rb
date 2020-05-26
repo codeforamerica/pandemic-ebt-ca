@@ -78,13 +78,19 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
       mailing_address_row = row_for_child @child_with_mailing_address
       expect(mailing_address_row['mailing_street']).to eq(@child_with_mailing_address.household.mailing_street)
       expect(mailing_address_row['mailing_street']).not_to eq(mailing_address_row['residential_street'])
+<<<<<<< HEAD
       expect(mailing_address_row['has_distinct_mailing_address']).to eq('yes')
+=======
+>>>>>>> bec53e990a62427ad6f98011750641f10935bde3
 
       expect(@child_without_mailing_address.household.mailing_street).to be_blank
       no_mailing_address_row = row_for_child @child_without_mailing_address
       expect(no_mailing_address_row['mailing_street']).not_to be_blank
       expect(no_mailing_address_row['mailing_street']).to eq(no_mailing_address_row['residential_street'])
+<<<<<<< HEAD
       expect(no_mailing_address_row['has_distinct_mailing_address']).to eq('no')
+=======
+>>>>>>> bec53e990a62427ad6f98011750641f10935bde3
     end
 
     it 'Exports the language' do
