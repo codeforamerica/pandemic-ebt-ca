@@ -1,6 +1,5 @@
 require 'rails_helper'
 require 'csv'
-Rails.application.load_tasks
 
 HEADERS = %w[ suid household_id student_first_name student_last_name student_dob student_school_type parent_signature
               residential_street residential_street_2 residential_city residential_state residential_zip_code
@@ -24,12 +23,7 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     create_list(:child, 20)
     File.delete(@output_file_name) if File.exist?(@output_file_name)
 
-    # Run rake silently:
-    @original_stdout = $stdout
-    @captured_stdout = StringIO.new
-    $stdout = @captured_stdout
-    Rake::Task['export:csv:all'].invoke
-    $stdout = @original_stdout
+    @captured_stdout = `thor export:children`
   end
 
   before do
@@ -43,7 +37,7 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
   end
 
   it 'Shows a confirmation message on the console' do
-    expect(@captured_stdout.string).to have_text('EXPORT COMPLETE')
+    expect(@captured_stdout).to have_text('EXPORT COMPLETE')
   end
 
   it 'Creates a file called /tmp/all.csv' do
