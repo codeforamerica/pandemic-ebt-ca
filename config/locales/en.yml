@@ -96,6 +96,8 @@ en:
       report a change of address. Instead, you can call the EBT Customer Service Center
       (<a href="tel:8773289677">877-328-9677</a>) to request a change of address beginning the week of May 25. After
       confirming eligibility, a new card can be issued to your new address.
+    what_about_shared_custody_q: What if I have shared custody of my children?
+    what_about_shared_custody_a: Children who are automatically eligible for P-EBT will receive their P-EBT card at the mailing address on file. Children who are eligible for P-EBT, but are not receiving CalFresh, Medi-Cal or Foster care benefits must apply. The P-EBT application should be completed by the parent who is responsible for purchasing and preparing a majority of a child’s meals (more than 50%). P-EBT benefits cannot be split on two cards, but parents can share a single P-EBT card.
   how:
     header_html: Here's how it works&colon;
     give_us_your_basic_html: <b>Share some basic information.</b>
