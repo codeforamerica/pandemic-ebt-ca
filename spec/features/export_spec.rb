@@ -19,12 +19,41 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     @child_with_email = create(:child, household_id: create(:household, :with_email).id)
     @child_with_mailing_address = create(:child, household_id: create(:household, :with_mailing_address).id)
     @child_without_mailing_address = create(:child, household_id: create(:household, :without_mailing_address).id)
+    @child_from_today = create(:child, household: create(:household, :submitted_today))
+    @child_from_yesterday = create(:child, household: create(:household, :submitted_yesterday))
   end
 
   after(:all) do
     # prevent data leakage:
     Child.destroy_all
     Household.destroy_all
+  end
+
+  context 'when exporting children for yesterday' do
+    it 'includes the children for yesterday' do
+      output_file_name = Rails.root.join('tmp', 'all.csv')
+      File.delete(output_file_name) if File.exist?(output_file_name)
+      captured_stdout = `thor export:children --yesterday`
+
+      expect(captured_stdout).to have_text('EXPORT COMPLETE')
+
+      @csv_data = CSV.read(output_file_name, headers: true)
+      expect(row_for_child(@child_from_today)).to be_nil
+      expect(row_for_child(@child_from_yesterday)).not_to be_nil
+    end
+  end
+
+  context 'when counting children' do
+    it 'shows the count on the screen and does not export' do
+      output_file_name = Rails.root.join('tmp', 'all.csv')
+
+      File.delete(output_file_name) if File.exist?(output_file_name)
+      captured_stdout = `thor export:children -c`
+
+      expect(captured_stdout).to have_text("Counted #{Child.submitted.count} children")
+      output_file_name = Rails.root.join('tmp', 'all.csv')
+      expect(File).not_to exist(output_file_name)
+    end
   end
 
   context 'when exporting submitted children' do
