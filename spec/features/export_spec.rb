@@ -1,6 +1,5 @@
 require 'rails_helper'
 require 'csv'
-Rails.application.load_tasks
 
 HEADERS = %w[ suid household_id student_first_name student_last_name student_dob student_school_type parent_signature
               residential_street residential_street_2 residential_city residential_state residential_zip_code
@@ -15,25 +14,13 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
   before(:all) do
     Child.delete_all
     Household.delete_all
-    @output_file_name = Rails.root.join('tmp', 'all.csv')
+    create_list(:child, 20)
     @unsubmitted_child = create(:child, household: create(:household, :unsubmitted))
     @child_with_email = create(:child, household_id: create(:household, :with_email).id)
     @child_with_mailing_address = create(:child, household_id: create(:household, :with_mailing_address).id)
     @child_without_mailing_address = create(:child, household_id: create(:household, :without_mailing_address).id)
-
-    create_list(:child, 20)
-    File.delete(@output_file_name) if File.exist?(@output_file_name)
-
-    # Run rake silently:
-    @original_stdout = $stdout
-    @captured_stdout = StringIO.new
-    $stdout = @captured_stdout
-    Rake::Task['export:csv:all'].invoke
-    $stdout = @original_stdout
-  end
-
-  before do
-    @csv_data = CSV.read(@output_file_name, headers: true)
+    @child_from_today = create(:child, household: create(:household, :submitted_today))
+    @child_from_yesterday = create(:child, household: create(:household, :submitted_yesterday))
   end
 
   after(:all) do
@@ -42,47 +29,75 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     Household.destroy_all
   end
 
-  it 'Shows a confirmation message on the console' do
-    expect(@captured_stdout.string).to have_text('EXPORT COMPLETE')
+  context 'when exporting children by date' do
+    it 'includes only children for yesterday when yesterday is exported' do
+      output_file_name = Rails.root.join('tmp', 'all.csv')
+      File.delete(output_file_name) if File.exist?(output_file_name)
+      captured_stdout = `thor export:children -a '#{Date.current - 1.day}' -b  '#{Date.current}'`
+
+      expect(captured_stdout).to have_text('EXPORT COMPLETE')
+
+      @csv_data = CSV.read(output_file_name, headers: true)
+      expect(row_for_child(@child_from_today)).to be_nil
+      expect(row_for_child(@child_from_yesterday)).not_to be_nil
+    end
   end
 
-  it 'Creates a file called /tmp/all.csv' do
-    expect(File).to exist(@output_file_name)
-  end
+  context 'when exporting submitted children' do
+    before(:all) do
+      @output_file_name = Rails.root.join('tmp', 'all.csv')
 
-  it 'Exports all children' do
-    expect(@csv_data.count).to eq(Child.submitted.count)
-  end
+      File.delete(@output_file_name) if File.exist?(@output_file_name)
 
-  it 'Has the proper headers' do
-    expect(@csv_data.headers).to eq(HEADERS)
-  end
+      @captured_stdout = `thor export:children`
+    end
 
-  it 'Fills all mailing addresses, duplicating residential data where required' do
-    expect(@csv_data.map { |r| r['mailing_street'] }).to all(be_present)
+    before do
+      @csv_data = CSV.read(@output_file_name, headers: true)
+    end
 
-    mailing_address_row = row_for_child @child_with_mailing_address
-    expect(mailing_address_row['mailing_street']).to eq(@child_with_mailing_address.household.mailing_street)
-    expect(mailing_address_row['mailing_street']).not_to eq(mailing_address_row['residential_street'])
+    it 'Shows a confirmation message on the console' do
+      expect(@captured_stdout).to have_text('EXPORT COMPLETE')
+    end
 
-    expect(@child_without_mailing_address.household.mailing_street).to be_blank
-    no_mailing_address_row = row_for_child @child_without_mailing_address
-    expect(no_mailing_address_row['mailing_street']).not_to be_blank
-    expect(no_mailing_address_row['mailing_street']).to eq(no_mailing_address_row['residential_street'])
-  end
+    it 'Creates a file called /tmp/all.csv' do
+      expect(File).to exist(@output_file_name)
+    end
 
-  it 'Exports the language' do
-    expect(@csv_data.map { |r| r['language'] }).to all(be_present)
-  end
+    it 'Exports all children' do
+      expect(@csv_data.count).to eq(Child.submitted.count)
+    end
 
-  it 'Exports email address if present' do
-    email_row = row_for_child @child_with_email
-    expect(@child_with_email.household.email_address).to be_present
-    expect(email_row['email_address']).to eq(@child_with_email.household.email_address)
-  end
+    it 'Has the proper headers' do
+      expect(@csv_data.headers).to eq(HEADERS)
+    end
 
-  it 'Only exports submitted children' do
-    unsubmitted_child_row = row_for_child @unsubmitted_child
-    expect(unsubmitted_child_row).to eq(nil)
+    it 'Fills all mailing addresses, duplicating residential data where required' do
+      expect(@csv_data.map { |r| r['mailing_street'] }).to all(be_present)
+
+      mailing_address_row = row_for_child @child_with_mailing_address
+      expect(mailing_address_row['mailing_street']).to eq(@child_with_mailing_address.household.mailing_street)
+      expect(mailing_address_row['mailing_street']).not_to eq(mailing_address_row['residential_street'])
+
+      expect(@child_without_mailing_address.household.mailing_street).to be_blank
+      no_mailing_address_row = row_for_child @child_without_mailing_address
+      expect(no_mailing_address_row['mailing_street']).not_to be_blank
+      expect(no_mailing_address_row['mailing_street']).to eq(no_mailing_address_row['residential_street'])
+    end
+
+    it 'Exports the language' do
+      expect(@csv_data.map { |r| r['language'] }).to all(be_present)
+    end
+
+    it 'Exports email address if present' do
+      email_row = row_for_child @child_with_email
+      expect(@child_with_email.household.email_address).to be_present
+      expect(email_row['email_address']).to eq(@child_with_email.household.email_address)
+    end
+
+    it 'Only exports submitted children' do
+      unsubmitted_child_row = row_for_child @unsubmitted_child
+      expect(unsubmitted_child_row).to eq(nil)
+    end
   end
 end
