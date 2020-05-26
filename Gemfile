@@ -3,7 +3,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
-gem 'actionpack-page_caching'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'cfa-styleguide', git: 'https://github.com/codeforamerica/honeycrisp-gem'
 gem 'pg', '>= 0.18', '< 2.0'
