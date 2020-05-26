@@ -14,20 +14,11 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
   before(:all) do
     Child.delete_all
     Household.delete_all
-    @output_file_name = Rails.root.join('tmp', 'all.csv')
+    create_list(:child, 20)
     @unsubmitted_child = create(:child, household: create(:household, :unsubmitted))
     @child_with_email = create(:child, household_id: create(:household, :with_email).id)
     @child_with_mailing_address = create(:child, household_id: create(:household, :with_mailing_address).id)
     @child_without_mailing_address = create(:child, household_id: create(:household, :without_mailing_address).id)
-
-    create_list(:child, 20)
-    File.delete(@output_file_name) if File.exist?(@output_file_name)
-
-    @captured_stdout = `thor export:children`
-  end
-
-  before do
-    @csv_data = CSV.read(@output_file_name, headers: true)
   end
 
   after(:all) do
@@ -36,47 +27,61 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     Household.destroy_all
   end
 
-  it 'Shows a confirmation message on the console' do
-    expect(@captured_stdout).to have_text('EXPORT COMPLETE')
-  end
+  context 'when exporting submitted children' do
+    before(:all) do
+      @output_file_name = Rails.root.join('tmp', 'all.csv')
 
-  it 'Creates a file called /tmp/all.csv' do
-    expect(File).to exist(@output_file_name)
-  end
+      File.delete(@output_file_name) if File.exist?(@output_file_name)
 
-  it 'Exports all children' do
-    expect(@csv_data.count).to eq(Child.submitted.count)
-  end
+      @captured_stdout = `thor export:children`
+    end
 
-  it 'Has the proper headers' do
-    expect(@csv_data.headers).to eq(HEADERS)
-  end
+    before do
+      @csv_data = CSV.read(@output_file_name, headers: true)
+    end
 
-  it 'Fills all mailing addresses, duplicating residential data where required' do
-    expect(@csv_data.map { |r| r['mailing_street'] }).to all(be_present)
+    it 'Shows a confirmation message on the console' do
+      expect(@captured_stdout).to have_text('EXPORT COMPLETE')
+    end
 
-    mailing_address_row = row_for_child @child_with_mailing_address
-    expect(mailing_address_row['mailing_street']).to eq(@child_with_mailing_address.household.mailing_street)
-    expect(mailing_address_row['mailing_street']).not_to eq(mailing_address_row['residential_street'])
+    it 'Creates a file called /tmp/all.csv' do
+      expect(File).to exist(@output_file_name)
+    end
 
-    expect(@child_without_mailing_address.household.mailing_street).to be_blank
-    no_mailing_address_row = row_for_child @child_without_mailing_address
-    expect(no_mailing_address_row['mailing_street']).not_to be_blank
-    expect(no_mailing_address_row['mailing_street']).to eq(no_mailing_address_row['residential_street'])
-  end
+    it 'Exports all children' do
+      expect(@csv_data.count).to eq(Child.submitted.count)
+    end
 
-  it 'Exports the language' do
-    expect(@csv_data.map { |r| r['language'] }).to all(be_present)
-  end
+    it 'Has the proper headers' do
+      expect(@csv_data.headers).to eq(HEADERS)
+    end
 
-  it 'Exports email address if present' do
-    email_row = row_for_child @child_with_email
-    expect(@child_with_email.household.email_address).to be_present
-    expect(email_row['email_address']).to eq(@child_with_email.household.email_address)
-  end
+    it 'Fills all mailing addresses, duplicating residential data where required' do
+      expect(@csv_data.map { |r| r['mailing_street'] }).to all(be_present)
 
-  it 'Only exports submitted children' do
-    unsubmitted_child_row = row_for_child @unsubmitted_child
-    expect(unsubmitted_child_row).to eq(nil)
+      mailing_address_row = row_for_child @child_with_mailing_address
+      expect(mailing_address_row['mailing_street']).to eq(@child_with_mailing_address.household.mailing_street)
+      expect(mailing_address_row['mailing_street']).not_to eq(mailing_address_row['residential_street'])
+
+      expect(@child_without_mailing_address.household.mailing_street).to be_blank
+      no_mailing_address_row = row_for_child @child_without_mailing_address
+      expect(no_mailing_address_row['mailing_street']).not_to be_blank
+      expect(no_mailing_address_row['mailing_street']).to eq(no_mailing_address_row['residential_street'])
+    end
+
+    it 'Exports the language' do
+      expect(@csv_data.map { |r| r['language'] }).to all(be_present)
+    end
+
+    it 'Exports email address if present' do
+      email_row = row_for_child @child_with_email
+      expect(@child_with_email.household.email_address).to be_present
+      expect(email_row['email_address']).to eq(@child_with_email.household.email_address)
+    end
+
+    it 'Only exports submitted children' do
+      unsubmitted_child_row = row_for_child @unsubmitted_child
+      expect(unsubmitted_child_row).to eq(nil)
+    end
   end
 end
