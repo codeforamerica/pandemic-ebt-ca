@@ -31,11 +31,6 @@ Use Outside-In Test-Driven Development to implement a new screen:
 4. Implement any updates to the back-end models (`Household` and `Child`) while updating corresponding unit specs.
 5. Implement the screen as an ERB template (`edit.html.erb`). The Journey spec should now pass.
 
-#### Environment Settings
-
-`CACHE_STATIC_PAGES`
-: Set to `false` to turn off page caching, `true` to enable. Default is `true`.
-
 ### CLI
 
 `thor export:children FILE`
