@@ -3,9 +3,9 @@
   <%= fields_for(:form, @form, builder: Cfa::Styleguide::CfaFormBuilder) do |f| %>
     <div class="form-card__header spacing-below-35">
       <div class="emoji emoji--bigger spacing-below-25 emoji--mail"></div>
-      <h2 class="form-card__title">
+      <h1 class="form-card__title">
         <%= t("mailing_address.header") %>
-      </h2>
+      </h1>
     </div>
     <div class="form-card__content">
       <div class="grid">
