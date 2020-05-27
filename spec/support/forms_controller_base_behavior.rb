@@ -1,8 +1,11 @@
 require 'rails_helper'
 
-RSpec.shared_examples_for 'form controller base behavior' do |household|
+RSpec.shared_examples_for 'form controller base behavior' do |household, has_children = false|
   context 'with session' do
     before do
+      if has_children
+        household.children = [build(:child)]
+      end
       session[:current_household_id] = household.id
     end
 
