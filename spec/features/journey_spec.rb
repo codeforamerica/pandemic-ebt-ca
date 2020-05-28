@@ -63,6 +63,7 @@ RSpec.describe 'Journey', type: :feature do
       fill_in 'form_signature', with: 'Julia Johnson'
       click_on 'Submit Application'
       expect(page).to have_text 'Your application is done!'
+      expect(page).not_to have_text 'GET ME SOME CSV!!!'
       click_on 'Good'
       expect(page).to have_text 'Thank you for your feedback!'
     end

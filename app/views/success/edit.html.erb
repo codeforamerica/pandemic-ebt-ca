@@ -48,6 +48,9 @@
         <div class="grid__item spacing-above-25">
           <%= link_to raw("#{t("success.back_home")}"), :root, class: "button" %>
         </div>
+        <% if Rails.env.staging? || Rails.env.development? -%>
+          <%= link_to "GET ME SOME CSV!!!", children_url(format: :csv, hhid: session[:current_household_id]) %>
+        <% end -%>
         <% if flash[:notice].present? %>
           <div class="notice">
             <p><%= flash[:notice] %></p>
