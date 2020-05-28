@@ -35,3 +35,7 @@ Use Outside-In Test-Driven Development to implement a new screen:
 
 `thor export:children FILE`
 : Export children (by default, only completely submitted children) to FILE (by default `tmp/all.csv`). Run `thor help export:children` for more options
+
+### Predeployment/Staging Lockdown
+
+If `AUTH_USERNAME` environment variable is set, the application will use `AUTH_USERNAME` and `AUTH_PASSWORD` via http authentication for each request.
