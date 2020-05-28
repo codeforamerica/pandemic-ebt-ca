@@ -17,4 +17,10 @@ RSpec.describe ChildrenController do
       expect(household.children.count).to eq(0)
     end
   end
+
+  describe 'index' do
+    it 'does not expose this' do
+      expect { get '/children.csv' }.to raise_error(ActionController::UrlGenerationError)
+    end
+  end
 end
