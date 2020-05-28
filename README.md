@@ -36,6 +36,12 @@ Use Outside-In Test-Driven Development to implement a new screen:
 `thor export:children FILE`
 : Export children (by default, only completely submitted children) to FILE (by default `tmp/all.csv`). Run `thor help export:children` for more options
 
-### Predeployment/Staging Lockdown
-
-If `AUTH_USERNAME` environment variable is set, the application will use `AUTH_USERNAME` and `AUTH_PASSWORD` via http authentication for each request.
+### Deployment Environment Variables
+`RAILS_ENV`: Rails environment. Currently one of `demo`, `staging`, `production`
+`RAILS_MASTER_KEY`: For decrypting env vars loaded from credentials file.
+`DATABASE_URL`: Postgres db connection string.
+`SENTRY_DSN`: [Sentry](https://docs.sentry.io/clients/ruby/) configuration.
+`EXPERIMENT_OVER`: For use in early launch experiments. Setting to `1` turns off `/early` endpoint.
+`SKYLIGHT_AUTHENTICATION`: [Skylight](https://www.skylight.io/support/getting-started) configuration.
+`DEMO_BANNER`: For use in non-prod environments. Setting to `1` shows a demo banner.
+`AUTH_USERNAME`: If set, the application will use `AUTH_USERNAME` and `AUTH_PASSWORD` via http authentication for each request.
