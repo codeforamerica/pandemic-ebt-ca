@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  include AuthenticationConcern
   before_action :set_sentry_context
   before_action :check_locale
   around_action :switch_locale
