@@ -45,3 +45,4 @@ Use Outside-In Test-Driven Development to implement a new screen:
 `SKYLIGHT_AUTHENTICATION`: [Skylight](https://www.skylight.io/support/getting-started) configuration.
 `DEMO_BANNER`: For use in non-prod environments. Setting to `1` shows a demo banner.
 `AUTH_USERNAME`: If set, the application will use `AUTH_USERNAME` and `AUTH_PASSWORD` via http authentication for each request.
+`GOOGLE_PLACES_API_KEY`: API key for [Google Places API](https://developers.google.com/places/web-service/autocomplete) for use in address autocomplete.
