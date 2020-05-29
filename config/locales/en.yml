@@ -210,7 +210,7 @@ en:
   validations:
     please_add_student: Please add a student.
     email_address: Please enter a valid email address.
-    first_name: Please fill in their last name.
+    first_name: Please fill in their first name.
     last_name: Please fill in their last name.
     school_type: Please select which type of school they attend.
     dob: Please fill in their date of birth.
