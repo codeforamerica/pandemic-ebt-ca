@@ -8,15 +8,12 @@ const addressAutocomplete = function (formType) {
     const addressInput = document.getElementById(`form_${formType}_street`);
     // Prevent accidentally submitting form when selecting autocomplete option
     $(addressInput).on("keydown", function(event) {return event.key !== "Enter";})
-
+    const circle = new google.maps.Circle({ center: new google.maps.LatLng(34.402850,-121.987422), radius: 549000 })
     const autocomplete = new google.maps.places.Autocomplete(addressInput, {
         types: ['address'],
         fields: ['address_component'],
         componentRestrictions: {country: "US"},
-        bounds: google.maps.LatLngBounds(
-            {lat: 32.5121, lng: -124.6509},
-            {lat: 42.0126, lng: -114.1315}
-        ) // Results biased to California
+        bounds: circle.getBounds() // Results biased to California
     })
 
     autocomplete.addListener('place_changed', function () {
