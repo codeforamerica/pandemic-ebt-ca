@@ -48,10 +48,12 @@ es:
     how_do_get_answer_1_html: La mayoría de las familias con niños que reciben beneficios de CalFresh, Medi-Cal o Foster Care no necesitan aplicar en línea. Recibirán su tarjeta P-EBT por correo durante el mes de mayo. Las tarjetas P-EBT comenzarán a llegar desde el 11 de mayo de 2020 hasta el 22 de mayo de 2020.
     how_do_get_answer_2_html: Las familias con niños que solicitaron los beneficios de CalFresh, Medi-Cal o Foster Care después del cierre de su escuela recibirán su tarjeta P-EBT por correo antes del 30 de junio de 2020.
     how_do_get_answer_3_html: Las familias con niños que califican para recibir comidas escolares gratis o a precio reducido y que NO reciben los beneficios de CalFresh, Medi-Cal o Foster Care, <u>deben aplicar en línea antes del 30 de junio de 2020</u>.
+    how_do_get_answer_4_html: Si sus hijos no estaban inscritos en las comidas escolares antes del cierre de las escuelas, es posible que no puedan ser verificados para la elegibilidad P-EBT. Comuníquese con su distrito escolar para ver si todavía están aceptando solicitudes para comidas gratis o a precio reducido.
     already_got_question: Si ya recibí una tarjeta P-EBT por correo, ¿todavía necesito solicitar en línea?
-    already_got_answer_html: No. Si ya recibió su tarjeta de P-EBT por correo, no haga su solicitud en línea. Siga las instrucciones que vienen junto su tarjeta P-EBT y crea su número de PIN privado. Después, su tarjeta estará lista para usar.
-    what_if_to_go_question: ¿Qué pasa si mis hijos están recibiendo comidas escolares 'para llevar' de otro sitio?
-    what_if_to_go_answer_html: Si. Los beneficios de P-EBT son beneficios adicionales que no reemplazan otros programas de nutrición infantil que ofrecen comidas. Los niños pueden continuar recibiendo comidas “para llevar” o alimentos en los sitios de alimentación de emergencia ofrecidos por las escuelas y espacios comunitarios, incluso si están recibiendo beneficios de P-EBT.
+    already_got_answer_1_html: No. Si ya recibió una tarjeta P-EBT por correo, no solicite en una en línea. Siga las instrucciones que vienen con su tarjeta P-EBT y crea su número de PIN privado.
+    already_got_answer_2_html: Para activar su tarjeta, llame al Centro de Servicio de Cliente de EBT al <a href="tel:18773289677">(877) 328-9677</a>. La opción 4 le permitirá de establecer un PIN para su nueva tarjeta. Necesitará la siguiente información para activar su tarjeta: el número de 16 dígitos que se encuentra en el frente de su tarjeta, su código postal para su dirección postal, y la fecha de nacimiento de 6 dígitos para el niño nombrado en la tarjeta.
+    what_if_to_go_question: ¿Mi familia todavía es elegible para otros beneficios de alimentos como CalFresh y los programas de comidas escolares en sitios de emergencia COVID-19 si recibimos P-EBT?
+    what_if_to_go_answer_html: Si. Los beneficios de P-EBT son beneficios adicionales que no reemplazan a CalFresh ni a las comidas del programa de nutrición infantil que se ofrecen. Los niños pueden continuar de recibir comidas para llevar o alimentos de emergencia en los sitios de alimentación de emergencia COVID-19 ofrecidos por las escuelas y sitios comunitarios, incluso si están recibiendo beneficios de P-EBT.
     how_much_question: ¿Cuánto voy a recibir de beneficios P-EBT?
     how_much_answer_1_html: Puede obtener hasta $365 por cada niño que sea elegible para los beneficios de P-EBT. La cantidad total que recibirá depende del número de niños que vivan en su hogar que son elegibles para el programa.
     how_much_answer_2_html: La mayoría de las familias con niños que son elegibles para comidas escolares gratuitas o de precio reducido recibirán $365 por cada niño. Si no recibe su tarjeta P-EBT por correo y presenta la solicitud antes del 30 de junio de 2020, obtendrá la cantidad total de beneficios.
@@ -60,7 +62,7 @@ es:
     what_can_i_buy_answer_1_html: Sus beneficios de P-EBT se pueden usar para comprar alimentos en la mayoría de los supermercados y mercados de agricultores y para comprar alimentos en línea en
       <a target="_blank" href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818">Amazon</a>
       y
-      <a target="_blank" href="https://www.walmart.com/ideas/discover-grocery-pickup-delivery/walmart-grocery-pickup-accepts-snap-ebt-payments/355540">Walmart</a>.
+      <a target="_blank" href="https://www.walmart.com/ideas/discover-grocery-pickup-delivery/walmart-grocery-pickup-accepts-snap-ebt-payments/355540">Walmart</a>. Lamentablemente, su tarjeta P-EBT no se puede usar para comidas en restaurantes o para comidas rápidas.
     what_can_i_buy_answer_2_html: Use su tarjeta P-EBT como una tarjeta de crédito&colon;
       <ul class="list--bulleted">
         <li>Seleccione "EBT"</li>
@@ -68,28 +70,35 @@ es:
         <li>Introduzca su número de PIN</li>
       </ul>
     what_should_i_do_question: ¿Qué debo hacer cuando reciba mi tarjeta P-EBT por correo?
-    what_should_i_do_answer_html: Siga las instrucciones que vienen junto su tarjeta P-EBT y cree su número de PIN privado. Luego, podrá usar su tarjeta para comprar alimentos en la mayoría de los supermercados y en los mercados de agricultores.
+    what_should_i_do_answer_1_html: Siga las instrucciones que vinieron con su tarjeta P-EBT y crea su número de PIN privado. Luego, puede usar su tarjeta para comprar alimentos en la mayoría de supermercados y en los mercados de agricultores.
+    what_should_i_do_answer_2_html: Para activar su tarjeta, llame al Centro de Servicio de Cliente de EBT al <a href="tel:18773289677">(877) 328-9677</a>. La opción 4 le permitirá de establecer un PIN para su nueva tarjeta. Necesitará la siguiente información para activar su tarjeta: el número de 16 dígitos que se encuentra en el frente de su tarjeta, su código postal para su dirección postal, y la fecha de nacimiento de 6 dígitos para el niño nombrado en la tarjeta.
     what_is_the_deadline_question: ¿Hasta cuándo tengo para solicitar beneficios P-EBT?
     what_is_the_deadline_answer_html: Si no recibe una tarjeta P-EBT por correo, debe presentar una solicitud en línea antes del 30 de junio de 2020 para obtener los beneficios P-EBT. Los beneficios de P-EBT solo están disponibles mientras las escuelas están cerradas debido al coronavirus (COVID 19). Si no recibió una tarjeta P-EBT por correo y no presentó la solicitud antes del 30 de junio de 2020, no podrá obtener los beneficios P-EBT.
     what_if_i_applied_question: ¿Qué pasa si solicité en línea y no he recibido mi tarjeta P-EBT?
-    what_if_i_applied_answer_html: Llame al centro de servicio al público de EBT de California al (877) 328-9677. Puede
-      llamar las 24 horas al día, 7 días a la semana.
+    what_if_i_applied_answer_html: Muchas partes del estado están experimentando retrasos en el correo, y las tarjetas pueden tardar más en llegar. Si solicitó en línea y aún no ha recibido una tarjeta por correo después de 12-14 días, puede llamar al Centro de Servicio de Cliente EBT de California al <a href="tel:18773289677">(877) 328-9677</a>. Puede comunicarse con ellos las 24 horas del día, los 7 días de la semana.
     how_long_question: ¿Cuánto tiempo tengo para usar mis beneficios P-EBT?
     how_long_answer: Puede usar sus beneficios por un año a partir de cuando usted reciba su tarjeta P-EBT.
     if_i_get_question: Si obtengo beneficios de P-EBT, ¿me convertiré en una carga pública?
-    if_i_get_answer_1_html: P-EBT es un beneficio de emergencia por desastre basado en su elegibilidad para acceder a  comidas escolares gratuitas o a precio reducido. Este beneficio es similar a otros beneficios que el DHS ha dicho <strong class="extra-strong">que no se considerarán como carga pública</strong>. Sin embargo, USCIS puede considerar varios factores para su prueba de carga pública.
-    if_i_get_answer_2_html: La carga pública no se aplica a todos los inmigrantes. Si tiene preguntas sobre su estado
+    if_i_get_answer_1_html: Dado al cierre de las escuelas debido a COVID-19, los niños que son elegibles para comidas escolares gratuitas o a precio reducido, pueden recibir EBT pandémico (P-EBT). P-EBT es similar a los beneficios de emergencia por desastre que el Departamento de Seguridad Nacional (DHS) ha confirmado que no será considerado para fines de carga pública.
+    if_i_get_answer_2_html: Adicionalmente, las comidas escolares gratuitas y de precio reducido no se consideran beneficios públicos para fines de carga pública. Además, los beneficios recibidos por los niños no cuentan con fines de carga pública para sus padres . Los niños son beneficiarios de P-EBT, entonces no se considera como un beneficio recibido por sus padres.
+    if_i_get_answer_3_html: La carga pública no se aplica a todos los inmigrantes. Si tiene preguntas sobre su estado
       migratorio y este beneficio de comida, más información esta disponible <a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__covid19.ca.gov_img_wp_covid-2D19-2Dimmigrant-2Dguidance-2Daccessible-2D1.pdf&d=DwMFAg&c=uASjV29gZuJt5_5J5CPRuQ&r=8R-cSKwMRKVQ8RlrsVEwub2ambB3pAUafrkOocCUwuw&m=zPw4azKOYZF_a34l3RNTMWy3ZGnar6BxiYo2of5MC20&s=C5kfHk9vuZa85KToIulnjpsTdZk8hH7VIz4PiTWGyx4&e"
       target="_blank">aqui</a>, incluyendo una lista de proveedores de servicios de inmigracion gratis o a precio bajo.
     what_if_i_should_get_q: ¿Qué pasa si yo debería de haber recibido una tarjeta P-EBT sin aplicar por ella, pero mi dirección cambió recientemente?
     what_if_i_should_get_a_html: Si no ha recibido una tarjeta P-EBT antes del 25 de mayo Y actualmente recibe los beneficios de CalFresh, CalWORKs, Medi-Cal o Foster Care, es posible que no tengamos su dirección más reciente. NO aplique en línea para reportar un cambio de dirección. En cambio, puede llamar al Centro de Servicio al Cliente de EBT (<a href="tel:8773289677">877-328-9677</a>) para solicitar un cambio de dirección a partir de la semana del 25 de mayo. Después de confirmar su elegibilidad, una nueva tarjeta puede ser enviada a su nueva dirección.
+    what_about_shared_custody_q: ¿Qué pasa si he compartido la custodia de mis hijos?
+    what_about_shared_custody_a: Los niños que son automáticamente elegibles para P-EBT recibirán su tarjeta P-EBT en la dirección postal en el archivo. Los niños que son elegibles para P-EBT, pero que no reciben los beneficios de CalFresh, Medi-Cal o Foster Care deben solicitarlo. La solicitud de P-EBT debe ser completada por el padre responsable de comprar y preparar la mayoría de las comidas de un niño (más del 50%). Los beneficios P-EBT no se pueden dividir en dos tarjetas, pero los padres pueden compartir una sola tarjeta P-EBT.
+    not_all_children_q: ¿Qué sucede si recibí una tarjeta P-EBT pero no tenía beneficios para todos los niños de mi familia?
+    not_all_children_a: Si recibió una tarjeta P-EBT, pero no incluyó beneficios para todos sus hijos elegibles, debe completar una solicitud para todos los estudiantes de su hogar.
+    multiple_cards_q: ¿Qué sucede si recibí varias tarjetas P-EBT?
+    multiple_cards_a: Algunas familias pueden recibir varias tarjetas. Siga los pasos de activación para cada tarjeta P-EBT recibida a nombre de cualquiera de los niños en la casa.
   how:
     header_html: Así es como funciona&colon;
     give_us_your_basic_html: <b>Comparta información básica.</b>
     we_will_ask: Nosotros aseguramos que usted sea elegible. Le preguntaremos por los nombres de sus hijos y fechas de
       nacimiento, el nombre de un padre o guardian, y la dirección que está registrada con la escuela.
     your_school_will_make_sure_html: <b>Nosotros nos aseguraremos de que usted sea elegible.</b>
-    we_will_check: Verificaremos si su familia puede obtener P-EBT.
+    we_will_check: Verificaremos para asegurarnos de que su familia pueda obtener P-EBT. El estado de inmigración no se considera en su elegibilidad para P-EBT.
     get_a_p_ebt_card_html: <b>Reciba la tarjeta de P-EBT por correo.</b>
     if_approved: Si su solicitud es aprobada, recibirá una tarjeta P-EBT en un plazo de 12 días, con dinero para comprar
       alimentos. La tarjeta vendrá cargada con dinero para alimentos y con instrucciones sobre cómo usarla.
@@ -117,8 +126,7 @@ es:
   received_card:
     header: ¿Ya ha recibido la tarjeta de P-EBT?
     it_looks_like_html: Se parece así.
-    if_you_already_got: Si ya recibió esta tarjeta, no necesita completar este formulario. Usted recibirá dinero en esta
-      tarjeta.
+    if_you_already_got: Si ya recibió esta tarjeta con beneficios para todos sus hijos elegibles, no necesita completar este formulario. Si recibió esta tarjeta, pero no incluyó beneficios para todos sus hijos elegibles, debe completar este formulario. Si no ha recibido una tarjeta en absoluto, debe completar este formulario.
   already_received:
     header: ¡Ya terminó!
     you_dont_need: Si ya recibió esta tarjeta, no necesita completar este formulario. Puede usarla como una tarjeta de
@@ -177,12 +185,12 @@ es:
     submit: Entrege la solicitud
   success:
     header: ¡Su solicitud está lista!
-    write_down_your_html: Escriba su número de confirmación&colon;
+    no_confirmation_email: No recibirá un correo electrónico de confirmación, pero su solicitud a sido enviada correctamente.
+    write_down_your_html: Anote su número de confirmación y guárdelo&colon;
     if_approved: Si su solicitud es aprobada, recibirá una tarjeta P-EBT dentro de los siguientes 12 días que puede usar para comprar alimentos.
     learn_more_html: <a href="/es/info">Aprenda más</a> sobre el programa P-EBT.
     if_approved_question: ¿Si se aprueba, ¿cuánto recibiré en beneficios de P-EBT?
-    if_approved_answer_1_html: Recibirá una tarjeta P-EBT a nombre del niño mayor en su hogar que se cargará con $365
-      por cada niño aprobado para comprar alimentos en la mayoría de los supermercados y mercados de alimentos.
+    if_approved_answer_1_html: Recibirá una tarjeta P-EBT a nombre del niño mayor que se cargará con hasta $365 por cada niño aprobado, y puede usar la tarjeta para comprar alimentos en la mayoría de supermercados y mercados de alimentos.
     if_approved_answer_2_html: También puede usar la tarjeta P-EBT para comprar alimentos en línea en
       <a target="_blank" href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818">Amazon</a>
       y

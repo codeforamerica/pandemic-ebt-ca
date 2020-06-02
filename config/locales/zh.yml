@@ -49,10 +49,11 @@ zh:
       Care 寄養福利的兒童家長將在2020年6月30日前收到郵寄P-EBT卡。
     how_do_get_answer_3_html: 在學校符合資格領取免費或低價的早/午餐，但沒有領取CalFresh糧食券, Medi-Cal 白卡或 Foster
       Care寄養福利的兒童家長必須在2020年6月30日前上網申請。
+    how_do_get_answer_4_html: 如果您的孩子在學校關閉前沒有參加獲取校餐，我們或許無法核實他的P-EBT資格。請與校區聯繫並詢問他們是否還接受免費或優惠價校餐的申請表格。
     already_got_question: 如果我已經從郵寄收到P-EBT卡，我還需再次上網申請嗎？
-    already_got_answer_html: 不用。如果您已經從郵寄收到P-EBT卡，則無需再次上網申請。請根據P-EBT卡寄來的指示設置您的卡密碼。
-      完成密碼設置後，P-EBT卡即可使用。
-    what_if_to_go_question: 如果我們家庭領取了P-EBT福利，同時還可以在COVID-19緊急食物站參與由學校提供的早/午餐計劃嗎？
+    already_got_answer_1_html: 不用。如果您已經從郵寄收到P-EBT卡，則無需再次上網申請。請根據P-EBT卡寄來的指示設置您的卡密碼。 完成密碼設置後，P-EBT卡即可使用。
+    already_got_answer_2_html: 如果需要激活您的卡，請致電<a href="tel:18773289677">(877) 328-9677</a> EBT客服中心。選項 4 會讓您設置新的卡密碼。您會需要該信息來激活您的卡：卡前面的16位數、通信地址的郵編號碼、卡上的孩子的六位數出生日期。
+    what_if_to_go_question: 如果我的家庭領取P-EBT，我們還會符合獲取其他食物福利嗎，比如CalFresh糧食卷或新冠病毒（COVID-19）緊急食物站提供的校餐？
     what_if_to_go_answer_html: 可以。P-EBT福利是一項額外的福利，它不會取代兒童現已享有的任何食物營養計劃。即使兒童正在領取P-EBT福利，仍然可以繼續領取由學校提供的「外帶」早/午餐或在COVID-19緊急食物站領取由學校和社區提供的緊急食物。
     how_much_question: 我可以領取多少金額的P-EBT福利？
     how_much_answer_1_html: 每個符合資格的兒童可領取高達 $365的P-EBT福利。福利金額的總數將取決於您家中符合領取資格的兒童人數。
@@ -60,10 +61,7 @@ zh:
     how_much_answer_3_html: 家長在學校關閉後才申請並領取到CalFresh 糧食券, Medi-Cal 白卡或 Foster
       Care 寄養福利，每個兒童或領取到少於$365 福利。這取決於您何時申請CalFresh 糧食券, Medi-Cal 白卡或 Foster Care 寄養福利。
     what_can_i_buy_question: 我可以用P-EBT福利購買什麼東西？
-    what_can_i_buy_answer_1_html: P-EBT福利可以在大多數的雜貨店，農夫市場和網站
-      <a href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818" target="_blank">Amazon</a> 和
-      <a href="https://www.walmart.com/ideas/discover-grocery-pickup-delivery/walmart-grocery-pickup-accepts-snap-ebt-payments/355540" target="_blank">Walmart</a>
-      購買食物。
+    what_can_i_buy_answer_1_html: P-EBT福利可以在大多數的雜貨店，農夫市場和網站 <a href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818" target="_blank">Amazon</a> 和 <a href="https://www.walmart.com/ideas/discover-grocery-pickup-delivery/walmart-grocery-pickup-accepts-snap-ebt-payments/355540" target="_blank">Walmart</a> 購買食物。很遺憾，P-EBT卡不能在餐館或快餐店使用。
     what_can_i_buy_answer_2_html: P-EBT卡的使用方式和借記卡一樣：
       <ul class="list--bulleted">
         <li>選擇「EBT」</li>
@@ -71,26 +69,34 @@ zh:
         <li>輸入您的卡密碼</li>
       </ul>
     what_should_i_do_question: 當我從郵寄收到P-EBT卡時，我應該做些什麼？
-    what_should_i_do_answer_html: 請根據P-EBT卡寄來的指示設置您的卡密碼。完成密碼設置後，P-EBT卡即可在大多數的雜貨店和農夫市場購買食物。
+    what_should_i_do_answer_1_html: 請根據P-EBT卡寄來的指示設置您的卡密碼。完成密碼設置後，P-EBT卡即可在大多數的雜貨店和農夫市場購買食物。
+    what_should_i_do_answer_2_html: 如果需要激活您的卡，請致電<a href="tel:18773289677">(877) 328-9677</a> 聯繫EBT客服中心。選項 4 會讓您設置新的卡密碼。您將需要提供以下信息來激活您的卡：卡前面的16位數、通信地址的郵編號碼、卡上的孩子的六位數出生日期。
     what_is_the_deadline_question: 申請P-EBT福利的截止日期是？
     what_is_the_deadline_answer_html: 如果您沒有收到郵寄P-EBT卡，則必須在2020年6月30日前上網申請P-EBT福利。P-EBT福利是爲了學校因新冠肺炎疫情(COVID
       19)關閉而臨時設立。如果您沒有收到郵寄P-EBT卡，也沒有在2020年6月30日前提交申請，則無法領取到P-EBT福利。
     what_if_i_applied_question: 如果我上網申請了，但沒有收到P-EBT卡該怎麼辦？
-    what_if_i_applied_answer_html: 請致電加州EBT客戶服務中心 (877) 328-9677。熱線電話每週7天，24小時為您服務。
+    what_if_i_applied_answer_html: 目前州內多個地區的郵寄服務出現延誤，因此卡會需要更長的時間郵寄到您的通信地址。如果您在網上申請後的12至14天內沒有收到卡，請致電<a href="tel:18773289677">(877) 328-9677</a> 聯繫加州EBT客服中心。熱線電話每週7天，24小時為您服務。
     how_long_question: 我有多長時間可以使用我的P-EBT 福利？
     how_long_answer: 您在收到P-EBT卡那天開始的一年內可以使用您的P-EBT福利。
     if_i_get_question: 如果我領取P-EBT福利，會因此被列為「公共負擔」審查的範圍嗎？
-    if_i_get_answer_1_html: P-EBT是一項基於符合獲取免費或低價學校早/午餐資格的災難緊急援助，國土安全局（DHS）將類似的福利並未列為「公共負擔」。但是，美國公民及移民服務局（USCIS）可以將許多因素列為「公共負擔」審查範圍之內。
-    if_i_get_answer_2_html: 公共負擔不適用於所有移民者。如果您就您個人的移民身分和該福利有任何疑問，請瀏覽<a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__covid19.ca.gov_img_wp_covid-2D19-2Dimmigrant-2Dguidance-2Daccessible-2D1.pdf&d=DwMFAg&c=uASjV29gZuJt5_5J5CPRuQ&r=8R-cSKwMRKVQ8RlrsVEwub2ambB3pAUafrkOocCUwuw&m=zPw4azKOYZF_a34l3RNTMWy3ZGnar6BxiYo2of5MC20&s=C5kfHk9vuZa85KToIulnjpsTdZk8hH7VIz4PiTWGyx4&e"
+    if_i_get_answer_1_html: 因為新冠病毒（COVID-19）導致學校關閉，符合資格獲取免費或優惠價校餐的學生可領取Pandemic EBT (P-EBT)。P-EBT被國土安全部（DHS）列為災難緊急福利，並不會被用於公共負擔測試。                                                                                                                                                                                                                                                     此外，獲取免費或優惠價校餐也不是公共負擔測試中的一項公共福利。另外，孩子領取的福利也不會導致或影響父母成為公共負擔。
+    if_i_get_answer_2_html: 孩子們是P-EBT領取者，因此不會被當成為父母領取福利。
+    if_i_get_answer_3_html: 公共負擔不適用於所有移民者。如果您就您個人的移民身分和該福利有任何疑問，請瀏覽<a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__covid19.ca.gov_img_wp_covid-2D19-2Dimmigrant-2Dguidance-2Daccessible-2D1.pdf&d=DwMFAg&c=uASjV29gZuJt5_5J5CPRuQ&r=8R-cSKwMRKVQ8RlrsVEwub2ambB3pAUafrkOocCUwuw&m=zPw4azKOYZF_a34l3RNTMWy3ZGnar6BxiYo2of5MC20&s=C5kfHk9vuZa85KToIulnjpsTdZk8hH7VIz4PiTWGyx4&e"
       target="_blank">此</a>，獲知更多免費或低費用的移民服務。
     what_if_i_should_get_q: 我本來應該無需提交申請，P-EBT卡會寄給我的，但是我最近更改了地址，我該怎麼辦？
     what_if_i_should_get_a_html: 如果您在5月25日還未收到P-EBT卡並正在領取CalFresh 糧食券, CalWORKs 加州就業及兒童照護計劃, Medi-Cal 白卡, 或Foster Care 寄養福利，我們或沒有您最新的地址。請不要上網申請和更改地址。在5月25日後，您可以致電EBT客戶服務中心 (877-328-9677)要求更改地址。待確認符合資格後，新卡將會寄至您的新地址。
+    what_about_shared_custody_q: 如果我擁有孩子的共同監護權？
+    what_about_shared_custody_a: 自動符合獲取P-EBT的孩子們會在他們的通信地址收到P-EBT卡。如果符合獲取P-EBT但沒有領取糧食卷（CalFresh）、加州醫療白卡（Medi-Cal）或寄養福利，需要提交申請表格。P-EBT申請表格應該由負責給孩子購買和準備食物（50%以上）的家長填寫。P-EBT福利不能分兩張卡，但父母可以共同使用同一張P-EBT卡。
+    not_all_children_q: 如果我收到P-EBT卡但金額不包括我家中所有孩子的福利？
+    not_all_children_a: 如果您收到P-EBT卡但金額不包括所有符合領取資格的孩子的福利，您應該為您家庭所有的孩子填寫申請表格。
+    multiple_cards_q: 如果我收到多張P-EBT卡？
+    multiple_cards_a: 有些家庭會收到多張卡，請按照激活步驟去激活所有顯示家中孩子名字的P-EBT卡。
   how:
     header_html: 以下是該服務的流程：
     give_us_your_basic_html: <b>分享一些基本的資料。</b>
     we_will_ask: 我們會確認您是否符合資格，並要求您提供孩子們的姓名和出生日期，家人或監護人的姓名，和您在學校註冊時提供的地址。
     your_school_will_make_sure_html: <b>我們將會確認您是否符合申請資格。</b>
-    we_will_check: 我們將會確認您的家庭是否可以領取P-EBT。
+    we_will_check: 我們將會核實您的家庭是否能夠獲取P-EBT。移民身分不會影響您獲取P-EBT的資格。
     get_a_p_ebt_card_html: <b>通過信件獲取您的P-EBT卡。</b>
     if_approved: 如果獲批，您將在12天內收到用作購買食物的P-EBT卡。福利已自動轉至卡內，請根據連同寄來的指示下使用福利卡。
   eligible:
@@ -112,8 +118,9 @@ zh:
     you_can_also_html: 您可以查找<a href="http://www.cafoodbanks.org/find-food-bank" target="_blank">最鄰近您的食物銀行。</a>
   received_card:
     header: 請問您已經收到P-EBT卡了嗎？
+    alt_text_card: 一張寫著P-EBT的白色卡
     it_looks_like_html: 卡應該如下：
-    if_you_already_got: 如果您已經收到這張卡，您不需要填寫這份申請表格。您可以當作借記卡一樣使用，用於購買食物。
+    if_you_already_got: 如果您已經收到這張卡，並收到所有符合領取該福利的孩子的總額，您無須填寫該表格。如果您收到這張卡，但卡中的金額不包括所有符合的孩子的福利，您應該填寫這份申請表格。如果您還沒有收到這張卡，您應該填寫這份申請表格。
   already_received:
     header: 您已完成 ！
     you_dont_need: Y您不必填寫這份表格。P-EBT福利將自動轉至卡內，使用方式和借記卡一樣，但只限於購買食物。
@@ -161,11 +168,12 @@ zh:
     submit: 提交申請表格
   success:
     header: 您的申請表格已完成！
-    write_down_your_html: 寫下您的確認號碼：
+    no_confirmation_email: 您不會收到確認郵件，但是您的申請表格已成功提交。
+    write_down_your_html: 寫下您的確認號碼並保留：
     if_approved: 如果獲批，您將會在12天內收到一張可用於購買雜貨的P-EBT卡。
     learn_more_html: <a href="/en/info">了解</a>更多有關P-EBT計劃。
     if_approved_question: 如果獲批 ，我會得到多少P-EBT福利？
-    if_approved_answer_1_html: P-EBT卡上將顯示您最年長的孩子姓名，每一個合資格的兒童將領取到 $365福利，福利卡可在大多數的雜貨店和超市購買食物。
+    if_approved_answer_1_html: P-EBT卡上將顯示您最年長的孩子姓名，每一個合資格的兒童最高可領取 $365福利，福利卡可在大多數的雜貨店和超市購買食物。
     if_approved_answer_2_html: 您也可以用P-EBT卡在網站<a href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818" target="_blank">Amazon</a>和<a href="https://www.walmart.com/ideas/discover-grocery-pickup-delivery/walmart-grocery-pickup-accepts-snap-ebt-payments/355540" target="_blank">Walmart</a>
       購買食物。
     how_was_your_experience: 請問您對這份申請的體驗如何 ？
