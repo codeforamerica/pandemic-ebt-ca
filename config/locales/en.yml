@@ -179,12 +179,10 @@ en:
     header: Where should we mail your P-EBT card?
     this_card_can: This card can only be mailed to an address in California.
   contact:
-    alt_text_bubble: a speech balloon with three dots
     header: How can we contact you?
     email_address: What is your email address? (optional)
     we_need_your_email: We need your email address to get in touch with you if there are any problems with your application.
   signature:
-    alt_text_pen: a black and silver pen
     header: Add a parent or guardian’s signature.
     type_your_full: Type your full legal name here to sign this form. By entering your name you agree you have been
       honest on this form.
