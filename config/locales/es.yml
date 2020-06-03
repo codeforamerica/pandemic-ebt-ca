@@ -124,6 +124,7 @@ es:
     many_immigrants_can_html: La mayoría de inmigrantes pueden obtener CalFresh. <a href="https://www.getcalfresh.org/en/immigrants" target="_blank">Aprenda más sobre CalFresh e inmigración.</a>
     you_can_also_html: También puede encontrar su <a href="http://www.cafoodbanks.org/find-food-bank" target="_blank">banco de alimentos más cercano.</a>
   received_card:
+    alt_text_card: Una tarjeta blanca con "P-EBT" inscrito en la tarjeta.
     header: ¿Ya ha recibido la tarjeta de P-EBT?
     it_looks_like_html: Se parece así.
     if_you_already_got: Si ya recibió esta tarjeta con beneficios para todos sus hijos elegibles, no necesita completar este formulario. Si recibió esta tarjeta, pero no incluyó beneficios para todos sus hijos elegibles, debe completar este formulario. Si no ha recibido una tarjeta en absoluto, debe completar este formulario.
