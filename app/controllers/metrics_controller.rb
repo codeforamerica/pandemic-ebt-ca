@@ -10,8 +10,13 @@ class MetricsController < ApplicationController
   end
 
   def authenticate
-    authenticate_or_request_with_http_basic do |username, password|
-      username == ENV['METRICS_USERNAME'] && password == ENV['METRICS_PASSWORD']
+    if ENV['METRICS_USERNAME'].blank?
+      flash[:error] = 'There has been a problem on our end.'
+      redirect_back(fallback_location: root_path)
+    else
+      authenticate_or_request_with_http_basic do |username, password|
+        username == ENV['METRICS_USERNAME'] && password == ENV['METRICS_PASSWORD']
+      end
     end
   end
 end

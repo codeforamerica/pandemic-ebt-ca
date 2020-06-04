@@ -36,8 +36,17 @@ RSpec.describe MetricsReport do
   end
 
   describe '#median_ttc' do
-    it 'returns the median time to complete for recent records' do
-      expect(described_class.new.median_ttc).to eq('06m 00s')
+    context 'at least one record' do
+      it 'returns the median time to complete for recent records' do
+        expect(described_class.new.median_ttc).to eq('06m 00s')
+      end
+    end
+
+    context 'no records' do
+      it 'returns N/A' do
+        Household.destroy_all
+        expect(described_class.new.median_ttc).to eq('N/A')
+      end
     end
   end
 end
