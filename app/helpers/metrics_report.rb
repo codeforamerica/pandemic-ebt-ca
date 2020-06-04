@@ -21,6 +21,8 @@ class MetricsReport
 
   def median_ttc
     households = Household.where.not(submitted_at: nil).limit(5000).order(submitted_at: :desc)
+    return 'N/A' if households.empty?
+
     median = median([].tap { |a| households.each { |hh| a << hh.submitted_at - hh.created_at } })
     Time.at(median).utc.strftime '%Mm %Ss'
   end
