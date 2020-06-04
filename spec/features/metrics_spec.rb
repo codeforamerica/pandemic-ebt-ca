@@ -2,7 +2,9 @@ require 'rails_helper'
 
 RSpec.describe 'Metrics', type: :feature do
   before do
-    stub_const 'ENV', ENV.to_h.merge('AUTH_PASSWORD' => 'i_like_turtles', 'AUTH_USERNAME' => 'cris_p_bacon')
+    @username = 'cris_p_bacon'
+    @pw = 'i_like_turtles'
+    stub_const 'ENV', ENV.to_h.merge('METRICS_PASSWORD' => @pw, 'METRICS_USERNAME' => @username)
   end
 
   context 'unauthorized' do
@@ -14,8 +16,8 @@ RSpec.describe 'Metrics', type: :feature do
 
   context 'authorized' do
     before do
-      ActionController::HttpAuthentication::Basic.encode_credentials 'cris_p_bacon', 'i_like_turtles'
-      page.driver.browser.authorize('cris_p_bacon', 'i_like_turtles')
+      ActionController::HttpAuthentication::Basic.encode_credentials @username, @pw
+      page.driver.browser.authorize(@username, @pw)
     end
 
     describe 'visiting /metrics' do
@@ -51,7 +53,7 @@ RSpec.describe 'Metrics', type: :feature do
         within('#application_experience') do
           expect(page).to have_content('33% 😄')
           expect(page).to have_content('33% 😐')
-          expect(page).to have_content('33% 😠')
+          expect(page).to have_content('33% 🙁')
         end
       end
 
