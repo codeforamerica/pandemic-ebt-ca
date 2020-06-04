@@ -1,0 +1,73 @@
+<% content_for(:template_name, 'metrics') %>
+<div id="totals" class="grid">
+  <h1>Totals</h1>
+  <div class="grid__item width-one-half">
+    <div class="statistic-card">
+      <p class="statistic-card__label">Applications Submitted</p>
+      <p class="statistic-card__number"><%= @metrics.total_applications %></p>
+    </div>
+  </div>
+  <div class="grid__item width-one-half">
+    <div class="statistic-card">
+      <p class="statistic-card__label">Children Submitted</p>
+      <p class="statistic-card__number"><%= @metrics.total_children %></p>
+    </div>
+  </div>
+</div>
+<div id="daily" class="grid">
+  <h1>Daily Submissions</h1>
+  <div class="grid__item width-one-fourth">
+    <div class="statistic-card">
+      <p class="statistic-card__label">Yesterday <%= (Date.today - 1.day).strftime("(%m/%d)") %></p>
+      <p class="statistic-card__number"><%= @metrics.total_applications(Date.today - 1.days) %></p>
+    </div>
+  </div>
+  <div class="grid__item width-one-fourth">
+    <div class="statistic-card">
+      <p class="statistic-card__label">2 Days Ago <%= (Date.today - 2.days).strftime("(%m/%d)") %></p>
+      <p class="statistic-card__number"><%= @metrics.total_applications(Date.today - 2.days) %></p>
+    </div>
+  </div>
+  <div class="grid__item width-one-fourth">
+    <div class="statistic-card">
+      <p class="statistic-card__label">3 Days Ago <%= (Date.today - 3.days).strftime("(%m/%d)") %></p>
+      <p class="statistic-card__number"><%= @metrics.total_applications(Date.today - 3.days) %></p>
+    </div>
+  </div>
+  <div class="grid__item width-one-fourth">
+    <div class="statistic-card">
+      <p class="statistic-card__label">4 Days Ago <%= (Date.today - 4.days).strftime("(%m/%d)") %></p>
+      <p class="statistic-card__number"><%= @metrics.total_applications(Date.today - 4.days) %></p>
+    </div>
+  </div>
+</div>
+<div id="application_experience" class="grid">
+  <h1>Application Experience</h1>
+  <div class="grid__item width-one-third">
+    <div class="statistic-card">
+      <p class="statistic-card__label">Good</p>
+      <p class="statistic-card__number"><%= @metrics.application_experience(:good) %> 😄</p>
+    </div>
+  </div>
+  <div class="grid__item width-one-third">
+    <div class="statistic-card">
+      <p class="statistic-card__label">Ok</p>
+      <p class="statistic-card__number"><%= @metrics.application_experience(:ok) %> 😐</p>
+    </div>
+  </div>
+  <div class="grid__item width-one-third">
+    <div class="statistic-card">
+      <p class="statistic-card__label">Bad</p>
+      <p class="statistic-card__number"><%= @metrics.application_experience(:bad) %> 😠</p>
+    </div>
+  </div>
+</div>
+<div id="median" class="grid">
+  <h1>Median Time To Complete</h1>
+  <div class="grid__item">
+    <div class="statistic-card">
+      <p class="statistic-card__label">Completion Time</p>
+      <p class="statistic-card__number"><%= @metrics.median_ttc %> ⏱</p>
+    </div>
+  </div>
+</div>

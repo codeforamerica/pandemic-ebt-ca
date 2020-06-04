@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :children, only: [:index] if Rails.env.staging? || Rails.env.development?
+  resources :metrics, only: [:index]
   mount JasmineRails::Engine => '/specs' if defined?(JasmineRails)
   root 'pages#index'
   get '/:locale' => 'pages#index'
