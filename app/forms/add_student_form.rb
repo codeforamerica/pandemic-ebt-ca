@@ -4,6 +4,7 @@ class AddStudentForm < Form
   validates_presence_of :last_name, message: proc { I18n.t('validations.last_name') }
   validates :school_type, inclusion: { in: Child.school_types.keys, message: proc { I18n.t('validations.school_type') } }
   validate :presence_of_dob_fields
+  validate :validity_of_date
 
   def save
     form_attributes = attributes_for(:child)
@@ -19,6 +20,12 @@ class AddStudentForm < Form
   end
 
   private
+
+  def validity_of_date
+    Date.parse [@dob_day, @dob_month, @dob_year].join('/') if @dob_day.present? && @dob_month.present? && @dob_year.present?
+  rescue ArgumentError
+    errors.add(:dob, proc { I18n.t('validations.dob') })
+  end
 
   def presence_of_dob_fields
     %i[dob_year dob_month dob_day].detect do |attr|

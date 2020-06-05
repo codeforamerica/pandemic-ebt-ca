@@ -56,6 +56,16 @@ describe AddStudentForm do
     end
   end
 
+  describe '#validity_of_date' do
+    it 'requires a real date' do
+      form = @valid_form.dup
+      form.dob_day = '31'
+      form.dob_month = '2'
+      form.dob_year = '1999'
+      expect(form).not_to be_valid
+    end
+  end
+
   describe '#presence_of_school_type_field' do
     it 'is invalid if school type is not present' do
       form = @valid_form.dup
