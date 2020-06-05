@@ -7,8 +7,6 @@ class ChildrenController < FormsController
 
   def index
     @children = Child.submitted
-
-    @children = Child.submitted
     @children = @children.submitted_after(DateTime.parse(params['after'])) if params['after'].present?
     @children = @children.submitted_before(DateTime.parse(params['before'])) if params['before'].present?
     @children = @children.by_household(params['hhid']) if params['hhid'].present?
