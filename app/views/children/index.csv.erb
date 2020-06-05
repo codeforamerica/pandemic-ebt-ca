@@ -1,55 +1,7 @@
 <% # Header Row -%>
-<%= csv_field(:suid) -%>
-<%= csv_field(:household_id) -%>
-<%= csv_field(:student_first_name) -%>
-<%= csv_field(:student_last_name) -%>
-<%= csv_field(:student_dob) -%>
-<%= csv_field(:student_school_type) -%>
-<%= csv_field(:parent_signature) -%>
-<%= csv_field(:residential_street) -%>
-<%= csv_field(:residential_street_2) -%>
-<%= csv_field(:residential_city) -%>
-<%= csv_field(:residential_state) -%>
-<%= csv_field(:residential_zip_code) -%>
-<%= csv_field(:registered_homeless) -%>
-<%= csv_field(:all_children_at_same_address) -%>
-<%= csv_field(:has_distinct_mailing_address) -%>
-<%= csv_field(:mailing_street) -%>
-<%= csv_field(:mailing_street_2) -%>
-<%= csv_field(:mailing_city) -%>
-<%= csv_field(:mailing_state) -%>
-<%= csv_field(:mailing_zip_code) -%>
-<%= csv_field(:email_address) -%>
-<%= csv_field(:language) -%>
-<%= csv_field(:submitted_at) -%>
-<%= csv_field(:application_experience) -%>
-<%= csv_field(:confirmation_code, last: true) -%>
+<%= CSV.generate { |csv| csv << Child.csv_headers } -%>
 <% # Data -%>
 <%- @children.in_batches.each_record do |child| -%>
-<%= csv_field(child.suid) -%>
-<%= csv_field(child.household_id) -%>
-<%= csv_field(child.first_name) -%>
-<%= csv_field(child.last_name) -%>
-<%= csv_field(child.dob) -%>
-<%= csv_field(child.school_type.gsub(/_school/, '')) -%>
-<%= csv_field(child.household.signature) -%>
-<%= csv_field(child.household.residential_street) -%>
-<%= csv_field(child.household.residential_street_2) -%>
-<%= csv_field(child.household.residential_city) -%>
-<%= csv_field('CA') -%>
-<%= csv_field(child.household.residential_zip_code) -%>
-<%= csv_field(child.household.registered_homeless) -%>
-<%= csv_field(child.household.same_residential_address) -%>
-<%= csv_field(child.household.has_mailing_address) -%>
-<%= csv_field(child.household.mailing_street.or_if_blank(child.household.residential_street)) -%>
-<%= csv_field(child.household.mailing_street_2.or_if_blank(child.household.residential_street_2)) -%>
-<%= csv_field(child.household.mailing_city.or_if_blank(child.household.residential_city)) -%>
-<%= csv_field('CA') -%>
-<%= csv_field(child.household.mailing_zip_code.or_if_blank(child.household.residential_zip_code)) -%>
-<%= csv_field(child.household.email_address) -%>
-<%= csv_field(child.household.language) -%>
-<%= csv_field(child.household.submitted_at) -%>
-<%= csv_field(child.household.application_experience) -%>
-<%= csv_field(child.household.confirmation_code, last: true) -%>
+<%= CSV.generate { |csv| csv << child.csv_row }.html_safe -%>
 <%- end -%>
 <%- #HACK forced data in csv -%>

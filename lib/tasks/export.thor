@@ -1,4 +1,5 @@
 require 'thor'
+require 'csv'
 require './config/environment' # Load Rails
 
 class Export < Thor
@@ -17,10 +18,12 @@ class Export < Thor
       puts "Exporting children submitted before #{DateTime.parse(options['before']).strftime('%B %d %Y')}"
     end
 
-    output = ChildrenController.render :index, assigns: { children: children }
     File.delete(file_name) if File.exist?(file_name)
-    File.open(file_name, 'w') do |file|
-      file.puts output
+    CSV.open(file_name, 'w') do |file|
+      file << Child.csv_headers
+      children.each do |row|
+        file << row.csv_row
+      end
     end
     puts "EXPORT COMPLETE! Exported to #{file_name}"
   end

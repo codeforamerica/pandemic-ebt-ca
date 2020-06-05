@@ -1,3 +1,4 @@
+require 'csv'
 class ChildrenController < FormsController
   helper_method :children
   skip_before_action :check_household, only: [:index]
