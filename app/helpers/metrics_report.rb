@@ -16,7 +16,7 @@ class MetricsReport
     experience = Household.where(application_experience: response.to_sym).count.to_f
     return '0%' if total_answered.zero?
 
-    "#{((experience / total_answered) * 100).round}%"
+    "#{((experience / total_answered) * 100).round(2)}%"
   end
 
   def median_ttc

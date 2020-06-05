@@ -29,9 +29,9 @@ RSpec.describe MetricsReport do
 
   describe '#application_experience' do
     it 'returns a percentage of the provided application experience' do
-      expect(described_class.new.application_experience(:good)).to eq('50%')
-      expect(described_class.new.application_experience(:ok)).to eq('50%')
-      expect(described_class.new.application_experience(:bad)).to eq('0%')
+      expect(described_class.new.application_experience(:good)).to eq('50.0%')
+      expect(described_class.new.application_experience(:ok)).to eq('50.0%')
+      expect(described_class.new.application_experience(:bad)).to eq('0.0%')
     end
   end
 
