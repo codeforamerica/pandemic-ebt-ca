@@ -21,7 +21,7 @@ class Export < Thor
     File.delete(file_name) if File.exist?(file_name)
     CSV.open(file_name, 'w') do |file|
       file << Child.csv_headers
-      children.each do |row|
+      children.in_batches.each_record do |row|
         file << row.csv_row
       end
     end
