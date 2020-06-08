@@ -5,6 +5,13 @@ RUN apt-get update \
  && apt-get -y install build-essential libpq-dev nodejs \
  && rm -rf /var/lib/apt/lists/*
 
+ # AWS Cli
+RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" \
+ && unzip awscliv2.zip \
+ && ./aws/install \
+ && apt-get update \
+ && apt-get install -y groff
+
 # If you require additional OS dependencies, install them here:
 # RUN apt-get update \
 #  && apt-get -y install imagemagick nodejs \
