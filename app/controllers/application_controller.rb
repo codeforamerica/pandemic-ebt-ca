@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  protect_from_forgery
+  protect_from_forgery with: :exception
   include AuthenticationConcern
   before_action :set_sentry_context
   before_action :check_locale
