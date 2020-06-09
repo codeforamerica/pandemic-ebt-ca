@@ -117,11 +117,11 @@ zh:
     many_immigrants_can_html: 大多數移民者都可以獲取CalFresh。 <a href="https://www.getcalfresh.org/en/immigrants" target="_blank">了解更多CalFresh及移民相關的信息。 </a>
     you_can_also_html: 您可以查找<a href="http://www.cafoodbanks.org/find-food-bank" target="_blank">最鄰近您的食物銀行。</a>
   received_card:
-    header: 請問您已經收到P-EBT卡了嗎？
+    header: 您是否已經收到一張一包括每位學生$365福利的P-EBT卡？
     alt_text_card: 一張寫著P-EBT的白色卡
     it_looks_like_html: 卡應該如下：
-    if_you_already_got_yes: 如果您已經收到這張卡，並收到所有符合領取該福利的孩子的總額，您無須填寫該表格。如果您收到這張卡，但卡中的金額不包括所有符合的孩子的福利，您應該填寫這份申請表格。如果您還沒有收到這張卡，您應該填寫這份申請表格。
-    if_you_already_got_no: ''
+    if_you_already_got_yes: 選擇 “是” 如果您有這張卡，卡裡並包括了每位學生的$365。
+    if_you_already_got_no: 選擇 “否” 如果您沒有這張卡，或收到這張卡但卡裡並沒有包括每個學生的福利（每位$365）。
   already_received:
     header: 您已完成 ！
     you_dont_need: Y您不必填寫這份表格。P-EBT福利將自動轉至卡內，使用方式和借記卡一樣，但只限於購買食物。
