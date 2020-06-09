@@ -1,6 +1,6 @@
 class EligibleForm < Form
   set_attributes_for :household, :is_eligible, :experiment_group, :language
-  validates_presence_of :is_eligible, message: 'Please choose an option.'
+  validates_presence_of :is_eligible, message: proc { I18n.t('shared.please_choose') }
 
   def save
     if household.persisted?
