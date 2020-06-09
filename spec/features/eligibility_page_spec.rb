@@ -20,7 +20,7 @@ RSpec.describe 'Eligibility page', type: :feature do
         click_on 'Continue'
         expect(page).to have_text 'Are any of these true for your family?'
         click_on 'Yes'
-        expect(page).to have_text 'Have you received a P-EBT card?'
+        expect(page).to have_text 'Have you already received a P-EBT card that has $365 for each eligible student in your house?'
       end
     end
 

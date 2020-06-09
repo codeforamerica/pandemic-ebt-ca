@@ -130,9 +130,10 @@ en:
     you_can_also_html: You can also find your <a href="http://www.cafoodbanks.org/find-food-bank" target="_blank">nearest food bank.</a>
   received_card:
     alt_text_card: A white card that says P-EBT on it
-    header: Have you received a P-EBT card?
+    header: Have you already received a P-EBT card that has $365 for each eligible student in your house?
     it_looks_like_html: It looks like this&colon;
-    if_you_already_got: If you already got this card with benefits for all of your eligible children, you don't need to fill out this form. If you got this card, but it did not include benefits for all your eligible children, you should fill out this form. If you haven't received a card at all, you should fill out this form.
+    if_you_already_got_yes: Select YES if you have this card with $365 per student on it.
+    if_you_already_got_no: Select NO if you do not have this card or if you got this card, but it did not include enough benefits for all of your students ($365 per student).
   already_received:
     header: You’re all done!
     you_dont_need: You don’t need to fill this form out. The P-EBT card will be automatically loaded like a debit card
