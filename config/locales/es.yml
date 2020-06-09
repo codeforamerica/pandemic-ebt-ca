@@ -127,7 +127,8 @@ es:
     alt_text_card: Una tarjeta blanca con "P-EBT" inscrito en la tarjeta.
     header: ¿Ya ha recibido la tarjeta de P-EBT?
     it_looks_like_html: Se parece así.
-    if_you_already_got: Si ya recibió esta tarjeta con beneficios para todos sus hijos elegibles, no necesita completar este formulario. Si recibió esta tarjeta, pero no incluyó beneficios para todos sus hijos elegibles, debe completar este formulario. Si no ha recibido una tarjeta en absoluto, debe completar este formulario.
+    if_you_already_got_yes: Si ya recibió esta tarjeta con beneficios para todos sus hijos elegibles, no necesita completar este formulario. Si recibió esta tarjeta, pero no incluyó beneficios para todos sus hijos elegibles, debe completar este formulario. Si no ha recibido una tarjeta en absoluto, debe completar este formulario.
+    if_you_already_got_no: ''
   already_received:
     header: ¡Ya terminó!
     you_dont_need: Si ya recibió esta tarjeta, no necesita completar este formulario. Puede usarla como una tarjeta de
