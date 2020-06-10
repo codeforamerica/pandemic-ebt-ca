@@ -6,7 +6,7 @@ class SignatureForm < Form
   def save
     form_attributes = attributes_for(:household)
     attributes = {
-      signature: form_attributes[:signature].gsub(NULL_BYTE, ' ').strip
+      signature: form_attributes[:signature].to_s.gsub(NULL_BYTE, ' ').strip
     }
     household.update(attributes.merge({ submitted_at: Time.zone.now }))
   end
