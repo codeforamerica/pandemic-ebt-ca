@@ -1,8 +1,13 @@
 class SignatureForm < Form
+  NULL_BYTE = "\u0000".freeze
   set_attributes_for :household, :signature
   validates_presence_of :signature, message: proc { I18n.t('validations.signature') }
 
   def save
-    household.update(attributes_for(:household).merge({ submitted_at: Time.zone.now }))
+    form_attributes = attributes_for(:household)
+    attributes = {
+      signature: form_attributes[:signature].to_s.gsub(NULL_BYTE, ' ').strip
+    }
+    household.update(attributes.merge({ submitted_at: Time.zone.now }))
   end
 end
