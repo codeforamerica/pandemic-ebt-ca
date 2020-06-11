@@ -64,6 +64,14 @@ describe AddStudentForm do
       form.dob_year = '1999'
       expect(form).not_to be_valid
     end
+
+    it 'requires the date to be in the past' do
+      form = @valid_form.dup
+      form.dob_day = '15'
+      form.dob_month = '5'
+      form.dob_year = '2029'
+      expect(form).not_to be_valid
+    end
   end
 
   describe '#presence_of_school_type_field' do
