@@ -16,7 +16,7 @@ en:
     please_choose: Please choose an option.
     demo: This site is for example purposes only. Please apply on
     general_error: There has been a problem on our end.
-    delay: We are experiencing a delay in processing applications for P-EBT due to the high volume of people who need help during the pandemic. If you have not received an email to notify you that your P-EBT card is on the way, the call center does not have information on your application status. You will hear back from us with your final eligibility status by about July 15th.
+    delay: There is a delay processing applications due to the high volume of people who need help during the pandemic.
   index:
     coming_soon_html: Coming soon&colon;
     header: Get help buying food while schools are closed.
@@ -37,6 +37,7 @@ en:
     online: Online at Amazon and Walmart
   info:
     heading: Information about P-EBT
+    delay_notice: Please do not call to check the status of your application. The call center does not have information on your application status. You will hear back from us with your final eligibility status by July 15th.
     what_are_question: What are ‘P-EBT’ or Pandemic EBT benefits?
     what_are_answer_html: Due to coronavirus (COVID 19), children who are eligible for free or reduced-price meals at
       school will get extra food benefits. These food benefits are called Pandemic EBT or P-EBT benefits. P-EBT benefits
