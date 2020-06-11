@@ -21,8 +21,13 @@ class AddStudentForm < Form
 
   private
 
+  def date_in_future?(dob)
+    dob.present? && dob.future?
+  end
+
   def validity_of_date
-    Date.parse [@dob_day, @dob_month, @dob_year].join('/') if @dob_day.present? && @dob_month.present? && @dob_year.present?
+    dob = Date.parse [@dob_day, @dob_month, @dob_year].join('/') if @dob_day.present? && @dob_month.present? && @dob_year.present?
+    errors.add(:dob, proc { I18n.t('validations.dob') }) if date_in_future?(dob)
   rescue ArgumentError
     errors.add(:dob, proc { I18n.t('validations.dob') })
   end
