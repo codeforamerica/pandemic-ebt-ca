@@ -25,8 +25,18 @@ RSpec.describe 'Metrics', type: :feature do
         h.created_at = (Time.zone.today - i.days).beginning_of_day
         h.submitted_at = (Time.zone.today - i.days).beginning_of_day + (5 + i).minutes
         h.application_experience = i
+        h.language = %w[en en zh es][i]
         h.save
       end
+
+      create_list(:household, 4) do |household, i|
+        household.submitted_at = nil
+        household.signature = nil
+        household.application_experience = i
+        household.language = %w[zh es zh es][i]
+        household.save
+      end
+
       visit '/metrics'
     end
 
@@ -52,6 +62,21 @@ RSpec.describe 'Metrics', type: :feature do
         expect(page).to have_content('33% 😄')
         expect(page).to have_content('33% 😐')
         expect(page).to have_content('33% 🙁')
+      end
+    end
+
+    it 'shows language metrics' do
+      within('#total_application_language') do
+        expect(page).to have_content('25.0%')
+        expect(page).to have_content('37.5%', count: 2)
+      end
+      within('#submitted_application_language') do
+        expect(page).to have_content('50.0%')
+        expect(page).to have_content('25.0%', count: 2)
+      end
+      within('#unsubmitted_application_language') do
+        expect(page).to have_content('50.0%', count: 2)
+        expect(page).not_to have_content('EN')
       end
     end
 
