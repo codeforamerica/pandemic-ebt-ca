@@ -15,6 +15,7 @@ zh:
     please_choose: 請選擇一個選項
     demo: 此網址僅用作示範用途。請在
     general_error: 我們這邊出現了問題。
+    delay: 由於疫情導期間需要幫助的人較多，因此目前案件審核的過程會出現延誤。
   index:
     coming_soon_html: 快來了：
     header: 在學校停課期間獲取食物购买援助。
@@ -33,6 +34,7 @@ zh:
     online: 在Amazon和Walmart的網站
   info:
     heading: 有關P-EBT的資料
+    delay_notice: 請不要致電查詢您申請表格的狀態。客服中心無法提供您申請表格的狀態信息 。我們將會在7月15日左右告知您案件的最終資格信息。
     what_are_question: 什麽是「P-EBT」或Pandemic EBT福利？
     what_are_answer_html: 因應新冠狀肺炎疫情(COVID 19)的影響，在學校符合資格領取免費或低價早/午餐的兒童將會領取到額外的食物福利。
       這項食物福利稱為Pandemic EBT或P-EBT福利。當學校關閉時，P-EBT福利能幫助加州家庭購買食物。

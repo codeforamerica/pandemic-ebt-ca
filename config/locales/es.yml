@@ -16,6 +16,7 @@ es:
     please_choose: Por favor escoja una opción
     demo: Este sitio web es solamente para usar de ejemplo. Favor de solicitar en
     general_error: Ha habido un problema de nuesta parte.
+    delay: Hay un retraso en el procesamiento de aplicaciones debido al alto volumen de personas que necesitan ayuda durante la pandemia.
   index:
     coming_soon_html: Próximamente&colon;
     header: Reciba ayuda para comprar comida mientras escuelas están cerradas.
@@ -36,6 +37,7 @@ es:
     online: En línea en Amazon y Walmart
   info:
     heading: Información sobre P-EBT
+    delay_notice: No llame para verificar el estado de su solicitud. El centro de llamadas no tiene información sobre el estado de su solicitud. Recibirá una respuesta de nosotros con su estado final de elegibilidad aproximadamente el 15 de julio.
     what_are_question: ¿Qué es 'P-EBT' o beneficios de Pandemia EBT?
     what_are_answer_html: Debido al coronavirus (COVID-19), los niños que son elegibles para recibir alimentos gratis o a precio reducido en la escuela van a recibir beneficios adicionales para acceder a alimentos. Estos beneficios se llaman &quot;Pandemic EBT&quot; (Pandemia EBT) o beneficios &quot;P-EBT&quot;. Los beneficios P-EBT ayudan a las familias de California a comprar comida cuando la escuela está cerrada.
     who_is_eligible_question: ¿Quién es elegible para recibir beneficios P-EBT?
@@ -75,7 +77,7 @@ es:
     what_is_the_deadline_question: ¿Hasta cuándo tengo para solicitar beneficios P-EBT?
     what_is_the_deadline_answer_html: Si no recibe una tarjeta P-EBT por correo, debe presentar una solicitud en línea antes del 30 de junio de 2020 para obtener los beneficios P-EBT. Los beneficios de P-EBT solo están disponibles mientras las escuelas están cerradas debido al coronavirus (COVID 19). Si no recibió una tarjeta P-EBT por correo y no presentó la solicitud antes del 30 de junio de 2020, no podrá obtener los beneficios P-EBT.
     what_if_i_applied_question: ¿Qué pasa si solicité en línea y no he recibido mi tarjeta P-EBT?
-    what_if_i_applied_answer_html: Muchas partes del estado están experimentando retrasos en el correo, y las tarjetas pueden tardar más en llegar. Si solicitó en línea y aún no ha recibido una tarjeta por correo después de 12-14 días, puede llamar al Centro de Servicio de Cliente EBT de California al <a href="tel:18773289677">(877) 328-9677</a>. Puede comunicarse con ellos las 24 horas del día, los 7 días de la semana.
+    what_if_i_applied_answer_html: El estado está experimentando demoras, y las tarjetas P-EBT pueden tardar más en llegar. Recibirá una respuesta de nosotros con su estado final de elegibilidad aproximadamente el 15 de julio.
     how_long_question: ¿Cuánto tiempo tengo para usar mis beneficios P-EBT?
     how_long_answer: Puede usar sus beneficios por un año a partir de cuando usted reciba su tarjeta P-EBT.
     if_i_get_question: Si obtengo beneficios de P-EBT, ¿me convertiré en una carga pública?
@@ -100,8 +102,7 @@ es:
     your_school_will_make_sure_html: <b>Nosotros nos aseguraremos de que usted sea elegible.</b>
     we_will_check: Verificaremos para asegurarnos de que su familia pueda obtener P-EBT. El estado de inmigración no se considera en su elegibilidad para P-EBT.
     get_a_p_ebt_card_html: <b>Reciba la tarjeta de P-EBT por correo.</b>
-    if_approved: Si su solicitud es aprobada, recibirá una tarjeta P-EBT en un plazo de 12 días, con dinero para comprar
-      alimentos. La tarjeta vendrá cargada con dinero para alimentos y con instrucciones sobre cómo usarla.
+    if_approved: Si su solicitud es aprobada, recibirá una tarjeta P-EBT con dinero para alimentos. La tarjeta se cargará con dinero para alimentos y vendrá con instrucciones sobre cómo usarla. Recibirá una respuesta de nosotros con su estado final de elegibilidad aproximadamente el 15 de julio.
   eligible:
     header: ¿Su hijo es elegible para recibir comidas gratis o a precio reducido durante el año escolar?
     even_if_the_student: Incluso si el estudiante no come desayuno o almuerzo escolar, necesitamos saber si es elegible
@@ -157,9 +158,7 @@ es:
     please_add_student: Por favor agregue un estudiante.
   just_so_you_know:
     header: Solo para que sepas
-    the_card_will: La tarjeta tendrá el nombre del estudiante mayor cuando llegue. Si solicitó más de un hijo,
-      todos los beneficios estarán en esta tarjeta. Los adultos en el hogar podrán usar la tarjeta para comprar
-      alimentos para toda la familia.
+    the_card_will: Recibirá una tarjeta P-EBT por cada estudiante elegible. Si tiene varios estudiantes en su casa, recibirá varias tarjetas P-EBT. Cada tarjeta tendrá $365 para comprar alimentos.
   residential_address:
     header: ¿Cual es la dirección que %{full_name} tiene en el registro de la escuela?
     what_address_notice: Es importante que nos de la dirección que su escuela tiene en sus registros. Nos puede dar una
@@ -189,10 +188,10 @@ es:
     header: ¡Su solicitud está lista!
     no_confirmation_email: No recibirá un correo electrónico de confirmación, pero su solicitud a sido enviada correctamente.
     write_down_your_html: Anote su número de confirmación y guárdelo&colon;
-    if_approved: Si su solicitud es aprobada, recibirá una tarjeta P-EBT dentro de los siguientes 12 días que puede usar para comprar alimentos.
+    if_approved: Si su solicitud es aprobada, recibirá una tarjeta P-EBT por cada estudiante elegible. Si tiene varios estudiantes en su casa, recibirá varias tarjetas P-EBT. Cada tarjeta tendrá $365 para comprar alimentos.
     learn_more_html: <a href="/es/info">Aprenda más</a> sobre el programa P-EBT.
     if_approved_question: ¿Si se aprueba, ¿cuánto recibiré en beneficios de P-EBT?
-    if_approved_answer_1_html: Recibirá una tarjeta P-EBT a nombre del niño mayor que se cargará con hasta $365 por cada niño aprobado, y puede usar la tarjeta para comprar alimentos en la mayoría de supermercados y mercados de alimentos.
+    if_approved_answer_1_html: Algunas familias recibirán una tarjeta P-EBT a nombre del niño mayor con beneficios para varios estudiantes. Otras familias pueden recibir varias tarjetas, una por cada estudiante elegible. Las tarjetas tendrán $365 por cada estudiante. Verifique el saldo de su tarjeta para determinar si recibió beneficios para todos los estudiantes elegibles.
     if_approved_answer_2_html: También puede usar la tarjeta P-EBT para comprar alimentos en línea en
       <a target="_blank" href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818">Amazon</a>
       y

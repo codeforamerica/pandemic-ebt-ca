@@ -101,7 +101,7 @@ en:
     not_all_children_q: What if I received a P-EBT card but it did not have benefits for all the children in my family?
     not_all_children_a: If you got a P-EBT card, but it did not include benefits for all your eligible children, you should fill out an application for all the students in your household.
     multiple_cards_q: What if I received multiple P-EBT cards?
-    multiple_cards_a: Some families may receive multiple cards,  please follow the activation steps for any P-EBT cards received in the name of any children in the house.
+    multiple_cards_a: Some families may receive multiple cards, please follow the activation steps for any P-EBT cards received in the name of any children in the house.
   how:
     header_html: Here's how it works&colon;
     give_us_your_basic_html: <b>Share some basic information.</b>
@@ -194,8 +194,7 @@ en:
     if_approved: If approved, you will receive one P-EBT card for each eligible student. If you have multiple students in your house, you will receive multiple P-EBT cards. Each card will have $365 to use on food and groceries.
     learn_more_html: <a href="/en/info">Learn more</a> about the P-EBT program.
     if_approved_question: If approved, how much in P-EBT benefits will I get?
-    if_approved_answer_1_html: You will receive one P-EBT card in the oldest child's name that will be loaded with up to $365
-      for each approved child to purchase food at most grocery stores and food markets.
+    if_approved_answer_1_html: Some families will receive one P-EBT card in the oldest child's name with benefits for several students. Some families will receive multiple cards, one for each eligible student. The cards will have $365 per student. Check the balance on your card to determine if you received benefits for all eligible students.
     if_approved_answer_2_html: You can also use the P-EBT card to order groceries online at
       <a target="_blank" href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818">Amazon</a>
       and
