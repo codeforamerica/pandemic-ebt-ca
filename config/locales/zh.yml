@@ -15,7 +15,7 @@ zh:
     please_choose: 請選擇一個選項
     demo: 此網址僅用作示範用途。請在
     general_error: 我們這邊出現了問題。
-    delay: 由於疫情導期間需要幫助的人較多，因此目前案件審核的過程會出現延誤。
+    delay: 由於災難疫情導致需要幫助的人較多，因此目前案件審核的過程出現延誤。
   index:
     coming_soon_html: 快來了：
     header: 在學校停課期間獲取食物购买援助。
@@ -77,7 +77,7 @@ zh:
     what_is_the_deadline_answer_html: 如果您沒有收到郵寄P-EBT卡，則必須在2020年6月30日前上網申請P-EBT福利。P-EBT福利是爲了學校因新冠肺炎疫情(COVID
       19)關閉而臨時設立。如果您沒有收到郵寄P-EBT卡，也沒有在2020年6月30日前提交申請，則無法領取到P-EBT福利。
     what_if_i_applied_question: 如果我上網申請了，但沒有收到P-EBT卡該怎麼辦？
-    what_if_i_applied_answer_html: 目前州內多個地區的郵寄服務出現延誤，因此卡會需要更長的時間郵寄到您的通信地址。如果您在網上申請後的12至14天內沒有收到卡，請致電<a href="tel:18773289677">(877) 328-9677</a> 聯繫加州EBT客服中心。熱線電話每週7天，24小時為您服務。
+    what_if_i_applied_answer_html: 州政府正在面臨延遲，因此P-EBT卡或許會需要更長時間寄出。我們將會在7月15日左右告知您案件的最終資格信息。
     how_long_question: 我有多長時間可以使用我的P-EBT 福利？
     how_long_answer: 您在收到P-EBT卡那天開始的一年內可以使用您的P-EBT福利。
     if_i_get_question: 如果我領取P-EBT福利，會因此被列為「公共負擔」審查的範圍嗎？
@@ -100,7 +100,7 @@ zh:
     your_school_will_make_sure_html: <b>我們將會確認您是否符合申請資格。</b>
     we_will_check: 我們將會核實您的家庭是否能夠獲取P-EBT。移民身分不會影響您獲取P-EBT的資格。
     get_a_p_ebt_card_html: <b>通過信件獲取您的P-EBT卡。</b>
-    if_approved: 如果獲批，您將在12天內收到用作購買食物的P-EBT卡。福利已自動轉至卡內，請根據連同寄來的指示下使用福利卡。
+    if_approved: 如果獲批，您會收到一張帶有金額可用於購買雜貨的P-EBT卡。在收到帶有金額的卡的同時也會收到使用指示。我們將會在7月15日左右告知您案件的最終資格信息。
   eligible:
     header: 您的孩子符合獲取免費或優惠價校餐嗎？
     even_if_the_student: 即使學生不在學校吃早餐或午餐，我們也需要知道他們是否符合資格。
@@ -147,7 +147,7 @@ zh:
     private_school: 私立學校（包括宗教學校）
   just_so_you_know:
     header: 須知事項。
-    the_card_will: 您收到的卡會顯示年紀最大的學生的名字。如果您為了多個孩子申請，合共的福利都會發放到同一張卡裡。家中的成年人可以用這張卡給全家購買食物或雜貨。
+    the_card_will: 您將會為每位符合的學生收到一張P-EBT卡。如果您家庭中有多個學生，您將會收到多張P-EBT卡。每張卡會有$365，可用於購買食物或雜貨 。
   residential_address:
     header: 請問%{full_name}在學校紀錄中的地址是？
     what_address_notice: 請務必告訴我們在學校紀錄中的地址。您可以提供另外的通信地址。
@@ -173,10 +173,10 @@ zh:
     header: 您的申請表格已完成！
     no_confirmation_email: 您不會收到確認郵件，但是您的申請表格已成功提交。
     write_down_your_html: 寫下您的確認號碼並保留：
-    if_approved: 如果獲批，您將會在12天內收到一張可用於購買雜貨的P-EBT卡。
+    if_approved: 如果獲批，您將會為每位符合資格的學生收到一張P-EBT卡。如果您家庭中有多個學生，您將會收到多張P-EBT卡。每張卡會有$365，可用於購買食物或雜貨 。
     learn_more_html: <a href="/en/info">了解</a>更多有關P-EBT計劃。
     if_approved_question: 如果獲批 ，我會得到多少P-EBT福利？
-    if_approved_answer_1_html: P-EBT卡上將顯示您最年長的孩子姓名，每一個合資格的兒童最高可領取 $365福利，福利卡可在大多數的雜貨店和超市購買食物。
+    if_approved_answer_1_html: 有些家庭會收到一張P-EBT卡，顯示家庭中最年長的孩子的名字，並包括多位學生的福利。 有些家庭會收到多張卡，每位符合資格的學生各獲一張。卡裡會包括每位學生的$365。請查詢卡裡的餘額以判斷是否收到所有符合資格的學生的福利。
     if_approved_answer_2_html: 您也可以用P-EBT卡在網站<a href="https://www.amazon.com/snap-ebt/b?ie=UTF8&node=19097785011&nocache=1588651384818" target="_blank">Amazon</a>和<a href="https://www.walmart.com/ideas/discover-grocery-pickup-delivery/walmart-grocery-pickup-accepts-snap-ebt-payments/355540" target="_blank">Walmart</a>
       購買食物。
     how_was_your_experience: 請問您對這份申請的體驗如何 ？
