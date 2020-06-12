@@ -28,9 +28,9 @@ RSpec.describe 'Favicons', type: :feature do
 
   it 'renders the other favicon stuff' do
     visit '/'
-    expect(page).to have_css('link[rel="manifest"]', visible: false)
-    expect(page).to have_css('meta[name="msapplication-TileColor"]', visible: false)
-    expect(page).to have_css('meta[name="msapplication-TileImage"]', visible: false)
-    expect(page).to have_css('meta[name="theme-color"]', visible: false)
+    expect(page).to have_css('link[rel="manifest"]', visible: :hidden)
+    expect(page).to have_css('meta[name="msapplication-TileColor"]', visible: :hidden)
+    expect(page).to have_css('meta[name="msapplication-TileImage"]', visible: :hidden)
+    expect(page).to have_css('meta[name="theme-color"]', visible: :hidden)
   end
 end
