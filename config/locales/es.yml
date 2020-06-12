@@ -93,7 +93,7 @@ es:
     not_all_children_q: ¿Qué sucede si recibí una tarjeta P-EBT pero no tenía beneficios para todos los niños de mi familia?
     not_all_children_a: Si recibió una tarjeta P-EBT, pero no incluyó beneficios para todos sus hijos elegibles, debe completar una solicitud para todos los estudiantes de su hogar.
     multiple_cards_q: ¿Qué sucede si recibí varias tarjetas P-EBT?
-    multiple_cards_a: Algunas familias pueden recibir varias tarjetas. Siga los pasos de activación para cada tarjeta P-EBT recibida a nombre de cualquiera de los niños en la casa.
+    multiple_cards_a: Algunas familias recibirán una tarjeta P-EBT a nombre del niño mayor con beneficios para varios estudiantes. Otras familias pueden recibir varias tarjetas, una por cada estudiante elegible. Las tarjetas tendrán $365 por cada estudiante. Verifique el saldo de su tarjeta para determinar si recibió beneficios para todos los estudiantes elegibles.
   how:
     header_html: Así es como funciona&colon;
     give_us_your_basic_html: <b>Comparta información básica.</b>

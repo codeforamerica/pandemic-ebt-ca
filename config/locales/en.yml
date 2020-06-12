@@ -101,7 +101,7 @@ en:
     not_all_children_q: What if I received a P-EBT card but it did not have benefits for all the children in my family?
     not_all_children_a: If you got a P-EBT card, but it did not include benefits for all your eligible children, you should fill out an application for all the students in your household.
     multiple_cards_q: What if I received multiple P-EBT cards?
-    multiple_cards_a: Some families may receive multiple cards, please follow the activation steps for any P-EBT cards received in the name of any children in the house.
+    multiple_cards_a: Some families will receive one P-EBT card in the oldest child's name with benefits for several students. Some families will receive multiple cards, one for each eligible student. The cards will have $365 per student. Check the balance on your card to determine if you received benefits for all eligible students.
   how:
     header_html: Here's how it works&colon;
     give_us_your_basic_html: <b>Share some basic information.</b>

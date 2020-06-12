@@ -92,7 +92,7 @@ zh:
     not_all_children_q: 如果我收到P-EBT卡但金額不包括我家中所有孩子的福利？
     not_all_children_a: 如果您收到P-EBT卡但金額不包括所有符合領取資格的孩子的福利，您應該為您家庭所有的孩子填寫申請表格。
     multiple_cards_q: 如果我收到多張P-EBT卡？
-    multiple_cards_a: 有些家庭會收到多張卡，請按照激活步驟去激活所有顯示家中孩子名字的P-EBT卡。
+    multiple_cards_a: 有些家庭會收到一張P-EBT卡，顯示家庭中最年長的孩子的名字，並包括多位學生的福利。 有些家庭會收到多張卡，每位符合資格的學生各獲一張。卡裡會包括每位學生的$365。請查詢卡裡的餘額以判斷是否收到所有符合資格的學生的福利。
   how:
     header_html: 以下是該服務的流程：
     give_us_your_basic_html: <b>分享一些基本的資料。</b>
