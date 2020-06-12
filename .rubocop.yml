@@ -29,6 +29,9 @@ Metrics/AbcSize:
   Enabled: false
 Metrics/BlockLength:
   Enabled: false
+Metrics/CyclomaticComplexity:
+  Exclude:
+    - app/helpers/ordinal_columns_helper.rb
 Metrics/MethodLength:
   Enabled: false
 Rails/FilePath:
