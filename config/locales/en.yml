@@ -80,7 +80,7 @@ en:
     what_is_the_deadline_answer_html: If you do not get a P-EBT card in the mail, you must apply online by June 30,
       2020 to get P-EBT benefits. P-EBT benefits are only available while schools are closed due to coronavirus (COVID 19). If you did not get a P-EBT card in the mail and do not apply by June 30, 2020 you will not be able to get P-EBT benefits.
     what_if_i_applied_question: What if I applied online and haven't received my P-EBT card?
-    what_if_i_applied_answer_html: Many parts of the state are experiencing mail delays, and cards might take longer to reach you. If you applied online and have not yet received a card in the mail after 12-14 days, you can call California's EBT customer service center at <a href="tel:18773289677">(877) 328-9677</a>. You can reach them 24 hours a day, 7 days a week.
+    what_if_i_applied_answer_html: The state is experiencing delays, so P-EBT cards may take longer to reach you. You will hear back from us with your final eligibility status by about July 15th.
     how_long_question: How long do I have to spend my P-EBT benefits?
     how_long_answer: You can use your P-EBT benefits for one year. It starts on the date you get your P-EBT card.
     if_i_get_question: If I get P-EBT benefits, will it make me a public charge?
@@ -110,8 +110,7 @@ en:
     your_school_will_make_sure_html: <b>We will make sure you're eligible.</b>
     we_will_check: We'll check to make sure your family can get P-EBT. Immigration status is not considered in your eligibility for P-EBT.
     get_a_p_ebt_card_html: <b>Get a P-EBT card in the mail.</b>
-    if_approved: If approved, you'll get a P-EBT card with money on it for groceries within 12 days. The card will be
-      loaded with grocery money and come with instructions on how to use it.
+    if_approved: If approved, you'll get a P-EBT card with money on it for groceries. The card will be loaded with grocery money and come with instructions on how to use it. You will hear back from us with your final eligibility status by about July 15th.
   eligible:
     header: Is the student able to receive free or reduced price meals during the school year?
     even_if_the_student: Even if the student does not eat school breakfast or lunch, we need to know if they are
@@ -163,9 +162,7 @@ en:
     private_school: Private school (including religious school)
   just_so_you_know:
     header: Just so you know.
-    the_card_will: The card will have the oldest student's name on it when it arrives. If you applied for more than
-      one child, all benefits will be on this one card. Adults in the household will be able to use it to shop for the
-      whole family.
+    the_card_will: You will receive one P-EBT card for each eligible student. If you have multiple students in your house, you will receive multiple P-EBT cards. Each card will have $365 to use on food and groceries.
   residential_address:
     header: What address does %{full_name}’s school have on file?
     what_address_notice: It’s important to tell us the address your school has on file. You can give us a separate
@@ -194,7 +191,7 @@ en:
     header: Your application is done!
     no_confirmation_email: You won't receive a confirmation email, but your application has been successfully submitted.
     write_down_your_html: Write down your confirmation number and save it&colon;
-    if_approved: If approved, you'll get a P-EBT card that you can use to buy groceries within 12 days.
+    if_approved: If approved, you will receive one P-EBT card for each eligible student. If you have multiple students in your house, you will receive multiple P-EBT cards. Each card will have $365 to use on food and groceries.
     learn_more_html: <a href="/en/info">Learn more</a> about the P-EBT program.
     if_approved_question: If approved, how much in P-EBT benefits will I get?
     if_approved_answer_1_html: You will receive one P-EBT card in the oldest child's name that will be loaded with up to $365
