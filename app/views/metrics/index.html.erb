@@ -62,6 +62,27 @@
     </div>
   </div>
 </div>
+<div id="total_application_language" class="grid">
+  <h1>Application Language</h1>
+  <% @metrics.language_percents_for(Household.all).each do |language, percent| %>
+    <div class="grid__item <%= ordinal_column_class(@metrics.language_percents_for(Household.all).count) %>">
+      <div class="statistic-card">
+        <p class="statistic-card__label"><strong><%= language.upcase %></strong> - Total</p>
+        <p class="statistic-card__number"><%= percent %>%</p>
+      </div>
+    </div>
+  <% end %>
+</div>
+<div id="submitted_application_language" class="grid">
+  <% @metrics.language_percents_for(Household.submitted).each do |language, percent| %>
+    <div class="grid__item <%= ordinal_column_class(@metrics.language_percents_for(Household.submitted).count) %>">
+      <div class="statistic-card">
+        <p class="statistic-card__label"><strong><%= language.upcase %></strong> - Submitted</p>
+        <p class="statistic-card__number"><%= percent %>%</p>
+      </div>
+    </div>
+  <% end %>
+</div>
 <div id="median" class="grid">
   <h1>Median Time To Complete</h1>
   <div class="grid__item">
