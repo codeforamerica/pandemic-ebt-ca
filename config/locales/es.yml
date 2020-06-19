@@ -94,6 +94,32 @@ es:
     not_all_children_a: Si recibió una tarjeta P-EBT, pero no incluyó beneficios para todos sus hijos elegibles, debe completar una solicitud para todos los estudiantes de su hogar.
     multiple_cards_q: ¿Qué sucede si recibí varias tarjetas P-EBT?
     multiple_cards_a: Algunas familias recibirán una tarjeta P-EBT a nombre del niño mayor con beneficios para varios estudiantes. Otras familias pueden recibir varias tarjetas, una por cada estudiante elegible. Las tarjetas tendrán $365 por cada estudiante. Verifique el saldo de su tarjeta para determinar si recibió beneficios para todos los estudiantes elegibles.
+    after_submission_q: ¿Qué pasará después de enviar mi solicitud P-EBT?
+    after_submission_1: Recibirá un correo electrónico indicando que recibimos su solicitud. Luego, comenzaremos a revisar su solicitud. La información que proporcionó debe coincidir con la información proporcionada por el Departamento de Educación. Esto toma tiempo.
+    after_submission_2: Recibirá una respuesta con su elegibilidad final antes del 31 de julio. Le enviaremos un correo electrónico y le informaremos cuando su tarjeta P-EBT esté en camino.
+    when_will_i_hear_q: ¿Cuándo voy a recibir noticias sobre el estado de mi solicitud?
+    when_will_i_hear_a: Recibirá una respuesta con su elegibilidad final antes del 31 de julio. Le enviaremos un correo electrónico y le informaremos cuando su tarjeta P-EBT esté en camino. ¿Cómo puedo verificar el estado de mi solicitud?
+    check_status_q: ¿Cómo puedo verificar el estado de mi solicitud?
+    check_status_a_html: Consulte su correo electrónico. Le enviaremos un correo electrónico informándole que recibimos su solicitud. Recibirá otro correo electrónico cuando su tarjeta P-EBT esté en el correo y en camino a su dirección postal. Después de recibir un correo electrónico diciendo que su tarjeta está en camino, puede llamar al Centro de Servicio al Cliente de EBT al (<a href="tel:8773289677">877-328-9677</a>) si necesita ayuda.
+    application_approved_q: ¿Cómo sabré si mi solicitud ha sido aprobada?
+    application_approved_a: Le enviaremos un correo electrónico y le informaremos cuando su tarjeta P-EBT esté en camino. Así es como sabrá que su solicitud ha sido aprobada. Recibirá una respuesta con su elegibilidad final antes del 31 de julio.
+    application_denied_q: ¿Cómo sabré si mi solicitud ha sido negada?
+    application_denied_a_html: Le enviaremos un correo electrónico. Si usted no recibe noticias de nosotros para el 15 de julio, puede llamar al Centro de Servicio al Cliente de EBT al (<a href="tel:8773289677">877-328-9677</a>) para obtener una actualización.
+    number_to_call_q: ¿A qué número debo de llamar para pedir ayuda?
+    number_to_call_a_html: Si necesita ayuda para cambiar su dirección postal o configurar su PIN, puede llamar al Centro de Servicio al Cliente de EBT al (<a href="tel:8773289677">877-328-9677</a>). No llame para pedir el estado de su solicitud. El centro de llamadas no tiene información sobre el estado de su solicitud.
+    how_many_cards_q: ¿Cuántas tarjetas P-EBT recibiré?
+    how_many_cards_1: Algunas familias recibirán una tarjeta P-EBT cargada de beneficios para todos los estudiantes en el hogar. Tendrá el nombre del estudiante mayor.
+    how_many_cards_2: Algunas familias recibirán muchas tarjetas, una para cada estudiante elegible. Las tarjetas tendrán $365 para cada estudiante.
+    how_many_cards_3: Verifique el saldo de sus tarjetas para asegurarse de haber recibido beneficios para todos sus estudiantes elegibles.
+    havent_received_q: ¿Qué debo hacer si aún no he recibido mi tarjeta?
+    havent_received_1: 'Si recibió un correo electrónico diciendo que su tarjeta está en camino, pero aún no la ha recibido, es posible que se haya enviado a la dirección incorrecta. Siga estas instrucciones para obtener una nueva tarjeta:'
+    havent_received_2_li_html: Llame al Centro de Servicio al Cliente de EBT al (<a href="tel:8773289677">877-328-9677</a>)
+    havent_received_3_li: Seleccione su idioma
+    havent_received_4_li: Seleccione "0" cuando soliciten un número de tarjeta
+    havent_received_5_li: Seleccione "reportar pérdida" o "uso no autorizado de la tarjeta"
+    havent_received_6_li: Lo conectarán con alguien
+    havent_received_7_li: Dígale al representante que le falta su tarjeta P-EBT
+    havent_received_8_html: Si el Centro de Servicio al Cliente de EBT confirma que su tarjeta fue enviada a la dirección incorrecta, llame a la línea de ayuda P-EBT al (<a href="tel:8337800353">833-780-0353</a>) o deje un mensaje aquí. Actualizarán su dirección y le enviarán una nueva tarjeta P-EBT.
   how:
     header_html: Así es como funciona&colon;
     give_us_your_basic_html: <b>Comparta información básica.</b>

@@ -93,6 +93,32 @@ zh:
     not_all_children_a: 如果您收到P-EBT卡但金額不包括所有符合領取資格的孩子的福利，您應該為您家庭所有的孩子填寫申請表格。
     multiple_cards_q: 如果我收到多張P-EBT卡？
     multiple_cards_a: 有些家庭會收到一張P-EBT卡，顯示家庭中最年長的孩子的名字，並包括多位學生的福利。 有些家庭會收到多張卡，每位符合資格的學生各獲一張。卡裡會包括每位學生的$365。請查詢卡裡的餘額以判斷是否收到所有符合資格的學生的福利。
+    after_submission_q: 我提交P-EBT申請後將會發生什麼？
+    after_submission_1: 您將會收到一封電郵告知您我們已經收到您的申請。然後，我們會開始審核您的申請。您提供的資料必須要和美國教育部的資料相符。核對過程會需要時間。
+    after_submission_2: 您將會在7月31日前得知您申請的最終資格信息。我們會通過電郵與您聯繫，並當P-EBT卡已在郵寄途中時通知您。
+    when_will_i_hear_q: 我會在什麼時候得知我申請的進度？
+    when_will_i_hear_a: 您將會在7月31日前得知您案件的最終資格信息。我們會通過電郵跟您聯繫，並當P-EBT卡已在郵寄途中時通知您。
+    check_status_q: 如何查詢我的申請進度？
+    check_status_a_html: 我們會給您發電郵。如果您在7月15日仍然沒有收到我們的信息，您可以致電 (<a href="tel:8773289677">877-328-9677</a>) 聯繫EBT客服中心獲知申請的進度信息。
+    application_approved_q: 如何得知我的申請是否獲批？
+    application_approved_a: 當P-EBT卡在郵寄途中，我們會給您發一封電郵通知。您將通過該郵件得知您的申請已獲批。您將會在7月31日前得知您案件的最終資格信息。
+    application_denied_q: 如何得知我的申請是否被拒絕？
+    application_denied_a_html: 我們會給您發電郵。如果您在7月15日仍然沒有收到我們的信息，您可以致電 (<a href="tel:8773289677">877-328-9677</a>) 聯繫EBT客服中心獲知申請的進度信息。
+    number_to_call_q: 我應該打哪個電話求助？
+    number_to_call_a_html: 如果您需要幫助修改通信地址或設置卡密碼，您可以致電 (<a href="tel:8773289677">877-328-9677</a>) 與EBT客服中心聯繫。請不要致電查詢申請進度。客服中心無法提供申請進度或申請的相關信息。
+    how_many_cards_q: 我會收到幾張P-EBT卡？
+    how_many_cards_1: 有些家庭會收到一張P-EBT卡，包括家庭中所有學生的福利。卡上會寫著最年長的學生的名字。
+    how_many_cards_2: 有些家庭會收到多張卡 —— 每位符合資格的學生各獲一張。每張卡會有$365。
+    how_many_cards_3: 請查詢您收到的卡的餘額，以確定您已收到所有符合資格的學生的福利。
+    havent_received_q: 如果我還沒有收到卡，該怎麼辦？
+    havent_received_1: 如果您已收到電郵告知卡已在寄送中但您還沒有收到，卡有可能被寄送到錯的地址。請跟隨以下步驟獲取新卡：
+    havent_received_2_li_html: 致電 (<a href="tel:8773289677">877-328-9677</a>) EBT客服中心
+    havent_received_3_li: 選擇語言
+    havent_received_4_li: 當要求提供卡號時，請按 “0”
+    havent_received_5_li: 選擇 “報失” 或 "卡未經同意被使用“
+    havent_received_6_li: 電話將被轉接至人工服務
+    havent_received_7_li: 告訴工作人員您的P-EBT卡遺失了
+    havent_received_8_html: 如果EBT客服中心確認您的卡是寄送到錯的地址，請致電 (<a href="tel:8337800353">833-780-0353</a>) P-EBT求助熱線或點擊此留言。他們將會更新您的地址並給你寄出新的P-EBT卡。
   how:
     header_html: 以下是該服務的流程：
     give_us_your_basic_html: <b>分享一些基本的資料。</b>

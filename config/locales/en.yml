@@ -102,6 +102,32 @@ en:
     not_all_children_a: If you got a P-EBT card, but it did not include benefits for all your eligible children, you should fill out an application for all the students in your household.
     multiple_cards_q: What if I received multiple P-EBT cards?
     multiple_cards_a: Some families will receive one P-EBT card in the oldest child's name with benefits for several students. Some families will receive multiple cards, one for each eligible student. The cards will have $365 per student. Check the balance on your card to determine if you received benefits for all eligible students.
+    after_submission_q: What will happen after I submit my P-EBT application?
+    after_submission_1: You will get an email saying that we received your application. Then, we will start reviewing your application. The information you provided must match information provided by the Department of Education. This takes some time.
+    after_submission_2: You will hear back with your final eligibility by July 31st. We will email you and let you know when your P-EBT card is on its way.
+    when_will_i_hear_q: When will I hear back about the status of my application?
+    when_will_i_hear_a: You will hear back with your final eligibility by July 31st. We will email you and let you know when your P-EBT card is on its way.
+    check_status_q: How can I check the status of my application?
+    check_status_a_html: Check your email. We will send you an email saying that we received your application. You will get another email when your P-EBT card is in the mail and on its way to you. After you get an email saying your card is on its way, you can call the EBT Customer Service Center at (<a href="tel:8773289677">877-328-9677</a>) if you need help.
+    application_approved_q: How will I know if my application has been approved?
+    application_approved_a: We will email you and let you know when your P-EBT card is on its way. This is how you will know your application has been approved. You will hear back with your final eligibility by July 31st.
+    application_denied_q: How will I know if my application has been denied?
+    application_denied_a_html: We will send you an email. If you have not heard from us by July 15th, you can call the EBT Customer Service Center at (<a href="tel:8773289677">877-328-9677</a>) for an update.
+    number_to_call_q: What number should I call for help?
+    number_to_call_a_html: If you need help changing your mailing address or setting up your PIN you can call the EBT Customer Service Center at (<a href="tel:8773289677">877-328-9677</a>). Please do not call for the status of your application. The call center does not have information about the status of your application.
+    how_many_cards_q: How many P-EBT cards will I get?
+    how_many_cards_1: Some families will receive one P-EBT card loaded with benefits for all students in the house. It will have the oldest student's name on it.
+    how_many_cards_2: Some families will receive many cards - one card for each eligible student. The cards will have $365 per student on it.
+    how_many_cards_3: Check the balance on your cards to make sure you have received benefits for all your eligible students.
+    havent_received_q: What should I do if I haven't received my card yet?
+    havent_received_1: "If you got an email saying your card is on its way, but you haven't received it yet, it may have been sent to the wrong address. Follow these instructions to get a new card:"
+    havent_received_2_li_html: Call the EBT Customer Service Center at (<a href="tel:8773289677">877-328-9677</a>)
+    havent_received_3_li: Select your language
+    havent_received_4_li: Select "0" when they ask for a card number
+    havent_received_5_li: Select "report lost" or "unauthorized card use"
+    havent_received_6_li: They will connect you with someone
+    havent_received_7_li: Tell the representative that you are missing your P-EBT card
+    havent_received_8_html: If the EBT Customer Service Center confirms that your card was sent to the wrong address, please call the P-EBT helpline at (<a href="tel:8337800353">833-780-0353</a>) or leave a message here. They will update your address and send you a new P-EBT card.
   how:
     header_html: Here's how it works&colon;
     give_us_your_basic_html: <b>Share some basic information.</b>
