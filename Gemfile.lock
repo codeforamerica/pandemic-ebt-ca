@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/codeforamerica/honeycrisp-gem
-  revision: 8512de6efc64d50c0f468fe8fb8f77d591ad2af3
+  revision: b74632bfac7c130e673c97df6db7ccfc3d4ad223
   specs:
     cfa-styleguide (0.9.3)
       autoprefixer-rails
