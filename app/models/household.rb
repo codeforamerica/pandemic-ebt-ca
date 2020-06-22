@@ -9,9 +9,6 @@ class Household < ApplicationRecord
   enum registered_homeless: { unfilled: 0, yes: 1 }, _prefix: :registered_homeless
   enum same_residential_address: { unfilled: 0, yes: 1, no: 2, not_sure: 3 }, _prefix: :same_residential_address
 
-  scope :submitted, -> { where.not(submitted_at: nil) }
-  scope :unsubmitted, -> { where(submitted_at: nil) }
-
   def confirmation_code
     children.order(:dob).first.suid.scan(/.{5}/).join('-')
   end

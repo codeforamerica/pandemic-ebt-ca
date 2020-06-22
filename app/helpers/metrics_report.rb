@@ -27,12 +27,6 @@ class MetricsReport
     Time.at(median).utc.strftime '%Mm %Ss'
   end
 
-  def language_percents_for(households)
-    count_by_language = households.group(:language).count
-    total = count_by_language.values.sum.to_f
-    count_by_language.map { |lang, count| [lang, ((count.to_f / total) * 100).round(2)] }.to_h
-  end
-
   private
 
   def median(array)
