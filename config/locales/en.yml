@@ -37,7 +37,7 @@ en:
     online: Online at Amazon and Walmart
   info:
     heading: Information about P-EBT
-    delay_notice: Please do not call to check the status of your application. The call center does not have information on your application status. You will hear back from us with your final eligibility status by about July 30th.
+    delay_notice: Please do not call to check the status of your application. The call center does not have information on your application status. You will hear back from us with your final eligibility status by about July 31st.
     what_are_question: What are ‘P-EBT’ or Pandemic EBT benefits?
     what_are_answer_html: Due to coronavirus (COVID 19), children who are eligible for free or reduced-price meals at
       school will get extra food benefits. These food benefits are called Pandemic EBT or P-EBT benefits. P-EBT benefits
@@ -80,7 +80,7 @@ en:
     what_is_the_deadline_answer_html: If you do not get a P-EBT card in the mail, you must apply online by June 30,
       2020 to get P-EBT benefits. P-EBT benefits are only available while schools are closed due to coronavirus (COVID 19). If you did not get a P-EBT card in the mail and do not apply by June 30, 2020 you will not be able to get P-EBT benefits.
     what_if_i_applied_question: What if I applied online and haven't received my P-EBT card?
-    what_if_i_applied_answer_html: The state is experiencing delays, so P-EBT cards may take longer to reach you. You will hear back from us with your final eligibility status by about July 30th.
+    what_if_i_applied_answer_html: The state is experiencing delays, so P-EBT cards may take longer to reach you. You will hear back from us with your final eligibility status by about July 31st.
     how_long_question: How long do I have to spend my P-EBT benefits?
     how_long_answer: You can use your P-EBT benefits for one year. It starts on the date you get your P-EBT card.
     if_i_get_question: If I get P-EBT benefits, will it make me a public charge?
@@ -112,7 +112,7 @@ en:
     application_approved_q: How will I know if my application has been approved?
     application_approved_a: We will email you and let you know when your P-EBT card is on its way. This is how you will know your application has been approved. You will hear back with your final eligibility by July 31st.
     application_denied_q: How will I know if my application has been denied?
-    application_denied_a_html: We will send you an email. If you have not heard from us by July 30th, you can call the EBT Customer Service Center at (<a href="tel:8773289677">877-328-9677</a>) for an update.
+    application_denied_a_html: We will send you an email. If you have not heard from us by July 31st, you can call the EBT Customer Service Center at (<a href="tel:8773289677">877-328-9677</a>) for an update.
     number_to_call_q: What number should I call for help?
     number_to_call_a_html: If you need help changing your mailing address or setting up your PIN you can call the EBT Customer Service Center at (<a href="tel:8773289677">877-328-9677</a>). Please do not call for the status of your application. The call center does not have information about the status of your application.
     how_many_cards_q: How many P-EBT cards will I get?
@@ -127,7 +127,7 @@ en:
     havent_received_5_li: Select "report lost" or "unauthorized card use"
     havent_received_6_li: They will connect you with someone
     havent_received_7_li: Tell the representative that you are missing your P-EBT card
-    havent_received_8_html: If the EBT Customer Service Center confirms that your card was sent to the wrong address, please call the P-EBT helpline at (<a href="tel:8337800353">833-780-0353</a>) or leave a message here. They will update your address and send you a new P-EBT card.
+    havent_received_8_html: If the EBT Customer Service Center confirms that your card was sent to the wrong address, please call the P-EBT helpline at <a href="tel:8337800353">833-780-0353</a> or leave a message <a href="https://inquiry.pebt.dss.ca.gov/">here.</a> They will update your address and send you a new P-EBT card.
   how:
     header_html: Here's how it works&colon;
     give_us_your_basic_html: <b>Share some basic information.</b>
@@ -136,7 +136,7 @@ en:
     your_school_will_make_sure_html: <b>We will make sure you're eligible.</b>
     we_will_check: We'll check to make sure your family can get P-EBT. Immigration status is not considered in your eligibility for P-EBT.
     get_a_p_ebt_card_html: <b>Get a P-EBT card in the mail.</b>
-    if_approved: If approved, you'll get a P-EBT card with money on it for groceries. The card will be loaded with grocery money and come with instructions on how to use it. You will hear back from us with your final eligibility status by about July 30th.
+    if_approved: If approved, you'll get a P-EBT card with money on it for groceries. The card will be loaded with grocery money and come with instructions on how to use it. You will hear back from us with your final eligibility status by about July 31st.
   eligible:
     header: Is the student able to receive free or reduced price meals during the school year?
     even_if_the_student: Even if the student does not eat school breakfast or lunch, we need to know if they are

@@ -34,7 +34,7 @@ zh:
     online: 在Amazon和Walmart的網站
   info:
     heading: 有關P-EBT的資料
-    delay_notice: 請不要致電查詢您申請表格的狀態。客服中心無法提供您申請表格的狀態信息 。我們將會在7月30日左右告知您案件的最終資格信息。
+    delay_notice: 請不要致電查詢您申請表格的狀態。客服中心無法提供您申請表格的狀態信息 。我們將會在7月31日左右告知您案件的最終資格信息。
     what_are_question: 什麽是「P-EBT」或Pandemic EBT福利？
     what_are_answer_html: 因應新冠狀肺炎疫情(COVID 19)的影響，在學校符合資格領取免費或低價早/午餐的兒童將會領取到額外的食物福利。
       這項食物福利稱為Pandemic EBT或P-EBT福利。當學校關閉時，P-EBT福利能幫助加州家庭購買食物。
@@ -77,7 +77,7 @@ zh:
     what_is_the_deadline_answer_html: 如果您沒有收到郵寄P-EBT卡，則必須在2020年6月30日前上網申請P-EBT福利。P-EBT福利是爲了學校因新冠肺炎疫情(COVID
       19)關閉而臨時設立。如果您沒有收到郵寄P-EBT卡，也沒有在2020年6月30日前提交申請，則無法領取到P-EBT福利。
     what_if_i_applied_question: 如果我上網申請了，但沒有收到P-EBT卡該怎麼辦？
-    what_if_i_applied_answer_html: 州政府正在面臨延遲，因此P-EBT卡或許會需要更長時間寄出。我們將會在7月30日左右告知您案件的最終資格信息。
+    what_if_i_applied_answer_html: 州政府正在面臨延遲，因此P-EBT卡或許會需要更長時間寄出。我們將會在7月31日左右告知您案件的最終資格信息。
     how_long_question: 我有多長時間可以使用我的P-EBT 福利？
     how_long_answer: 您在收到P-EBT卡那天開始的一年內可以使用您的P-EBT福利。
     if_i_get_question: 如果我領取P-EBT福利，會因此被列為「公共負擔」審查的範圍嗎？
@@ -99,11 +99,11 @@ zh:
     when_will_i_hear_q: 我會在什麼時候得知我申請的進度？
     when_will_i_hear_a: 您將會在7月31日前得知您案件的最終資格信息。我們會通過電郵跟您聯繫，並當P-EBT卡已在郵寄途中時通知您。
     check_status_q: 如何查詢我的申請進度？
-    check_status_a_html: 我們會給您發電郵。如果您在7月30日仍然沒有收到我們的信息，您可以致電 (<a href="tel:8773289677">877-328-9677</a>) 聯繫EBT客服中心獲知申請的進度信息。
+    check_status_a_html: 我們會給您發電郵。如果您在7月31日仍然沒有收到我們的信息，您可以致電 (<a href="tel:8773289677">877-328-9677</a>) 聯繫EBT客服中心獲知申請的進度信息。
     application_approved_q: 如何得知我的申請是否獲批？
     application_approved_a: 當P-EBT卡在郵寄途中，我們會給您發一封電郵通知。您將通過該郵件得知您的申請已獲批。您將會在7月31日前得知您案件的最終資格信息。
     application_denied_q: 如何得知我的申請是否被拒絕？
-    application_denied_a_html: 我們會給您發電郵。如果您在7月30日仍然沒有收到我們的信息，您可以致電 (<a href="tel:8773289677">877-328-9677</a>) 聯繫EBT客服中心獲知申請的進度信息。
+    application_denied_a_html: 我們會給您發電郵。如果您在7月31日仍然沒有收到我們的信息，您可以致電 (<a href="tel:8773289677">877-328-9677</a>) 聯繫EBT客服中心獲知申請的進度信息。
     number_to_call_q: 我應該打哪個電話求助？
     number_to_call_a_html: 如果您需要幫助修改通信地址或設置卡密碼，您可以致電 (<a href="tel:8773289677">877-328-9677</a>) 與EBT客服中心聯繫。請不要致電查詢申請進度。客服中心無法提供申請進度或申請的相關信息。
     how_many_cards_q: 我會收到幾張P-EBT卡？
@@ -118,7 +118,7 @@ zh:
     havent_received_5_li: 選擇 “報失” 或 "卡未經同意被使用“
     havent_received_6_li: 電話將被轉接至人工服務
     havent_received_7_li: 告訴工作人員您的P-EBT卡遺失了
-    havent_received_8_html: 如果EBT客服中心確認您的卡是寄送到錯的地址，請致電 (<a href="tel:8337800353">833-780-0353</a>) P-EBT求助熱線或點擊此留言。他們將會更新您的地址並給你寄出新的P-EBT卡。
+    havent_received_8_html: 如果EBT客服中心確認您的卡是寄送到錯的地址，請致電 <a href="tel:8337800353">833-780-0353</a> P-EBT求助熱線或點擊<a href="https://inquiry.pebt.dss.ca.gov/">此留言。</a>他們將會更新您的地址並給你寄出新的P-EBT卡。
   how:
     header_html: 以下是該服務的流程：
     give_us_your_basic_html: <b>分享一些基本的資料。</b>
@@ -126,7 +126,7 @@ zh:
     your_school_will_make_sure_html: <b>我們將會確認您是否符合申請資格。</b>
     we_will_check: 我們將會核實您的家庭是否能夠獲取P-EBT。移民身分不會影響您獲取P-EBT的資格。
     get_a_p_ebt_card_html: <b>通過信件獲取您的P-EBT卡。</b>
-    if_approved: 如果獲批，您會收到一張帶有金額可用於購買雜貨的P-EBT卡。在收到帶有金額的卡的同時也會收到使用指示。我們將會在7月30日左右告知您案件的最終資格信息。
+    if_approved: 如果獲批，您會收到一張帶有金額可用於購買雜貨的P-EBT卡。在收到帶有金額的卡的同時也會收到使用指示。我們將會在7月31日左右告知您案件的最終資格信息。
   eligible:
     header: 您的孩子符合獲取免費或優惠價校餐嗎？
     even_if_the_student: 即使學生不在學校吃早餐或午餐，我們也需要知道他們是否符合資格。

@@ -37,7 +37,7 @@ es:
     online: En línea en Amazon y Walmart
   info:
     heading: Información sobre P-EBT
-    delay_notice: No llame para verificar el estado de su solicitud. El centro de llamadas no tiene información sobre el estado de su solicitud. Recibirá una respuesta de nosotros con su estado final de elegibilidad aproximadamente el 30 de julio.
+    delay_notice: No llame para verificar el estado de su solicitud. El centro de llamadas no tiene información sobre el estado de su solicitud. Recibirá una respuesta de nosotros con su estado final de elegibilidad aproximadamente el 31 de julio.
     what_are_question: ¿Qué es 'P-EBT' o beneficios de Pandemia EBT?
     what_are_answer_html: Debido al coronavirus (COVID-19), los niños que son elegibles para recibir alimentos gratis o a precio reducido en la escuela van a recibir beneficios adicionales para acceder a alimentos. Estos beneficios se llaman &quot;Pandemic EBT&quot; (Pandemia EBT) o beneficios &quot;P-EBT&quot;. Los beneficios P-EBT ayudan a las familias de California a comprar comida cuando la escuela está cerrada.
     who_is_eligible_question: ¿Quién es elegible para recibir beneficios P-EBT?
@@ -77,7 +77,7 @@ es:
     what_is_the_deadline_question: ¿Hasta cuándo tengo para solicitar beneficios P-EBT?
     what_is_the_deadline_answer_html: Si no recibe una tarjeta P-EBT por correo, debe presentar una solicitud en línea antes del 30 de junio de 2020 para obtener los beneficios P-EBT. Los beneficios de P-EBT solo están disponibles mientras las escuelas están cerradas debido al coronavirus (COVID 19). Si no recibió una tarjeta P-EBT por correo y no presentó la solicitud antes del 30 de junio de 2020, no podrá obtener los beneficios P-EBT.
     what_if_i_applied_question: ¿Qué pasa si solicité en línea y no he recibido mi tarjeta P-EBT?
-    what_if_i_applied_answer_html: El estado está experimentando demoras, y las tarjetas P-EBT pueden tardar más en llegar. Recibirá una respuesta de nosotros con su estado final de elegibilidad aproximadamente el 30 de julio.
+    what_if_i_applied_answer_html: El estado está experimentando demoras, y las tarjetas P-EBT pueden tardar más en llegar. Recibirá una respuesta de nosotros con su estado final de elegibilidad aproximadamente el 31 de julio.
     how_long_question: ¿Cuánto tiempo tengo para usar mis beneficios P-EBT?
     how_long_answer: Puede usar sus beneficios por un año a partir de cuando usted reciba su tarjeta P-EBT.
     if_i_get_question: Si obtengo beneficios de P-EBT, ¿me convertiré en una carga pública?
@@ -104,7 +104,7 @@ es:
     application_approved_q: ¿Cómo sabré si mi solicitud ha sido aprobada?
     application_approved_a: Le enviaremos un correo electrónico y le informaremos cuando su tarjeta P-EBT esté en camino. Así es como sabrá que su solicitud ha sido aprobada. Recibirá una respuesta con su elegibilidad final antes del 31 de julio.
     application_denied_q: ¿Cómo sabré si mi solicitud ha sido negada?
-    application_denied_a_html: Le enviaremos un correo electrónico. Si usted no recibe noticias de nosotros para el 30 de julio, puede llamar al Centro de Servicio al Cliente de EBT al (<a href="tel:8773289677">877-328-9677</a>) para obtener una actualización.
+    application_denied_a_html: Le enviaremos un correo electrónico. Si usted no recibe noticias de nosotros para el 31 de julio, puede llamar al Centro de Servicio al Cliente de EBT al (<a href="tel:8773289677">877-328-9677</a>) para obtener una actualización.
     number_to_call_q: ¿A qué número debo de llamar para pedir ayuda?
     number_to_call_a_html: Si necesita ayuda para cambiar su dirección postal o configurar su PIN, puede llamar al Centro de Servicio al Cliente de EBT al (<a href="tel:8773289677">877-328-9677</a>). No llame para pedir el estado de su solicitud. El centro de llamadas no tiene información sobre el estado de su solicitud.
     how_many_cards_q: ¿Cuántas tarjetas P-EBT recibiré?
@@ -119,7 +119,7 @@ es:
     havent_received_5_li: Seleccione "reportar pérdida" o "uso no autorizado de la tarjeta"
     havent_received_6_li: Lo conectarán con alguien
     havent_received_7_li: Dígale al representante que le falta su tarjeta P-EBT
-    havent_received_8_html: Si el Centro de Servicio al Cliente de EBT confirma que su tarjeta fue enviada a la dirección incorrecta, llame a la línea de ayuda P-EBT al (<a href="tel:8337800353">833-780-0353</a>) o deje un mensaje aquí. Actualizarán su dirección y le enviarán una nueva tarjeta P-EBT.
+    havent_received_8_html: Si el Centro de Servicio al Cliente de EBT confirma que su tarjeta fue enviada a la dirección incorrecta, llame a la línea de ayuda P-EBT al <a href="tel:8337800353">833-780-0353</a> o deje un mensaje <a href="https://inquiry.pebt.dss.ca.gov/">aquí.</a> Actualizarán su dirección y le enviarán una nueva tarjeta P-EBT.
   how:
     header_html: Así es como funciona&colon;
     give_us_your_basic_html: <b>Comparta información básica.</b>
@@ -128,7 +128,7 @@ es:
     your_school_will_make_sure_html: <b>Nosotros nos aseguraremos de que usted sea elegible.</b>
     we_will_check: Verificaremos para asegurarnos de que su familia pueda obtener P-EBT. El estado de inmigración no se considera en su elegibilidad para P-EBT.
     get_a_p_ebt_card_html: <b>Reciba la tarjeta de P-EBT por correo.</b>
-    if_approved: Si su solicitud es aprobada, recibirá una tarjeta P-EBT con dinero para alimentos. La tarjeta se cargará con dinero para alimentos y vendrá con instrucciones sobre cómo usarla. Recibirá una respuesta de nosotros con su estado final de elegibilidad aproximadamente el 30 de julio.
+    if_approved: Si su solicitud es aprobada, recibirá una tarjeta P-EBT con dinero para alimentos. La tarjeta se cargará con dinero para alimentos y vendrá con instrucciones sobre cómo usarla. Recibirá una respuesta de nosotros con su estado final de elegibilidad aproximadamente el 31 de julio.
   eligible:
     header: ¿Su hijo es elegible para recibir comidas gratis o a precio reducido durante el año escolar?
     even_if_the_student: Incluso si el estudiante no come desayuno o almuerzo escolar, necesitamos saber si es elegible
