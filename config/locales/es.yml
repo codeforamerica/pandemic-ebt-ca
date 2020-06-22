@@ -21,7 +21,7 @@ es:
     coming_soon_html: Próximamente&colon;
     header: Reciba ayuda para comprar comida mientras escuelas están cerradas.
     apply_starting: Solicite en este sitio web a partir del 22 de mayo.
-    apply_by: Registrese para P-EBT antes del 30 de junio.
+    apply_by: Registrese para P-EBT antes del 15 de julio.
     apply_now: Registrese ahora
     about: Este programa, llamado P-EBT, es para niños que normalmente reciben alimentos gratis o a precio reducido en
       la escuela. Solicite para recibir $365 por cada niño para comprar alimentos.
@@ -48,8 +48,8 @@ es:
       </ul>
     how_do_get_question: ¿Cómo recibo los beneficios de P-EBT?
     how_do_get_answer_1_html: La mayoría de las familias con niños que reciben beneficios de CalFresh, Medi-Cal o Foster Care no necesitan aplicar en línea. Recibirán su tarjeta P-EBT por correo durante el mes de mayo. Las tarjetas P-EBT comenzarán a llegar desde el 11 de mayo de 2020 hasta el 22 de mayo de 2020.
-    how_do_get_answer_2_html: Las familias con niños que solicitaron los beneficios de CalFresh, Medi-Cal o Foster Care después del cierre de su escuela recibirán su tarjeta P-EBT por correo antes del 30 de junio de 2020.
-    how_do_get_answer_3_html: Las familias con niños que califican para recibir comidas escolares gratis o a precio reducido y que NO reciben los beneficios de CalFresh, Medi-Cal o Foster Care, <u>deben aplicar en línea antes del 30 de junio de 2020</u>.
+    how_do_get_answer_2_html: Las familias con niños que solicitaron los beneficios de CalFresh, Medi-Cal o Foster Care después del cierre de su escuela recibirán su tarjeta P-EBT por correo antes del 15 de julio de 2020.
+    how_do_get_answer_3_html: Las familias con niños que califican para recibir comidas escolares gratis o a precio reducido y que NO reciben los beneficios de CalFresh, Medi-Cal o Foster Care, <u>deben aplicar en línea antes del 15 de julio de 2020</u>.
     how_do_get_answer_4_html: Si sus hijos no estaban inscritos en las comidas escolares antes del cierre de las escuelas, es posible que no puedan ser verificados para la elegibilidad P-EBT. Comuníquese con su distrito escolar para ver si todavía están aceptando solicitudes para comidas gratis o a precio reducido.
     already_got_question: Si ya recibí una tarjeta P-EBT por correo, ¿todavía necesito solicitar en línea?
     already_got_answer_1_html: No. Si ya recibió una tarjeta P-EBT por correo, no solicite en una en línea. Siga las instrucciones que vienen con su tarjeta P-EBT y crea su número de PIN privado.
@@ -58,7 +58,7 @@ es:
     what_if_to_go_answer_html: Si. Los beneficios de P-EBT son beneficios adicionales que no reemplazan a CalFresh ni a las comidas del programa de nutrición infantil que se ofrecen. Los niños pueden continuar de recibir comidas para llevar o alimentos de emergencia en los sitios de alimentación de emergencia COVID-19 ofrecidos por las escuelas y sitios comunitarios, incluso si están recibiendo beneficios de P-EBT.
     how_much_question: ¿Cuánto voy a recibir de beneficios P-EBT?
     how_much_answer_1_html: Puede obtener hasta $365 por cada niño que sea elegible para los beneficios de P-EBT. La cantidad total que recibirá depende del número de niños que vivan en su hogar que son elegibles para el programa.
-    how_much_answer_2_html: La mayoría de las familias con niños que son elegibles para comidas escolares gratuitas o de precio reducido recibirán $365 por cada niño. Si no recibe su tarjeta P-EBT por correo y presenta la solicitud antes del 30 de junio de 2020, obtendrá la cantidad total de beneficios.
+    how_much_answer_2_html: La mayoría de las familias con niños que son elegibles para comidas escolares gratuitas o de precio reducido recibirán $365 por cada niño. Si no recibe su tarjeta P-EBT por correo y presenta la solicitud antes del 15 de julio de 2020, obtendrá la cantidad total de beneficios.
     how_much_answer_3_html: Las familias con niños que solicitaron y obtuvieron los beneficios de CalFresh, Medi-Cal o Foster Care después del cierre de la escuela pueden recibir menos de $365 por cada niño. Esto depende de la fecha en que usted solicitó CalFresh, Medi-Cal o Foster Care.
     what_can_i_buy_question: ¿Qué puedo comprar con los beneficios P-EBT?
     what_can_i_buy_answer_1_html: Sus beneficios de P-EBT se pueden usar para comprar alimentos en la mayoría de los supermercados y mercados de agricultores y para comprar alimentos en línea en
@@ -75,7 +75,7 @@ es:
     what_should_i_do_answer_1_html: Siga las instrucciones que vinieron con su tarjeta P-EBT y crea su número de PIN privado. Luego, puede usar su tarjeta para comprar alimentos en la mayoría de supermercados y en los mercados de agricultores.
     what_should_i_do_answer_2_html: Para activar su tarjeta, llame al Centro de Servicio de Cliente de EBT al <a href="tel:18773289677">(877) 328-9677</a>. La opción 4 le permitirá de establecer un PIN para su nueva tarjeta. Necesitará la siguiente información para activar su tarjeta&colon; el número de 16 dígitos que se encuentra en el frente de su tarjeta, su código postal para su dirección postal, y la fecha de nacimiento de 6 dígitos para el niño nombrado en la tarjeta.
     what_is_the_deadline_question: ¿Hasta cuándo tengo para solicitar beneficios P-EBT?
-    what_is_the_deadline_answer_html: Si no recibe una tarjeta P-EBT por correo, debe presentar una solicitud en línea antes del 30 de junio de 2020 para obtener los beneficios P-EBT. Los beneficios de P-EBT solo están disponibles mientras las escuelas están cerradas debido al coronavirus (COVID 19). Si no recibió una tarjeta P-EBT por correo y no presentó la solicitud antes del 30 de junio de 2020, no podrá obtener los beneficios P-EBT.
+    what_is_the_deadline_answer_html: Si no recibe una tarjeta P-EBT por correo, debe presentar una solicitud en línea antes del 15 de julio de 2020 para obtener los beneficios P-EBT. Los beneficios de P-EBT solo están disponibles mientras las escuelas están cerradas debido al coronavirus (COVID 19). Si no recibió una tarjeta P-EBT por correo y no presentó la solicitud antes del 15 de julio de 2020, no podrá obtener los beneficios P-EBT.
     what_if_i_applied_question: ¿Qué pasa si solicité en línea y no he recibido mi tarjeta P-EBT?
     what_if_i_applied_answer_html: El estado está experimentando demoras, y las tarjetas P-EBT pueden tardar más en llegar. Recibirá una respuesta de nosotros con su estado final de elegibilidad aproximadamente el 31 de julio.
     how_long_question: ¿Cuánto tiempo tengo para usar mis beneficios P-EBT?
