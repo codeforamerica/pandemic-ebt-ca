@@ -17,11 +17,9 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     create_list(:child, 20)
     @unsubmitted_child = create(:child, household: create(:household, :unsubmitted))
     @child_with_email = create(:child, household_id: create(:household, :with_email).id)
-    @child_with_mailing_address = create(:child, household_id: create(:household, :with_mailing_address).id)
-    @child_without_mailing_address = create(:child, household_id: create(:household, :without_mailing_address).id)
     @child_from_today = create(:child, household: create(:household, :submitted_today))
     @child_from_yesterday = create(:child, household: create(:household, :submitted_yesterday))
-    @child_with_double_quotes = create(:child, household: create(:household, residential_street_2: 'Apt "B"'))
+    @child_with_double_quotes = create(:child, household: create(:household, clean_street_2: 'Apt "B"'))
   end
 
   after(:all) do
@@ -73,21 +71,6 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
       expect(@csv_data.headers).to eq(HEADERS)
     end
 
-    it 'Fills all mailing addresses, duplicating residential data where required' do
-      expect(@csv_data.map { |r| r['mailing_street'] }).to all(be_present)
-
-      mailing_address_row = row_for_child @child_with_mailing_address
-      expect(mailing_address_row['mailing_street']).to eq(@child_with_mailing_address.household.mailing_street)
-      expect(mailing_address_row['mailing_street']).not_to eq(mailing_address_row['residential_street'])
-      expect(mailing_address_row['has_distinct_mailing_address']).to eq('yes')
-
-      expect(@child_without_mailing_address.household.mailing_street).to be_blank
-      no_mailing_address_row = row_for_child @child_without_mailing_address
-      expect(no_mailing_address_row['mailing_street']).not_to be_blank
-      expect(no_mailing_address_row['mailing_street']).to eq(no_mailing_address_row['residential_street'])
-      expect(no_mailing_address_row['has_distinct_mailing_address']).to eq('no')
-    end
-
     it 'Exports the language' do
       expect(@csv_data.map { |r| r['language'] }).to all(be_present)
     end
@@ -105,7 +88,7 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
 
     it 'Escapes double quotes' do
       row = row_for_child @child_with_double_quotes
-      expect(row['residential_street_2']).to eq(@child_with_double_quotes.household.residential_street_2)
+      expect(row['clean_street_2']).to eq(@child_with_double_quotes.household.residential_street_2)
     end
   end
 end

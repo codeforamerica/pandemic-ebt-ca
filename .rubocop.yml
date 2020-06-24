@@ -19,6 +19,9 @@ Layout/LineLength:
   Enabled: false
 Layout/SpaceAroundMethodCallOperator:
   Enabled: false
+Layout/ArrayAlignment:
+  Exclude:
+    - app/helpers/address_cleaner.rb
 Lint/DeprecatedOpenSSLConstant:
   Enabled: true
 Lint/MixedRegexpCaptureTypes:
@@ -60,6 +63,9 @@ RSpec/NamedSubject:
 RSpec/BeforeAfterAll:
   Exclude:
     - spec/features/export_spec.rb
+    - spec/features/upload_aws_spec.rb
+RSpec/MessageSpies:
+  Enabled: false
 Style/Documentation:
   Enabled: false
 Style/ExponentialNotation:

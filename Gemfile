@@ -12,6 +12,7 @@ gem 'rails', '>= 6.0.3.2'
 gem 'sass-rails', '~> 6.0'
 gem 'sentry-raven'
 gem 'skylight'
+gem 'smartystreets_ruby_sdk'
 gem 'thor', '~> 0.19'
 gem 'uglifier', '>= 1.3.0'
 
