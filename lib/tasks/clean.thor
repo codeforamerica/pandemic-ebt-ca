@@ -10,6 +10,6 @@ class Clean < Thor
     uncleaned_households.each do |hh|
       cleaner.run(hh)
     end
-    puts "CLEANER COMPLETE! Ran on #{count} addresses."
+    puts "CLEANER COMPLETE! Ran on #{count} households."
   end
 end

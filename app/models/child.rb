@@ -18,6 +18,8 @@ class Child < ApplicationRecord
     "#{first_name} #{last_name}"
   end
 
+  STATE = 'CA'.freeze
+
   def csv_row
     [
       suid,
@@ -30,21 +32,31 @@ class Child < ApplicationRecord
       household.residential_street,
       household.residential_street_2,
       household.residential_city,
-      'CA',
+      STATE,
       household.residential_zip_code,
       household.registered_homeless,
       household.same_residential_address,
       household.has_mailing_address,
-      household.clean_street_1,
-      household.clean_street_2,
-      household.clean_city,
-      'CA',
-      household.clean_zip_code,
+      household.street,
+      household.street_2,
+      household.city,
+      STATE,
+      household.zip_code,
       household.email_address,
       household.language,
       household.submitted_at,
       household.application_experience,
-      household.confirmation_code
+      household.confirmation_code,
+      household.clean_residential_street,
+      household.clean_residential_street_2,
+      household.clean_residential_city,
+      household.clean_residential_zip_code,
+      STATE,
+      household.clean_mailing_street,
+      household.clean_mailing_street_2,
+      household.clean_mailing_city,
+      household.clean_mailing_zip_code,
+      STATE
     ]
   end
 
@@ -75,6 +87,16 @@ class Child < ApplicationRecord
       submitted_at
       application_experience
       confirmation_code
+      clean_residential_street
+      clean_residential_street_2
+      clean_residential_city
+      clean_residential_zip_code
+      clean_residential_state
+      clean_mailing_street
+      clean_mailing_street_2
+      clean_mailing_city
+      clean_mailing_zip_code
+      clean_mailing_state
     ]
   end
 end

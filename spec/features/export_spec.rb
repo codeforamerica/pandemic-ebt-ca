@@ -4,7 +4,9 @@ require 'csv'
 HEADERS = %w[ suid household_id student_first_name student_last_name student_dob student_school_type parent_signature
               residential_street residential_street_2 residential_city residential_state residential_zip_code
               registered_homeless all_children_at_same_address has_distinct_mailing_address mailing_street mailing_street_2 mailing_city mailing_state
-              mailing_zip_code email_address language submitted_at application_experience confirmation_code ].freeze
+              mailing_zip_code email_address language submitted_at application_experience confirmation_code
+              clean_residential_street clean_residential_street_2 clean_residential_city clean_residential_zip_code clean_residential_state
+              clean_mailing_street clean_mailing_street_2 clean_mailing_city clean_mailing_zip_code clean_mailing_state].freeze
 
 RSpec.describe 'Exporting Children as CSV', type: :feature do
   def row_for_child(child)
@@ -19,7 +21,7 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
     @child_with_email = create(:child, household_id: create(:household, :with_email).id)
     @child_from_today = create(:child, household: create(:household, :submitted_today))
     @child_from_yesterday = create(:child, household: create(:household, :submitted_yesterday))
-    @child_with_double_quotes = create(:child, household: create(:household, clean_street_2: 'Apt "B"'))
+    @child_with_double_quotes = create(:child, household: create(:household, clean_residential_street_2: 'Apt "B"'))
   end
 
   after(:all) do
@@ -88,7 +90,7 @@ RSpec.describe 'Exporting Children as CSV', type: :feature do
 
     it 'Escapes double quotes' do
       row = row_for_child @child_with_double_quotes
-      expect(row['clean_street_2']).to eq(@child_with_double_quotes.household.residential_street_2)
+      expect(row['clean_residential_street_2']).to eq('Apt "B"')
     end
   end
 end
