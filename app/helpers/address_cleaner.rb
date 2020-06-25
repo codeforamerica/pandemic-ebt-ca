@@ -36,7 +36,7 @@ class AddressCleaner
     lookup.street2 = street2
     lookup.city = city
     lookup.zipcode = zip_code
-    lookup.state = Child.STATE
+    lookup.state = 'CA'
     lookup.candidates = 1
     lookup.match = 'invalid'
 
