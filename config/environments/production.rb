@@ -103,4 +103,5 @@ Rails.application.configure do
   config.force_ssl = true
 
   config.action_controller.perform_caching = ENV['CACHE_STATIC_PAGES'] || true
+  config.lograge.enabled = true
 end
