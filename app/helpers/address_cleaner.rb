@@ -11,13 +11,15 @@ class AddressCleaner
       end
     end
 
-    result = get_result(household.id, household.residential_street, household.residential_street_2, household.residential_city, household.residential_zip_code)
+    unless household.registered_homeless_yes?
+      result = get_result(household.id, household.residential_street, household.residential_street_2, household.residential_city, household.residential_zip_code)
 
-    if result.present?
-      household.clean_residential_street = result.delivery_line_1
-      household.clean_residential_street_2 = result.delivery_line_2
-      household.clean_residential_city = result.components.city_name
-      household.clean_residential_zip_code = result.components.zipcode
+      if result.present?
+        household.clean_residential_street = result.delivery_line_1
+        household.clean_residential_street_2 = result.delivery_line_2
+        household.clean_residential_city = result.components.city_name
+        household.clean_residential_zip_code = result.components.zipcode
+      end
     end
 
     household.cleaned_addresses = true

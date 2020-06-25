@@ -31,6 +31,17 @@ RSpec.describe AddressCleaner do
       expect(hh.cleaned_addresses).to be_truthy
     end
 
+    it 'calls the cleaner only on mailing address if homeless' do
+      cleaner = described_class.new
+
+      expect(cleaner).to receive(:get_result).and_return(
+        @cleaner_result
+      )
+
+      hh = build(:household, :with_mailing_address, registered_homeless: 'yes')
+      cleaner.run(hh)
+    end
+
     it 'sets the mailing_address fields if a mailing_street is set' do
       cleaner = described_class.new
 
