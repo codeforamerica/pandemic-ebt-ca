@@ -1,9 +1,36 @@
 @import 'neat';
 @import 'atoms/variables';
+@import 'atoms/spacing';
 
 .hero--food {
   h1, h2 {
     color: #000;
+  }
+
+  h3 {
+    color: $color-grey-dark;
+  }
+
+  .toc {
+    ul, li {
+      list-style: none;
+      @extend .spacing-below-25;
+    }
+  }
+
+  .info_content {
+    h2, h3 {
+      @extend .spacing-above-60;
+    }
+
+    h2+h3 {
+      @extend .spacing-above-0;
+    }
+
+    @extend .spacing-above-35;
+    @include media($tablet-up) { // Desktop
+      margin-top: 0px !important;
+    }
   }
 
   .slab--hero {
