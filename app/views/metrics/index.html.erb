@@ -67,7 +67,7 @@
   <% @metrics.language_percents_for(Household.all).each do |language, percent| %>
     <div class="grid__item <%= ordinal_column_class(@metrics.language_percents_for(Household.all).count) %>">
       <div class="statistic-card">
-        <p class="statistic-card__label"><strong><%= language.upcase %></strong> - Total</p>
+        <p class="statistic-card__label"><strong><%= language.to_s.upcase %></strong> - Total</p>
         <p class="statistic-card__number"><%= percent %>%</p>
       </div>
     </div>
@@ -77,7 +77,7 @@
   <% @metrics.language_percents_for(Household.submitted).each do |language, percent| %>
     <div class="grid__item <%= ordinal_column_class(@metrics.language_percents_for(Household.submitted).count) %>">
       <div class="statistic-card">
-        <p class="statistic-card__label"><strong><%= language.upcase %></strong> - Submitted</p>
+        <p class="statistic-card__label"><strong><%= language.to_s.upcase %></strong> - Submitted</p>
         <p class="statistic-card__number"><%= percent %>%</p>
       </div>
     </div>
