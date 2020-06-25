@@ -37,6 +37,13 @@ es:
     online: En línea en Amazon y Walmart
   info:
     heading: Información sobre P-EBT
+    toc: Índice
+    general_information: Información general
+    using_benifits: Usando los beneficios de P-EBT
+    what_to_expect: Qué esperar
+    getting_your_card: Obteniendo su tarjeta P-EBT
+    application_status: Estado de la aplicación
+    help: Ayuda
     delay_notice: No llame para verificar el estado de su solicitud. El centro de llamadas no tiene información sobre el estado de su solicitud. Recibirá una respuesta de nosotros con su estado final de elegibilidad aproximadamente el 31 de julio.
     what_are_question: ¿Qué es 'P-EBT' o beneficios de Pandemia EBT?
     what_are_answer_html: Debido al coronavirus (COVID-19), los niños que son elegibles para recibir alimentos gratis o a precio reducido en la escuela van a recibir beneficios adicionales para acceder a alimentos. Estos beneficios se llaman &quot;Pandemic EBT&quot; (Pandemia EBT) o beneficios &quot;P-EBT&quot;. Los beneficios P-EBT ayudan a las familias de California a comprar comida cuando la escuela está cerrada.

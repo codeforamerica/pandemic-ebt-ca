@@ -33,80 +33,97 @@
   </section>
   <section class="slab slab--white">
     <div class="grid">
-      <div class="grid__item width-seven-twelfths">
+      <div class="grid__item width-one-third toc">
+        <h3><%= t('info.toc') %></h3>
+        <ul>
+          <li><a href="#GENERAL_INFORMATION"><%= t('info.general_information') %></a></li>
+          <li><a href="#USING_BENIFITS"><%= t('info.using_benifits') %></a></li>
+          <li><a href="#WHAT_TO_EXPECT"><%= t('info.what_to_expect') %></a></li>
+          <li><a href="#GETTING_YOUR_CARD"><%= t('info.getting_your_card') %></a></li>
+          <li><a href="#APPLICATION_STATUS"><%= t('info.application_status') %></a></li>
+          <li><a href="#HELP"><%= t('info.help') %></a></li>
+        </ul>
+      </div>
+      <div class="grid__item width-two-thirds info_content">
         <div class="notice--warning">
           <p><%= t('info.delay_notice') %></p>
         </div>
+        <h2 id='GENERAL_INFORMATION'><%= t('info.general_information') %></h2>
         <h3><%= t("info.what_is_the_deadline_question") %></h3>
-        <p class="form-card__body-text"><%= t("info.what_is_the_deadline_answer_html") %></p>
-        <h3 class="spacing-above-60"><%= t("info.what_are_question") %></h3>
-        <p class="form-card__body-text"><%= t("info.what_are_answer_html") %></p>
-        <h3 class="spacing-above-60" class="spacing-above-60"><%= t("info.who_is_eligible_question") %></h3>
-        <p class="form-card__body-text"><%= t("info.who_is_eligible_answer_html") %></p>
-        <h3 class="spacing-above-60"><%= t("info.how_do_get_question") %></h3>
-        <p class="form-card__body-text"><%= t("info.how_do_get_answer_1_html") %></p>
-        <p class="form-card__body-text"><%= t("info.how_do_get_answer_2_html") %></p>
-        <p class="form-card__body-text"><%= t("info.how_do_get_answer_3_html") %></p>
-        <p class="form-card__body-text"><%= t("info.how_do_get_answer_4_html") %></p>
-        <h3 class="spacing-above-6  0"><%= t("info.how_long_question") %></h3>
-        <p class="form-card__body-text"><%= t("info.how_long_answer") %></p>
-        <h3 class="spacing-above-60"><%= t("info.already_got_question") %></h3>
-        <p class="form-card__body-text"><%= t("info.already_got_answer_1_html") %></p>
-        <p class="form-card__body-text"><%= t("info.already_got_answer_2_html") %></p>
-        <h3 class="spacing-above-60"><%= t("info.what_if_to_go_question") %></h3>
-        <p class="form-card__body-text"><%= t("info.what_if_to_go_answer_html") %></p>
-        <h3 class="spacing-above-60"><%= t("info.how_much_question") %></h3>
-        <p class="form-card__body-text"><%= t("info.how_much_answer_1_html") %></p>
-        <p class="form-card__body-text"><%= t("info.how_much_answer_2_html") %></p>
-        <p class="form-card__body-text"><%= t("info.how_much_answer_3_html") %></p>
-        <h3 class="spacing-above-60"><%= t("info.what_can_i_buy_question") %></h3>
-        <p class="form-card__body-text"><%= t("info.what_can_i_buy_answer_1_html") %></p>
-        <p class="form-card__body-text"><%= t("info.what_can_i_buy_answer_2_html") %></p>
-        <h3 class="spacing-above-60"><%= t("info.what_should_i_do_question") %></h3>
-        <p class="form-card__body-text"><%= t("info.what_should_i_do_answer_1_html") %></p>
-        <p class="form-card__body-text"><%= t("info.what_should_i_do_answer_2_html") %></p>
-        <h3 class="spacing-above-60"><%= t("info.what_if_i_applied_question") %></h3>
-        <p class="form-card__body-text"><%= t("info.what_if_i_applied_answer_html") %></p>
-        <h3 class="spacing-above-60"><%= t("info.if_i_get_question") %></h3>
-        <p class="form-card__body-text"><%= t("info.if_i_get_answer_1_html") %></p>
-        <p class="form-card__body-text"><%= t("info.if_i_get_answer_2_html") %></p>
-        <p class="form-card__body-text"><%= t("info.if_i_get_answer_3_html") %></p>
-        <h3 class="spacing-above-60"><%= t("info.what_if_i_should_get_q") %></h3>
-        <p class="form-card__body-text"><%= t("info.what_if_i_should_get_a_html") %></p>
-        <h3 class="spacing-above-60"><%= t("info.what_about_shared_custody_q") %></h3>
-        <p class="form-card__body-text"><%= t("info.what_about_shared_custody_a") %></p>
-        <h3 class="spacing-above-60"><%= t("info.not_all_children_q") %></h3>
-        <p class="form-card__body-text"><%= t("info.not_all_children_a") %></p>
-        <h3 class="spacing-above-60"><%= t("info.multiple_cards_q") %></h3>
-        <p class="form-card__body-text"><%= t("info.multiple_cards_a") %></p>
-        <h3 class="spacing-above-60"><%= t("info.after_submission_q") %></h3>
-        <p class="form-card__body-text"><%= t("info.after_submission_1") %></p>
-        <p class="form-card__body-text"><%= t("info.after_submission_2") %></p>
-        <h3 class="spacing-above-60"><%= t("info.when_will_i_hear_q") %></h3>
-        <p class="form-card__body-text"><%= t("info.when_will_i_hear_a") %></p>
-        <h3 class="spacing-above-60"><%= t("info.check_status_q") %></h3>
-        <p class="form-card__body-text"><%= t("info.check_status_a_html") %></p>
-        <h3 class="spacing-above-60"><%= t("info.application_approved_q") %></h3>
-        <p class="form-card__body-text"><%= t("info.application_approved_a") %></p>
-        <h3 class="spacing-above-60"><%= t("info.application_denied_q") %></h3>
-        <p class="form-card__body-text"><%= t("info.application_denied_a_html") %></p>
-        <h3 class="spacing-above-60"><%= t("info.number_to_call_q") %></h3>
-        <p class="form-card__body-text"><%= t("info.number_to_call_a_html") %></p>
-        <h3 class="spacing-above-60"><%= t("info.how_many_cards_q") %></h3>
-        <p class="form-card__body-text"><%= t("info.how_many_cards_1") %></p>
-        <p class="form-card__body-text"><%= t("info.how_many_cards_2") %></p>
-        <p class="form-card__body-text"><%= t("info.how_many_cards_3") %></p>
-        <h3 class="spacing-above-60"><%= t("info.havent_received_q") %></h3>
-        <p class="form-card__body-text"><%= t("info.havent_received_1") %></p>
+        <p><%= t("info.what_is_the_deadline_answer_html") %></p>
+        <h3><%= t("info.what_are_question") %></h3>
+        <p><%= t("info.what_are_answer_html") %></p>
+        <h3><%= t("info.who_is_eligible_question") %></h3>
+        <p><%= t("info.who_is_eligible_answer_html") %></p>
+        <h3><%= t("info.how_do_get_question") %></h3>
+        <p><%= t("info.how_do_get_answer_1_html") %></p>
+        <p><%= t("info.how_do_get_answer_2_html") %></p>
+        <p><%= t("info.how_do_get_answer_3_html") %></p>
+        <p><%= t("info.how_do_get_answer_4_html") %></p>
+        <h3><%= t("info.if_i_get_question") %></h3>
+        <p><%= t("info.if_i_get_answer_1_html") %></p>
+        <p><%= t("info.if_i_get_answer_2_html") %></p>
+        <p><%= t("info.if_i_get_answer_3_html") %></p>
+        <h3><%= t("info.what_if_to_go_question") %></h3>
+        <p><%= t("info.what_if_to_go_answer_html") %></p>
+        <h3><%= t("info.what_about_shared_custody_q") %></h3>
+        <p><%= t("info.what_about_shared_custody_a") %></p>
+        <h2 id='USING_BENIFITS'><%= t('info.using_benifits') %></h2>
+        <h3><%= t("info.how_much_question") %></h3>
+        <p><%= t("info.how_much_answer_1_html") %></p>
+        <p><%= t("info.how_much_answer_2_html") %></p>
+        <p><%= t("info.how_much_answer_3_html") %></p>
+        <h3><%= t("info.how_long_question") %></h3>
+        <p><%= t("info.how_long_answer") %></p>
+        <h3><%= t("info.what_can_i_buy_question") %></h3>
+        <p><%= t("info.what_can_i_buy_answer_1_html") %></p>
+        <p><%= t("info.what_can_i_buy_answer_2_html") %></p>
+        <h2 id='WHAT_TO_EXPECT'><%= t('info.what_to_expect') %></h2>
+        <h3><%= t("info.after_submission_q") %></h3>
+        <p><%= t("info.after_submission_1") %></p>
+        <p><%= t("info.after_submission_2") %></p>
+        <h3><%= t("info.what_should_i_do_question") %></h3>
+        <p><%= t("info.what_should_i_do_answer_1_html") %></p>
+        <p><%= t("info.what_should_i_do_answer_2_html") %></p>
+        <h3><%= t("info.how_many_cards_q") %></h3>
+        <p><%= t("info.how_many_cards_1") %></p>
+        <p><%= t("info.how_many_cards_2") %></p>
+        <p><%= t("info.how_many_cards_3") %></p>
+        <h2 id='GETTING_YOUR_CARD'><%= t('info.getting_your_card') %></h2>
+        <h3><%= t("info.already_got_question") %></h3>
+        <p><%= t("info.already_got_answer_1_html") %></p>
+        <p><%= t("info.already_got_answer_2_html") %></p>
+        <h3><%= t("info.multiple_cards_q") %></h3>
+        <p><%= t("info.multiple_cards_a") %></p>
+        <h3><%= t("info.not_all_children_q") %></h3>
+        <p><%= t("info.not_all_children_a") %></p>
+        <h3><%= t("info.what_if_i_should_get_q") %></h3>
+        <p><%= t("info.what_if_i_should_get_a_html") %></p>
+        <h2 id='APPLICATION_STATUS'><%= t('info.application_status') %></h2>
+        <h3><%= t("info.when_will_i_hear_q") %></h3>
+        <p><%= t("info.when_will_i_hear_a") %></p>
+        <h3><%= t("info.application_approved_q") %></h3>
+        <p><%= t("info.application_approved_a") %></p>
+        <h3><%= t("info.application_denied_q") %></h3>
+        <p><%= t("info.application_denied_a_html") %></p>
+        <h3><%= t("info.check_status_q") %></h3>
+        <p><%= t("info.check_status_a_html") %></p>
+        <h2 id='HELP'><%= t('info.help') %></h2>
+        <h3><%= t("info.havent_received_q") %></h3>
+        <p><%= t("info.havent_received_1") %></p>
         <ol class="list--numbered">
-          <li class="form-card__body-text"><%= t("info.havent_received_2_li_html") %></li>
-          <li class="form-card__body-text"><%= t("info.havent_received_3_li") %></li>
-          <li class="form-card__body-text"><%= t("info.havent_received_4_li") %></li>
-          <li class="form-card__body-text"><%= t("info.havent_received_5_li") %></li>
-          <li class="form-card__body-text"><%= t("info.havent_received_6_li") %></li>
-          <li class="form-card__body-text"><%= t("info.havent_received_7_li") %></li>
+          <li><%= t("info.havent_received_2_li_html") %></li>
+          <li><%= t("info.havent_received_3_li") %></li>
+          <li><%= t("info.havent_received_4_li") %></li>
+          <li><%= t("info.havent_received_5_li") %></li>
+          <li><%= t("info.havent_received_6_li") %></li>
+          <li><%= t("info.havent_received_7_li") %></li>
         </ol>
-        <p class="form-card__body-text"><%= t("info.havent_received_8_html") %></p>
+        <p><%= t("info.havent_received_8_html") %></p>
+        <h3><%= t("info.what_if_i_applied_question") %></h3>
+        <p><%= t("info.what_if_i_applied_answer_html") %></p>
+        <h3><%= t("info.number_to_call_q") %></h3>
+        <p><%= t("info.number_to_call_a_html") %></p>
         <p class="spacing-above-60">
           <%= render partial: 'apply_now', locals: { is_early: false } %>
         </p>
