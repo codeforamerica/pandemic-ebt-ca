@@ -55,7 +55,7 @@ jobs:
         with:
           key: ${{ secrets.APTIBLE_SSH_KEY }}
           known_hosts: ${{ secrets.APTIBLE_KNOWN_HOSTS }}
-      - name: Turnstyle
+      - name: Wait for last deploy to complete
         uses: softprops/turnstyle@v1
         env:
           GITHUB_TOKEN: ${{ secrets.BOT_GITHUB_KEY }}
