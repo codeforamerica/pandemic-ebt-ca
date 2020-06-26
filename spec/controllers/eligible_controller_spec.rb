@@ -6,7 +6,7 @@ RSpec.describe EligibleController do
   describe '#update' do
     it 'updates the experiment group if present' do
       session[:experiment_group] = 'ca_early'
-      put :update, params: { form: { is_eligible: 'no' }, locale: I18n.default_locale }
+      put :update, params: { form: { is_eligible: 'no', language: 'en' }, locale: I18n.default_locale }
 
       household = Household.last
 

@@ -4,7 +4,7 @@ describe EligibleForm do
   describe '#save' do
     context 'with no household' do
       it 'creates a household' do
-        expect { described_class.new(Household.new).save }.to change(Household, :count).by(1)
+        expect { described_class.new(Household.new, language: 'en').save }.to change(Household, :count).by(1)
       end
 
       it 'validates that the submitted language is supported' do
@@ -28,7 +28,7 @@ describe EligibleForm do
     context 'existing household' do
       it 'updates the existing household' do
         household = Household.create(is_eligible: :yes)
-        form = described_class.new(household, { is_eligible: :no })
+        form = described_class.new(household, { is_eligible: :no, language: 'en' })
         form.valid?
         expect { form.save }.not_to change(Household, :count)
 
