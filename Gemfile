@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
+gem 'aws-sdk-s3', '~> 1'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'cfa-styleguide', git: 'https://github.com/codeforamerica/honeycrisp-gem'
 gem 'lograge'
@@ -14,7 +15,7 @@ gem 'sass-rails', '~> 6.0'
 gem 'sentry-raven'
 gem 'skylight'
 gem 'smartystreets_ruby_sdk'
-gem 'thor', '~> 0.19'
+gem 'thor'
 gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do

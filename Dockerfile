@@ -12,10 +12,17 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2
  && apt-get update \
  && apt-get install -y groff
 
-# If you require additional OS dependencies, install them here:
-# RUN apt-get update \
-#  && apt-get -y install imagemagick nodejs \
-#  && rm -rf /var/lib/apt/lists/*
+# Supercronic for cron jobs
+ENV SUPERCRONIC_URL=https://github.com/aptible/supercronic/releases/download/v0.1.9/supercronic-linux-amd64 \
+    SUPERCRONIC=supercronic-linux-amd64 \
+    SUPERCRONIC_SHA1SUM=5ddf8ea26b56d4a7ff6faecdd8966610d5cb9d85
+
+RUN curl -fsSLO "$SUPERCRONIC_URL" \
+ && echo "${SUPERCRONIC_SHA1SUM}  ${SUPERCRONIC}" | sha1sum -c - \
+ && chmod +x "$SUPERCRONIC" \
+ && mv "$SUPERCRONIC" "/usr/local/bin/${SUPERCRONIC}" \
+ && ln -s "/usr/local/bin/${SUPERCRONIC}" /usr/local/bin/supercronic
+ ADD config/crontab /app/crontab
 
 ADD Gemfile /app/
 ADD Gemfile.lock /app/
@@ -35,5 +42,3 @@ RUN set -a \
  && bin/rails db:migrate
 
 EXPOSE 3000
-
-CMD ["bundle", "exec", "rails", "s", "-b", "0.0.0.0", "-p", "3000"]

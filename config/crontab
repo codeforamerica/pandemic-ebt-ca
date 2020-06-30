@@ -1,0 +1,2 @@
+0 8 * * 1 bash /app/lib/tasks/weekly_export.sh $RAILS_ENV
+0 7 * * * bash /app/lib/tasks/daily_clean.sh $RAILS_ENV
