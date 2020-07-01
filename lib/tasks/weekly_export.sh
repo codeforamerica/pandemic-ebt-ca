@@ -11,4 +11,9 @@ result=$(bundle exec thor clean:addresses \
   && bundle exec thor export:upload_export_to_aws tmp/"${today}".csv)
 status_code=$?
 
-curl https://cronitor.link/KuHCa7/complete?msg="Weekly export completed on: CA-${rails_env}, Status: ${status_code}" -m 10 || true
+request_type='complete'
+if [ "${status_code}" != '0' ]; then
+  request_type='fail'
+fi
+
+curl https://cronitor.link/KuHCa7/{request_type}?msg="Weekly export completed on: CA-${rails_env}, Status: ${status_code}" -m 10 || true
