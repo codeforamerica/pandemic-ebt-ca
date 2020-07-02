@@ -43,9 +43,6 @@ Rails/FilePath:
   Enabled: false
 Rails/HasManyOrHasOneDependent:
   Enabled: false
-Rails/OutputSafety:
-  Exclude:
-    - app/helpers/csv_helper.rb
 Rails/UnknownEnv:
   Enabled: false
 RSpec/ContextWording:
