@@ -30,7 +30,7 @@ class MetricsReport
   def language_percents_for(households)
     count_by_language = households.where.not(language: nil).group(:language).count
     total = count_by_language.values.sum.to_f
-    count_by_language.map { |lang, count| [lang, ((count.to_f / total) * 100).round(2)] }.to_h
+    count_by_language.transform_values { |count| ((count.to_f / total) * 100).round(2) }
   end
 
   private

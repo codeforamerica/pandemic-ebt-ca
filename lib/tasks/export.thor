@@ -33,7 +33,9 @@ class Export < Thor
   STATE_BUCKET = 'ca'.freeze
   def upload_export_to_aws(file)
     required_variables = %w[AWS_REGION AWS_EXPORT_UPLOAD_BUCKET AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY]
-    required_variables.each { |var| raise Thor::Error, "ERROR: #{var} is required to be set as an environment variable" unless ENV.key?(var) }
+    required_variables.each do |var|
+      raise Thor::Error, "ERROR: #{var} is required to be set as an environment variable" unless ENV.key?(var)
+    end
     raise Thor::Error, "ERROR: #{file} does not exist" unless File.exist?(file)
 
     s3 = Aws::S3::Resource.new

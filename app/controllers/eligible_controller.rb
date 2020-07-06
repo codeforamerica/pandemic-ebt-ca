@@ -20,9 +20,7 @@ class EligibleController < FormsController
 
   def form_params
     params = super
-    if session[:experiment_group].present?
-      params[:experiment_group] = session[:experiment_group]
-    end
+    params[:experiment_group] = session[:experiment_group] if session[:experiment_group].present?
     params
   end
 
