@@ -20,10 +20,10 @@ jobs:
           POSTGRES_PASSWORD: postgres
     steps:
     - uses: actions/checkout@v2
-    - name: Setup Ruby 2.6.3
+    - name: Setup Ruby 2.6.6
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 2.6.3
+        ruby-version: 2.6.6
     - run: ruby -v
     - name: Cache Gems
       uses: actions/cache@v1.1.2
