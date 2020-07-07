@@ -4,13 +4,13 @@
   <div class="grid__item width-one-half">
     <div class="statistic-card">
       <p class="statistic-card__label">Applications Submitted</p>
-      <p class="statistic-card__number"><%= @metrics.total_applications %></p>
+      <p class="statistic-card__number"><%= number_with_delimiter @metrics.total_applications %></p>
     </div>
   </div>
   <div class="grid__item width-one-half">
     <div class="statistic-card">
       <p class="statistic-card__label">Children Submitted</p>
-      <p class="statistic-card__number"><%= @metrics.total_children %></p>
+      <p class="statistic-card__number"><%= number_with_delimiter @metrics.total_children %></p>
     </div>
   </div>
 </div>
@@ -19,25 +19,25 @@
   <div class="grid__item width-one-fourth">
     <div class="statistic-card">
       <p class="statistic-card__label">Yesterday <%= (Date.today - 1.day).strftime("(%m/%d)") %></p>
-      <p class="statistic-card__number"><%= @metrics.total_applications(Date.today - 1.days) %></p>
+      <p class="statistic-card__number"><%= number_with_delimiter @metrics.total_applications(Date.today - 1.days) %></p>
     </div>
   </div>
   <div class="grid__item width-one-fourth">
     <div class="statistic-card">
       <p class="statistic-card__label">2 Days Ago <%= (Date.today - 2.days).strftime("(%m/%d)") %></p>
-      <p class="statistic-card__number"><%= @metrics.total_applications(Date.today - 2.days) %></p>
+      <p class="statistic-card__number"><%= number_with_delimiter @metrics.total_applications(Date.today - 2.days) %></p>
     </div>
   </div>
   <div class="grid__item width-one-fourth">
     <div class="statistic-card">
       <p class="statistic-card__label">3 Days Ago <%= (Date.today - 3.days).strftime("(%m/%d)") %></p>
-      <p class="statistic-card__number"><%= @metrics.total_applications(Date.today - 3.days) %></p>
+      <p class="statistic-card__number"><%= number_with_delimiter @metrics.total_applications(Date.today - 3.days) %></p>
     </div>
   </div>
   <div class="grid__item width-one-fourth">
     <div class="statistic-card">
       <p class="statistic-card__label">4 Days Ago <%= (Date.today - 4.days).strftime("(%m/%d)") %></p>
-      <p class="statistic-card__number"><%= @metrics.total_applications(Date.today - 4.days) %></p>
+      <p class="statistic-card__number"><%= number_with_delimiter @metrics.total_applications(Date.today - 4.days) %></p>
     </div>
   </div>
 </div>
