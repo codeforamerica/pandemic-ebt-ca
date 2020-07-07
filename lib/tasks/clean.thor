@@ -7,7 +7,7 @@ class Clean < Thor
     cleaner = AddressCleaner.new
     uncleaned_households = Household.submitted.where(cleaned_addresses: false)
     count = uncleaned_households.count
-    uncleaned_households.each do |hh|
+    uncleaned_households.in_batches.each_record do |hh|
       cleaner.run(hh)
     end
     puts "CLEANER COMPLETE! Ran on #{count} households."
