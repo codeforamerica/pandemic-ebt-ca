@@ -19,9 +19,12 @@ zh:
   index:
     coming_soon_html: 快來了：
     header: 在學校停課期間獲取食物购买援助。
+    closed_header: 大流行疫情EBT
     apply_starting: 從5月22日開始在此網站上申請。
     apply_by: 7月15日前申請獲取P-EBT
     apply_now: 立即申請
+    now_closed: 目前已截止接受申請
+    applications_closed: 申請於7月15日已截止
     about: 該計劃 ，稱為P-EBT，適用於符合資格獲取免費或優惠價校餐的孩子。申請後每個孩子可領取高達$365，可用於購買雜貨。
     children_may: 即使兒童正在領取P-EBT福利，仍然可以繼續領取由學校提供的「外帶」早/午餐或在COVID-19緊急食物站領取由學校和社區提供的緊急食物。
     questions_about: 有關P-EBT的問題？
@@ -41,6 +44,7 @@ zh:
     getting_your_card: 獲取您的P-EBT卡
     application_status: 申請現況
     help: 幫助
+    closed_html: 大流行疫情 EBT (P-EBT) 已截止接受申請。如果您已經提交申請但尚未收到P-EBT卡，請等待我們審核您的申請。我們將會通過電郵告知您申請的最終結果 。如果您對您的申請有任何疑問，請透過下面表格與我<a href="https://inquiry.pebt.dss.ca.gov/" target="blank">們聯繫</a>
     delay_notice: 請不要致電查詢您申請表格的狀態。客服中心無法提供您申請表格的狀態信息 。我們將會在7月31日左右告知您案件的最終資格信息。
     what_are_question: 什麽是「P-EBT」或Pandemic EBT福利？
     what_are_answer_html: 因應新冠狀肺炎疫情(COVID 19)的影響，在學校符合資格領取免費或低價早/午餐的兒童將會領取到額外的食物福利。

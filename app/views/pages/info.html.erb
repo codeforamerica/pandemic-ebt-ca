@@ -19,11 +19,13 @@
         <h1 class="text-25">
           <% if (ENV["COMING_SOON"] == "1") && !@is_early %>
             <%= t("index.apply_starting") %>
+          <% elsif ENV["CLOSED"] == "1" %>
+            <%= t("index.now_closed") %>
           <% else %>
             <%= t("index.apply_by") %>
           <% end %>
         </h1>
-        <% if ENV["COMING_SOON"].blank? %>
+        <% if ENV["COMING_SOON"].blank? && ENV["CLOSED"] != "1" %>
           <%= render partial: 'apply_now', locals: { is_early: false } %>
         <% else %>
           <div class="button-spacer"></div>
@@ -48,6 +50,11 @@
         <div class="notice--warning">
           <p><%= t('info.delay_notice') %></p>
         </div>
+        <% if ENV["CLOSED"] == "1" %>
+          <div class="notice">
+            <p><%= t('info.closed_html') %></p>
+          </div>
+        <% end %>
         <h2 id='GENERAL_INFORMATION'><%= t('info.general_information') %></h2>
         <h3><%= t("info.what_is_the_deadline_question") %></h3>
         <p><%= t("info.what_is_the_deadline_answer_html") %></p>
@@ -124,9 +131,11 @@
         <p><%= t("info.what_if_i_applied_answer_html") %></p>
         <h3><%= t("info.number_to_call_q") %></h3>
         <p><%= t("info.number_to_call_a_html") %></p>
-        <p class="spacing-above-60">
-          <%= render partial: 'apply_now', locals: { is_early: false } %>
-        </p>
+        <% if ENV["CLOSED"] != "1" %>
+          <p class="spacing-above-60">
+            <%= render partial: 'apply_now', locals: { is_early: false } %>
+          </p>
+        <% end %>
       </div>
     </div>
   </section>

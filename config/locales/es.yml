@@ -20,9 +20,12 @@ es:
   index:
     coming_soon_html: Próximamente&colon;
     header: Reciba ayuda para comprar comida mientras escuelas están cerradas.
+    closed_header: Pandemia-EBT
     apply_starting: Solicite en este sitio web a partir del 22 de mayo.
     apply_by: Registrese para P-EBT antes del 15 de julio.
     apply_now: Registrese ahora
+    now_closed: El plazo para aplicar ha cerrado.
+    applications_closed: El plazo para aplicar cerró el 15 de julio.
     about: Este programa, llamado P-EBT, es para niños que normalmente reciben alimentos gratis o a precio reducido en
       la escuela. Solicite para recibir $365 por cada niño para comprar alimentos.
     children_may: Los niños pueden continuar recibiendo comidas “para llevar” o alimentos en los sitios de alimentación
@@ -44,6 +47,7 @@ es:
     getting_your_card: Obteniendo su tarjeta P-EBT
     application_status: Estado de la aplicación
     help: Ayuda
+    closed_html: El plazo para aplicar por Pandemia EBT (P-EBT) ha cerrado. Si ya ha solicitado y no ha recibido su tarjeta de P-EBT, espere mientras procesamos su solicitud. Pronto recibirá un correo electrónico con la decisión de su solicitud. Si tiene alguna pregunta sobre su solicitud, <a href="https://inquiry.pebt.dss.ca.gov/" target="_blank">contáctenos aquí</a>.
     delay_notice: No llame para verificar el estado de su solicitud. El centro de llamadas no tiene información sobre el estado de su solicitud. Recibirá una respuesta de nosotros con su estado final de elegibilidad aproximadamente el 31 de julio.
     what_are_question: ¿Qué es 'P-EBT' o beneficios de Pandemia EBT?
     what_are_answer_html: Debido al coronavirus (COVID-19), los niños que son elegibles para recibir alimentos gratis o a precio reducido en la escuela van a recibir beneficios adicionales para acceder a alimentos. Estos beneficios se llaman &quot;Pandemic EBT&quot; (Pandemia EBT) o beneficios &quot;P-EBT&quot;. Los beneficios P-EBT ayudan a las familias de California a comprar comida cuando la escuela está cerrada.

@@ -20,21 +20,28 @@
         <h2 class="heading-60">
           <% if (ENV["COMING_SOON"] == "1") && !@is_early %>
             <em><%= t("index.coming_soon_html") %></em>
+          <% elsif ENV["CLOSED"] == "1" %>
+            <%= t("index.closed_header") %>
+          <% else %>
+            <%= t("index.header") %>
           <% end %>
-          <%= t("index.header") %>
         </h2>
         <h1 class="text-25">
           <% if (ENV["COMING_SOON"] == "1") && !@is_early %>
             <%= t("index.apply_starting") %>
+          <% elsif ENV["CLOSED"] == "1" %>
+            <%= t("index.now_closed") %>
           <% else %>
             <%= t("index.apply_by") %>
           <% end %>
         </h1>
         <div class="buttons-group">
           <div class="grid">
-            <div class="grid__item width-one-half">
-              <%= render partial: 'apply_now', locals: { is_early: @is_early } %>
-            </div>
+            <% if ENV["CLOSED"] != "1" %>
+              <div class="grid__item width-one-half">
+                <%= render partial: 'apply_now', locals: { is_early: @is_early } %>
+              </div>
+            <% end %>
             <div class="grid__item width-one-half">
               <a href="<%= info_path %>"><button class="button"><%= t("index.learn_more") %></button></a>
             </div>
@@ -44,6 +51,13 @@
     </div>
   </section>
   <section class="slab slab--white">
+    <% if ENV["CLOSED"] == "1" %>
+      <div class="grid">
+        <div class="grid__item">
+          <h3><%= t("index.applications_closed") %></h3>
+        </div>
+      </div>
+    <% end %>
     <div class="grid">
       <div class="grid__item width-five-twelfths">
         <p class="form-card__body-text"><%= t("index.about") %></p>
