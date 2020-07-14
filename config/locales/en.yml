@@ -20,9 +20,12 @@ en:
   index:
     coming_soon_html: Coming soon&colon;
     header: Get help buying food while schools are closed.
+    closed_header: Pandemic EBT
     apply_starting: Apply on this website starting May 22nd.
     apply_by: Apply for P-EBT by July 15th.
     apply_now: Apply now
+    now_closed: Applications are now closed.
+    applications_closed: Applications closed on July 15th
     about: This program, called P-EBT, is for students who are normally able to get free or reduced price school meals.
       Apply and get up to $365 per child to spend on groceries.
     children_may: Children may continue to receive "grab n go" meals or emergency food at COVID-19 emergency feeding
@@ -44,6 +47,7 @@ en:
     getting_your_card: Getting your P-EBT card
     application_status: Application status
     help: Help
+    closed_html: The application window for Pandemic EBT (P-EBT) has now closed. If you have already applied and haven’t gotten your P-EBT card, please wait while we process your application. You will get an email with your application decision soon. If you have any questions about your application, please <a href="https://inquiry.pebt.dss.ca.gov/" target="_blank">contact us here</a>.
     delay_notice: Please do not call to check the status of your application. The call center does not have information on your application status. You will hear back from us with your final eligibility status by about July 31st.
     what_are_question: What are ‘P-EBT’ or Pandemic EBT benefits?
     what_are_answer_html: Due to coronavirus (COVID 19), children who are eligible for free or reduced-price meals at
