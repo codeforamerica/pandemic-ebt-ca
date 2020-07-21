@@ -8,7 +8,7 @@ AllCops:
     - bin/**/*
     - db/**/*
     - vendor/**/*
-
+    - config/routes.rb
 FactoryBot/CreateList:
   Exclude:
     - spec/helpers/suid_generator_spec.rb
