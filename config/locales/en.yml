@@ -88,6 +88,9 @@ en:
     what_should_i_do_answer_1_html: Follow the instructions that came with your P-EBT card and create your private PIN number. Then your card can be used to buy food in most grocery stores and farmer's markets.
     what_should_i_do_answer_2_html: To activate your card, call the EBT Customer Service Center at <a href="tel:18773289677">(877) 328-9677</a>. Option 4 will allow you to set a PIN for your new card. You'll need the following information to activate your card&colon; the 16-digit card number found on the front of your card, your zip code for your mailing address, and the 6-digit date of birth for the child named on the card.
     what_is_the_deadline_question: When is the deadline to apply for P-EBT benefits?
+    window_now_closed: The application window for Pandemic EBT (P-EBT) has now closed.
+    as_of_july_31: As of July 31, 2020, the California Department of Social Services has made all P-EBT eligibility decisions.
+    if_you_have_html: If you have any questions about your application, please contact them <a href="https://inquiry.pebt.dss.ca.gov/" target="_blank">here</a>.
     what_is_the_deadline_answer_html: If you do not get a P-EBT card in the mail, you must apply online by July 15,
       2020 to get P-EBT benefits. P-EBT benefits are only available while schools are closed due to coronavirus (COVID 19). If you did not get a P-EBT card in the mail and do not apply by July 15, 2020 you will not be able to get P-EBT benefits.
     what_if_i_applied_question: What if I applied online and haven't received my P-EBT card?
@@ -117,15 +120,20 @@ en:
     after_submission_1: You will get an email saying that we received your application. Then, we will start reviewing your application. The information you provided must match information provided by the Department of Education. This takes some time.
     after_submission_2: You will hear back with your final eligibility by July 31st. We will email you and let you know when your P-EBT card is on its way.
     when_will_i_hear_q: When will I hear back about the status of my application?
+    did_you_provide: Did you provide an email address on your P-EBT application? You should have received an email with your final eligibility.
     when_will_i_hear_a: You will hear back with your final eligibility by July 31st. We will email you and let you know when your P-EBT card is on its way.
     check_status_q: How can I check the status of my application?
     check_status_a_html: Check your email. We will send you an email saying that we received your application. You will get another email when your P-EBT card is in the mail and on its way to you. After you get an email saying your card is on its way, you can call the EBT Customer Service Center at (<a href="tel:8773289677">877-328-9677</a>) if you need help.
     application_approved_q: How will I know if my application has been approved?
     application_approved_a: We will email you and let you know when your P-EBT card is on its way. This is how you will know your application has been approved. You will hear back with your final eligibility by July 31st.
     application_denied_q: How will I know if my application has been denied?
-    application_denied_a_html: We will send you an email. If you have not heard from us by July 31st, you can call the EBT Customer Service Center at (<a href="tel:8773289677">877-328-9677</a>) for an update.
+    application_denied_a_html: If your family was not eligible for P-EBT, but you believe you should have been, you can complete an appeal. <a href="https://inquiry.pebt.dss.ca.gov/appeal" target="_blank">Submit an appeal online</a> or call the P-EBT helpline at 833-780-0353. The deadline to submit an appeal is August 10, 2020. The California Department of Social Services will review your appeal. This may take up to one month. They are not allowed to talk about why you are not eligible over the phone.
     number_to_call_q: What number should I call for help?
     number_to_call_a_html: If you need help changing your mailing address or setting up your PIN you can call the EBT Customer Service Center at (<a href="tel:8773289677">877-328-9677</a>). Please do not call for the status of your application. The call center does not have information about the status of your application.
+    cdss_still_available_html: California Department of Social Services is still available if you need help. They can help with address changes, PIN set up, and other inquiries. If you have any questions about your application, please contact them <a href="https://inquiry.pebt.dss.ca.gov/" target="_blank">here</a>.
+    always_provide_a_phone_number: Always provide a phone number when you send a message so that they can get back to you as soon as possible.
+    thank_you_for_your_patience: Thank you for your patience during this challenging time.
+    what_should_i_do_denied_q: What should I do if my application was denied?
     how_many_cards_q: How many P-EBT cards will I get?
     how_many_cards_1: Some families will receive one P-EBT card loaded with benefits for all students in the house. It will have the oldest student's name on it.
     how_many_cards_2: Some families will receive many cards - one card for each eligible student. The cards will have $365 per student on it.

@@ -58,8 +58,9 @@
         <% end %>
         <h2 id='GENERAL_INFORMATION'><%= t('info.general_information') %></h2>
         <h3><%= t("info.what_is_the_deadline_question") %></h3>
-        <p><%= t("info.what_is_the_deadline_answer_html") %></p>
-        <p><%= t("shared.if_your_family") %></p>
+        <p><%= t("info.window_now_closed") %></p>
+        <p><%= t("info.as_of_july_31") %></p>
+        <p><%= t("info.if_you_have_html") %></p>
         <%= link_to t("shared.apply_for_cf"), "https://www.getcalfresh.org", class: "button button--primary" %>
         <h3><%= t("info.what_are_question") %></h3>
         <p><%= t("info.what_are_answer_html") %></p>
@@ -111,10 +112,12 @@
         <p><%= t("info.what_if_i_should_get_a_html") %></p>
         <h2 id='APPLICATION_STATUS'><%= t('info.application_status') %></h2>
         <h3><%= t("info.when_will_i_hear_q") %></h3>
-        <p><%= t("info.when_will_i_hear_a") %></p>
+        <p><%= t("info.as_of_july_31") %></p>
+        <p><%= t("info.did_you_provide") %></p>
         <h3><%= t("info.application_approved_q") %></h3>
-        <p><%= t("info.application_approved_a") %></p>
+        <p><%= t("info.did_you_provide") %></p>
         <h3><%= t("info.application_denied_q") %></h3>
+        <p><%= t("info.did_you_provide") %></p>
         <p><%= t("info.application_denied_a_html") %></p>
         <h3><%= t("info.check_status_q") %></h3>
         <p><%= t("info.check_status_a_html") %></p>
@@ -133,7 +136,12 @@
         <h3><%= t("info.what_if_i_applied_question") %></h3>
         <p><%= t("info.what_if_i_applied_answer_html") %></p>
         <h3><%= t("info.number_to_call_q") %></h3>
+        <p><%= t("info.cdss_still_available_html") %></p>
         <p><%= t("info.number_to_call_a_html") %></p>
+        <p><%= t("info.always_provide_a_phone_number") %></p>
+        <p><%= t("info.thank_you_for_your_patience") %></p>
+        <h3><%= t("info.what_should_i_do_denied_q") %></h3>
+        <p><%= t("info.application_denied_a_html") %></p>
         <% if ENV["CLOSED"] != "1" %>
           <p class="spacing-above-60">
             <%= render partial: 'apply_now', locals: { is_early: false } %>

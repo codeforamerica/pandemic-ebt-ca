@@ -85,6 +85,9 @@ zh:
     what_should_i_do_answer_1_html: 請根據P-EBT卡寄來的指示設置您的卡密碼。完成密碼設置後，P-EBT卡即可在大多數的雜貨店和農夫市場購買食物。
     what_should_i_do_answer_2_html: 如果需要激活您的卡，請致電<a href="tel:18773289677">(877) 328-9677</a> 聯繫EBT客服中心。選項 4 會讓您設置新的卡密碼。您將需要提供以下信息來激活您的卡：卡前面的16位數、通信地址的郵編號碼、卡上的孩子的六位數出生日期。
     what_is_the_deadline_question: 申請P-EBT福利的截止日期是？
+    window_now_closed: Pandemic EBT（P-EBT）的申請期限已過。
+    as_of_july_31: 於2020年7月31號，加州社會服務部 (CDSS) 已完成所有P-EBT的資格審核。
+    if_you_have_html: 如果您有任何與表格相關的問題，請點擊此與他<a href="https://inquiry.pebt.dss.ca.gov/" target="_blank">們聯繫</a>。
     what_is_the_deadline_answer_html: 如果您沒有收到郵寄P-EBT卡，則必須在2020年7月15日前上網申請P-EBT福利。P-EBT福利是爲了學校因新冠肺炎疫情(COVID
       19)關閉而臨時設立。如果您沒有收到郵寄P-EBT卡，也沒有在2020年7月15日前提交申請，則無法領取到P-EBT福利。
     what_if_i_applied_question: 如果我上網申請了，但沒有收到P-EBT卡該怎麼辦？
@@ -108,14 +111,19 @@ zh:
     after_submission_1: 您將會收到一封電郵告知您我們已經收到您的申請。然後，我們會開始審核您的申請。您提供的資料必須要和美國教育部的資料相符。核對過程會需要時間。
     after_submission_2: 您將會在7月31日前得知您申請的最終資格信息。我們會通過電郵與您聯繫，並當P-EBT卡已在郵寄途中時通知您。
     when_will_i_hear_q: 我會在什麼時候得知我申請的進度？
+    did_you_provide: 您在P-EBT申請表格上有提供電子郵箱嗎？您應該已收到最終資格相關的郵件。
     when_will_i_hear_a: 您將會在7月31日前得知您案件的最終資格信息。我們會通過電郵跟您聯繫，並當P-EBT卡已在郵寄途中時通知您。
     check_status_q: 如何查詢我的申請進度？
     check_status_a_html: 我們會給您發電郵。如果您在7月31日仍然沒有收到我們的信息，您可以致電 (<a href="tel:8773289677">877-328-9677</a>) 聯繫EBT客服中心獲知申請的進度信息。
     application_approved_q: 如何得知我的申請是否獲批？
     application_approved_a: 當P-EBT卡在郵寄途中，我們會給您發一封電郵通知。您將通過該郵件得知您的申請已獲批。您將會在7月31日前得知您案件的最終資格信息。
     application_denied_q: 如何得知我的申請是否被拒絕？
-    application_denied_a_html: 我們會給您發電郵。如果您在7月31日仍然沒有收到我們的信息，您可以致電 (<a href="tel:8773289677">877-328-9677</a>) 聯繫EBT客服中心獲知申請的進度信息。
+    application_denied_a_html: 如果您的家庭不符合資格獲取P-EBT，但您認為該決定有誤，您可以提交上訴。<a href="https://inquiry.pebt.dss.ca.gov/appeal" target="_blank">您可以在網上遞交上</a>訴或致電 833-780-0353 聯繫P-EBT。提交上訴的截止日期為2020年8月10日。加州社會服務部 （CDSS）會審核您的上訴。審核過程有可能需要一個月。他們不能通過電話與您詳談關於您為什麼不符合資格。
     number_to_call_q: 我應該打哪個電話求助？
+    cdss_still_available_html: 如果您需要幫助，可以與加州社會服務部聯繫。他們可以幫助您更改地址，設置密碼以及其他詢問。如果您有關於申請表格的問題，請通過此與他們聯繫。
+    always_provide_a_phone_number: 為了方便工作人員與您聯繫，如果您留言或發送信息，請留下電話號碼。
+    thank_you_for_your_patience: 感謝您在這段困難的時間中的耐心等候。
+    what_should_i_do_denied_q: 如果我的申請被拒絕，我該怎麼辦？
     number_to_call_a_html: 如果您需要幫助修改通信地址或設置卡密碼，您可以致電 (<a href="tel:8773289677">877-328-9677</a>) 與EBT客服中心聯繫。請不要致電查詢申請進度。客服中心無法提供申請進度或申請的相關信息。
     how_many_cards_q: 我會收到幾張P-EBT卡？
     how_many_cards_1: 有些家庭會收到一張P-EBT卡，包括家庭中所有學生的福利。卡上會寫著最年長的學生的名字。

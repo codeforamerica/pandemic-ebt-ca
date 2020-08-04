@@ -86,6 +86,9 @@ es:
     what_should_i_do_answer_1_html: Siga las instrucciones que vinieron con su tarjeta P-EBT y crea su número de PIN privado. Luego, puede usar su tarjeta para comprar alimentos en la mayoría de supermercados y en los mercados de agricultores.
     what_should_i_do_answer_2_html: Para activar su tarjeta, llame al Centro de Servicio de Cliente de EBT al <a href="tel:18773289677">(877) 328-9677</a>. La opción 4 le permitirá de establecer un PIN para su nueva tarjeta. Necesitará la siguiente información para activar su tarjeta&colon; el número de 16 dígitos que se encuentra en el frente de su tarjeta, su código postal para su dirección postal, y la fecha de nacimiento de 6 dígitos para el niño nombrado en la tarjeta.
     what_is_the_deadline_question: ¿Hasta cuándo tengo para solicitar beneficios P-EBT?
+    window_now_closed: El plazo para aplicar para Pandemia EBT (P-EBT) se ha cerrado.
+    as_of_july_31: A partir del 31 de julio de 2020, el Departamento de Servicios Sociales de California ha tomado todas las decisiones de elegibilidad para P-EBT.
+    if_you_have_html: Si tiene alguna pregunta sobre su solicitud, por favor comuníquese con ellos <a href="https://inquiry.pebt.dss.ca.gov/" target="_blank">aquí</a>.
     what_is_the_deadline_answer_html: Si no recibe una tarjeta P-EBT por correo, debe presentar una solicitud en línea antes del 15 de julio de 2020 para obtener los beneficios P-EBT. Los beneficios de P-EBT solo están disponibles mientras las escuelas están cerradas debido al coronavirus (COVID 19). Si no recibió una tarjeta P-EBT por correo y no presentó la solicitud antes del 15 de julio de 2020, no podrá obtener los beneficios P-EBT.
     what_if_i_applied_question: ¿Qué pasa si solicité en línea y no he recibido mi tarjeta P-EBT?
     what_if_i_applied_answer_html: El estado está experimentando demoras, y las tarjetas P-EBT pueden tardar más en llegar. Recibirá una respuesta de nosotros con su estado final de elegibilidad aproximadamente el 31 de julio.
@@ -109,15 +112,20 @@ es:
     after_submission_1: Recibirá un correo electrónico indicando que recibimos su solicitud. Luego, comenzaremos a revisar su solicitud. La información que proporcionó debe coincidir con la información proporcionada por el Departamento de Educación. Esto toma tiempo.
     after_submission_2: Recibirá una respuesta con su elegibilidad final antes del 31 de julio. Le enviaremos un correo electrónico y le informaremos cuando su tarjeta P-EBT esté en camino.
     when_will_i_hear_q: ¿Cuándo voy a recibir noticias sobre el estado de mi solicitud?
+    did_you_provide: ¿Proporcionó una dirección de correo electrónico (o email) en su solicitud P-EBT? Debería haber recibido un correo electrónico (email) con su elegibilidad final.
     when_will_i_hear_a: Recibirá una respuesta con su elegibilidad final antes del 31 de julio. Le enviaremos un correo electrónico y le informaremos cuando su tarjeta P-EBT esté en camino. ¿Cómo puedo verificar el estado de mi solicitud?
     check_status_q: ¿Cómo puedo verificar el estado de mi solicitud?
     check_status_a_html: Consulte su correo electrónico. Le enviaremos un correo electrónico informándole que recibimos su solicitud. Recibirá otro correo electrónico cuando su tarjeta P-EBT esté en el correo y en camino a su dirección postal. Después de recibir un correo electrónico diciendo que su tarjeta está en camino, puede llamar al Centro de Servicio al Cliente de EBT al (<a href="tel:8773289677">877-328-9677</a>) si necesita ayuda.
     application_approved_q: ¿Cómo sabré si mi solicitud ha sido aprobada?
     application_approved_a: Le enviaremos un correo electrónico y le informaremos cuando su tarjeta P-EBT esté en camino. Así es como sabrá que su solicitud ha sido aprobada. Recibirá una respuesta con su elegibilidad final antes del 31 de julio.
     application_denied_q: ¿Cómo sabré si mi solicitud ha sido negada?
-    application_denied_a_html: Le enviaremos un correo electrónico. Si usted no recibe noticias de nosotros para el 31 de julio, puede llamar al Centro de Servicio al Cliente de EBT al (<a href="tel:8773289677">877-328-9677</a>) para obtener una actualización.
+    application_denied_a_html: Si su familia no fue elegible para P-EBT, pero cree que debería haberlo sido, puede completar una apelación. <a href="https://inquiry.pebt.dss.ca.gov/appeal" target="_blank">Envíe una apelación en línea</a> o llame a la línea de ayuda de P-EBT al 833-780-0353. La fecha límite para presentar una apelación es el 10 de agosto de 2020. El Departamento de Servicios Sociales de California revisará su apelación. Esto puede tomar hasta un mes. El departamento no está permitido hablar por teléfono sobre por qué no es elegible.
     number_to_call_q: ¿A qué número debo de llamar para pedir ayuda?
     number_to_call_a_html: Si necesita ayuda para cambiar su dirección postal o configurar su PIN, puede llamar al Centro de Servicio al Cliente de EBT al (<a href="tel:8773289677">877-328-9677</a>). No llame para pedir el estado de su solicitud. El centro de llamadas no tiene información sobre el estado de su solicitud.
+    cdss_still_available_html: El Departamento de Servicios Sociales de California aún está disponible si necesita ayuda. Pueden ayudar con los cambios de dirección, la configuración del PIN y otras consultas. Si tiene alguna pregunta sobre su solicitud, comuníquese con ellos <a href="https://inquiry.pebt.dss.ca.gov/" target="_blank">aquí</a>.
+    always_provide_a_phone_number: Siempre proporcione un número de teléfono cuando envíe un mensaje para que puedan responderle lo más pronto posible.
+    thank_you_for_your_patience: Gracias por su paciencia durante este tiempo difícil.
+    what_should_i_do_denied_q: ¿Qué debo hacer si mi solicitud fue denegada?
     how_many_cards_q: ¿Cuántas tarjetas P-EBT recibiré?
     how_many_cards_1: Algunas familias recibirán una tarjeta P-EBT cargada de beneficios para todos los estudiantes en el hogar. Tendrá el nombre del estudiante mayor.
     how_many_cards_2: Algunas familias recibirán muchas tarjetas, una para cada estudiante elegible. Las tarjetas tendrán $365 para cada estudiante.
