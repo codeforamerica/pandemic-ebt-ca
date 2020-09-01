@@ -62,7 +62,7 @@ class FormsController < ApplicationController
     end
 
     def form_class
-      (controller_name + '_form').classify.constantize
+      "#{controller_name}_form".classify.constantize
     end
   end
 end

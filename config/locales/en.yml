@@ -50,9 +50,10 @@ en:
     closed_html: The application window for Pandemic EBT (P-EBT) has now closed. If you have already applied and haven’t gotten your P-EBT card, please wait while we process your application. You will get an email with your application decision soon. If you have any questions about your application, please <a href="https://inquiry.pebt.dss.ca.gov/" target="_blank">contact us here</a>.
     delay_notice: Please do not call to check the status of your application. The call center does not have information on your application status. You will hear back from us with your final eligibility status by about July 31st.
     what_are_question: What are ‘P-EBT’ or Pandemic EBT benefits?
-    what_are_answer_html: Due to coronavirus (COVID 19), children who are eligible for free or reduced-price meals at
-      school will get extra food benefits. These food benefits are called Pandemic EBT or P-EBT benefits. P-EBT benefits
-      help families in California buy food when school is closed.
+    what_are_answer_one: While schools were closed due to coronavirus (COVID-19), some students got extra food benefits. These food benefits are called Pandemic EBT or P-EBT benefits. P-EBT benefits help families in California buy food when school is closed.
+    what_are_answer_two: P-EBT was a one-time disaster response program. The program ran between March and June 2020. P-EBT was for students who lost access to free or reduced price school meals during the pandemic. Students were eligible for P-EBT if they would have received free or reduced-price school meals though the federal School Breakfast or National School Lunch Programs.
+    what_are_answer_three: Federal funding for this program was not renewed for the 2020-21 school year.
+    what_are_answer_four: The California Department of Social Services and the California Department of Education finished P-EBT operations at the end of August 2020.
     who_is_eligible_question: Who is eligible for P-EBT benefits?
     who_is_eligible_answer_html: Children are eligible for P-EBT benefits if&colon;
       <ul class="list--bulleted">
@@ -90,9 +91,9 @@ en:
     what_is_the_deadline_question: When is the deadline to apply for P-EBT benefits?
     window_now_closed: The application window for Pandemic EBT (P-EBT) has now closed.
     as_of_july_31: As of July 31, 2020, the California Department of Social Services has made all P-EBT eligibility decisions.
+    all_decisions_made: As of July 31, all P-EBT eligibility decisions have been made. The deadline to appeal an eligibility decision was August 17.
     if_you_have_html: If you have any questions about your application, please contact them <a href="https://inquiry.pebt.dss.ca.gov/" target="_blank">here</a>.
-    what_is_the_deadline_answer_html: If you do not get a P-EBT card in the mail, you must apply online by July 15,
-      2020 to get P-EBT benefits. P-EBT benefits are only available while schools are closed due to coronavirus (COVID 19). If you did not get a P-EBT card in the mail and do not apply by July 15, 2020 you will not be able to get P-EBT benefits.
+    what_is_the_deadline_answer: As of July 31, all P-EBT eligibility decisions have been made. The deadline to appeal an eligibility decision was August 17. The California Department of Social Services is processing all the appeals they received. They will make final appeal decisions no later than one month from the date they received the appeal.
     what_if_i_applied_question: What if I applied online and haven't received my P-EBT card?
     what_if_i_applied_answer_html: The state is experiencing delays, so P-EBT cards may take longer to reach you. You will hear back from us with your final eligibility status by about July 31st.
     how_long_question: How long do I have to spend my P-EBT benefits?
@@ -129,11 +130,15 @@ en:
     application_denied_q: How will I know if my application has been denied?
     application_denied_a_html: If your family was not eligible for P-EBT, but you believe you should have been, you can complete an appeal. <a href="https://inquiry.pebt.dss.ca.gov/appeal" target="_blank">Submit an appeal online</a> or call the P-EBT helpline at 833-780-0353. The deadline to submit an appeal is August 17, 2020. The California Department of Social Services will review your appeal. This may take up to one month. They are not allowed to talk about why you are not eligible over the phone.
     number_to_call_q: What number should I call for help?
-    number_to_call_a_html: If you need help changing your mailing address or setting up your PIN you can call the EBT Customer Service Center at (<a href="tel:8773289677">877-328-9677</a>). Please do not call for the status of your application. The call center does not have information about the status of your application.
+    number_to_call_1_html: Your local social service office can help with the following&colon;
+    number_to_call_2_html: <ul class="list--bulleted"><li>You have a P-EBT card and need help setting up your PIN</li><li>You need to request a replacement card</li><li>Your P-EBT card did not arrive in the mail</li></ul>
+    number_to_call_3_html: Contact your local social service office for help. Find an office near you at <a href="https://calfresh.dss.ca.gov/food/officelocator/" target="_blank">https://calfresh.dss.ca.gov/food/officelocator/</a> or call <a href="tel:18778473663">1-877-847-3663</a>. If you live in Los Angeles, call <a href="tel:18889997671">1-888-999-7671</a>.
+    number_to_call_4: Local social service offices can only help families that are eligible for P-EBT. They cannot help with P-EBT eligibility issues or provide status updates for P-EBT.
     cdss_still_available_html: California Department of Social Services is still available if you need help. They can help with address changes, PIN set up, and other inquiries. If you have any questions about your application, please contact them <a href="https://inquiry.pebt.dss.ca.gov/" target="_blank">here</a>.
     always_provide_a_phone_number: Always provide a phone number when you send a message so that they can get back to you as soon as possible.
     thank_you_for_your_patience: Thank you for your patience during this challenging time.
     what_should_i_do_denied_q: What should I do if my application was denied?
+    what_should_i_do_denied_a: The deadline to appeal an eligibility decision was August 17. The California Department of Social Services is processing all the appeals they received. They will make final appeal decisions no later than one month from the date they received the appeal.
     how_many_cards_q: How many P-EBT cards will I get?
     how_many_cards_1: Some families will receive one P-EBT card loaded with benefits for all students in the house. It will have the oldest student's name on it.
     how_many_cards_2: Some families will receive many cards - one card for each eligible student. The cards will have $365 per student on it.

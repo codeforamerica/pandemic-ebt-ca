@@ -50,7 +50,10 @@ es:
     closed_html: El plazo para aplicar por Pandemia EBT (P-EBT) ha cerrado. Si ya ha solicitado y no ha recibido su tarjeta de P-EBT, espere mientras procesamos su solicitud. Pronto recibirá un correo electrónico con la decisión de su solicitud. Si tiene alguna pregunta sobre su solicitud, <a href="https://inquiry.pebt.dss.ca.gov/" target="_blank">contáctenos aquí</a>.
     delay_notice: No llame para verificar el estado de su solicitud. El centro de llamadas no tiene información sobre el estado de su solicitud. Recibirá una respuesta de nosotros con su estado final de elegibilidad aproximadamente el 31 de julio.
     what_are_question: ¿Qué es 'P-EBT' o beneficios de Pandemia EBT?
-    what_are_answer_html: Debido al coronavirus (COVID-19), los niños que son elegibles para recibir alimentos gratis o a precio reducido en la escuela van a recibir beneficios adicionales para acceder a alimentos. Estos beneficios se llaman &quot;Pandemic EBT&quot; (Pandemia EBT) o beneficios &quot;P-EBT&quot;. Los beneficios P-EBT ayudan a las familias de California a comprar comida cuando la escuela está cerrada.
+    what_are_answer_one: Mientras que las escuelas estuvieron cerradas debido al coronavirus (COVID 19), algunos estudiantes obtuvieron beneficios alimenticios adicionales. Estos beneficios alimentarios se llaman beneficios Pandemia EBT o P-EBT. Los beneficios de P-EBT ayudan a las familias en California a comprar alimentos cuando las escuela están cerradas.
+    what_are_answer_two: P-EBT fue un programa de respuesta a desastres de una sola vez. El programa se desarrolló entre marzo y junio de 2020. P-EBT fue para estudiantes que perdieron el acceso a comidas escolares gratuitas o a precio reducido durante la pandemia. Los estudiantes fueron elegibles para P-EBT si hubieran recibido comidas escolares gratuitas o a precio reducido a través del programa federal de Desayunos Escolares o el Programa Nacional de Almuerzos Escolares.
+    what_are_answer_three: Los fondos federales para este programa no se renovaron para el año escolar de 2020-21.
+    what_are_answer_four: El Departamento de Servicios Sociales de California y el Departamento de Educación de California finalizaron las operaciones de P-EBT a fines de agosto de 2020.
     who_is_eligible_question: ¿Quién es elegible para recibir beneficios P-EBT?
     who_is_eligible_answer_html: Los niños son elegibles para recibir los beneficios P-EBT si es que&colon;
       <ul class="list--bulleted">
@@ -88,8 +91,9 @@ es:
     what_is_the_deadline_question: ¿Hasta cuándo tengo para solicitar beneficios P-EBT?
     window_now_closed: El plazo para aplicar para Pandemia EBT (P-EBT) se ha cerrado.
     as_of_july_31: A partir del 31 de julio de 2020, el Departamento de Servicios Sociales de California ha tomado todas las decisiones de elegibilidad para P-EBT.
+    all_decisions_made: A partir del 31 de julio, se han tomado todas las decisiones de elegibilidad de P-EBT. La fecha límite para apelar una decisión de elegibilidad fue el 17 de agosto.
     if_you_have_html: Si tiene alguna pregunta sobre su solicitud, por favor comuníquese con ellos <a href="https://inquiry.pebt.dss.ca.gov/" target="_blank">aquí</a>.
-    what_is_the_deadline_answer_html: Si no recibe una tarjeta P-EBT por correo, debe presentar una solicitud en línea antes del 15 de julio de 2020 para obtener los beneficios P-EBT. Los beneficios de P-EBT solo están disponibles mientras las escuelas están cerradas debido al coronavirus (COVID 19). Si no recibió una tarjeta P-EBT por correo y no presentó la solicitud antes del 15 de julio de 2020, no podrá obtener los beneficios P-EBT.
+    what_is_the_deadline_answer: A partir del 31 de julio, se han tomado todas las decisiones de elegibilidad de P-EBT. La fecha límite para apelar una decisión de elegibilidad fue el 17 de agosto. El Departamento de Servicios Sociales de California está procesando todas las apelaciones que recibieron. Ellos tomarán las decisiones finales sobre la apelación a más tardar un mes después de la fecha en que recibieron la apelación.
     what_if_i_applied_question: ¿Qué pasa si solicité en línea y no he recibido mi tarjeta P-EBT?
     what_if_i_applied_answer_html: El estado está experimentando demoras, y las tarjetas P-EBT pueden tardar más en llegar. Recibirá una respuesta de nosotros con su estado final de elegibilidad aproximadamente el 31 de julio.
     how_long_question: ¿Cuánto tiempo tengo para usar mis beneficios P-EBT?
@@ -121,11 +125,15 @@ es:
     application_denied_q: ¿Cómo sabré si mi solicitud ha sido negada?
     application_denied_a_html: Si su familia no fue elegible para P-EBT, pero cree que debería haberlo sido, puede completar una apelación. <a href="https://inquiry.pebt.dss.ca.gov/appeal" target="_blank">Envíe una apelación en línea</a> o llame a la línea de ayuda de P-EBT al 833-780-0353. La fecha límite para presentar una apelación es el 17 de agosto de 2020. El Departamento de Servicios Sociales de California revisará su apelación. Esto puede tomar hasta un mes. El departamento no está permitido hablar por teléfono sobre por qué no es elegible.
     number_to_call_q: ¿A qué número debo de llamar para pedir ayuda?
-    number_to_call_a_html: Si necesita ayuda para cambiar su dirección postal o configurar su PIN, puede llamar al Centro de Servicio al Cliente de EBT al (<a href="tel:8773289677">877-328-9677</a>). No llame para pedir el estado de su solicitud. El centro de llamadas no tiene información sobre el estado de su solicitud.
+    number_to_call_1_html: Su oficina local de servicios sociales puede ayudar con lo siguiente&colon;
+    number_to_call_2_html: <ul class="list--bulleted"><li>Tiene una tarjeta P-EBT y necesita ayuda para configurar su PIN</li><li>Necesita solicitar una tarjeta de reemplazo</li><li>Su tarjeta P-EBT no llegó por correo</li></ul>
+    number_to_call_3_html: Comuníquese con su oficina local de servicios sociales para obtener ayuda. Encuentre una oficina cerca de usted en  <a href="https://calfresh.dss.ca.gov/food/officelocator/" target="_blank">https://calfresh.dss.ca.gov/food/officelocator/</a> o llame al <a href="tel:18778473663">1-877-847-3663</a>. Si vive en Los Ángeles, llame al <a href="tel:18889997671">1-888-999-7671</a>.
+    number_to_call_4: Local social service offices can only help families that are eligible for P-EBT. They cannot help with P-EBT eligibility issues or provide status updates for P-EBT.
     cdss_still_available_html: El Departamento de Servicios Sociales de California aún está disponible si necesita ayuda. Pueden ayudar con los cambios de dirección, la configuración del PIN y otras consultas. Si tiene alguna pregunta sobre su solicitud, comuníquese con ellos <a href="https://inquiry.pebt.dss.ca.gov/" target="_blank">aquí</a>.
     always_provide_a_phone_number: Siempre proporcione un número de teléfono cuando envíe un mensaje para que puedan responderle lo más pronto posible.
     thank_you_for_your_patience: Gracias por su paciencia durante este tiempo difícil.
     what_should_i_do_denied_q: ¿Qué debo hacer si mi solicitud fue denegada?
+    what_should_i_do_denied_a: La fecha límite para apelar una decisión de elegibilidad fue el 17 de agosto. El Departamento de Servicios Sociales de California está procesando todas las apelaciones que recibieron. Ellos tomarán decisiones finales sobre la apelación a más tardar un mes después de la fecha en que recibieron la apelación.
     how_many_cards_q: ¿Cuántas tarjetas P-EBT recibiré?
     how_many_cards_1: Algunas familias recibirán una tarjeta P-EBT cargada de beneficios para todos los estudiantes en el hogar. Tendrá el nombre del estudiante mayor.
     how_many_cards_2: Algunas familias recibirán muchas tarjetas, una para cada estudiante elegible. Las tarjetas tendrán $365 para cada estudiante.
