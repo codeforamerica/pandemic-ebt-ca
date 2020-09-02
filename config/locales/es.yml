@@ -128,7 +128,7 @@ es:
     number_to_call_1_html: Su oficina local de servicios sociales puede ayudar con lo siguiente&colon;
     number_to_call_2_html: <ul class="list--bulleted"><li>Tiene una tarjeta P-EBT y necesita ayuda para configurar su PIN</li><li>Necesita solicitar una tarjeta de reemplazo</li><li>Su tarjeta P-EBT no llegó por correo</li></ul>
     number_to_call_3_html: Comuníquese con su oficina local de servicios sociales para obtener ayuda. Encuentre una oficina cerca de usted en  <a href="https://calfresh.dss.ca.gov/food/officelocator/" target="_blank">https://calfresh.dss.ca.gov/food/officelocator/</a> o llame al <a href="tel:18778473663">1-877-847-3663</a>. Si vive en Los Ángeles, llame al <a href="tel:18889997671">1-888-999-7671</a>.
-    number_to_call_4: Local social service offices can only help families that are eligible for P-EBT. They cannot help with P-EBT eligibility issues or provide status updates for P-EBT.
+    number_to_call_4: Las oficinas de servicios sociales locales solo pueden ayudar a las familias que son elegibles para P-EBT. No pueden ayudar con problemas de elegibilidad de P-EBT ni proporcionar actualizaciones del estado de aplicaciones P-EBT.
     cdss_still_available_html: El Departamento de Servicios Sociales de California aún está disponible si necesita ayuda. Pueden ayudar con los cambios de dirección, la configuración del PIN y otras consultas. Si tiene alguna pregunta sobre su solicitud, comuníquese con ellos <a href="https://inquiry.pebt.dss.ca.gov/" target="_blank">aquí</a>.
     always_provide_a_phone_number: Siempre proporcione un número de teléfono cuando envíe un mensaje para que puedan responderle lo más pronto posible.
     thank_you_for_your_patience: Gracias por su paciencia durante este tiempo difícil.

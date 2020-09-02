@@ -47,8 +47,10 @@ zh:
     closed_html: 大流行疫情 EBT (P-EBT) 已截止接受申請。如果您已經提交申請但尚未收到P-EBT卡，請等待我們審核您的申請。我們將會通過電郵告知您申請的最終結果 。如果您對您的申請有任何疑問，請透過下面表格與我<a href="https://inquiry.pebt.dss.ca.gov/" target="blank">們聯繫</a>
     delay_notice: 請不要致電查詢您申請表格的狀態。客服中心無法提供您申請表格的狀態信息 。我們將會在7月31日左右告知您案件的最終資格信息。
     what_are_question: 什麽是「P-EBT」或Pandemic EBT福利？
-    what_are_answer_html: 因應新冠狀肺炎疫情(COVID 19)的影響，在學校符合資格領取免費或低價早/午餐的兒童將會領取到額外的食物福利。
-      這項食物福利稱為Pandemic EBT或P-EBT福利。當學校關閉時，P-EBT福利能幫助加州家庭購買食物。
+    what_are_answer_one: 在學校因新冠病毒（COVID 19）關閉時，有部分學生獲得額外食物福利。這項食物福利為大流行災難EBT或P-EBT福利。在學校關閉期間，P-EBT福利幫助家庭購買食物。
+    what_are_answer_two: P-EBT是一次性的災難應急項目。該項目由2020年3月至6月進行。P-EBT是給予在大流行災難期間無法獲得免費或優惠價校餐的學生。如果學生通過聯邦School Breakfast或National School Lunch Programs項目獲得免費或優惠價校餐，則符合資格獲取P-EBT。
+    what_are_answer_three: 該項目的聯邦撥款在2020-21學年沒有續款。
+    what_are_answer_four: 加州社會服務部和加州教育部於2020年8月底結束運營P-EBT。
     who_is_eligible_question: 誰符合資格領取P-EBT福利？
     who_is_eligible_answer_html: 符合以下條件的兒童可領取P-EBT福利：
       <ul class="list--bulleted">
@@ -87,9 +89,9 @@ zh:
     what_is_the_deadline_question: 申請P-EBT福利的截止日期是？
     window_now_closed: Pandemic EBT（P-EBT）的申請期限已過。
     as_of_july_31: 於2020年7月31號，加州社會服務部 (CDSS) 已完成所有P-EBT的資格審核。
+    all_decisions_made: 於7月31日，所有P-EBT的資格審核已完成。提交上訴的截止日期是8月17日。
     if_you_have_html: 如果您有任何與表格相關的問題，請點擊此與他<a href="https://inquiry.pebt.dss.ca.gov/" target="_blank">們聯繫</a>。
-    what_is_the_deadline_answer_html: 如果您沒有收到郵寄P-EBT卡，則必須在2020年7月15日前上網申請P-EBT福利。P-EBT福利是爲了學校因新冠肺炎疫情(COVID
-      19)關閉而臨時設立。如果您沒有收到郵寄P-EBT卡，也沒有在2020年7月15日前提交申請，則無法領取到P-EBT福利。
+    what_is_the_deadline_answer: 於7月31日，所有P-EBT的資格審核已完成。提交上訴的截止日期是8月17日。加州社會服務部正在處理收到的上訴申請。他們將會在收到上訴的一個月內作出最終的上訴決定。
     what_if_i_applied_question: 如果我上網申請了，但沒有收到P-EBT卡該怎麼辦？
     what_if_i_applied_answer_html: 州政府正在面臨延遲，因此P-EBT卡或許會需要更長時間寄出。我們將會在7月31日左右告知您案件的最終資格信息。
     how_long_question: 我有多長時間可以使用我的P-EBT 福利？
@@ -120,10 +122,15 @@ zh:
     application_denied_q: 如何得知我的申請是否被拒絕？
     application_denied_a_html: 如果您的家庭不符合資格獲取P-EBT，但您認為該決定有誤，您可以提交上訴。<a href="https://inquiry.pebt.dss.ca.gov/appeal" target="_blank">您可以在網上遞交上</a>訴或致電 833-780-0353 聯繫P-EBT。提交上訴的截止日期為2020年8月17日。加州社會服務部 （CDSS）會審核您的上訴。審核過程有可能需要一個月。他們不能通過電話與您詳談關於您為什麼不符合資格。
     number_to_call_q: 我應該打哪個電話求助？
+    number_to_call_1_html: 您當地的社會服務辦公室可以提供以下幫助：
+    number_to_call_2_html: <ul class="list--bulleted"><li>您有P-EBT卡並需要幫助設置密碼</li><li>您需要申請補發卡</li><li>您沒有通過信件收到P-EBT卡</li></ul>
+    number_to_call_3_html: 與您當地的社會服務辦公室聯繫求助。請瀏覽 <a href="https://calfresh.dss.ca.gov/food/officelocator/" target="_blank">https://calfresh.dss.ca.gov/food/officelocator/</a> 或致電 <a href="tel:18778473663">1-877-847-3663</a>. 尋找您當地的辦公室。如果您住在洛杉磯，請致電 <a href="tel:18889997671">1-888-999-7671</a>.
+    number_to_call_4: 當地的社會服務辦公室只能幫助符合資格獲取P-EBT的家庭。他們無法協助解決P-EBT資格問題或提供P-EBT申請現狀。
     cdss_still_available_html: 如果您需要幫助，可以與加州社會服務部聯繫。他們可以幫助您更改地址，設置密碼以及其他詢問。如果您有關於申請表格的問題，請通過此與他<a href="https://inquiry.pebt.dss.ca.gov/" target="_blank">們聯繫</a>。
     always_provide_a_phone_number: 為了方便工作人員與您聯繫，如果您留言或發送信息，請留下電話號碼。
     thank_you_for_your_patience: 感謝您在這段困難的時間中的耐心等候。
     what_should_i_do_denied_q: 如果我的申請被拒絕，我該怎麼辦？
+    what_should_i_do_denied_a: 提交上訴的截止日期是8月17日。加州社會服務部正在處理收到的上訴申請。他們將會在收到上訴的一個月內作出最終的上訴決定。
     number_to_call_a_html: 如果您需要幫助修改通信地址或設置卡密碼，您可以致電 (<a href="tel:8773289677">877-328-9677</a>) 與EBT客服中心聯繫。請不要致電查詢申請進度。客服中心無法提供申請進度或申請的相關信息。
     how_many_cards_q: 我會收到幾張P-EBT卡？
     how_many_cards_1: 有些家庭會收到一張P-EBT卡，包括家庭中所有學生的福利。卡上會寫著最年長的學生的名字。
