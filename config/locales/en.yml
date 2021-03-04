@@ -14,7 +14,7 @@ en:
     if_your_family: If your family still needs help buying groceries, you can apply for CalFresh (also known as Food
       Stamps).
     please_choose: Please choose an option.
-    demo: This site is for example purposes only. Please apply on
+    demo_html: This site is for example purposes only. Applications are no longer required to receive P-EBT. See the <a href="https://www.cdss.ca.gov/home/pandemic-ebt">official website for more details</a>.
     general_error: There has been a problem on our end.
     delay: There is a delay processing applications due to the high volume of people who need help during the pandemic.
   index:
