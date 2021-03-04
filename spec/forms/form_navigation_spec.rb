@@ -11,7 +11,9 @@ RSpec.describe FormNavigation do
     end
 
     class FirstController < BaseController; end
+
     class SecondController < BaseController; end
+
     class ThirdController < BaseController; end
 
     stub_const('FormNavigation::FLOW',

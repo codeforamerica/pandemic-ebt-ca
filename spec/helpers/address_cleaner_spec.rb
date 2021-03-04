@@ -17,7 +17,7 @@ RSpec.describe AddressCleaner do
     it 'sets the residential_address fields' do
       cleaner = described_class.new
 
-      expect(cleaner).to receive(:get_result).and_return(
+      allow(cleaner).to receive(:get_result).and_return(
         @cleaner_result
       )
 
@@ -34,7 +34,7 @@ RSpec.describe AddressCleaner do
     it 'calls the cleaner only on mailing address if homeless' do
       cleaner = described_class.new
 
-      expect(cleaner).to receive(:get_result).and_return(
+      allow(cleaner).to receive(:get_result).and_return(
         @cleaner_result
       )
 

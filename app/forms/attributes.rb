@@ -27,7 +27,7 @@ class Attributes
     return [] if attribute_names.nil?
 
     attribute_names.map do |attr|
-      if attr.class == Symbol
+      if attr.instance_of?(Symbol)
         attr
       else
         attr.keys

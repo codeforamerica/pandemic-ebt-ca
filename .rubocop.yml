@@ -9,9 +9,6 @@ AllCops:
     - db/**/*
     - vendor/**/*
     - config/routes.rb
-FactoryBot/CreateList:
-  Exclude:
-    - spec/helpers/suid_generator_spec.rb
 Layout/EmptyLinesAroundAttributeAccessor:
   Enabled: true
 Layout/EndOfLine:
@@ -23,6 +20,8 @@ Layout/SpaceAroundMethodCallOperator:
 Layout/ArrayAlignment:
   Exclude:
     - app/helpers/address_cleaner.rb
+Lint/ConstantDefinitionInBlock:
+  Enabled: false
 Lint/DeprecatedOpenSSLConstant:
   Enabled: true
 Lint/MixedRegexpCaptureTypes:
@@ -39,6 +38,8 @@ Metrics/CyclomaticComplexity:
   Exclude:
     - app/helpers/ordinal_columns_helper.rb
 Metrics/MethodLength:
+  Enabled: false
+Naming/VariableNumber:
   Enabled: false
 Rails/FilePath:
   Enabled: false
@@ -62,6 +63,9 @@ RSpec/BeforeAfterAll:
   Exclude:
     - spec/features/export_spec.rb
     - spec/features/upload_aws_spec.rb
+RSpec/FactoryBot/CreateList:
+  Exclude:
+    - spec/helpers/suid_generator_spec.rb
 RSpec/MessageSpies:
   Enabled: false
 Style/Documentation:
