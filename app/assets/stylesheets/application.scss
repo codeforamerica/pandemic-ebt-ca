@@ -125,3 +125,13 @@ h1.form-card__title {
   font-weight: 700;
   line-height: 3.5rem;
 }
+
+.demo-banner {
+  text-align: left;
+  @include media($site-max-up) {
+    text-align: center;
+  }
+  a {
+    color: white;
+  }
+}
