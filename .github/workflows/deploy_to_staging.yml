@@ -61,4 +61,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.BOT_GITHUB_KEY }}
       - name: Deploy to aptible
         run: |
-          git push -f git@beta.aptible.com:p-ebt/app-staging.git master
+          git push -f git@beta.aptible.com:p-ebt/app-demo.git master
